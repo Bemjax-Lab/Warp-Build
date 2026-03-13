@@ -1,0 +1,9 @@
+.sec { font-size:.75em; text-transform:uppercase; letter-spacing:1px; }
+.tab-btn { opacity:0.8 }
+.tab-btn.active { opacity:1 }
+.tab-panel { display:none; }
+.tab-panel.open { display:block; }
+.icon-card { display:flex; flex-direction:column; align-items:center; padding:6px; border-radius:4px; cursor:default; transition:background .12s; }
+.icon-card:hover { background:rgba(128,128,128,.08); }
+.icon-card .ic { font-size:18px; }
+.icon-card .il { font-size:8px; margin-top:3px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; max-width:100%; }

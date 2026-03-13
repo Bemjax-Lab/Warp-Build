@@ -1,0 +1,22 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Build for Browser",
+      "type": "pwa-msedge",
+      "request": "launch",
+      "url": "http://localhost:4174/demo.html",
+      "preLaunchTask": "build-and-serve"
+    },
+    {
+      "name": "Build for Native",
+      "type": "node",
+      "request": "launch",
+      "runtimeExecutable": "${workspaceFolder}/node_modules/.bin/electron",
+      "args": ["."],
+      "cwd": "${workspaceFolder}",
+      "preLaunchTask": "build-silent",
+      "console": "integratedTerminal"
+    }
+  ]
+}

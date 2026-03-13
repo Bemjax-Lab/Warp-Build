@@ -1,0 +1,6 @@
+.sec { font-size:.7em; text-transform:uppercase; letter-spacing:1px; padding:6px 0 2px 0; }
+label { font-size:11px; line-height:var(--sm); }
+.r6 { gap:5px; }
+.win-row { display:flex; align-items:center; gap:5px; padding:4px 8px; border-bottom:1px solid rgba(128,128,128,.15); font-size:11px; }
+.win-row .wname { flex:1; }
+.win-row .wstate { opacity:.5; font-size:10px; min-width:55px; text-align:right; }

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Warp Build — Dev</title>
+    <style>
+        html, body { margin: 0; padding: 0; background: transparent; }
+    </style>
+</head>
+<body>
+    <script src="include/Warp.compact.js"></script>
+    <script>
+        var warp;
+        inflate().then(function () {
+            // Load Warp (built-in) + your custom layouts
+            warp = new Warp({
+                contain: false,
+                load: [
+                    "dist/Warp.layout"
+                ]
+            });
+        });
+    </script>
+</body>
+</html>

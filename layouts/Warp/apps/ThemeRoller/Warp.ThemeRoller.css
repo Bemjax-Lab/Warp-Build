@@ -1,0 +1,5 @@
+.sr .sec { font-size:.7em; text-transform:uppercase; letter-spacing:1px; padding:10px 0 3px; opacity:.5; }
+.sr .cv { display:flex; flex-direction:column; align-items:center; gap:3px; }
+.sr .cv label { font-size:10px; opacity:.6; }
+.sr .cv input[type=color] { width:100%; height:32px; border:1px solid rgba(128,128,128,.25); border-radius:3px; padding:0; cursor:pointer; }
+.sr .cv .hex { font-size:10px; font-family:monospace; opacity:.4; }

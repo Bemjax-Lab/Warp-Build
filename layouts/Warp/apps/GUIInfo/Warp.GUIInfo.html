@@ -1,0 +1,491 @@
+<div class="xs" style="display:flex;flex-direction:column;height:100%">
+
+  <div class="p5 pl10 pr10 pt10 md" style="flex:0 0 auto;display:flex;align-items:center;border-bottom:1px solid rgba(128,128,128,.1)">
+    <h2 class="tab-title txl ml10 mb20" style="flex:1;margin:0">Scaffolding</h2>
+    <div style="display:flex;gap:3px">
+      <button class="tab-btn" data-tab="desc">About</button>
+      <button class="tab-btn" data-tab="scaffold">Scaffold</button>
+      <button class="tab-btn" data-tab="controls">Controls</button>
+      <button class="tab-btn" data-tab="icons">Icons</button>
+      <button class="tab-btn" data-tab="spacing">Spacing</button>
+      <button class="tab-btn" data-tab="colours">Colours</button>
+      <button class="tab-btn" data-tab="methods">Methods</button>
+    </div>
+  </div>
+
+  <div class="tab-panels tmd" style="flex:1;overflow-y:auto;min-height:0">
+
+    <!-- DESCRIPTION -->
+    <div class="tab-panel" data-panel="desc">
+      <div class="m10" style="line-height:1.6">
+
+        <div class="mt10 op8">Warp CSS is a small, fast prototyping framework. No build step, no preprocessor. Just classes on elements.</div>
+
+        <div class="mt10 p5 sec op8 tmd">Grid</div>
+        <div class="r2 mt5" style="gap:10px">
+          <div class="op7"><code>.r2</code> – <code>.r10</code> create equal-column grids. <code>.c2</code> – <code>.c10</code> span columns. Nest freely.</div>
+          <pre class="s0 p5 rounded-xs" style="font-size:10px;overflow-x:auto;margin:0">&lt;div class="r3"&gt;
+  &lt;div class="s1 p5"&gt;A&lt;/div&gt;
+  &lt;div class="c2 s2 p5"&gt;B (spans 2)&lt;/div&gt;
+&lt;/div&gt;</pre>
+        </div>
+
+        <div class="mt10 pt5 pb5 pl10 sec op8">Sizes</div>
+        <div class="r2 mt5" style="gap:10px">
+          <div class="op7">Five sizes: <code>xs</code> <code>sm</code> <code>md</code> <code>lg</code> <code>xl</code>. Put on a container — all buttons, inputs, selects inside inherit it. <code>md</code> is default.</div>
+          <pre class="s0 p5 rounded-xs" style="font-size:10px;overflow-x:auto;margin:0">&lt;div class="r2 xs"&gt;
+  &lt;input placeholder="small"&gt;
+  &lt;button class="s1"&gt;Go&lt;/button&gt;
+&lt;/div&gt;</pre>
+        </div>
+
+        <div class="mt10 pt5 pb5 pl10 sec op8">Padding &amp; margin</div>
+        <div class="r2 mt5" style="gap:10px">
+          <div class="op7">Fixed steps: <code>0</code>, <code>5</code>, <code>10</code>, <code>15</code>, <code>20</code> px. Directional: <code>pt</code> <code>pb</code> <code>pl</code> <code>pr</code>, <code>mt</code> <code>mb</code> <code>ml</code> <code>mr</code>. Negatives: <code>.m-5</code> <code>.mt-10</code>. Auto: <code>.mla</code> <code>.mra</code>.</div>
+          <pre class="s0 p5 rounded-xs" style="font-size:10px;overflow-x:auto;margin:0">.p0 .p5 .p10 .p15 .p20
+.pt0 .pb5 .pl10 .pr20
+
+.m0 .m5 .m10 .m15 .m20
+.mt-5 .m-10 .mla .mra</pre>
+        </div>
+
+        <div class="mt10 pt5 pb5 pl10 sec op8">Colours</div>
+        <div class="r2 mt5" style="gap:10px">
+          <div class="op7">Background: <code>.s0</code>–<code>.s6</code> (default, primary, secondary, success, warning, danger, link). Text only: <code>.t0</code>–<code>.t6</code>. Driven by skin CSS variables.</div>
+          <pre class="s0 p5 rounded-xs" style="font-size:10px;overflow-x:auto;margin:0">&lt;button class="s1 sm"&gt;Primary&lt;/button&gt;
+&lt;span class="t5"&gt;Error text&lt;/span&gt;
+&lt;div class="s3 p10"&gt;Success&lt;/div&gt;</pre>
+        </div>
+
+        <div class="mt10 pt5 pb5 pl10 sec op8">Height &amp; width tokens</div>
+        <div class="r2 mt5" style="gap:10px">
+          <div class="op7"><code>.hxs</code>–<code>.hxl</code> and <code>.wxs</code>–<code>.wxl</code> map to <code>--xs</code>(25px) through <code>--xl</code>(100px). Use for fixed-size elements.</div>
+          <pre class="s0 p5 rounded-xs" style="font-size:10px;overflow-x:auto;margin:0">&lt;div class="s1 hmd wmd"&gt;Square&lt;/div&gt;
+&lt;button class="s5 hxs wxs round"&gt;−&lt;/button&gt;</pre>
+        </div>
+
+        <div class="mt10 pt5 pb5 pl10 sec op8">Other helpers</div>
+        <div class="r2 mt5" style="gap:10px">
+          <div class="op7"><code>.round</code> circle, <code>.raised</code> <code>.raised-sm</code> <code>.inset-xs</code> elevation, <code>.op0</code>–<code>.op9</code> opacity, <code>.disabled</code> <code>.hidden</code> state, <code>.clear</code> strips bg/border.</div>
+          <pre class="s0 p5 rounded-xs" style="font-size:10px;overflow-x:auto;margin:0">&lt;button class="xs round s1"&gt;+&lt;/button&gt;
+&lt;div class="s0 p10 raised"&gt;Card&lt;/div&gt;
+&lt;span class="op5"&gt;50% opacity&lt;/span&gt;</pre>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- SCAFFOLD -->
+    <div class="tab-panel open" data-panel="scaffold">
+      <div class="m10">
+
+        <div class="mt5 pt5 pb5 pl10 sec op8">Grid rows (r2 – r6)</div>
+        <div class="r2 mt5" style="gap:3px">
+          <div class="s1 p5 rounded-xs">r2 col 1</div>
+          <div class="s2 p5 rounded-xs">r2 col 2</div>
+        </div>
+        <div class="r3 mt5" style="gap:3px">
+          <div class="s3 p5 rounded-xs">r3</div>
+          <div class="s4 p5 rounded-xs">r3</div>
+          <div class="s5 p5 rounded-xs">r3</div>
+        </div>
+        <div class="r6 mt5" style="gap:3px">
+          <div class="s0 p5 rounded-xs">1</div>
+          <div class="s1 p5 rounded-xs">2</div>
+          <div class="s2 p5 rounded-xs">3</div>
+          <div class="s3 p5 rounded-xs">4</div>
+          <div class="s4 p5 rounded-xs">5</div>
+          <div class="s5 p5 rounded-xs">6</div>
+        </div>
+
+        <div class="mt10 pt5 pb5 pl10 sec op8">Column spans (c2, c3, c4 in r6)</div>
+        <div class="r6 mt5" style="gap:3px">
+          <div class="c2 s1 p5 rounded-xs">c2</div>
+          <div class="c3 s2 p5 rounded-xs">c3</div>
+          <div class="s3 p5 rounded-xs">1</div>
+        </div>
+        <div class="r6 mt5" style="gap:3px">
+          <div class="c4 s4 p5 rounded-xs">c4 — spans 4</div>
+          <div class="s5 p5 rounded-xs">1</div>
+          <div class="s0 p5 rounded-xs">1</div>
+        </div>
+
+        <div class="mt10 pt5 pb5 pl10 sec op8">Two-column layout (r10 / c7 + c3)</div>
+        <div class="r10 mt5" style="gap:5px">
+          <div class="c7 s0 p10 rounded-xs">
+            <div class="sec op8">Main panel (c7)</div>
+            <div class="mt5 op6" style="font-size:10px">7 of 10 columns</div>
+          </div>
+          <div class="c3 s0 p10 rounded-xs">
+            <div class="sec op8">Sidebar (c3)</div>
+            <div class="mt5 op6" style="font-size:10px">3 of 10 columns</div>
+          </div>
+        </div>
+
+        <div class="mt10 pt5 pb5 pl10 sec op8">Nested grids</div>
+        <div class="r3 mt5" style="gap:3px">
+          <div class="s0 p5 rounded-xs">Info</div>
+          <div class="r2" style="gap:3px">
+            <div class="s3 p5 rounded-xs">Sub A</div>
+            <div class="s4 p5 rounded-xs">Sub B</div>
+          </div>
+          <div class="s5 p5 rounded-xs">Action</div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- CONTROLS -->
+    <div class="tab-panel" data-panel="controls">
+      <div class="m10">
+
+        <div class="mt5 pt5 pb5 pl10 sec op8">Text inputs (xs / sm / md)</div>
+        <div class="r3 mt5 xs" style="gap:3px">
+          <input type="text" placeholder="First name">
+          <input type="text" placeholder="Last name">
+          <input type="email" placeholder="Email">
+        </div>
+        <div class="r3 mt5 sm" style="gap:3px">
+          <input type="text" placeholder="First name">
+          <input type="text" placeholder="Last name">
+          <input type="email" placeholder="Email">
+        </div>
+        <div class="r3 mt5" style="gap:3px">
+          <input type="text" placeholder="First name">
+          <input type="text" placeholder="Last name">
+          <input type="email" placeholder="Email">
+        </div>
+
+        <div class="mt10 pt5 pb5 pl10 sec op8">Selects and date</div>
+        <div class="r3 mt5 sm" style="gap:3px">
+          <select>
+            <option value="">Category</option>
+            <option>Option A</option>
+            <option>Option B</option>
+            <option>Option C</option>
+          </select>
+          <select>
+            <option value="">Priority</option>
+            <option>Low</option>
+            <option>Medium</option>
+            <option>High</option>
+          </select>
+          <input type="date" class="sm">
+        </div>
+
+
+        <div class="mt10 pt5 pb5 pl10 sec op8">Number inputs with labels</div>
+        <div class="r2 mt5 sm" style="gap:3px">
+          <div class="r6" style="gap:3px">
+            <label class="c2" style="font-size:11px;line-height:var(--sm)">Width</label>
+            <input type="number" class="c4" value="300">
+          </div>
+          <div class="r6" style="gap:3px">
+            <label class="c2" style="font-size:11px;line-height:var(--sm)">Height</label>
+            <input type="number" class="c4" value="200">
+          </div>
+        </div>
+        <div class="r2 mt5 sm" style="gap:3px">
+          <div class="r6" style="gap:3px">
+            <label class="c2" style="font-size:11px;line-height:var(--sm)">Min W</label>
+            <input type="number" class="c4" value="100">
+          </div>
+          <div class="r6" style="gap:3px">
+            <label class="c2" style="font-size:11px;line-height:var(--sm)">Max W</label>
+            <input type="number" class="c4" placeholder="none">
+          </div>
+        </div>
+
+        <div class="mt10 pt5 pb5 pl10 sec op8">Checkboxes and radios</div>
+        <div class="r3 mt5" style="gap:3px">
+          <label style="font-size:11px"><input type="checkbox" checked> Draggable</label>
+          <label style="font-size:11px"><input type="checkbox" checked> Scalable</label>
+          <label style="font-size:11px"><input type="checkbox"> Headless</label>
+          <label style="font-size:11px"><input type="checkbox" checked> Closable</label>
+          <label style="font-size:11px"><input type="checkbox" checked> Scrollable</label>
+          <label style="font-size:11px"><input type="checkbox"> Keep ratio</label>
+        </div>
+        <div class="r3 mt5" style="gap:3px">
+          <label style="font-size:11px"><input type="radio" name="demo-state" checked> Restored</label>
+          <label style="font-size:11px"><input type="radio" name="demo-state"> Minimized</label>
+          <label style="font-size:11px"><input type="radio" name="demo-state"> Maximized</label>
+        </div>
+
+        <div class="mt10 pt5 pb5 pl10 sec op8">Textarea</div>
+        <div class="mt5">
+          <textarea class="sm" style="width:100%;min-height:60px" placeholder="Notes..."></textarea>
+        </div>
+
+        <div class="mt10 pt5 pb5 pl10 sec op8">Search with full-width input</div>
+        <div class="mt5">
+          <input type="search" class="sm" style="width:100%" placeholder="Search files, apps, layouts...">
+        </div>
+
+        <div class="mt10 pt5 pb5 pl10 sec op8">Password with button</div>
+        <div class="r6 mt5 sm" style="gap:3px">
+          <input type="password" class="c5" placeholder="Password">
+          <button>Login</button>
+        </div>
+
+        <div class="mt10 pt5 pb5 pl10 sec op8">Buttons (no colour, sizes)</div>
+        <div class="mt5" style="display:flex;gap:5px;align-items:center">
+          <button class="xs">xs</button>
+          <button class="sm">sm</button>
+          <button>md</button>
+          <button class="xs round">+</button>
+          <button class="xs round">−</button>
+          <button class="sm"><span class="icon icon-save"></span> Save</button>
+          <button class="xs clear"><span class="icon icon-gear"></span></button>
+          <button class="xs clear"><span class="icon icon-refresh"></span></button>
+        </div>
+
+        <div class="mt10 pt5 pb5 pl10 sec op8">Button row (r4)</div>
+        <div class="r4 mt5 sm" style="gap:3px">
+          <button>Cancel</button>
+          <button>Reset</button>
+          <button>Apply</button>
+          <button>OK</button>
+        </div>
+
+        <div class="mt10 pt5 pb5 pl10 sec op8">Disabled state</div>
+        <div class="r3 mt5 sm disabled" style="gap:3px">
+          <input type="text" placeholder="Disabled input">
+          <select><option>Disabled select</option></select>
+          <button>Disabled</button>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- ICONS -->
+    <div class="tab-panel" data-panel="icons">
+      <div class="m10">
+        <div class="mt5 pt5 pb5 pl10 sec op8">General</div>
+        <div class="icon-grid r8 mt5" style="gap:3px"></div>
+      </div>
+    </div>
+
+    <!-- SPACING -->
+    <div class="tab-panel" data-panel="spacing">
+      <div class="m10">
+
+        <div class="mt5 pt5 pb5 pl10 sec op8">Padding: p0, p5, p10, p15, p20</div>
+        <div class="mt5" style="display:flex;flex-wrap:wrap;gap:5px">
+          <div class="s0 p0 rounded-xs" >p0</div>
+          <div class="s1 p5 rounded-xs" >p5</div>
+          <div class="s2 p10 rounded-xs" >p10</div>
+          <div class="s3 p15 rounded-xs" >p15</div>
+          <div class="s4 p20 rounded-xs" >p20</div>
+        </div>
+
+        <div class="mt10 pt5 pb5 pl10 sec op8">Margin top: mt0, mt5, mt10, mt15, mt20</div>
+        <div class="s0 p5 mt5 rounded-xs">
+          <div class="s1 p5 mt0 rounded-xs" >mt0</div>
+          <div class="s2 p5 mt5 rounded-xs" >mt5</div>
+          <div class="s3 p5 mt10 rounded-xs" >mt10</div>
+          <div class="s4 p5 mt15 rounded-xs" >mt15</div>
+          <div class="s5 p5 mt20 rounded-xs" >mt20</div>
+        </div>
+
+        <div class="mt10 pt5 pb5 pl10 sec op8">Token sizes: hxs, hsm, hmd, hlg, hxl</div>
+        <div class="r5 mt5" style="gap:5px;align-items:end">
+          <div class="s1 hxs rounded-xs" style="display:flex;align-items:center;justify-content:center;font-size:9px">xs 25</div>
+          <div class="s2 hsm rounded-xs" style="display:flex;align-items:center;justify-content:center;font-size:9px">sm 35</div>
+          <div class="s3 hmd rounded-xs" style="display:flex;align-items:center;justify-content:center;font-size:9px">md 50</div>
+          <div class="s4 hlg rounded-xs" style="display:flex;align-items:center;justify-content:center;font-size:9px">lg 70</div>
+          <div class="s5 hxl rounded-xs" style="display:flex;align-items:center;justify-content:center;font-size:9px">xl 100</div>
+        </div>
+
+        <div class="mt10 pt5 pb5 pl10 sec op8">Opacity: op1 – op9</div>
+        <div class="r9 mt5" style="gap:2px">
+          <div class="s1 p5 op1 rounded-xs" style="font-size:9px">1</div>
+          <div class="s1 p5 op2 rounded-xs" style="font-size:9px">2</div>
+          <div class="s1 p5 op3 rounded-xs" style="font-size:9px">3</div>
+          <div class="s1 p5 op8 rounded-xs" style="font-size:9px">4</div>
+          <div class="s1 p5 op5 rounded-xs" style="font-size:9px">5</div>
+          <div class="s1 p5 op6 rounded-xs" style="font-size:9px">6</div>
+          <div class="s1 p5 op7 rounded-xs" style="font-size:9px">7</div>
+          <div class="s1 p5 op8 rounded-xs" style="font-size:9px">8</div>
+          <div class="s1 p5 op9 rounded-xs" style="font-size:9px">9</div>
+        </div>
+
+        <div class="mt10 pt5 pb5 pl10 sec op8">Elevation</div>
+        <div class="r3 mt5" style="gap:10px">
+          <div class="s0 p10 raised rounded-sm" >raised</div>
+          <div class="s0 p10 raised-sm rounded-sm" >raised-sm</div>
+          <div class="s0 p10 inset-xs rounded-sm" >inset-xs</div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- COLOURS -->
+    <div class="tab-panel" data-panel="colours">
+      <div class="m10">
+
+        <div class="mt5 pt5 pb5 pl10 sec op8">Semantic backgrounds: s0 – s6</div>
+        <div class="r7 mt5" style="gap:3px">
+          <div class="s0 p10 rounded-xs" >s0</div>
+          <div class="s1 p10 rounded-xs" >s1</div>
+          <div class="s2 p10 rounded-xs" >s2</div>
+          <div class="s3 p10 rounded-xs" >s3</div>
+          <div class="s4 p10 rounded-xs" >s4</div>
+          <div class="s5 p10 rounded-xs" >s5</div>
+          <div class="s6 p10 rounded-xs" >s6</div>
+        </div>
+
+        <div class="mt10 pt5 pb5 pl10 sec op8">Text colours: t0 – t6</div>
+        <div class="r7 mt5" style="gap:3px">
+          <div class="t0 p5" style="font-size:11px">t0 text</div>
+          <div class="t1 p5" style="font-size:11px">t1 text</div>
+          <div class="t2 p5" style="font-size:11px">t2 text</div>
+          <div class="t3 p5" style="font-size:11px">t3 text</div>
+          <div class="t4 p5" style="font-size:11px">t4 text</div>
+          <div class="t5 p5" style="font-size:11px">t5 text</div>
+          <div class="t6 p5" style="font-size:11px">t6 text</div>
+        </div>
+
+        <div class="mt10 pt5 pb5 pl10 sec op8">Coloured buttons</div>
+        <div class="r7 mt5 sm" style="gap:3px">
+          <button class="s0">Default</button>
+          <button class="s1">Primary</button>
+          <button class="s2">Secondary</button>
+          <button class="s3">Success</button>
+          <button class="s4">Warning</button>
+          <button class="s5">Danger</button>
+          <button class="s6">Link</button>
+        </div>
+
+        <div class="mt10 pt5 pb5 pl10 sec op8">Mixed: coloured icons on s0 background</div>
+        <div class="r6 mt5 s0 p10 rounded-xs" style="gap:10px;font-size:18px">
+          <span class="icon icon-home t1"></span>
+          <span class="icon icon-star t4"></span>
+          <span class="icon icon-heart t5"></span>
+          <span class="icon icon-check-circle t3"></span>
+          <span class="icon icon-bell t2"></span>
+          <span class="icon icon-bolt t6"></span>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- METHODS -->
+    <div class="tab-panel" data-panel="methods">
+      <div class="m10">
+
+        <div class="mt5 pt5 pb5 pl10 sec op8">gui.toast( text, time? )</div>
+        <div class="r2 mt5" style="gap:10px">
+          <div>
+            <div class="op7" style="font-size:11px;line-height:1.5">Shows a dark notification at the bottom-center. Auto-dismisses after <code>time</code> ms (default 3000). Pass <code>0</code> for permanent. Duplicates bump a count badge.</div>
+            <div class="mt5" style="display:flex;gap:3px">
+              <input class="sm gm-text" type="text" value="Hello from Warp!" style="flex:1" />
+              <button class="sm s1 gm-toast"><span class="icon icon-info"></span> Toast</button>
+            </div>
+          </div>
+          <pre class="s0 p5 rounded-xs" style="font-size:10px;overflow-x:auto;margin:0">warp.gui.toast("Hello!");
+
+// custom duration (5s)
+warp.gui.toast("Slow toast", 5000);
+
+// permanent — user must dismiss
+warp.gui.toast("Sticky", 0);</pre>
+        </div>
+
+        <div class="mt10 pt5 pb5 pl10 sec op8">gui.error( text )</div>
+        <div class="r2 mt5" style="gap:10px">
+          <div>
+            <div class="op7" style="font-size:11px;line-height:1.5">Shows a danger-coloured notification at the bottom-right. Same stacking and dedup as toast. Auto-dismisses after 3 s.</div>
+            <div class="mt5">
+              <button class="sm s5 gm-error"><span class="icon icon-warning"></span> Error</button>
+            </div>
+          </div>
+          <pre class="s0 p5 rounded-xs" style="font-size:10px;overflow-x:auto;margin:0">warp.gui.error("Something went wrong");
+
+// uses --dangerBg / --dangerColor
+// anchored bottom-right, stacks upward</pre>
+        </div>
+
+        <div class="mt10 pt5 pb5 pl10 sec op8">gui.alert( text )</div>
+        <div class="r2 mt5" style="gap:10px">
+          <div>
+            <div class="op7" style="font-size:11px;line-height:1.5">Centered modal with backdrop. Has an OK button. Dismissed by clicking OK or the backdrop.</div>
+            <div class="mt5">
+              <button class="sm s1 gm-alert"><span class="icon icon-warning"></span> Alert</button>
+            </div>
+          </div>
+          <pre class="s0 p5 rounded-xs" style="font-size:10px;overflow-x:auto;margin:0">warp.gui.alert("Heads up!");
+
+// centered, dark background
+// closes on OK or backdrop click
+// destroyOnHide: true</pre>
+        </div>
+
+        <div class="mt10 pt5 pb5 pl10 sec op8">gui.confirm( text ) → Promise&lt;boolean&gt;</div>
+        <div class="r2 mt5" style="gap:10px">
+          <div>
+            <div class="op7" style="font-size:11px;line-height:1.5">Async centered modal. Resolves <code>true</code> on OK, <code>false</code> on Cancel or backdrop.</div>
+            <div class="mt5">
+              <button class="sm gm-confirm"><span class="icon icon-check"></span> Confirm</button>
+            </div>
+          </div>
+          <pre class="s0 p5 rounded-xs" style="font-size:10px;overflow-x:auto;margin:0">var ok = await warp.gui.confirm("Delete?");
+if (ok) {
+    // proceed
+}</pre>
+        </div>
+
+        <div class="mt10 pt5 pb5 pl10 sec op8">gui.input( valueOrText, text? ) → Promise&lt;string|false&gt;</div>
+        <div class="r2 mt5" style="gap:10px">
+          <div>
+            <div class="op7" style="font-size:11px;line-height:1.5">Async centered modal with a text input. One arg = message (empty input). Two args = default value + message. Resolves with new value if changed, <code>false</code> if unchanged or cancelled.</div>
+            <div class="mt5">
+              <button class="sm s1 gm-input"><span class="icon icon-edit"></span> Input</button>
+            </div>
+          </div>
+          <pre class="s0 p5 rounded-xs" style="font-size:10px;overflow-x:auto;margin:0">// empty input with message
+var name = await warp.gui.input("Enter name:");
+
+// pre-filled input
+var val = await warp.gui.input("old value", "Rename:");
+// val = new string or false</pre>
+        </div>
+
+        <div class="mt10 pt5 pb5 pl10 sec op8">layout.destroy() + gui.confirm</div>
+        <div class="r2 mt5" style="gap:10px">
+          <div>
+            <div class="op7" style="font-size:11px;line-height:1.5">Use <code>gui.confirm</code> before destroying a layout to let the user review what will be removed — layout name plus its apps.</div>
+            <div class="mt5">
+              <button class="sm s5 gm-destroy"><span class="icon icon-trash"></span> Destroy Layout</button>
+            </div>
+          </div>
+          <pre class="s0 p5 rounded-xs" style="font-size:10px;overflow-x:auto;margin:0">var layout = await warp.layout("Test");
+var apps = Object.keys(await layout.app());
+var ok = await warp.gui.confirm(
+    "Destroy Test and " + apps.length + " apps?"
+);
+if (ok) await layout.destroy();</pre>
+        </div>
+
+        <div class="mt10 pt5 pb5 pl10 sec op8">warp.load() — reload existing layout</div>
+        <div class="r2 mt5" style="gap:10px">
+          <div>
+            <div class="op7" style="font-size:11px;line-height:1.5">If a layout is already loaded, confirm before destroying and reloading it. <code>warp.load</code> returns the existing instance if the name matches — destroy first to force a fresh load.</div>
+            <div class="mt5">
+              <button class="sm s4 gm-reload"><span class="icon icon-refresh"></span> Reload Test Layout</button>
+            </div>
+          </div>
+          <pre class="s0 p5 rounded-xs" style="font-size:10px;overflow-x:auto;margin:0">var existing = warp.lists.instances.layouts["Test"];
+if (existing) {
+    var ok = await warp.gui.confirm("Reload Test?");
+    if (ok) await existing.destroy();
+    else return;
+}
+var layout = await warp.load("../dist/Test.layout");</pre>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+</div>
