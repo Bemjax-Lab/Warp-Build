@@ -1,6 +1,6 @@
 function Warp(engineOptions) {
 
-var buildDate = "2026-03-14 14:00:11";
+var buildDate = "2026-03-14 23:25:21";
 
 var warp = this;
 
@@ -913,9 +913,9 @@ function Gui() {
         var win = manager.win({
             headless: true,
             classes: 'rxl tlg op9',
-            width: 560,
+            width: 400,
             height: 200,
-            minWidth: 560,
+            minWidth: 400,
             minHeight: 200,
             draggable: false,
             scalable: false,
@@ -937,10 +937,12 @@ function Gui() {
         win.body.classList.add('p20');
         if (bodyStyle) win.body.style.cssText += bodyStyle;
 
+        win.body.style.display = 'flex';
+        win.body.style.flexDirection = 'column';
         win.body.innerHTML = `
         <div class="count hidden wxs hxs txs round primary tb fr mt-15 mr-15 tc pt5"></div>
-        <div class="content mt10">${text}</div>
-        <div class="buttons tc mt10"><button class="primary xs notify-ok">OK</button></div>
+        <div class="content m20" style="flex:1;overflow-y:auto">${text}</div>
+        <div class="buttons tc p10" style="flex:0 0 auto"><button class="primary xs notify-ok">OK</button></div>
         `;
 
         win._notifyText = text;
@@ -956,8 +958,13 @@ function Gui() {
 
         win.body.querySelector('.notify-ok').addEventListener('click', function () { win._dismiss(); });
 
+        // esc to cancel
+        var escHandler = function (e) { if (e.key === 'Escape') { win._dismiss(); } };
+        document.addEventListener('keydown', escHandler);
+
         // clean list when dismissed via backdrop or any hide path
         win.on('hide', function () {
+            document.removeEventListener('keydown', escHandler);
             var idx = list.indexOf(win);
             if (idx !== -1) list.splice(idx, 1);
         });
@@ -988,7 +995,7 @@ function Gui() {
             if (win._notifyCount > 1) return;
 
             var buttons = win.body.querySelector('.buttons');
-            buttons.innerHTML = '<button class="sm notify-cancel">Cancel</button> <button class="primary sm notify-ok">OK</button>';
+            buttons.innerHTML = '<button class="xs notify-ok">OK</button> <button class="primary xs notify-cancel">Cancel</button>';
 
             buttons.querySelector('.notify-ok').addEventListener('click', function () { win._dismiss(); resolve(true); });
             buttons.querySelector('.notify-cancel').addEventListener('click', function () { win._dismiss(); resolve(false); });
@@ -1006,20 +1013,28 @@ function Gui() {
             if (!win) return resolve(false);
             if (win._notifyCount > 1) return;
 
+            win.height(230);
+
             var content = win.body.querySelector('.content');
-            content.innerHTML = message + '<input class="notify-input mt10" type="text" style="width:100%;box-sizing:border-box;" value="' + original.replace(/"/g, '&quot;') + '" />';
+            content.style.overflow = 'visible';
+            content.innerHTML = message + '<textarea class="notify-input mt10" style="width:100%;box-sizing:border-box;resize:vertical;min-height:40px;">' + original.replace(/</g, '&lt;') + '</textarea>';
 
             var buttons = win.body.querySelector('.buttons');
-            buttons.innerHTML = '<button class="sm notify-cancel">Cancel</button> <button class="primary sm notify-ok">OK</button>';
+            buttons.innerHTML = '<button class="xs notify-ok">OK</button> <button class="primary xs notify-cancel">Cancel</button>';
 
             var input = content.querySelector('.notify-input');
             input.focus();
+            input.select();
 
-            buttons.querySelector('.notify-ok').addEventListener('click', function () {
+            var submit = function () {
                 var val = input.value;
                 win._dismiss();
                 resolve(val !== original ? val : false);
-            });
+            };
+
+            input.addEventListener('keydown', function (e) { if (e.key === 'Enter' && !e.shiftKey) { e.preventDefault(); submit(); } });
+
+            buttons.querySelector('.notify-ok').addEventListener('click', submit);
             buttons.querySelector('.notify-cancel').addEventListener('click', function () { win._dismiss(); resolve(false); });
             win.on('hide', function () { resolve(false); });
         });

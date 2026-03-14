@@ -2,6 +2,7 @@ var self = this;
 var listEl = dom.query(".list");
 var headingEl = dom.query(".heading");
 var btnOpen = dom.query(".open");
+var layoutDrawers = {};
 
 // --- Drawer component ---
 function Drawer(opts) {
@@ -32,6 +33,7 @@ function Drawer(opts) {
     drawer.body = body;
     drawer.title = title;
     drawer.caption = caption;
+    drawer.isOpen = function () { return isOpen; };
 
     dom.on(title, "click", function () {
         if (isOpen) {
@@ -72,6 +74,18 @@ function renderProps(container, obj, skip) {
 function AppDrawer(layout, name, appJson) {
     var layoutName = layout.json().name;
     var fullName = layoutName + "." + name;
+    var dot = dom.node("span", { class: "status-dot" });
+
+    var statusLabel, btnLoad;
+
+    function isLoaded() { return !!lists.instances.apps[fullName]; }
+
+    function updateStatus() {
+        var loaded = isLoaded();
+        dot.className = "status-dot " + (loaded ? "loaded" : "idle");
+        if (statusLabel) statusLabel.textContent = loaded ? "Loaded" : "Not loaded";
+        if (btnLoad) btnLoad.textContent = loaded ? "Unload" : "Load";
+    }
 
     var d = new Drawer({
         caption: name,
@@ -80,30 +94,43 @@ function AppDrawer(layout, name, appJson) {
         onOpen: function (drawer) {
             drawer.body.innerHTML = "";
 
-            var inst = lists.instances.apps[fullName];
-            var loaded = !!inst;
-
             var row = dom.node("div", { class: "app-status m10" });
-            var dot = dom.node("span", { class: "status-dot " + (loaded ? "loaded" : "idle") });
-            var label = dom.node("span", { class: "meta", text: loaded ? "Loaded" : "Not loaded" });
-            row.appendChild(dot);
-            row.appendChild(label);
+            var statusDot = dom.node("span", { class: "status-dot " + (isLoaded() ? "loaded" : "idle") });
+            statusLabel = dom.node("span", { class: "meta", text: isLoaded() ? "Loaded" : "Not loaded" });
+            row.appendChild(statusDot);
+            row.appendChild(statusLabel);
 
-            var btnAppOpen = dom.node("button", { class: "xs rsm", text: "Open" });
-            dom.on(btnAppOpen, "click", function () {
-                warp.app(fullName).then(function (inst) { if (inst) inst.show(); });
+            btnLoad = dom.node("button", { class: "xs rsm", text: isLoaded() ? "Unload" : "Load" });
+            dom.on(btnLoad, "click", function () {
+                if (isLoaded()) {
+                    lists.instances.apps[fullName].destroy();
+                } else {
+                    warp.app(fullName).then(function (inst) { if (inst) inst.show(); });
+                }
             });
-            row.appendChild(btnAppOpen);
+            row.appendChild(btnLoad);
 
             var btnRemove = dom.node("button", { class: "xs rsm", text: "Remove" });
             dom.on(btnRemove, "click", function () {
-                layout.remove("apps", name).then(function () { d.el.remove(); });
+                warp.gui.confirm('Remove app "' + name + '" from ' + layoutName + '?').then(function (ok) {
+                    if (!ok) return;
+                    if (isLoaded()) lists.instances.apps[fullName].destroy();
+                    layout.remove("apps", name).then(function () {
+                        d.el.remove();
+                        warp.gui.toast('App "' + name + '" removed');
+                    });
+                });
             });
             row.appendChild(btnRemove);
 
             drawer.body.appendChild(row);
-        }
+        },
+        onClose: function () { statusLabel = null; btnLoad = null; }
     });
+    d.title.insertBefore(dot, d.caption);
+    updateStatus();
+    d.fullName = fullName;
+    d.updateStatus = updateStatus;
     if (appJson.desc) {
         var descSpan = dom.node("span", { class: "meta", text: appJson.desc });
         d.caption.after(descSpan);
@@ -169,6 +196,7 @@ function BrandDrawer(brData) {
 function LayoutDrawer(layout) {
     var json = layout.json();
     var _isOpen = false;
+    var appDrawerMap = {};
 
     function updateMeta() {
         var j = layout.json();
@@ -186,10 +214,17 @@ function LayoutDrawer(layout) {
 
     async function renderBody(drawer) {
         drawer.body.innerHTML = "";
+        appDrawerMap = {};
 
         var btnDestroy = dom.node("button", { class: "xs rsm m10", text: "Destroy" });
         dom.on(btnDestroy, "click", function () {
-            layout.destroy().then(function () { self.refresh(); });
+            warp.gui.confirm('Destroy layout "' + json.name + '" and all its loaded apps?').then(function (ok) {
+                if (!ok) return;
+                layout.destroy().then(function () {
+                    warp.gui.toast('Layout "' + json.name + '" destroyed');
+                    self.refresh();
+                });
+            });
         });
         drawer.body.appendChild(btnDestroy);
 
@@ -206,7 +241,9 @@ function LayoutDrawer(layout) {
         if (appKeys.length) {
             drawer.body.appendChild(dom.node("div", { class: "hxs section-hdr op5 pl10", text: "Apps [" + appKeys.length + "]" }));
             appKeys.forEach(function (a) {
-                drawer.body.appendChild(AppDrawer(layout, a, appData[a]).el);
+                var ad = AppDrawer(layout, a, appData[a]);
+                appDrawerMap[a] = ad;
+                drawer.body.appendChild(ad.el);
             });
         }
 
@@ -256,6 +293,10 @@ function LayoutDrawer(layout) {
         metaSpan.after(descSpan);
     }
 
+    d.layoutName = json.name;
+    d.appDrawerMap = appDrawerMap;
+    d.updateMeta = updateMeta;
+    d.renderBody = function () { if (_isOpen) renderBody(d); };
     return d;
 }
 
@@ -267,21 +308,43 @@ dom.on(btnOpen, "click", function () {
 // --- Refresh ---
 this.refresh = async function () {
     listEl.innerHTML = "";
+    layoutDrawers = {};
     var count = 0;
 
     for (var name in lists.instances.layouts) {
         count++;
         var layout = lists.instances.layouts[name];
-        listEl.appendChild(LayoutDrawer(layout).el);
+        var ld = LayoutDrawer(layout);
+        layoutDrawers[name] = ld;
+        listEl.appendChild(ld.el);
     }
 
     headingEl.textContent = "Layouts [" + count + "]";
 };
 
-// --- Auto-refresh on layout events ---
+// --- Layout lifecycle (same tab) ---
 warp.on("layoutLoad", function () { self.refresh(); });
 warp.on("layoutUnload", function () { self.refresh(); });
-warp.on("layoutChanged", function () { self.refresh(); });
+
+// --- Cross-tab sync via store ---
+var _storeTimer = 0;
+warp.store("layouts").then(function (store) {
+    store.on("change", function (key, value, client) {
+        if (client === warp.id) return;
+        clearTimeout(_storeTimer);
+        _storeTimer = setTimeout(function () { self.refresh(); }, 100);
+    });
+});
+
+// --- App status live updates ---
+function onAppStatusChange() {
+    for (var ln in layoutDrawers) {
+        var map = layoutDrawers[ln].appDrawerMap;
+        for (var an in map) map[an].updateStatus();
+    }
+}
+warp.on("appLoad", onAppStatusChange);
+warp.on("appUnload", onAppStatusChange);
 
 // --- Electron close ---
 if (typeof electronAPI !== "undefined") {
