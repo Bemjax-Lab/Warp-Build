@@ -15,6 +15,7 @@
             // Load Warp (built-in) + your custom layouts
             warp = new Warp({
                 contain: false,
+                storeWorker  :"include/Store.worker.js",
                 load: [
                     "dist/Warp.layout"
                 ]
