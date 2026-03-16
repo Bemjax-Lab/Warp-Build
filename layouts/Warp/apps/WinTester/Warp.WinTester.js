@@ -10,6 +10,12 @@ function refreshMgrs() {
         sel.appendChild(warp.dom.node("option", { value: n, text: n }));
     });
     if (prev && sel.querySelector('option[value="' + prev + '"]')) sel.value = prev;
+    else {
+        var names = Object.keys(warp.gui.managers);
+        for (var i = 0; i < names.length; i++) {
+            if (names[i] !== "toastsAndErrors") { sel.value = names[i]; break; }
+        }
+    }
 }
 
 function refreshParents() {

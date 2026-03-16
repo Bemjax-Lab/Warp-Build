@@ -1,0 +1,17 @@
+.find-wrap { display:flex; flex-direction:column; height:100%; }
+.find-input-wrap { padding:8px; }
+.find-input { width:100%; box-sizing:border-box; }
+.find-results { flex:1; overflow-y:auto; }
+
+.find-drawer { margin-bottom:1px; }
+.find-drawer > .find-head { cursor:pointer; user-select:none; display:flex; align-items:center; gap:6px; padding:4px 10px; background:var(--defaultBg); transition:background .15s; font-size:12px; }
+.find-drawer > .find-head:hover { background:var(--defaultLight); }
+.find-drawer > .find-head .caption { font-weight:500; }
+.find-drawer > .find-head .meta { font-size:10px; opacity:.7; }
+.find-drawer > .find-head .caret { font-size:12px; margin-left:auto; transition:transform .15s; }
+.find-drawer > .find-head .caret.open { transform:rotate(90deg); }
+.find-drawer > .find-body { display:none; max-height:260px; overflow-y:auto; }
+.find-drawer > .find-body.open { display:block; }
+.find-item { transition:background .1s; }
+.find-item.active { background:var(--defaultLight); }
+.find-no { padding:8px 10px; opacity:.5; font-size:11px; }

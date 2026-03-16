@@ -1,0 +1,11 @@
+.appinfo-wrap { display:flex; flex-direction:column; gap:8px; }
+.appinfo-header .name { font-weight:600; }
+.appinfo-header .layout-name { opacity:.6; font-size:11px; }
+.appinfo-header .desc { opacity:.6; font-size:11px; margin-top:2px; }
+.appinfo-status { display:flex; align-items:center; gap:8px; flex-wrap:wrap; }
+.appinfo-status .dot { width:8px; height:8px; border-radius:50%; flex-shrink:0; background:var(--defaultDark); }
+.appinfo-status .dot.loaded { background:var(--successBg); }
+.appinfo-actions { display:flex; gap:4px; flex-wrap:wrap; }
+.appinfo-section { margin-top:4px; }
+.appinfo-section .section-title { font-size:10px; text-transform:uppercase; letter-spacing:1px; opacity:.5; margin-bottom:2px; }
+.appinfo-file { font-size:11px; padding:1px 0; opacity:.8; }

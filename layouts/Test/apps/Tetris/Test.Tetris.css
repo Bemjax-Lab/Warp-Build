@@ -1,0 +1,94 @@
+position: relative;
+width: 100%;
+height: 100%;
+overflow: hidden;
+background: #1c1814;
+display: flex;
+flex-direction: row;
+
+.game-canvas {
+    display: block;
+    flex-shrink: 0;
+}
+
+.hud {
+    width: 100px;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 8px;
+    font-family: monospace;
+    font-size: 12px;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.3);
+    line-height: 1.8;
+    box-sizing: border-box;
+    pointer-events: none;
+}
+
+.hud-next-label {
+    font-size: 11px;
+    color: #aaa;
+    margin-bottom: 4px;
+}
+
+.hud-next-canvas {
+    display: block;
+    background: rgba(255,255,255,0.05);
+    border-radius: 3px;
+    margin-bottom: 14px;
+}
+
+.hud-score,
+.hud-level,
+.hud-lines {
+    font-size: 11px;
+    color: #ccc;
+}
+
+.game-over {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    background: rgba(0, 0, 0, 0.85);
+    padding: 24px 32px;
+    border-radius: 8px;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    z-index: 3;
+}
+
+.game-over.visible {
+    display: flex;
+}
+
+.go-title {
+    font-size: 24px;
+    font-weight: bold;
+    font-family: monospace;
+}
+
+.go-score {
+    font-size: 16px;
+    font-family: monospace;
+}
+
+.go-restart {
+    margin-top: 8px;
+    padding: 8px 20px;
+    font-size: 14px;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    background: #9eab8c;
+    color: #f5f0e8;
+    font-family: monospace;
+}
+
+.go-restart:hover {
+    background: #b0be9e;
+}

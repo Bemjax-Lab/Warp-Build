@@ -1,0 +1,17 @@
+display: flex;
+flex-direction: column;
+height: 100%;
+overflow: hidden;
+
+.msg {
+    max-width: 82%;
+    padding: 6px 10px;
+    border-radius: 8px;
+    font-size: 12px;
+    line-height: 1.5;
+    word-break: break-word;
+}
+
+.msg.mine   { align-self: flex-end;   background: var(--primaryBg);    color: var(--primaryColor);   border-bottom-right-radius: 2px; }
+.msg.theirs { align-self: flex-start; background: var(--secondaryBg);  color: var(--secondaryColor); border-bottom-left-radius: 2px; }
+.msg.system { align-self: center; font-size: 10px; opacity: 0.4; font-style: italic; }

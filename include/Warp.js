@@ -1,6 +1,6 @@
 function Warp(engineOptions) {
 
-var buildDate = "2026-03-14 23:25:21";
+var buildDate = "2026-03-16 11:32:14";
 
 var warp = this;
 
@@ -1895,6 +1895,7 @@ var WinJSON = {
     'maxWidth': false,
     'maxHeight': false,
     'close': true,
+    'bottomClose': true,
     'minimize': true,
     'maximize': true,
     'classes': '',
@@ -2050,7 +2051,7 @@ function Win(userOpts) {
         } else {
             win.el.classList.remove('hidden');
             win.body.classList.remove('hidden');
-            if (opts.close) win.el.querySelector(':scope > .close').classList.remove('hidden');
+            if (opts.bottomClose) win.el.querySelector(':scope > .close').classList.remove('hidden');
             win.head.querySelector('.center').classList.remove('hidden');
             win.head.querySelector('.caption').style.maxWidth = '';
             win.el.style.height = '';
@@ -2119,7 +2120,7 @@ function Win(userOpts) {
         this.el.innerHTML = `
         <div class="head">
             <div class="left">
-                <image class="round hxs wxs" src="https://warpbrowser.com/wp-content/uploads/2025/07/warp-logo-150x150.png"/>
+                <img class="round hxs wxs" src=""/>
                 <span class="caption pl5">CAPTION</span>
             </div>
             <div class="center"></div>
@@ -2140,7 +2141,8 @@ function Win(userOpts) {
 
         if (opts.classes) opts.classes.split(' ').forEach(function (c) { if (c) win.el.classList.add(c); });
         if (opts.headless) this.head.classList.add('hidden');
-        if (!opts.image) this.head.querySelector('img').classList.add('hidden');
+        var imgEl = this.head.querySelector('img');
+        if (opts.image) { imgEl.src = opts.image; } else { imgEl.classList.add('hidden'); }
 
         var captionEl = this.el.querySelector('.caption');
         if (captionEl) captionEl.textContent = opts.caption;
@@ -2156,10 +2158,8 @@ function Win(userOpts) {
         this.head.querySelector('.maximize').addEventListener('click', function () { win.state(3); });
         this.head.querySelector('.restore').addEventListener('click', function () { win.state(1); });
 
-        if (!opts.close) {
-            this.head.querySelector('.close').classList.add('hidden');
-            this.el.querySelector(':scope > .close').classList.add('hidden');
-        }
+        if (!opts.close) this.head.querySelector('.close').classList.add('hidden');
+        if (!opts.bottomClose) this.el.querySelector(':scope > .close').classList.add('hidden');
         if (!opts.minimize) this.head.querySelector('.minimize').classList.add('hidden');
         if (!opts.maximize) this.head.querySelector('.maximize').classList.add('hidden');
 
@@ -3544,7 +3544,7 @@ var LayoutJSON = {
     deps: [],
     apps: {},
     brands: {},
-    win : false, //false | WinJSON - will be passed to layouts win manager as default window
+    defaultWin : false, //false | WinJSON - passed to layouts manager as defaultWin
     fileTypes: {},
     searches : {},
     onBeforeLoad :false, //boolean or function
@@ -3598,7 +3598,7 @@ function Layout(layoutJSON) {
             await s.set(layoutJSON.name, layoutJSON);
             lists.loadedLayoutNames.push(layoutJSON.name);
         }
-        var m = await warp.gui.manager({ name: "layout-" + layoutJSON.name, defaultWin : layoutJSON.win });
+        var m = await warp.gui.manager({ name: "layout-" + layoutJSON.name, defaultWin : layoutJSON.defaultWin });
         m.el.classList.add("layout-" + layoutJSON.name);
         lists.instances.layouts[layoutJSON.name] = layout;
         warp.trigger("layoutLoad", layout);

@@ -1,0 +1,40 @@
+<!-- SCREEN: start -->
+<div class="screen" id="screen-start">
+    <div class="logo">💬</div>
+    <div class="title">P2P Chat</div>
+    <div class="sub">No server. Direct connection.</div>
+    <button class="btn btn-primary" id="btn-create">Create Offer  <span class="role-tag">A</span></button>
+    <button class="btn btn-secondary" id="btn-join">Join with Offer  <span class="role-tag">B</span></button>
+</div>
+
+<!-- SCREEN: offer (A — waiting for peer to paste answer) -->
+<div class="screen hidden" id="screen-offer">
+    <div class="step-label">Step 1 — Send this offer to peer B</div>
+    <textarea class="signal-box" id="offer-text" readonly></textarea>
+    <button class="btn btn-copy" id="btn-copy-offer">Copy Offer</button>
+    <div class="step-label" id="step2-label" style="margin-top:12px">Step 2 — Paste peer B's answer here</div>
+    <textarea class="signal-box" id="answer-input" placeholder="Paste answer here…"></textarea>
+    <button class="btn btn-primary" id="btn-connect">Connect</button>
+    <div class="status-line" id="offer-status"></div>
+</div>
+
+<!-- SCREEN: join (B — paste offer, get answer) -->
+<div class="screen hidden" id="screen-join">
+    <div class="step-label">Step 1 — Paste peer A's offer here</div>
+    <textarea class="signal-box" id="offer-input" placeholder="Paste offer here…"></textarea>
+    <button class="btn btn-primary" id="btn-gen-answer">Generate Answer</button>
+    <div class="step-label hidden" id="answer-ready-label">Step 2 — Send this answer to peer A</div>
+    <textarea class="signal-box hidden" id="answer-text" readonly></textarea>
+    <button class="btn btn-copy hidden" id="btn-copy-answer">Copy Answer</button>
+    <div class="status-line" id="join-status"></div>
+</div>
+
+<!-- SCREEN: chat -->
+<div class="screen hidden" id="screen-chat">
+    <div class="chat-header">Connected <span class="dot-live"></span></div>
+    <div class="messages" id="messages"></div>
+    <div class="input-row">
+        <input class="msg-input" id="msg-input" type="text" placeholder="Type a message…" />
+        <button class="btn btn-send" id="btn-send">Send</button>
+    </div>
+</div>

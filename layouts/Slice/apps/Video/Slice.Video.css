@@ -1,0 +1,8 @@
+position: relative;
+display: flex;
+flex-direction: column;
+height: 100%;
+overflow: hidden;
+
+.btn-cam.cam-off { opacity: 0.4; }
+.btn-mute.muted  { opacity: 0.4; }

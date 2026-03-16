@@ -54,15 +54,36 @@ async function buildLayouts() {
 function warpLayoutPlugin() {
   return {
     name: "warp-layout-build",
-    apply: "build",
     async buildStart() {
-      // watch all layout source files so changes trigger rebuild
       for (const f of collectFiles(LAYOUTS_DIR)) {
         this.addWatchFile(f);
       }
       console.log("Building layouts...");
       await buildLayouts();
       console.log("Done.");
+    },
+    configureServer(server) {
+      // Initial build on dev server start
+      buildLayouts().then(() => console.log("Layouts ready."));
+
+      // Watch layouts dir and rebuild + reload on any change
+      server.watcher.add(LAYOUTS_DIR);
+      server.watcher.on("change", async (file) => {
+        if (!file.startsWith(LAYOUTS_DIR)) return;
+        console.log(`Layout changed: ${path.relative(LAYOUTS_DIR, file)} — rebuilding...`);
+        await buildLayouts();
+        server.ws.send({ type: "full-reload" });
+      });
+      server.watcher.on("add", async (file) => {
+        if (!file.startsWith(LAYOUTS_DIR)) return;
+        await buildLayouts();
+        server.ws.send({ type: "full-reload" });
+      });
+      server.watcher.on("unlink", async (file) => {
+        if (!file.startsWith(LAYOUTS_DIR)) return;
+        await buildLayouts();
+        server.ws.send({ type: "full-reload" });
+      });
     }
   };
 }
