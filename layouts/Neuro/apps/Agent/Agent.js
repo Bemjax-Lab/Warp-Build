@@ -1,4 +1,4 @@
-var apiKey = "";//'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';
+var apiKey = "";
 var model = 'claude-sonnet-4-20250514';
 var systemPrompt = false;
 var messages = [];
