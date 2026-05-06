@@ -5,9 +5,10 @@ You are a Warp layout/app developer. You build apps that run inside the Warp Eng
 ## Your scope
 
 You can ONLY modify files inside `layouts/` directory — that's your workspace.
-Everything in `include/` is the prebuilt Warp Engine runtime and its documents - Do NOT modify it, its for reference and for demoing the built layouts
+Everything in `include/` is the prebuilt Warp Engine runtime and its documents — DO NOT modify it, it's for reference and for demoing the built layouts.
+Everything in `browser/` is the prebuilt Electron desktop shell (HTTP server, IPC router, native API endpoints) — DO NOT modify it; it's owned by the Warp-Engine repo. If a layout needs new native capabilities, report it.
 
-`dist/` contains compiled `.layout` files (build output).
+`dist/` contains compiled `.layout` files (build output) and the prebuilt `Warp.layout` (built-in layout shipped with the engine).
 
 In `docs` users can put their documents for discovery so we have more insight in the project's domain (pdf's and such)
 
@@ -23,26 +24,32 @@ Later on , if needed you can add html,css or other files to apps folders.
 ```
 Warp-build/
   include/                 # Engine runtime (DO NOT EDIT)
-    Warp.compact.js        # Compressed self-extracting runtime (used by demo.html)
+    Warp.compact.js        # Compressed self-extracting runtime
     Warp.js                # Full source (readable by LLMs for reference)
     Store.worker.js        # SharedWorker for cross-tab state
+  browser/                 # Electron desktop shell (DO NOT EDIT)
+    main.js                # Electron entry — starts HTTP server + window
+    preload.js             # IPC membrane (native-invoke / native-resolve / etc.)
+    api/                   # Native endpoint modules (App, OS, Webs, Endpoints)
+    icons/                 # App icons
+    app/index.html         # Auto-generated entry that loads /include/Warp + /dist/*.layout
   dist/                    # Build output — compiled .layout files
-    Warp.layout            # Built-in Warp layout
+    Warp.layout            # Prebuilt built-in Warp layout (ships with engine)
   layouts/                 # YOUR WORKSPACE — layout source dirs
-    Warp/                  # Example layout (reference, read-only)
     MyLayout/              # Your layout goes here
   docs/                    # API reference, event docs, manifest format
-  demo.html                # Load and test your layouts here
-  vite.config.mjs          # Build system (layouts → .layout zips)
+  demo.html                # Browser-mode test entry (loads /include + /dist)
+  vite.config.mjs          # Build system (layouts → .layout zips + browser/app/index.html)
 ```
 
 ## How to build
 
 ```bash
 npm install
-npm run build          # builds layouts/*.layout into dist/
+npm run build          # builds layouts/*.layout into dist/, regenerates browser/app/index.html
 npm run dev            # watch mode — rebuilds on file changes
-npm run serve          # serves on localhost:4173
+npm run serve          # serves on localhost:4174 (browser-mode dev)
+npm start              # launches the Electron desktop shell with all built layouts
 ```
 
 ## How to create a layout
@@ -71,8 +78,7 @@ Inside `LayoutName.AppName.js`, you have access to:
 ## Rules
 
 1. DO NOT touch files outside `layouts/`
-2. If you need changes to the runtime (`include/`), report it — that's the Instance Developer's job
+2. If you need changes to the runtime (`include/`) or desktop shell (`browser/`), report it — that's the Instance Developer's job (those come from the Warp-Engine repo)
 3. Reference `docs/` for API details, event systems, and manifest format
-4. Use the Warp layout as a working example — read its apps to understand patterns
-5. Use CSS variables from Warp's theme system (`var(--defaultBg)`, `var(--successBg)`, etc.)
-6. Apps MUST have a `.js` file — the engine throws without one
+4. Use CSS variables from Warp's theme system (`var(--defaultBg)`, `var(--successBg)`, etc.)
+5. Apps MUST have a `.js` file — the engine throws without one

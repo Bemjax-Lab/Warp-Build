@@ -9,6 +9,7 @@ const __dirname = path.dirname(__filename);
 
 const LAYOUTS_DIR = path.resolve(__dirname, "layouts");
 const DIST_DIR = path.resolve(__dirname, "dist");
+const APP_DIR = path.resolve(__dirname, "browser", "app");
 
 function ensureDir(dirPath) {
   fs.mkdirSync(dirPath, { recursive: true });
@@ -26,7 +27,7 @@ function collectFiles(dir) {
 }
 
 async function buildLayouts() {
-  if (!fs.existsSync(LAYOUTS_DIR)) return;
+  if (!fs.existsSync(LAYOUTS_DIR)) return [];
   ensureDir(DIST_DIR);
 
   const dirs = fs.readdirSync(LAYOUTS_DIR, { withFileTypes: true })
@@ -49,6 +50,24 @@ async function buildLayouts() {
     archive.directory(src, false);
     archive.finalize();
   })));
+
+  // include the prebuilt Warp layout from dist/ if present (no source in layouts/)
+  const builtIn = ["Warp"].filter(n =>
+    !dirs.find(d => d.name === n) &&
+    fs.existsSync(path.join(DIST_DIR, n + ".layout"))
+  );
+  return [...dirs.map(d => d.name), ...builtIn];
+}
+
+function buildAppHtml(layoutNames) {
+  const loads = layoutNames.map(n => '"/dist/' + n + '.layout"').join(", ");
+  return '<!DOCTYPE html>\n<html>\n<head>\n    <meta charset="UTF-8">\n    <title>Warp Build</title>\n    <style>\n        html, body { margin: 0; padding: 0; background: transparent; }\n    </style>\n</head>\n<body>\n    <script src="/include/Warp.compact.js"><\/script>\n    <script>\n        var warp;\n        inflate().then(function () {\n            warp = new Warp({ contain: false, load: [' + loads + '], storeWorker: "/include/Store.worker.js" });\n        });\n    <\/script>\n</body>\n</html>\n';
+}
+
+async function buildAll() {
+  const layoutNames = await buildLayouts();
+  ensureDir(APP_DIR);
+  fs.writeFileSync(path.join(APP_DIR, "index.html"), buildAppHtml(layoutNames), "utf8");
 }
 
 function warpLayoutPlugin() {
@@ -59,29 +78,29 @@ function warpLayoutPlugin() {
         this.addWatchFile(f);
       }
       console.log("Building layouts...");
-      await buildLayouts();
+      await buildAll();
       console.log("Done.");
     },
     configureServer(server) {
       // Initial build on dev server start
-      buildLayouts().then(() => console.log("Layouts ready."));
+      buildAll().then(() => console.log("Layouts ready."));
 
       // Watch layouts dir and rebuild + reload on any change
       server.watcher.add(LAYOUTS_DIR);
       server.watcher.on("change", async (file) => {
         if (!file.startsWith(LAYOUTS_DIR)) return;
         console.log(`Layout changed: ${path.relative(LAYOUTS_DIR, file)} — rebuilding...`);
-        await buildLayouts();
+        await buildAll();
         server.ws.send({ type: "full-reload" });
       });
       server.watcher.on("add", async (file) => {
         if (!file.startsWith(LAYOUTS_DIR)) return;
-        await buildLayouts();
+        await buildAll();
         server.ws.send({ type: "full-reload" });
       });
       server.watcher.on("unlink", async (file) => {
         if (!file.startsWith(LAYOUTS_DIR)) return;
-        await buildLayouts();
+        await buildAll();
         server.ws.send({ type: "full-reload" });
       });
     }

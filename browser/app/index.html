@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Warp Build</title>
+    <style>
+        html, body { margin: 0; padding: 0; background: transparent; }
+    </style>
+</head>
+<body>
+    <script src="/include/Warp.compact.js"></script>
+    <script>
+        var warp;
+        inflate().then(function () {
+            warp = new Warp({ contain: false, load: ["/dist/Neuro.layout", "/dist/Warp.layout"], storeWorker: "/include/Store.worker.js" });
+        });
+    </script>
+</body>
+</html>
