@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Publish — iOS (App Store)</title>
+<link rel="stylesheet" href="to-market.css">
+</head>
+<body>
+
+<nav class="topnav">
+  <a href="index.html" class="nav-home">⌂ Home</a>
+  <span class="nav-sep">|</span>
+  <a href="proposition.html">Proposition</a>
+  <a href="features.html">Features</a>
+  <a href="plan.html">Plan</a>
+  <a href="launch-todo.html">Launch TODO</a>
+  <span class="nav-sep">|</span>
+  <a href="pricing.html">Pricing</a>
+  <a href="content.html">Content</a>
+  <a href="legal.html">Legal</a>
+  <span class="nav-sep">|</span>
+  <span class="nav-label">Publish:</span>
+  <a href="publish-common.html">common</a>
+  <a href="publish-web.html">web</a>
+  <a href="publish-ios.html" class="active">iOS</a>
+  <a href="publish-android.html">Android</a>
+</nav>
+
+<h1>Publish — iOS (App Store) <span style="font-size:0.55em;background:#888;color:#fff;padding:3px 10px;border-radius:10px;margin-left:8px;vertical-align:middle">year 2</span></h1>
+<div class="meta">Apple-specific publishing. Common requirements live in <a href="publish-common.html">publish-common.html</a>.</div>
+
+<h2>Headline numbers</h2>
+
+<table>
+  <tr><th>Item</th><th>Value</th></tr>
+  <tr><td>Cost</td><td>$99 / year (<a href="https://developer.apple.com/programs/" target="_blank" rel="noopener">Apple Developer Program</a>)</td></tr>
+  <tr><td>First-review lead time</td><td>Typically 1–3 days, plan for 1–2 weeks counting rejection rounds</td></tr>
+  <tr><td>Store cut on subscriptions</td><td>30% in year 1 of a subscription, 15% from month 13 onward</td></tr>
+  <tr><td>Small Business Program</td><td>15% from day one if total annual revenue across all your apps is &lt; $1M — <a href="https://developer.apple.com/app-store/small-business-program/" target="_blank" rel="noopener">programme details</a></td></tr>
+  <tr><td>DUNS lead time (company registration)</td><td>1–2 weeks before you can even start the developer enrolment</td></tr>
+  <tr><td>Review guidelines</td><td><a href="https://developer.apple.com/app-store/review/guidelines/" target="_blank" rel="noopener">App Store Review Guidelines</a> — read top to bottom before drafting copy</td></tr>
+</table>
+
+<h2>Apple Developer enrolment — DUNS first</h2>
+
+<div class="warn">
+  <strong>The DUNS number is the gating step.</strong> If we register the developer
+  account as a company / legal entity, Apple requires a Dun &amp; Bradstreet (DUNS)
+  number tied to the entity. Getting one takes 1–2 weeks (free in the EU / US;
+  intermediaries charge). Start this the day the legal entity is set up — see
+  <a href="proposition.html">proposition.html</a> for the incorporation question.
+</div>
+
+<ul>
+  <li>Alternative: enrol as <strong>individual</strong> first to skip DUNS, then transfer the app to a company account once the entity exists. Adds an Apple-side transfer dance later (1 working day).</li>
+  <li>Two-factor authentication required on the Apple ID used for enrolment.</li>
+  <li>Verified phone number for the enrolment contact.</li>
+  <li>Bank account in the entity's country for paid-app payouts (subscription revenue lands here).</li>
+  <li>Tax forms — W-8BEN-E if non-US, plus the country's local tax ID for the App Store payouts setup.</li>
+</ul>
+
+<h2>App Store Connect — what to set up</h2>
+
+<table>
+  <tr><th>Step</th><th>Detail</th></tr>
+  <tr><td>App record</td><td>Created in <a href="https://appstoreconnect.apple.com" target="_blank" rel="noopener">App Store Connect</a> once the developer account is approved. App name reserved at this point.</td></tr>
+  <tr><td>Bundle ID</td><td>com.&lt;entity&gt;.&lt;app&gt; — register in Certificates, Identifiers &amp; Profiles. Cannot be changed once an app is shipped under it.</td></tr>
+  <tr><td>Subscription product</td><td>Configure inside App Store Connect with the price tier (Apple's tier table is region-localised automatically), free trial duration, introductory price for the early-bird cohort if used.</td></tr>
+  <tr><td>Subscription group</td><td>One group covering monthly + annual + early-bird tiers — lets users upgrade / downgrade between them at a prorated price.</td></tr>
+  <tr><td>Server-to-server notifications</td><td>App Store sends events (subscribed, renewed, cancelled, refunded) to a webhook endpoint. We persist subscription state from these.</td></tr>
+  <tr><td>StoreKit configuration</td><td><a href="https://developer.apple.com/storekit/" target="_blank" rel="noopener">StoreKit 2</a> (iOS 15+) is the modern API — receipt validation, subscription status, transactions all come through one Swift API.</td></tr>
+  <tr><td>App-specific shared secret</td><td>Generated in App Store Connect, used by our backend when validating receipts.</td></tr>
+</table>
+
+<h2>iOS-specific assets</h2>
+
+<table>
+  <tr><th>Asset</th><th>Spec</th></tr>
+  <tr><td>App icon</td><td>1024×1024 PNG, no transparency, no rounded corners (Apple adds them)</td></tr>
+  <tr><td>iPhone screenshots (required)</td><td>6.5" display: 1284×2778. Other sizes generated by App Store Connect.</td></tr>
+  <tr><td>iPad screenshots (only if iPad-supported)</td><td>12.9" display: 2048×2732. Skip if PWA-only on iPad.</td></tr>
+  <tr><td>App preview video (optional)</td><td>15–30s, native device resolution, no music we don't own the rights to</td></tr>
+  <tr><td>Promotional text (170 chars)</td><td>Updated without re-submitting — useful for early-bird messaging</td></tr>
+</table>
+
+<h2>The big constraint — no steering to web payments</h2>
+
+<div class="warn">
+  Apple's "anti-steering" rules have loosened (the 2024 Epic ruling, the EU DMA), but
+  the safe pattern is still: <strong>do not link out to web payments from inside the
+  iOS app.</strong> Mention pricing, yes; "tap here to pay on the web" — no. The
+  rules vary by region (EU is more permissive after DMA). Default to the strictest
+  interpretation until we have legal review on the regional variants.
+</div>
+
+<p>Pricing implication: web price is lower than iOS price (3% Stripe vs 30% Apple cut).
+Users discover this from the website or pre-purchase email — not from a link inside the
+iOS app. See <a href="pricing.html">pricing.html</a> for the suggested price split.</p>
+
+<h2>iOS-specific rejection patterns</h2>
+
+<table>
+  <tr><th>Pattern</th><th>Fix</th></tr>
+  <tr><td>Guideline 4.2 — "Minimum Functionality"</td><td>An app that "looks like a website wrapper" gets rejected. The PWA wrapper alone is not enough — the iOS app needs to feel native (StoreKit IAP, push notifications, biometric auth, share sheet integration).</td></tr>
+  <tr><td>Guideline 5.1.1(v) — Subscription disclosure</td><td>The price, billing frequency, and "auto-renewing" must appear on the same screen as the Subscribe button. Not buried in T&amp;C.</td></tr>
+  <tr><td>Guideline 3.1.1 — In-App Purchase</td><td>Digital subscriptions sold inside the app must use StoreKit, not Stripe. No exception.</td></tr>
+  <tr><td>Guideline 1.4.1 — Medical claims</td><td>Apple is twitchy about medical apps. "Aid", "support", "decision support" — fine. "Diagnoses", "treats", "cures" — rejected.</td></tr>
+  <tr><td>Reviewer cannot complete a case</td><td>Demo account login fails, backend errors during review, or sample data is missing. We test the demo account on a clean device 24h before submission.</td></tr>
+</table>
+
+<h2>Order of operations — iOS</h2>
+
+<ol>
+  <li>Legal entity exists → start DUNS (1–2 weeks).</li>
+  <li>DUNS received → enrol Apple Developer Program ($99 charged on enrolment).</li>
+  <li>App record created → bundle ID registered → subscription products configured.</li>
+  <li>Native iOS wrapper around the PWA built (or fully native if scope allows). StoreKit subscription flow tested on a real device with sandbox accounts.</li>
+  <li>Server-to-server notification endpoint live and persisting subscription state.</li>
+  <li>Privacy Policy URL stable (see <a href="legal.html">legal.html</a>).</li>
+  <li>App Store Connect submission — assets, descriptions, demo account credentials.</li>
+  <li>First review (1–3 days). Expect 1–2 rejection rounds; budget 2 weeks total.</li>
+  <li>Approval → release scheduled (manual release, not auto, so we coordinate with launch content).</li>
+</ol>
+
+<p class="small">For sales / payments / cross-platform parity see
+<a href="pricing.html">pricing.html</a>. For PWA-as-launch-vehicle reasoning see
+<a href="publish-web.html">publish-web.html</a>.</p>
+
+</body>
+</html>

@@ -1,12 +1,12 @@
 function Warp(engineOptions) {
 
-var buildDate = "2026-03-16 11:32:14";
+var buildDate = "2026-04-30 21:55:10";
 
 var warp = this;
 
 var _fontsCss = "@font-face{font-family:remixicon;font-style:normal;font-weight:400;font-display:swap;src:url(https://cdn.jsdelivr.net/npm/remixicon@4.6.0/fonts/remixicon.woff2) format(\"woff2\")}@font-face{font-family:Oswald;font-style:normal;font-weight:400;src:url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs1_FvsUZiZQ.woff2) format(\"woff2\");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}@font-face{font-family:Montserrat;font-style:normal;font-weight:400;src:url(https://fonts.gstatic.com/s/montserrat/v15/JTUSjIg1_i6t8kCHKm459Wlhyw.woff2) format(\"woff2\");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}@font-face{font-family:Montserrat;font-style:normal;font-weight:800;src:url(https://fonts.gstatic.com/s/montserrat/v15/JTURjIg1_i6t8kCHKm45_c5H3gnD_g.woff2) format(\"woff2\");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}\n";
-var _skinCss = ":host{--font1: Montserrat, sans-serif;--font2: Oswald, sans-serif}:host{--xs: 25px;--sm: 35px;--md: 50px;--lg: 70px;--xl: 100px}:host{--winBorderRadius: 2px}\n";
-var _warpCss = "*,:after,:before{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block;vertical-align:baseline}canvas{image-rendering:-moz-crisp-edges;image-rendering:-webkit-crisp-edges;image-rendering:crisp-edges;image-rendering:pixelated}audio:not([controls]){display:none;height:0}[hidden],template{display:none}a{background-color:transparent}a:active,a:hover{outline:0}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:700}dfn{font-style:italic}h1{font-size:2em;margin:.67em 0}mark{background:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sup{top:-.5em}sub{bottom:-.25em}img{border:0}svg:not(:root){overflow:hidden}figure{margin:1em 40px}hr{-webkit-box-sizing:content-box;-moz-box-sizing:content-box;box-sizing:content-box;height:0}pre{overflow:auto}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}button,input,optgroup,select,textarea{color:inherit;font:inherit;margin:0}button{overflow:visible}button,select{text-transform:none}button,html input[type=button],input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer}button[disabled],html input[disabled]{cursor:default}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}input{line-height:normal}input[type=checkbox],input[type=radio]{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;padding:0}input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-spin-button{height:auto}input[type=search]{-webkit-appearance:textfield;-webkit-box-sizing:content-box;-moz-box-sizing:content-box;box-sizing:content-box}input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration{-webkit-appearance:none}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{border:0;padding:0}textarea{overflow:auto}optgroup{font-weight:700}table{border-collapse:collapse;border-spacing:0}td,th{padding:0}table{width:100%;margin:0;padding:0}td{margin:0;padding-top:10px;padding-bottom:10px}tbody{width:100%;max-height:200px;overflow-y:scroll}tr{width:100%}tr th{font-weight:700;text-align:center;padding-top:10px;padding-bottom:10px}*{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}:after,:before{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}hr{margin-top:20px;margin-bottom:20px;border:0;border-top:1px solid #eee}.icon,a,body,button,div,input,select,textarea{-webkit-touch-callout:none;-webkit-user-select:none;-khtml-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;-webkit-tap-highlight-color:transparent}textarea{resize:none}a{color:var(--linkColor);fill:var(--linkColor);cursor:pointer;text-decoration:none}a,a:active,a:focus,a:hover,a:visited{text-decoration:none;fill:var(--linkColor)}.button,button{font-weight:400;transition:background .2s;margin-bottom:0;text-align:center;white-space:nowrap;vertical-align:middle;touch-action:manipulation;cursor:pointer;background-image:none;border:1px solid transparent;user-select:none;overflow:hidden;height:var(--md);border-radius:calc(var(--md) / 2)}.button.active.focus,.button.active:focus,.button.focus,.button:active.focus,.button:active:focus,.button:focus,button:active:focus,button:focus{outline:0 auto -webkit-focus-ring-color}.button.focus,.button:focus,.button:hover,button:focus,button:hover{text-decoration:none}.button.active,.button:active,button:active,button.active,button.a{background-image:none;outline:0;box-shadow:inset 0 3px 5px #00000020}.button.disabled,.button[disabled],button.disabled,fieldset[disabled] .button{cursor:not-allowed;opacity:.65;box-shadow:none}a.button.disabled,fieldset[disabled] a.button{pointer-events:none}button:hover{opacity:1}button:focus{opacity:1;border-color:var(--secondaryBg)}button:active{background-size:100%;transition:background 0s;opacity:1}.button-xs,button.xs{font-size:.8em;height:var(--xs);border-radius:calc(var(--xs) / 2);padding:0 13px}.button-sm,button.sm{font-size:.9em;height:var(--sm);border-radius:calc(var(--sm) / 2)}.button-lg,button.lg{font-size:1.2em;height:var(--lg);border-radius:calc(var(--lg) / 2)}.button-xl,button.xl{font-size:1.4em;height:var(--xl);border-radius:calc(var(--xl) / 2)}.button-xs.round,button.xs.round{width:var(--xs);padding:0}.button-sm.round,button.sm.round{width:var(--sm);padding:0}.button.round,button.round{width:var(--md);padding:0}.button-lg.round,button.lg.round{width:var(--lg);padding:0}.button-xl.round,button.xl.round{width:var(--xl);padding:0}button.round.xs{height:var(--xs);width:var(--xs);border-radius:50%}button.round.sm{height:var(--sm);width:var(--sm);border-radius:50%}button.round,button.round.md{height:var(--md);width:var(--md);border-radius:50%;padding:0}button.xl.round{background-color:var(--textBg);color:var(--linkColor);width:var(--xl);height:var(--xl);border-color:transparent;border-radius:50%;padding:0}button.xl.round>.icon{width:50px;height:50px;fill:var(--linkColor)}.button .icon,button .icon{fill:currentColor;stroke:currentColor;width:21px;height:21px;pointer-events:none}.button-sm .icon,button.sm .icon{width:17px;height:17px}.button-xs .icon,button.xs .icon{width:13px;height:13px}.button-lg .icon,button.lg .icon{height:31px;width:31px}.button-xl .icon,button.xl .icon{height:50px;width:50px}.button .icon:hover,button .icon:hover,.button use:hover,button use:hover,.button use:active,button use:active{fill:none}.button-block{display:block;width:100%}.button-block+.button-block{margin-top:5px}.button svg,button svg{stroke:none;stroke-opacity:0;background-color:transparent}.button-default,.button-default svg,button.default,button.default svg{color:var(--defaultColor);fill:var(--defaultColor)}.button-primary,.button-primary svg,button.primary,button.primary svg{color:var(--primaryColor);fill:var(--primaryColor)}.button-secondary,.button-secondary svg,button.secondary,button.secondary svg{color:var(--secondaryColor);fill:var(--secondaryColor)}.button-warning,.button-warning svg,button.warning,button.warning svg{color:var(--warningColor);fill:var(--warningColor)}.button-danger,.button-danger svg,button.danger,button.danger svg{color:var(--dangerColor);fill:var(--dangerColor)}.button-success,.button-success svg,button.success,button.success svg{color:var(--successColor);fill:var(--successColor)}.button-link,button.link{color:var(--linkColor);fill:var(--linkColor);letter-spacing:0;font-weight:400;background:none;border:1px solid transparent}.button-link svg,button.link svg,.button-link:hover,button.link:hover,.button-link:active,.button-link:focus,.button-link:visited{text-decoration:none;color:var(--linkColor);fill:var(--linkColor)}a.button.link:hover{text-decoration:underline;color:var(--linkColor);fill:var(--linkColor)}.button-default,button{background-color:var(--defaultBg);border:1px solid var(--defaultDark)}.button-default:hover,button:hover{border:1px solid var(--defaultBg)}.button-default:active,button:active{border:1px solid var(--defaultDark)}.button-primary,button.primary{background-color:var(--primaryBg);border:1px solid var(--primaryDark)}.button-primary:hover,button.primary:hover{border:1px solid var(--primaryBg)}.button-primary:active,button.primary:active{border:1px solid var(--primaryDark)}.button-secondary,button.secondary{background-color:var(--secondaryBg);border:1px solid var(--secondaryDark)}.button-secondary:hover,button.secondary:hover{border:1px solid var(--secondaryBg)}.button-secondary:active,button.secondary:active{border:1px solid var(--secondaryDark)}.button-warning,button.warning{background-color:var(--warningBg);border:1px solid var(--warningDark)}.button-warning:hover,button.warning:hover{border:1px solid var(--warningBg)}.button-warning:active,button.warning:active{border:1px solid var(--warningDark)}.button-danger,button.danger{background-color:var(--dangerBg);border:1px solid var(--dangerDark)}.button-danger:hover,button.danger:hover{border:1px solid var(--dangerBg)}.button-danger:active,button.danger:active{border:1px solid var(--dangerDark)}.button-success,button.success{background-color:var(--successBg);border:1px solid var(--successDark)}.button-success:hover,button.success:hover{border:1px solid var(--successBg)}.button-success:active,button.success:active{border:1px solid var(--successDark)}.button-default.inverted,button.inverted.default{color:var(--defaultBg);fill:var(--defaultBg);background-color:var(--defaultColor);border:1px solid var(--defaultColor)}.button-primary.inverted,button.inverted.primary,button.inverted.primary>svg{color:var(--primaryBg);fill:var(--primaryBg);background-color:var(--primaryColor);border:1px solid var(--primaryColor)}.button-secondary.inverted,button.inverted.secondary{color:var(--secondaryBg);fill:var(--secondaryBg);background-color:var(--secondaryColor);border:1px solid var(--secondaryColor)}.button-warning.inverted,button.inverted.warning{color:var(--warningBg);fill:var(--warningBg);background-color:var(--warningColor);border:1px solid var(--warningColor)}.button-danger.inverted,button.inverted.danger{color:var(--dangerBg);fill:var(--dangerBg);background-color:var(--dangerColor);border:1px solid var(--dangerColor)}.button-success.inverted,button.inverted.success{color:var(--successBg);fill:var(--successBg);background-color:var(--successColor);border:1px solid var(--successColor)}.button-link.inverted,button.inverted.link{color:var(--linkBg);fill:var(--linkBg);background-color:var(--linkColor);border:1px solid var(--linkColor)}iframe{background:0 0;padding:0;margin:0;border:none;font-size:13px;background-color:var(--textBg);color:var(--textColor)}*::-webkit-scrollbar{width:5px;background:#01010100;opacity:.6;overflow:visible;margin-left:-10}*::-webkit-scrollbar-track{background:#01010100}*::-webkit-scrollbar-thumb{background:var(--defaultBg);opacity:.6;border-radius:2px;margin-left:-15px}@-moz-document url-prefix(){*{scrollbar-color:var(--defaultBg) rgba(1,1,1,0);scrollbar-width:thin}}.gui,.gui>.man,.scripts{margin:0;padding:0;position:fixed;left:0;top:0;width:0;height:0}.gui{z-index:2;font-family:var(--font1);font-size:13px!important;color:var(--textColor)}.gui>.man.active{z-index:10}.gui>canvas.man{pointer-events:none;display:block}.backdrop{position:fixed;left:0;top:0;width:100%;height:100%;background-image:linear-gradient(45deg,#0006 25%,#0000004d 25% 50%,#0006 50% 75%,#0000004d 75% 100%);background-size:30.57px 30px;cursor:pointer}.disabled{opacity:.4!important;pointer-events:none!important;overflow:hidden!important}.fr{float:right!important}.fl{float:left!important}.fi{float:initial}.raised{box-shadow:0 2.8px 2.2px #00000009,0 6.7px 5.3px #0000000c,0 12.5px 10px #0000000f,0 22.3px 17.9px #00000012,0 41.8px 33.4px #00000016,0 100px 80px #0000001f}.raised-sm{box-shadow:0 2.8px 2.2px #00000008,0 6.7px 5.3px #0000000d,-2px -1px 18px 1px #0000000f,0 11px 20px #00000012,0 14px 20px 3px #00000017,14px 9px 9px #0000001f}.inset-xs{box-shadow:0 0 4px 2px #999 inset}.image{background-size:cover;background-repeat:no-repeat;background-position:center center}.fixed{position:fixed!important}.clear,.clear:hover,.clear:active,.clear svg{background:none!important;border:none!important}.centered{margin-left:auto;margin-right:auto;display:inline-block}.hidden{display:none!important}.inline{display:inline;overflow:hidden}.block{display:block}.inline-block{display:inline-block;overflow:hidden}.round{border-radius:50%}.rounded-xs,.rxs{border-radius:3px!important}.rounded-sm,.rsm{border-radius:6px!important}.rounded-md,.rmd{border-radius:9px!important}.rounded-lg,.rlg{border-radius:12px!important}.rounded-xl,.rxl{border-radius:18px!important}.r2{display:grid;grid-template-columns:repeat(2,1fr)}.r3{display:grid;grid-template-columns:repeat(3,1fr)}.r4{display:grid;grid-template-columns:repeat(4,1fr)}.r5{display:grid;grid-template-columns:repeat(5,1fr)}.r6{display:grid;grid-template-columns:repeat(6,1fr)}.r7{display:grid;grid-template-columns:repeat(7,1fr)}.r8{display:grid;grid-template-columns:repeat(8,1fr)}.r9{display:grid;grid-template-columns:repeat(9,1fr)}.r10{display:grid;grid-template-columns:repeat(10,1fr)}.c2{grid-column:span 2}.c3{grid-column:span 3}.c4{grid-column:span 4}.c5{grid-column:span 5}.c6{grid-column:span 6}.c7{grid-column:span 7}.c8{grid-column:span 8}.c9{grid-column:span 9}.c10{grid-column:span 10}.mla{margin-left:auto}.mra{margin-right:auto}.mxs{margin:var(--xs)}.msm{margin:var(--sm)}.mmd{margin:var(--md)}.mlg{margin:var(--lg)}.mxl{margin:var(--xl)}.mtxs{margin-top:var(--xs)}.mtsm{margin-top:var(--sm)}.mtmd{margin-top:var(--md)}.mtlg{margin-top:var(--lg)}.mtxl{margin-top:var(--xl)}.mbxs{margin-bottom:var(--xs)}.mbsm{margin-bottom:var(--sm)}.mbmd{margin-bottom:var(--md)}.mblg{margin-bottom:var(--lg)}.mbxl{margin-bottom:var(--xl)}.m0{margin:0!important}.m5{margin:5px!important}.m10{margin:10px!important}.m15{margin:15px!important}.m20{margin:20px!important}.mt0{margin-top:0!important}.mt5{margin-top:5px!important}.mt10{margin-top:10px!important}.mt15{margin-top:15px!important}.mt20{margin-top:20px!important}.mb0{margin-bottom:0!important}.mb5{margin-bottom:5px!important}.mb10{margin-bottom:10px!important}.mb15{margin-bottom:15px!important}.mb20{margin-bottom:20px!important}.ml0{margin-left:0!important}.ml5{margin-left:5px!important}.ml10{margin-left:10px!important}.ml15{margin-left:15px!important}.ml20{margin-left:20px!important}.mr0{margin-right:0!important}.mr5{margin-right:5px!important}.mr10{margin-right:10px!important}.mr15{margin-right:15px!important}.mr20{margin-right:20px!important}.m-5{margin:-5px!important}.m-10{margin:-10px!important}.m-15{margin:-15px!important}.m-20{margin:-20px!important}.mt-5{margin-top:-5px!important}.mt-10{margin-top:-10px!important}.mt-15{margin-top:-15px!important}.mt-20{margin-top:-20px!important}.mb-5{margin-bottom:-5px!important}.mb-10{margin-bottom:-10px!important}.mb-15{margin-bottom:-15px!important}.mb-20{margin-bottom:-20px!important}.ml-5{margin-left:-5px!important}.ml-10{margin-left:-10px!important}.ml-15{margin-left:-15px!important}.ml-20{margin-left:-20px!important}.mr-5{margin-right:-5px!important}.mr-10{margin-right:-10px!important}.mr-15{margin-right:-15px!important}.mr-20{margin-right:-20px!important}.p0{padding:0!important}.p5{padding:5px!important}.p10{padding:10px!important}.p15{padding:15px!important}.p20{padding:20px!important}.pl0{padding-left:0!important}.pl5{padding-left:5px!important}.pl10{padding-left:10px!important}.pl15{padding-left:15px!important}.pl20{padding-left:20px!important}.pr0{padding-right:0!important}.pr5{padding-right:5px!important}.pr10{padding-right:10px!important}.pr15{padding-right:15px!important}.pr20{padding-right:20px!important}.pt0{padding-top:0!important}.pt5{padding-top:5px!important}.pt10{padding-top:10px!important}.pt15{padding-top:15px!important}.pt20{padding-top:20px!important}.pb0{padding-bottom:0!important}.pb5{padding-bottom:5px!important}.pb10{padding-bottom:10px!important}.pb15{padding-bottom:15px!important}.pb20{padding-bottom:20px!important}.op0{opacity:0}.op1{opacity:.1}.op2{opacity:.2}.op3{opacity:.3}.op4{opacity:.4}.op5{opacity:.5}.op6{opacity:.6}.op7{opacity:.7}.op8{opacity:.8}.op9{opacity:.9}.hxs{height:var(--xs)}.hsm{height:var(--sm)}.hmd{height:var(--md)}.hlg{height:var(--lg)}.hxl{height:var(--xl)}.wxs{width:var(--xs)}.wsm{width:var(--sm)}.wmd{width:var(--md)}.wlg{width:var(--lg)}.wxl{width:var(--xl)}.default,.s0{background-color:var(--defaultBg);fill:var(--defaultBg);color:var(--defaultColor)}.primary,.s1{background-color:var(--primaryBg);fill:var(--primaryBg);color:var(--primaryColor)}.secondary,.s2{background-color:var(--secondaryBg);fill:var(--secondaryBg);color:var(--secondaryColor)}.success,.s3{background-color:var(--successBg);fill:var(--successBg);color:var(--successColor)}.warning,.s4{background-color:var(--warningBg);fill:var(--warningBg);color:var(--warningColor)}.danger,.s5{background-color:var(--dangerBg);fill:var(--dangerBg);color:var(--dangerColor)}.link,.s6{background-color:var(--linkBg);fill:var(--linkBg);color:var(--linkColor)}.text-default,.t0{color:var(--defaultBg);fill:var(--defaultBg)}.text-primary,.t1{color:var(--primaryBg);fill:var(--primaryBg)}.text-secondary,.t2{color:var(--secondaryBg);fill:var(--secondaryBg)}.text-success,.t3{color:var(--successBg);fill:var(--successBg)}.text-warning,.t4{color:var(--warningBg);fill:var(--warningBg)}.text-danger,.t5{color:var(--dangerBg);fill:var(--dangerBg)}.text-link,.t6{color:var(--linkBg);fill:var(--linkBg)}.text-default svg{fill:var(--defaultBg)}.text-primary svg{fill:var(--primaryBg)}.text-secondary svg{fill:var(--secondaryBg)}.text-success svg{fill:var(--successBg)}.text-warning svg{fill:var(--warningBg)}.text-danger svg{fill:var(--dangerBg)}.text-link svg{fill:var(--linkBg)}.xs select:not(.xs):not(.sm):not(.md):not(.lg):not(.xl),.xs input[type=text]:not(.xs):not(.sm):not(.md):not(.lg):not(.xl),.xs input[type=password]:not(.xs):not(.sm):not(.md):not(.lg):not(.xl),.xs input[type=email]:not(.xs):not(.sm):not(.md):not(.lg):not(.xl),.xs input[type=search]:not(.xs):not(.sm):not(.md):not(.lg):not(.xl),.xs input[type=date]:not(.xs):not(.sm):not(.md):not(.lg):not(.xl),.xs input[type=number]:not(.xs):not(.sm):not(.md):not(.lg):not(.xl),.xs textarea:not(.xs):not(.sm):not(.md):not(.lg):not(.xl){font-size:.8em;min-height:var(--xs);height:var(--xs);padding-left:5px;border-radius:2px}.xs button:not(.xs):not(.sm):not(.md):not(.lg):not(.xl){font-size:.8em;height:var(--xs);border-radius:calc(var(--xs) / 2);padding:0 13px}.xs button:not(.xs):not(.sm):not(.md):not(.lg):not(.xl) .icon{width:13px;height:13px}.xs button.round:not(.xs):not(.sm):not(.md):not(.lg):not(.xl){width:var(--xs);height:var(--xs);border-radius:50%;padding:0}.xs select:not(.xs):not(.sm):not(.md):not(.lg):not(.xl)>option{min-height:var(--xs);height:var(--xs)}.sm select:not(.xs):not(.sm):not(.md):not(.lg):not(.xl),.sm input[type=text]:not(.xs):not(.sm):not(.md):not(.lg):not(.xl),.sm input[type=password]:not(.xs):not(.sm):not(.md):not(.lg):not(.xl),.sm input[type=email]:not(.xs):not(.sm):not(.md):not(.lg):not(.xl),.sm input[type=search]:not(.xs):not(.sm):not(.md):not(.lg):not(.xl),.sm input[type=date]:not(.xs):not(.sm):not(.md):not(.lg):not(.xl),.sm input[type=number]:not(.xs):not(.sm):not(.md):not(.lg):not(.xl),.sm textarea:not(.xs):not(.sm):not(.md):not(.lg):not(.xl){min-height:var(--sm);height:var(--sm);padding-left:5px;border-radius:2px;font-size:.9em}.sm button:not(.xs):not(.sm):not(.md):not(.lg):not(.xl){font-size:.9em;height:var(--sm);border-radius:calc(var(--sm) / 2)}.sm button:not(.xs):not(.sm):not(.md):not(.lg):not(.xl) .icon{width:17px;height:17px}.sm button.round:not(.xs):not(.sm):not(.md):not(.lg):not(.xl){width:var(--sm);height:var(--sm);border-radius:50%;padding:0}.sm select:not(.xs):not(.sm):not(.md):not(.lg):not(.xl)>option{min-height:var(--sm);height:var(--sm)}.lg select:not(.xs):not(.sm):not(.md):not(.lg):not(.xl),.lg input[type=text]:not(.xs):not(.sm):not(.md):not(.lg):not(.xl),.lg input[type=password]:not(.xs):not(.sm):not(.md):not(.lg):not(.xl),.lg input[type=email]:not(.xs):not(.sm):not(.md):not(.lg):not(.xl),.lg input[type=search]:not(.xs):not(.sm):not(.md):not(.lg):not(.xl),.lg input[type=date]:not(.xs):not(.sm):not(.md):not(.lg):not(.xl),.lg input[type=number]:not(.xs):not(.sm):not(.md):not(.lg):not(.xl),.lg textarea:not(.xs):not(.sm):not(.md):not(.lg):not(.xl){min-height:var(--lg);height:var(--lg);font-size:1.2em}.lg button:not(.xs):not(.sm):not(.md):not(.lg):not(.xl){font-size:1.2em;height:var(--lg);border-radius:calc(var(--lg) / 2)}.lg button:not(.xs):not(.sm):not(.md):not(.lg):not(.xl) .icon{height:31px;width:31px}.lg button.round:not(.xs):not(.sm):not(.md):not(.lg):not(.xl){width:var(--lg);height:var(--lg);border-radius:50%;padding:0}.lg select:not(.xs):not(.sm):not(.md):not(.lg):not(.xl)>option{min-height:var(--lg);height:var(--lg)}.xl select:not(.xs):not(.sm):not(.md):not(.lg):not(.xl),.xl input[type=text]:not(.xs):not(.sm):not(.md):not(.lg):not(.xl),.xl input[type=password]:not(.xs):not(.sm):not(.md):not(.lg):not(.xl),.xl input[type=email]:not(.xs):not(.sm):not(.md):not(.lg):not(.xl),.xl input[type=search]:not(.xs):not(.sm):not(.md):not(.lg):not(.xl),.xl input[type=date]:not(.xs):not(.sm):not(.md):not(.lg):not(.xl),.xl input[type=number]:not(.xs):not(.sm):not(.md):not(.lg):not(.xl),.xl textarea:not(.xs):not(.sm):not(.md):not(.lg):not(.xl){min-height:var(--xl);height:var(--xl);font-size:1.4em}.xl button:not(.xs):not(.sm):not(.md):not(.lg):not(.xl){font-size:1.4em;height:var(--xl);border-radius:calc(var(--xl) / 2)}.xl button:not(.xs):not(.sm):not(.md):not(.lg):not(.xl) .icon{height:50px;width:50px}.xl button.round:not(.xs):not(.sm):not(.md):not(.lg):not(.xl){width:var(--xl);height:var(--xl);border-radius:50%;padding:0}.xl select:not(.xs):not(.sm):not(.md):not(.lg):not(.xl)>option{min-height:var(--xl);height:var(--xl)}.icon:before{font-family:remixicon;font-style:normal;font-weight:400;-webkit-font-smoothing:antialiased;display:inline-block}.icon-home:before{content:\"\\ee2b\"}.icon-search:before{content:\"\\f0d1\"}.icon-gear:before{content:\"\\f0e6\"}.icon-gears:before{content:\"\\f0e8\"}.icon-cog:before{content:\"\\f0e6\"}.icon-sliders:before{content:\"\\ec9d\"}.icon-user:before{content:\"\\f2de\"}.icon-users:before{content:\"\\f2e2\"}.icon-star:before{content:\"\\f18b\"}.icon-heart:before{content:\"\\ee0f\"}.icon-bell:before{content:\"\\ef9a\"}.icon-clock:before{content:\"\\f201\"}.icon-calendar:before{content:\"\\eb27\"}.icon-tag:before{content:\"\\f025\"}.icon-tags:before{content:\"\\f025\"}.icon-bookmark:before{content:\"\\eae5\"}.icon-thumbtack:before{content:\"\\f039\"}.icon-link:before{content:\"\\eeb2\"}.icon-unlink:before{content:\"\\eeb1\"}.icon-globe:before{content:\"\\edcf\"}.icon-filter:before{content:\"\\ed27\"}.icon-sort:before{content:\"\\f15f\"}.icon-bolt:before{content:\"\\ed3d\"}.icon-magic:before{content:\"\\eeea\"}.icon-key:before{content:\"\\ee71\"}.icon-shield:before{content:\"\\f108\"}.icon-info:before{content:\"\\ee59\"}.icon-warn:before{content:\"\\eca1\"}.icon-check:before{content:\"\\eb7b\"}.icon-check-circle:before{content:\"\\eb81\"}.icon-close:before{content:\"\\eb99\"}.icon-circle-xmark:before{content:\"\\eb97\"}.icon-ban:before{content:\"\\ed95\"}.icon-question:before{content:\"\\f045\"}.icon-exclamation:before{content:\"\\ea21\"}.icon-spinner:before{content:\"\\eeca\"}.icon-circle-notch:before{content:\"\\eeca\"}.icon-eye:before{content:\"\\ecb5\"}.icon-eye-off:before{content:\"\\ecb7\"}.icon-lock:before{content:\"\\eece\"}.icon-unlock:before{content:\"\\eed2\"}.icon-plus:before{content:\"\\ea13\"}.icon-minus:before{content:\"\\f1af\"}.icon-edit:before{content:\"\\ec86\"}.icon-pen:before{content:\"\\efe0\"}.icon-save:before{content:\"\\f0b3\"}.icon-trash:before{content:\"\\ec2a\"}.icon-trash-can:before{content:\"\\ec29\"}.icon-copy:before{content:\"\\ecd5\"}.icon-paste:before{content:\"\\eb91\"}.icon-cut:before{content:\"\\f0bf\"}.icon-clone:before{content:\"\\ecd5\"}.icon-download:before{content:\"\\ec5a\"}.icon-upload:before{content:\"\\f212\"}.icon-refresh:before{content:\"\\f064\"}.icon-sync:before{content:\"\\f064\"}.icon-undo:before{content:\"\\ea58\"}.icon-redo:before{content:\"\\ea5a\"}.icon-print:before{content:\"\\f029\"}.icon-share:before{content:\"\\f0fe\"}.icon-external:before{content:\"\\ecaf\"}.icon-file:before{content:\"\\eceb\"}.icon-file-lines:before{content:\"\\ed0f\"}.icon-file-code:before{content:\"\\ecd1\"}.icon-file-image:before{content:\"\\ee4b\"}.icon-file-pdf:before{content:\"\\ecfd\"}.icon-file-audio:before{content:\"\\ecf7\"}.icon-file-video:before{content:\"\\ed21\"}.icon-file-archive:before{content:\"\\ed1f\"}.icon-file-csv:before{content:\"\\eccd\"}.icon-file-excel:before{content:\"\\ecdf\"}.icon-file-export:before{content:\"\\ecaf\"}.icon-file-import:before{content:\"\\ec5a\"}.icon-file-pen:before{content:\"\\ecdb\"}.icon-file-circle-plus:before{content:\"\\ecc9\"}.icon-folder:before{content:\"\\ed6a\"}.icon-folder-open:before{content:\"\\ed70\"}.icon-folder-plus:before{content:\"\\ed5a\"}.icon-folder-minus:before{content:\"\\ed74\"}.icon-folder-tree:before{content:\"\\ef90\"}.icon-hard-drive:before{content:\"\\edf9\"}.icon-server:before{content:\"\\f0e0\"}.icon-database:before{content:\"\\ec18\"}.icon-cloud:before{content:\"\\eb9d\"}.icon-cloud-upload:before{content:\"\\ec56\"}.icon-cloud-download:before{content:\"\\ec58\"}.icon-floppy:before{content:\"\\f0af\"}.icon-box:before{content:\"\\ee4f\"}.icon-box-archive:before{content:\"\\ea48\"}.icon-boxes:before{content:\"\\ea44\"}.icon-warehouse:before{content:\"\\f1a9\"}.icon-cabinet:before{content:\"\\ea46\"}.icon-drawer:before{content:\"\\ea46\"}.icon-sd-card:before{content:\"\\f0c9\"}.icon-window:before{content:\"\\f1fa\"}.icon-window-maximize:before{content:\"\\ed9c\"}.icon-window-minimize:before{content:\"\\ed9a\"}.icon-window-restore:before{content:\"\\eff4\"}.icon-layer-group:before{content:\"\\f181\"}.icon-object-group:before{content:\"\\ee90\"}.icon-object-ungroup:before{content:\"\\eddf\"}.icon-table-cells:before{content:\"\\f1de\"}.icon-table-columns:before{content:\"\\ee94\"}.icon-table-list:before{content:\"\\eebe\"}.icon-columns:before{content:\"\\ee94\"}.icon-grip-vertical:before{content:\"\\ec62\"}.icon-grip-lines:before{content:\"\\ec60\"}.icon-up-down-left-right:before{content:\"\\ec62\"}.icon-maximize:before{content:\"\\ed9c\"}.icon-minimize:before{content:\"\\ed9a\"}.icon-crop:before{content:\"\\ec02\"}.icon-expand:before{content:\"\\ed9c\"}.icon-compress:before{content:\"\\ed9a\"}.icon-bars:before{content:\"\\ef3e\"}.icon-grip:before{content:\"\\ec60\"}.icon-ellipsis:before{content:\"\\ef79\"}.icon-ellipsis-v:before{content:\"\\ef77\"}.icon-palette:before{content:\"\\efc5\"}.icon-paintbrush:before{content:\"\\eb01\"}.icon-image:before{content:\"\\ee4b\"}.icon-icons:before{content:\"\\ea44\"}.icon-puzzle:before{content:\"\\f247\"}.icon-sidebar:before{content:\"\\f128\"}.icon-panel-left:before{content:\"\\f128\"}.icon-arrow-up:before{content:\"\\ea76\"}.icon-arrow-down:before{content:\"\\ea4c\"}.icon-arrow-left:before{content:\"\\ea60\"}.icon-arrow-right:before{content:\"\\ea6c\"}.icon-chevron-up:before{content:\"\\ea78\"}.icon-chevron-down:before{content:\"\\ea4e\"}.icon-chevron-left:before{content:\"\\ea64\"}.icon-chevron-right:before{content:\"\\ea6e\"}.icon-angles-left:before{content:\"\\ea64\"}.icon-angles-right:before{content:\"\\ea6e\"}.icon-caret-up:before{content:\"\\ea56\"}.icon-caret-down:before{content:\"\\ea50\"}.icon-caret-left:before{content:\"\\ea52\"}.icon-caret-right:before{content:\"\\ea54\"}.icon-play:before{content:\"\\f00b\"}.icon-pause:before{content:\"\\efd8\"}.icon-stop:before{content:\"\\f1a1\"}.icon-forward:before{content:\"\\f144\"}.icon-backward:before{content:\"\\f140\"}.icon-volume:before{content:\"\\f20c\"}.icon-volume-off:before{content:\"\\f210\"}.icon-music:before{content:\"\\ef85\"}.icon-camera:before{content:\"\\eb31\"}.icon-video:before{content:\"\\f205\"}.icon-code:before{content:\"\\eba9\"}.icon-terminal:before{content:\"\\f1f6\"}.icon-bug:before{content:\"\\eb07\"}.icon-wrench:before{content:\"\\f0e8\"}.icon-hammer:before{content:\"\\edef\"}.icon-plug:before{content:\"\\f017\"}.icon-power-off:before{content:\"\\f126\"}.icon-trash-restore:before{content:\"\\ec2a\"}.icon-circle:before{content:\"\\f250\"}.icon-square:before{content:\"\\f24e\"}.icon-list:before{content:\"\\eebe\"}.icon-list-check:before{content:\"\\eeba\"}.icon-indent:before{content:\"\\ee55\"}.icon-outdent:before{content:\"\\ee54\"}.icon-sitemap:before{content:\"\\efb8\"}.icon-diagram:before{content:\"\\efb8\"}.icon-chart-bar:before{content:\"\\ea9e\"}.icon-chart-line:before{content:\"\\eeab\"}.icon-chart-pie:before{content:\"\\effa\"}input{user-select:text}textarea{min-height:150px;padding-top:10px}select,select.md,input[type=text],input[type=password],input[type=email],input[type=search],input[type=date],input[type=number],textarea{width:100%;border:1px solid var(--defaultDark);min-height:var(--md);height:var(--md);padding-left:15px;border-radius:5px;outline:none;background-color:var(--itemBg);color:var(--itemColor);font-size:1em}select.sm,input[type=text].sm,input[type=password].sm,input[type=email].sm,input[type=search].sm,input[type=date].sm,input[type=number].sm{min-height:var(--sm);height:var(--sm);padding-left:5px;border-radius:2px;font-size:.9em}select.xs,input[type=text].xs,input[type=password].xs,input[type=email].xs,input[type=search].xs,input[type=date].xs,input[type=number].xs{font-size:.8em;min-height:var(--xs);height:var(--xs);padding-left:5px;border-radius:2px}select.md>option,select>option,option.md{min-height:var(--md);height:var(--md)}select.xs>option,option.xs{min-height:var(--xs);height:var(--xs)}select.sm>option,option.sm{min-height:var(--sm);height:var(--sm)}select.lg>option,option.lg{min-height:var(--lg);height:var(--lg)}select.xl>option,option.xl{min-height:var(--xl);height:var(--xl)}select{background-image:url(data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20256%20448%22%20enable-background%3D%22new%200%200%20256%20448%22%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E.arrow%7Bfill%3Adarkgrey%3B%7D%3C%2Fstyle%3E%3Cpath%20class%3D%22arrow%22%20d%3D%22M255.9%20168c0-4.2-1.6-7.9-4.8-11.2-3.2-3.2-6.9-4.8-11.2-4.8H16c-4.2%200-7.9%201.6-11.2%204.8S0%20163.8%200%20168c0%204.4%201.6%208.2%204.8%2011.4l112%20112c3.1%203.1%206.8%204.6%2011.2%204.6%204.4%200%208.2-1.5%2011.4-4.6l112-112c3-3.2%204.5-7%204.5-11.4z%22%2F%3E%3C%2Fsvg%3E);background-position:right 10px center;background-repeat:no-repeat;background-size:auto 50%;padding-left:15px;padding-right:30px;outline:none;-moz-appearance:none;-webkit-appearance:none;appearance:none}input:-webkit-autofill,input:-webkit-autofill:hover,input:-webkit-autofill:focus,input:-webkit-autofill:active,textarea:-webkit-autofill,textarea:-webkit-autofill:hover,textarea:-webkit-autofill:focus,textarea:-webkit-autofill:active,select:-webkit-autofill,select:-webkit-autofill:hover,select:-webkit-autofill:focus,select:-webkit-autofill:active{color:var(--itemColor);-webkit-box-shadow:0 0 0 50px var(--itemBg) inset!important;outline:none;border:1px solid var(--defaultDark)!important}input::placeholder,textarea::placeholder{color:var(--defaultDark)}input[type=radio]{cursor:pointer}.radio label{display:block;padding-top:2px;padding-bottom:2px;cursor:pointer}.check{margin-top:5px;cursor:pointer}input[type=range]{-webkit-appearance:none;margin-top:5px!important;width:100%;background:none}input[type=range]:focus{outline:none}input[type=range]::-webkit-slider-runnable-track{width:100%;height:8.4px;cursor:pointer;background:#000000b3;border:1px solid rgba(0,0,0,0)}input[type=range]::-webkit-slider-thumb{box-shadow:0 0 1px #000,0 0 3px #0d0d0d;height:25px;width:12px;border-radius:3px 3px 6px 6px;background:var(--primaryBg);cursor:pointer;-webkit-appearance:none;margin-top:-10px}input[type=range]::-moz-range-track{width:100%;height:8.4px;cursor:pointer;background:#000000b3;border:1px solid rgba(0,0,0,0)}input[type=range]::-moz-range-thumb{box-shadow:0 0 1px #000,0 0 3px #0d0d0d;height:25px;width:12px;border-radius:3px 3px 6px 6px;background:var(--primaryBg);cursor:pointer;margin-top:-10px}.text *,.text,.t,.t *{background-color:#fff;color:#000;text-align:left;word-break:break-word}.text a{background-color:var(--linkBg);color:var(--linkColor)}p{line-height:1.8em}.tcap{text-transform:capitalize}.tcf:first-letter{text-transform:capitalize}strong,.tb{font-weight:700}.tn{font-weight:400}.tu{text-decoration:underline}.ti{font-style:italic}small,.tsm{font-size:.8em}.txs{font-size:.7em}.tlg{font-size:1.2em}.txl{font-size:1.6em}.tc{text-align:center}.tj{text-align:justify}.tl{text-align:left}.tr{text-align:right}.tu{text-transform:uppercase}.win{background-color:var(--winBodyBg);color:var(--textColor);position:absolute;margin:0;overflow:hidden;border-radius:var(--winBorderRadius)}.win>.head{height:var(--sm);display:flex;align-items:center;background-color:var(--winHeadBg);color:var(--winHeadColor);fill:var(--winHeadColor);border:none;touch-action:none;cursor:grab;user-select:none}.win>.head>.left{display:flex;align-items:center;flex-shrink:0}.win>.head>.center{flex:1;display:flex;align-items:center;overflow:hidden;margin:0 20px}.win>.head>.center>*{margin-right:5px}.win>.head>.right{display:flex;align-items:center;flex-shrink:0}.win>.head>.left>.caption{font-family:var(--font2);font-size:10pt;letter-spacing:.6pt;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;min-width:75px}.win>.head span,.win>.head img{user-select:none;touch-action:none;pointer-events:none}.win.active{z-index:10}.win.active>.head{background-color:var(--winHeadActiveBg);color:var(--winHeadActiveColor);fill:var(--winHeadActiveColor)}.win>.head>.right>*{margin-right:5px}.win>.head>.left>*{margin-left:5px}.win>.body{width:100%;overflow-y:scroll;background:var(--winBodyBg);color:var(--winBodyColor)}.win>.menu{z-index:1000;background-image:linear-gradient(45deg,#0006 25%,#0000004d 25% 50%,#0006 50% 75%,#0000004d 75% 100%);position:fixed;top:30px;left:0;width:100%;background-color:#0000001a;cursor:pointer;background-size:30.57px 30px}.win>.close{position:absolute;bottom:10px;right:10px;padding:0;opacity:.3;background:var(--primaryColor);color:var(--primaryLight);width:var(--md);height:var(--md);cursor:pointer;font-weight:700;font-size:18px;border-radius:50%}.win>.close:hover{opacity:1}\n";
+var _skinCss = ":host{--font1: Montserrat, sans-serif;--font2: Oswald, sans-serif}:host{--mi: 15px;--xs: 25px;--sm: 35px;--md: 50px;--lg: 70px;--xl: 100px}:host{--winBorderRadius: 2px}\n";
+var _warpCss = "*,:after,:before{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block;vertical-align:baseline}canvas{image-rendering:-moz-crisp-edges;image-rendering:-webkit-crisp-edges;image-rendering:crisp-edges;image-rendering:pixelated}audio:not([controls]){display:none;height:0}[hidden],template{display:none}a{background-color:transparent}a:active,a:hover{outline:0}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:700}dfn{font-style:italic}h1{font-size:2em;margin:.67em 0}mark{background:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sup{top:-.5em}sub{bottom:-.25em}img{border:0}svg:not(:root){overflow:hidden}figure{margin:1em 40px}hr{-webkit-box-sizing:content-box;-moz-box-sizing:content-box;box-sizing:content-box;height:0}pre{overflow:auto}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}button,input,optgroup,select,textarea{color:inherit;font:inherit;margin:0}button{overflow:visible}button,select{text-transform:none}button,html input[type=button],input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer}button[disabled],html input[disabled]{cursor:default}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}input{line-height:normal}input[type=checkbox],input[type=radio]{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;padding:0}input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-spin-button{height:auto}input[type=search]{-webkit-appearance:textfield;-webkit-box-sizing:content-box;-moz-box-sizing:content-box;box-sizing:content-box}input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration{-webkit-appearance:none}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{border:0;padding:0}textarea{overflow:auto}optgroup{font-weight:700}table{border-collapse:collapse;border-spacing:0}td,th{padding:0}table{width:100%;margin:0;padding:0}td{margin:0;padding-top:10px;padding-bottom:10px}tbody{width:100%;max-height:200px;overflow-y:scroll}tr{width:100%}tr th{font-weight:700;text-align:center;padding-top:10px;padding-bottom:10px}*{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}:after,:before{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}hr{margin-top:20px;margin-bottom:20px;border:0;border-top:1px solid #eee}.icon,a,body,button,div,input,select,textarea{-webkit-touch-callout:none;-webkit-user-select:none;-khtml-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;-webkit-tap-highlight-color:transparent}textarea{resize:none}a{color:var(--linkColor);fill:var(--linkColor);cursor:pointer;text-decoration:none}a,a:active,a:focus,a:hover,a:visited{text-decoration:none;fill:var(--linkColor)}a[docs]{color:var(--linkColor);cursor:pointer;text-decoration:none}a[docs]:hover{text-decoration:underline}a[code]{color:var(--primaryBg);cursor:pointer;text-decoration:none}a[code]:hover{text-decoration:underline}a[code]:after{content:\"\\f1f6\";font-family:remixicon;font-size:1em;margin-left:3px;vertical-align:middle}.button,button{font-weight:400;transition:background .2s;margin-bottom:0;text-align:center;white-space:nowrap;vertical-align:middle;touch-action:manipulation;cursor:pointer;background-image:none;border:1px solid transparent;user-select:none;overflow:hidden;height:var(--md);padding:0 25px;border-radius:calc(var(--md) / 2)}.button.active.focus,.button.active:focus,.button.focus,.button:active.focus,.button:active:focus,.button:focus,button:active:focus,button:focus{outline:0 auto -webkit-focus-ring-color}.button.focus,.button:focus,.button:hover,button:focus,button:hover{text-decoration:none}.button.active,.button:active,button:active,button.active,button.a{background-image:none;outline:0;box-shadow:inset 0 3px 5px #00000020}.button.disabled,.button[disabled],button.disabled,fieldset[disabled] .button{cursor:not-allowed;opacity:.65;box-shadow:none}a.button.disabled,fieldset[disabled] a.button{pointer-events:none}button:hover{opacity:1}button:focus{opacity:1;border-color:var(--secondaryBg)}button:active{background-size:100%;transition:background 0s;opacity:1}button.mi{font-size:.7em;height:var(--mi);border-radius:calc(var(--mi) / 2);padding:0 6px}button.xs{font-size:.8em;height:var(--xs);border-radius:calc(var(--xs) / 2);padding:0 10px}button.sm{font-size:.9em;height:var(--sm);padding:0 15px;border-radius:calc(var(--sm) / 2)}button.lg{font-size:1.2em;height:var(--lg);padding:0 30px;border-radius:calc(var(--lg) / 2)}button.xl{font-size:1.4em;height:var(--xl);padding:0 40px;border-radius:calc(var(--xl) / 2)}button.mi.round{width:var(--mi);padding:0}button.xs.round{width:var(--xs);padding:0}button.sm.round{width:var(--sm);padding:0}.button.round,button.round{width:var(--md);padding:0}button.lg.round{width:var(--lg);padding:0}button.xl.round{width:var(--xl);padding:0}button.round.xs{height:var(--xs);width:var(--xs);border-radius:50%}button.round.sm{height:var(--sm);width:var(--sm);border-radius:50%}button.round,button.round.md{height:var(--md);width:var(--md);border-radius:50%;padding:0}button.xl.round{background-color:var(--textBg);color:var(--linkColor);width:var(--xl);height:var(--xl);border-color:transparent;border-radius:50%;padding:0}button.xl.round>.icon{width:50px;height:50px;fill:var(--linkColor)}.button .icon,button .icon{fill:currentColor;stroke:currentColor;width:21px;height:21px;pointer-events:none}button.sm .icon{width:17px;height:17px}button.xs .icon{width:13px;height:13px}button.mi .icon{width:10px;height:10px}button.lg .icon{height:31px;width:31px}button.xl .icon{height:50px;width:50px}.button .icon:hover,button .icon:hover,.button use:hover,button use:hover,.button use:active,button use:active{fill:none}button.block{display:block;width:100%}button.block+button.block{margin-top:5px}.button svg,button svg{stroke:none;stroke-opacity:0;background-color:transparent}button.default,button.default svg{color:var(--defaultColor);fill:var(--defaultColor)}button.primary,button.primary svg{color:var(--primaryColor);fill:var(--primaryColor)}button.secondary,button.secondary svg{color:var(--secondaryColor);fill:var(--secondaryColor)}button.warning,button.warning svg{color:var(--warningColor);fill:var(--warningColor)}button.danger,button.danger svg{color:var(--dangerColor);fill:var(--dangerColor)}button.success,button.success svg{color:var(--successColor);fill:var(--successColor)}button.link{color:var(--linkColor);fill:var(--linkColor);letter-spacing:0;font-weight:400;background:none;border:1px solid transparent}button.link svg,button.link:hover,button.link:active,button.link:focus,button.link:visited{text-decoration:none;color:var(--linkColor);fill:var(--linkColor)}a.button.link:hover{text-decoration:underline;color:var(--linkColor);fill:var(--linkColor)}button{background-color:var(--defaultBg);border:1px solid var(--defaultDark)}button:hover{border:1px solid var(--defaultBg)}button:active{border:1px solid var(--defaultDark)}button.primary{background-color:var(--primaryBg);border:1px solid var(--primaryDark)}button.primary:hover{border:1px solid var(--primaryBg)}button.primary:active{border:1px solid var(--primaryDark)}button.secondary{background-color:var(--secondaryBg);border:1px solid var(--secondaryDark)}button.secondary:hover{border:1px solid var(--secondaryBg)}button.secondary:active{border:1px solid var(--secondaryDark)}button.warning{background-color:var(--warningBg);border:1px solid var(--warningDark)}button.warning:hover{border:1px solid var(--warningBg)}button.warning:active{border:1px solid var(--warningDark)}button.danger{background-color:var(--dangerBg);border:1px solid var(--dangerDark)}button.danger:hover{border:1px solid var(--dangerBg)}button.danger:active{border:1px solid var(--dangerDark)}button.success{background-color:var(--successBg);border:1px solid var(--successDark)}button.success:hover{border:1px solid var(--successBg)}button.success:active{border:1px solid var(--successDark)}button.inverted.default{color:var(--defaultBg);fill:var(--defaultBg);background-color:var(--defaultColor);border:1px solid var(--defaultColor)}button.inverted.primary,button.inverted.primary>svg{color:var(--primaryBg);fill:var(--primaryBg);background-color:var(--primaryColor);border:1px solid var(--primaryColor)}button.inverted.secondary{color:var(--secondaryBg);fill:var(--secondaryBg);background-color:var(--secondaryColor);border:1px solid var(--secondaryColor)}button.inverted.warning{color:var(--warningBg);fill:var(--warningBg);background-color:var(--warningColor);border:1px solid var(--warningColor)}button.inverted.danger{color:var(--dangerBg);fill:var(--dangerBg);background-color:var(--dangerColor);border:1px solid var(--dangerColor)}button.inverted.success{color:var(--successBg);fill:var(--successBg);background-color:var(--successColor);border:1px solid var(--successColor)}button.inverted.link{color:var(--linkBg);fill:var(--linkBg);background-color:var(--linkColor);border:1px solid var(--linkColor)}iframe{background:0 0;padding:0;margin:0;border:none;font-size:13px;background-color:var(--textBg);color:var(--textColor)}*::-webkit-scrollbar{width:5px;background:#01010100;opacity:.6;overflow:visible;margin-left:-10}*::-webkit-scrollbar-track{background:#01010100}*::-webkit-scrollbar-thumb{background:var(--defaultBg);opacity:.6;border-radius:2px;margin-left:-15px}@-moz-document url-prefix(){*{scrollbar-color:var(--defaultBg) rgba(1,1,1,0);scrollbar-width:thin}}.gui{margin:0;padding:0;position:fixed;left:0;top:0;font-family:var(--font1);font-size:13px!important;background-color:none;color:var(--textColor);width:0;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;cursor:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAUCAYAAAC07qxWAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAANESURBVHgBADQDy/wA/////7Ozs7GAgIAE////AP///wD///8A////AP///wD///8A////AAIAAAAAtLS0Tjw8PLaBgYEJAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP////8AAAD/WFhY/8XFxcaAgIAQ////AP///wD///8A////AP///wAA/////wAAAP8AAAD/SUlJ/87Ozs+CgoIY////AP///wD///8A////AAD/////AAAA/wAAAP8AAAD/Ozs7/9fX19eFhYUk////AP///wD///8AAP////8AAAD/AAAA/wAAAP8AAAD/MDAw/97e3t6Hh4cw////AP///wAA/////wAAAP8AAAD/AAAA/wAAAP8AAAD/JiYm/+Pj4+eJiYk+////AAH/////AQEBAAAAAAAAAAAAAAAAAAAAAAAAAAAAHBwcAL6+vu6wsLA5AP////8AAAD/AAAA/wAAAP8AAAD/AAAA/xQUFP97e3v/6Ojo+dra2hECAAAAAAAAAAAAAAAAAAAAACgoKACZmZkA2dnZ7DExMX2dnZ0dDg4O9AH/////AQEBAERERABxcXEAJycn18TExIfg4OCtbW1tCL+/vzbZ2dnQAf/////T09MA9/f3uczMzIrr6+u/XFxcIsTExCPg4ODEf39/9gAAAAAAubm5moyMjCn///8AycnJNZWVlT2AgIAB////AP///wD///8A////AAD///8Aubm5QYyMjCn///8A////AP///wD///8A////AP///wD///8AAf///wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAA//8D5SINzAur5gAAAABJRU5ErkJggg==),auto}.gui,.gui>.man,.scripts{margin:0;padding:0;position:fixed;left:0;top:0;width:0;height:0}.gui{z-index:2;font-family:var(--font1);font-size:13px!important;color:var(--textColor)}.gui>.man.active{z-index:10}.gui>canvas.man{pointer-events:none;display:block}.backdrop{position:fixed;left:0;top:0;width:100%;height:100%;background-image:linear-gradient(45deg,#0006 25%,#0000004d 25% 50%,#0006 50% 75%,#0000004d 75% 100%);background-size:30.57px 30px;cursor:pointer}.disabled{opacity:.4!important;pointer-events:none!important;overflow:hidden!important}.fr{float:right!important}.fl{float:left!important}.fi{float:initial}.raised{box-shadow:0 2.8px 2.2px #00000009,0 6.7px 5.3px #0000000c,0 12.5px 10px #0000000f,0 22.3px 17.9px #00000012,0 41.8px 33.4px #00000016,0 100px 80px #0000001f}.raised-sm{box-shadow:0 2.8px 2.2px #00000008,0 6.7px 5.3px #0000000d,-2px -1px 18px 1px #0000000f,0 11px 20px #00000012,0 14px 20px 3px #00000017,14px 9px 9px #0000001f}.inset-xs{box-shadow:0 0 4px 2px #999 inset}.image{background-size:cover;background-repeat:no-repeat;background-position:center center}.fixed{position:fixed!important}.clear,.clear:hover,.clear:active,.clear svg{background:none!important;border:none!important}.centered{margin-left:auto;margin-right:auto;display:inline-block}.hidden{display:none!important}.inline{display:inline;overflow:hidden}.block{display:block}.inline-block{display:inline-block;overflow:hidden}.round{border-radius:50%}.rounded-xs,.rxs{border-radius:3px!important}.rounded-sm,.rsm{border-radius:6px!important}.rounded-md,.rmd{border-radius:9px!important}.rounded-lg,.rlg{border-radius:12px!important}.rounded-xl,.rxl{border-radius:18px!important}.r2{display:grid;grid-template-columns:repeat(2,1fr)}.r3{display:grid;grid-template-columns:repeat(3,1fr)}.r4{display:grid;grid-template-columns:repeat(4,1fr)}.r5{display:grid;grid-template-columns:repeat(5,1fr)}.r6{display:grid;grid-template-columns:repeat(6,1fr)}.r7{display:grid;grid-template-columns:repeat(7,1fr)}.r8{display:grid;grid-template-columns:repeat(8,1fr)}.r9{display:grid;grid-template-columns:repeat(9,1fr)}.r10{display:grid;grid-template-columns:repeat(10,1fr)}.c2{grid-column:span 2}.c3{grid-column:span 3}.c4{grid-column:span 4}.c5{grid-column:span 5}.c6{grid-column:span 6}.c7{grid-column:span 7}.c8{grid-column:span 8}.c9{grid-column:span 9}.c10{grid-column:span 10}.mla{margin-left:auto}.mra{margin-right:auto}.mxs{margin:var(--xs)}.msm{margin:var(--sm)}.mmd{margin:var(--md)}.mlg{margin:var(--lg)}.mxl{margin:var(--xl)}.mtxs{margin-top:var(--xs)}.mtsm{margin-top:var(--sm)}.mtmd{margin-top:var(--md)}.mtlg{margin-top:var(--lg)}.mtxl{margin-top:var(--xl)}.mbxs{margin-bottom:var(--xs)}.mbsm{margin-bottom:var(--sm)}.mbmd{margin-bottom:var(--md)}.mblg{margin-bottom:var(--lg)}.mbxl{margin-bottom:var(--xl)}.m0{margin:0!important}.m5{margin:5px!important}.m10{margin:10px!important}.m15{margin:15px!important}.m20{margin:20px!important}.mt0{margin-top:0!important}.mt5{margin-top:5px!important}.mt10{margin-top:10px!important}.mt15{margin-top:15px!important}.mt20{margin-top:20px!important}.mb0{margin-bottom:0!important}.mb5{margin-bottom:5px!important}.mb10{margin-bottom:10px!important}.mb15{margin-bottom:15px!important}.mb20{margin-bottom:20px!important}.ml0{margin-left:0!important}.ml5{margin-left:5px!important}.ml10{margin-left:10px!important}.ml15{margin-left:15px!important}.ml20{margin-left:20px!important}.mr0{margin-right:0!important}.mr5{margin-right:5px!important}.mr10{margin-right:10px!important}.mr15{margin-right:15px!important}.mr20{margin-right:20px!important}.m-5{margin:-5px!important}.m-10{margin:-10px!important}.m-15{margin:-15px!important}.m-20{margin:-20px!important}.mt-5{margin-top:-5px!important}.mt-10{margin-top:-10px!important}.mt-15{margin-top:-15px!important}.mt-20{margin-top:-20px!important}.mb-5{margin-bottom:-5px!important}.mb-10{margin-bottom:-10px!important}.mb-15{margin-bottom:-15px!important}.mb-20{margin-bottom:-20px!important}.ml-5{margin-left:-5px!important}.ml-10{margin-left:-10px!important}.ml-15{margin-left:-15px!important}.ml-20{margin-left:-20px!important}.mr-5{margin-right:-5px!important}.mr-10{margin-right:-10px!important}.mr-15{margin-right:-15px!important}.mr-20{margin-right:-20px!important}.p0{padding:0!important}.p5{padding:5px!important}.p10{padding:10px!important}.p15{padding:15px!important}.p20{padding:20px!important}.pl0{padding-left:0!important}.pl5{padding-left:5px!important}.pl10{padding-left:10px!important}.pl15{padding-left:15px!important}.pl20{padding-left:20px!important}.pr0{padding-right:0!important}.pr5{padding-right:5px!important}.pr10{padding-right:10px!important}.pr15{padding-right:15px!important}.pr20{padding-right:20px!important}.pt0{padding-top:0!important}.pt5{padding-top:5px!important}.pt10{padding-top:10px!important}.pt15{padding-top:15px!important}.pt20{padding-top:20px!important}.pb0{padding-bottom:0!important}.pb5{padding-bottom:5px!important}.pb10{padding-bottom:10px!important}.pb15{padding-bottom:15px!important}.pb20{padding-bottom:20px!important}.op0{opacity:0}.op1{opacity:.1}.op2{opacity:.2}.op3{opacity:.3}.op4{opacity:.4}.op5{opacity:.5}.op6{opacity:.6}.op7{opacity:.7}.op8{opacity:.8}.op9{opacity:.9}.hmi{height:var(--mi)}.hxs{height:var(--xs)}.hsm{height:var(--sm)}.hmd{height:var(--md)}.hlg{height:var(--lg)}.hxl{height:var(--xl)}.wmi{width:var(--mi)}.wxs{width:var(--xs)}.wsm{width:var(--sm)}.wmd{width:var(--md)}.wlg{width:var(--lg)}.wxl{width:var(--xl)}.default,.s0{background-color:var(--defaultBg);fill:var(--defaultBg);color:var(--defaultColor)}.primary,.s1{background-color:var(--primaryBg);fill:var(--primaryBg);color:var(--primaryColor)}.secondary,.s2{background-color:var(--secondaryBg);fill:var(--secondaryBg);color:var(--secondaryColor)}.success,.s3{background-color:var(--successBg);fill:var(--successBg);color:var(--successColor)}.warning,.s4{background-color:var(--warningBg);fill:var(--warningBg);color:var(--warningColor)}.danger,.s5{background-color:var(--dangerBg);fill:var(--dangerBg);color:var(--dangerColor)}.link,.s6{background-color:var(--linkBg);fill:var(--linkBg);color:var(--linkColor)}.text-default,.t0{color:var(--defaultBg);fill:var(--defaultBg)}.text-primary,.t1{color:var(--primaryBg);fill:var(--primaryBg)}.text-secondary,.t2{color:var(--secondaryBg);fill:var(--secondaryBg)}.text-success,.t3{color:var(--successBg);fill:var(--successBg)}.text-warning,.t4{color:var(--warningBg);fill:var(--warningBg)}.text-danger,.t5{color:var(--dangerBg);fill:var(--dangerBg)}.text-link,.t6{color:var(--linkBg);fill:var(--linkBg)}.text-default svg{fill:var(--defaultBg)}.text-primary svg{fill:var(--primaryBg)}.text-secondary svg{fill:var(--secondaryBg)}.text-success svg{fill:var(--successBg)}.text-warning svg{fill:var(--warningBg)}.text-danger svg{fill:var(--dangerBg)}.text-link svg{fill:var(--linkBg)}.mi select:not(.mi):not(.mi):not(.xs):not(.sm):not(.md):not(.lg):not(.xl),.mi input[type=text]:not(.mi):not(.mi):not(.xs):not(.sm):not(.md):not(.lg):not(.xl),.mi input[type=password]:not(.mi):not(.mi):not(.xs):not(.sm):not(.md):not(.lg):not(.xl),.mi input[type=email]:not(.mi):not(.mi):not(.xs):not(.sm):not(.md):not(.lg):not(.xl),.mi input[type=search]:not(.mi):not(.mi):not(.xs):not(.sm):not(.md):not(.lg):not(.xl),.mi input[type=date]:not(.mi):not(.mi):not(.xs):not(.sm):not(.md):not(.lg):not(.xl),.mi input[type=number]:not(.mi):not(.mi):not(.xs):not(.sm):not(.md):not(.lg):not(.xl),.mi textarea:not(.mi):not(.mi):not(.xs):not(.sm):not(.md):not(.lg):not(.xl){font-size:.7em;min-height:var(--mi);height:var(--mi);padding-left:3px;border-radius:2px}.mi button:not(.mi):not(.mi):not(.xs):not(.sm):not(.md):not(.lg):not(.xl){font-size:.7em;height:var(--mi);border-radius:calc(var(--mi) / 2);padding:0 8px}.mi button:not(.mi):not(.mi):not(.xs):not(.sm):not(.md):not(.lg):not(.xl) .icon{width:10px;height:10px}.mi button.round:not(.mi):not(.mi):not(.xs):not(.sm):not(.md):not(.lg):not(.xl){width:var(--mi);height:var(--mi);border-radius:50%;padding:0}.mi select:not(.mi):not(.mi):not(.xs):not(.sm):not(.md):not(.lg):not(.xl)>option{min-height:var(--mi);height:var(--mi)}.xs select:not(.mi):not(.mi):not(.xs):not(.sm):not(.md):not(.lg):not(.xl),.xs input[type=text]:not(.mi):not(.mi):not(.xs):not(.sm):not(.md):not(.lg):not(.xl),.xs input[type=password]:not(.mi):not(.mi):not(.xs):not(.sm):not(.md):not(.lg):not(.xl),.xs input[type=email]:not(.mi):not(.mi):not(.xs):not(.sm):not(.md):not(.lg):not(.xl),.xs input[type=search]:not(.mi):not(.mi):not(.xs):not(.sm):not(.md):not(.lg):not(.xl),.xs input[type=date]:not(.mi):not(.mi):not(.xs):not(.sm):not(.md):not(.lg):not(.xl),.xs input[type=number]:not(.mi):not(.mi):not(.xs):not(.sm):not(.md):not(.lg):not(.xl),.xs textarea:not(.mi):not(.mi):not(.xs):not(.sm):not(.md):not(.lg):not(.xl){font-size:.8em;min-height:var(--xs);height:var(--xs);padding-left:5px;border-radius:2px}.xs button:not(.mi):not(.mi):not(.xs):not(.sm):not(.md):not(.lg):not(.xl){font-size:.8em;height:var(--xs);border-radius:calc(var(--xs) / 2);padding:0 13px}.xs button:not(.mi):not(.mi):not(.xs):not(.sm):not(.md):not(.lg):not(.xl) .icon{width:13px;height:13px}.xs button.round:not(.mi):not(.mi):not(.xs):not(.sm):not(.md):not(.lg):not(.xl){width:var(--xs);height:var(--xs);border-radius:50%;padding:0}.xs select:not(.mi):not(.mi):not(.xs):not(.sm):not(.md):not(.lg):not(.xl)>option{min-height:var(--xs);height:var(--xs)}.sm select:not(.mi):not(.xs):not(.sm):not(.md):not(.lg):not(.xl),.sm input[type=text]:not(.mi):not(.xs):not(.sm):not(.md):not(.lg):not(.xl),.sm input[type=password]:not(.mi):not(.xs):not(.sm):not(.md):not(.lg):not(.xl),.sm input[type=email]:not(.mi):not(.xs):not(.sm):not(.md):not(.lg):not(.xl),.sm input[type=search]:not(.mi):not(.xs):not(.sm):not(.md):not(.lg):not(.xl),.sm input[type=date]:not(.mi):not(.xs):not(.sm):not(.md):not(.lg):not(.xl),.sm input[type=number]:not(.mi):not(.xs):not(.sm):not(.md):not(.lg):not(.xl),.sm textarea:not(.mi):not(.xs):not(.sm):not(.md):not(.lg):not(.xl){min-height:var(--sm);height:var(--sm);padding-left:5px;border-radius:2px;font-size:.9em}.sm button:not(.mi):not(.xs):not(.sm):not(.md):not(.lg):not(.xl){font-size:.9em;height:var(--sm);border-radius:calc(var(--sm) / 2)}.sm button:not(.mi):not(.xs):not(.sm):not(.md):not(.lg):not(.xl) .icon{width:17px;height:17px}.sm button.round:not(.mi):not(.xs):not(.sm):not(.md):not(.lg):not(.xl){width:var(--sm);height:var(--sm);border-radius:50%;padding:0}.sm select:not(.mi):not(.xs):not(.sm):not(.md):not(.lg):not(.xl)>option{min-height:var(--sm);height:var(--sm)}.lg select:not(.mi):not(.xs):not(.sm):not(.md):not(.lg):not(.xl),.lg input[type=text]:not(.mi):not(.xs):not(.sm):not(.md):not(.lg):not(.xl),.lg input[type=password]:not(.mi):not(.xs):not(.sm):not(.md):not(.lg):not(.xl),.lg input[type=email]:not(.mi):not(.xs):not(.sm):not(.md):not(.lg):not(.xl),.lg input[type=search]:not(.mi):not(.xs):not(.sm):not(.md):not(.lg):not(.xl),.lg input[type=date]:not(.mi):not(.xs):not(.sm):not(.md):not(.lg):not(.xl),.lg input[type=number]:not(.mi):not(.xs):not(.sm):not(.md):not(.lg):not(.xl),.lg textarea:not(.mi):not(.xs):not(.sm):not(.md):not(.lg):not(.xl){min-height:var(--lg);height:var(--lg);font-size:1.2em}.lg button:not(.mi):not(.xs):not(.sm):not(.md):not(.lg):not(.xl){font-size:1.2em;height:var(--lg);border-radius:calc(var(--lg) / 2)}.lg button:not(.mi):not(.xs):not(.sm):not(.md):not(.lg):not(.xl) .icon{height:31px;width:31px}.lg button.round:not(.mi):not(.xs):not(.sm):not(.md):not(.lg):not(.xl){width:var(--lg);height:var(--lg);border-radius:50%;padding:0}.lg select:not(.mi):not(.xs):not(.sm):not(.md):not(.lg):not(.xl)>option{min-height:var(--lg);height:var(--lg)}.xl select:not(.mi):not(.xs):not(.sm):not(.md):not(.lg):not(.xl),.xl input[type=text]:not(.mi):not(.xs):not(.sm):not(.md):not(.lg):not(.xl),.xl input[type=password]:not(.mi):not(.xs):not(.sm):not(.md):not(.lg):not(.xl),.xl input[type=email]:not(.mi):not(.xs):not(.sm):not(.md):not(.lg):not(.xl),.xl input[type=search]:not(.mi):not(.xs):not(.sm):not(.md):not(.lg):not(.xl),.xl input[type=date]:not(.mi):not(.xs):not(.sm):not(.md):not(.lg):not(.xl),.xl input[type=number]:not(.mi):not(.xs):not(.sm):not(.md):not(.lg):not(.xl),.xl textarea:not(.mi):not(.xs):not(.sm):not(.md):not(.lg):not(.xl){min-height:var(--xl);height:var(--xl);font-size:1.4em}.xl button:not(.mi):not(.xs):not(.sm):not(.md):not(.lg):not(.xl){font-size:1.4em;height:var(--xl);border-radius:calc(var(--xl) / 2)}.xl button:not(.mi):not(.xs):not(.sm):not(.md):not(.lg):not(.xl) .icon{height:50px;width:50px}.xl button.round:not(.mi):not(.xs):not(.sm):not(.md):not(.lg):not(.xl){width:var(--xl);height:var(--xl);border-radius:50%;padding:0}.xl select:not(.mi):not(.xs):not(.sm):not(.md):not(.lg):not(.xl)>option{min-height:var(--xl);height:var(--xl)}.icon:before{font-family:remixicon;font-style:normal;font-weight:400;-webkit-font-smoothing:antialiased;display:inline-block}.icon-home:before{content:\"\\ee2b\"}.icon-search:before{content:\"\\f0d1\"}.icon-gear:before{content:\"\\f0e6\"}.icon-gears:before{content:\"\\f0e8\"}.icon-cog:before{content:\"\\f0e6\"}.icon-sliders:before{content:\"\\ec9d\"}.icon-user:before{content:\"\\f2de\"}.icon-users:before{content:\"\\f2e2\"}.icon-star:before{content:\"\\f18b\"}.icon-heart:before{content:\"\\ee0f\"}.icon-bell:before{content:\"\\ef9a\"}.icon-clock:before{content:\"\\f201\"}.icon-calendar:before{content:\"\\eb27\"}.icon-tag:before{content:\"\\f025\"}.icon-tags:before{content:\"\\f025\"}.icon-bookmark:before{content:\"\\eae5\"}.icon-thumbtack:before{content:\"\\f039\"}.icon-link:before{content:\"\\eeb2\"}.icon-unlink:before{content:\"\\eeb1\"}.icon-globe:before{content:\"\\edcf\"}.icon-filter:before{content:\"\\ed27\"}.icon-sort:before{content:\"\\f15f\"}.icon-bolt:before{content:\"\\ed3d\"}.icon-magic:before{content:\"\\eeea\"}.icon-key:before{content:\"\\ee71\"}.icon-shield:before{content:\"\\f108\"}.icon-info:before{content:\"\\ee59\"}.icon-warn:before{content:\"\\eca1\"}.icon-check:before{content:\"\\eb7b\"}.icon-check-circle:before{content:\"\\eb81\"}.icon-close:before{content:\"\\eb99\"}.icon-circle-xmark:before{content:\"\\eb97\"}.icon-ban:before{content:\"\\ed95\"}.icon-question:before{content:\"\\f045\"}.icon-exclamation:before{content:\"\\ea21\"}.icon-spinner:before{content:\"\\eeca\"}.icon-circle-notch:before{content:\"\\eeca\"}.icon-eye:before{content:\"\\ecb5\"}.icon-eye-off:before{content:\"\\ecb7\"}.icon-lock:before{content:\"\\eece\"}.icon-unlock:before{content:\"\\eed2\"}.icon-plus:before{content:\"\\ea13\"}.icon-minus:before{content:\"\\f1af\"}.icon-edit:before{content:\"\\ec86\"}.icon-pen:before{content:\"\\efe0\"}.icon-save:before{content:\"\\f0b3\"}.icon-trash:before{content:\"\\ec2a\"}.icon-trash-can:before{content:\"\\ec29\"}.icon-copy:before{content:\"\\ecd5\"}.icon-paste:before{content:\"\\eb91\"}.icon-cut:before{content:\"\\f0bf\"}.icon-clone:before{content:\"\\ecd5\"}.icon-download:before{content:\"\\ec5a\"}.icon-upload:before{content:\"\\f212\"}.icon-refresh:before{content:\"\\f064\"}.icon-sync:before{content:\"\\f064\"}.icon-undo:before{content:\"\\ea58\"}.icon-redo:before{content:\"\\ea5a\"}.icon-print:before{content:\"\\f029\"}.icon-share:before{content:\"\\f0fe\"}.icon-external:before{content:\"\\ecaf\"}.icon-file:before{content:\"\\eceb\"}.icon-file-lines:before{content:\"\\ed0f\"}.icon-file-code:before{content:\"\\ecd1\"}.icon-file-image:before{content:\"\\ee4b\"}.icon-file-pdf:before{content:\"\\ecfd\"}.icon-file-audio:before{content:\"\\ecf7\"}.icon-file-video:before{content:\"\\ed21\"}.icon-file-archive:before{content:\"\\ed1f\"}.icon-file-csv:before{content:\"\\eccd\"}.icon-file-excel:before{content:\"\\ecdf\"}.icon-file-export:before{content:\"\\ecaf\"}.icon-file-import:before{content:\"\\ec5a\"}.icon-file-pen:before{content:\"\\ecdb\"}.icon-file-circle-plus:before{content:\"\\ecc9\"}.icon-folder:before{content:\"\\ed6a\"}.icon-folder-open:before{content:\"\\ed70\"}.icon-folder-plus:before{content:\"\\ed5a\"}.icon-folder-minus:before{content:\"\\ed74\"}.icon-folder-tree:before{content:\"\\ef90\"}.icon-hard-drive:before{content:\"\\edf9\"}.icon-server:before{content:\"\\f0e0\"}.icon-database:before{content:\"\\ec18\"}.icon-cloud:before{content:\"\\eb9d\"}.icon-cloud-upload:before{content:\"\\ec56\"}.icon-cloud-download:before{content:\"\\ec58\"}.icon-floppy:before{content:\"\\f0af\"}.icon-box:before{content:\"\\ee4f\"}.icon-box-archive:before{content:\"\\ea48\"}.icon-boxes:before{content:\"\\ea44\"}.icon-warehouse:before{content:\"\\f1a9\"}.icon-cabinet:before{content:\"\\ea46\"}.icon-drawer:before{content:\"\\ea46\"}.icon-sd-card:before{content:\"\\f0c9\"}.icon-window:before{content:\"\\f1fa\"}.icon-window-maximize:before{content:\"\\ed9c\"}.icon-window-minimize:before{content:\"\\ed9a\"}.icon-window-restore:before{content:\"\\eff4\"}.icon-layer-group:before{content:\"\\f181\"}.icon-object-group:before{content:\"\\ee90\"}.icon-object-ungroup:before{content:\"\\eddf\"}.icon-table-cells:before{content:\"\\f1de\"}.icon-table-columns:before{content:\"\\ee94\"}.icon-table-list:before{content:\"\\eebe\"}.icon-columns:before{content:\"\\ee94\"}.icon-grip-vertical:before{content:\"\\ec62\"}.icon-grip-lines:before{content:\"\\ec60\"}.icon-up-down-left-right:before{content:\"\\ec62\"}.icon-maximize:before{content:\"\\ed9c\"}.icon-minimize:before{content:\"\\ed9a\"}.icon-crop:before{content:\"\\ec02\"}.icon-expand:before{content:\"\\ed9c\"}.icon-compress:before{content:\"\\ed9a\"}.icon-bars:before{content:\"\\ef3e\"}.icon-grip:before{content:\"\\ec60\"}.icon-ellipsis:before{content:\"\\ef79\"}.icon-ellipsis-v:before{content:\"\\ef77\"}.icon-palette:before{content:\"\\efc5\"}.icon-paintbrush:before{content:\"\\eb01\"}.icon-image:before{content:\"\\ee4b\"}.icon-icons:before{content:\"\\ea44\"}.icon-puzzle:before{content:\"\\f247\"}.icon-sidebar:before{content:\"\\f128\"}.icon-panel-left:before{content:\"\\f128\"}.icon-arrow-up:before{content:\"\\ea76\"}.icon-arrow-down:before{content:\"\\ea4c\"}.icon-arrow-left:before{content:\"\\ea60\"}.icon-arrow-right:before{content:\"\\ea6c\"}.icon-chevron-up:before{content:\"\\ea78\"}.icon-chevron-down:before{content:\"\\ea4e\"}.icon-chevron-left:before{content:\"\\ea64\"}.icon-chevron-right:before{content:\"\\ea6e\"}.icon-angles-left:before{content:\"\\ea64\"}.icon-angles-right:before{content:\"\\ea6e\"}.icon-caret-up:before{content:\"\\ea56\"}.icon-caret-down:before{content:\"\\ea50\"}.icon-caret-left:before{content:\"\\ea52\"}.icon-caret-right:before{content:\"\\ea54\"}.icon-play:before{content:\"\\f00b\"}.icon-pause:before{content:\"\\efd8\"}.icon-stop:before{content:\"\\f1a1\"}.icon-forward:before{content:\"\\f144\"}.icon-backward:before{content:\"\\f140\"}.icon-volume:before{content:\"\\f20c\"}.icon-volume-off:before{content:\"\\f210\"}.icon-music:before{content:\"\\ef85\"}.icon-camera:before{content:\"\\eb31\"}.icon-video:before{content:\"\\f205\"}.icon-code:before{content:\"\\eba9\"}.icon-terminal:before{content:\"\\f1f6\"}.icon-bug:before{content:\"\\eb07\"}.icon-wrench:before{content:\"\\f0e8\"}.icon-hammer:before{content:\"\\edef\"}.icon-plug:before{content:\"\\f017\"}.icon-power-off:before{content:\"\\f126\"}.icon-trash-restore:before{content:\"\\ec2a\"}.icon-circle:before{content:\"\\f250\"}.icon-square:before{content:\"\\f24e\"}.icon-list:before{content:\"\\eebe\"}.icon-list-check:before{content:\"\\eeba\"}.icon-indent:before{content:\"\\ee55\"}.icon-outdent:before{content:\"\\ee54\"}.icon-sitemap:before{content:\"\\efb8\"}.icon-diagram:before{content:\"\\efb8\"}.icon-chart-bar:before{content:\"\\ea9e\"}.icon-chart-line:before{content:\"\\eeab\"}.icon-chart-pie:before{content:\"\\effa\"}input{user-select:text}textarea{min-height:150px;padding-top:10px}select,select.md,input[type=text],input[type=password],input[type=email],input[type=search],input[type=date],input[type=number],textarea{width:100%;border:1px solid var(--defaultDark);min-height:var(--md);height:var(--md);padding-left:15px;border-radius:5px;outline:none;background-color:var(--itemBg);color:var(--itemColor);font-size:1em}select.sm,input[type=text].sm,input[type=password].sm,input[type=email].sm,input[type=search].sm,input[type=date].sm,input[type=number].sm{min-height:var(--sm);height:var(--sm);padding-left:5px;border-radius:2px;font-size:.9em}select.mi,input[type=text].mi,input[type=password].mi,input[type=email].mi,input[type=search].mi,input[type=date].mi,input[type=number].mi{font-size:.7em;min-height:var(--mi);height:var(--mi);padding-left:3px;border-radius:2px}select.xs,input[type=text].xs,input[type=password].xs,input[type=email].xs,input[type=search].xs,input[type=date].xs,input[type=number].xs{font-size:.8em;min-height:var(--xs);height:var(--xs);padding-left:5px;border-radius:2px}select.md>option,select>option,option.md{min-height:var(--md);height:var(--md)}select.mi>option,option.mi{min-height:var(--mi);height:var(--mi)}select.xs>option,option.xs{min-height:var(--xs);height:var(--xs)}select.sm>option,option.sm{min-height:var(--sm);height:var(--sm)}select.lg>option,option.lg{min-height:var(--lg);height:var(--lg)}select.xl>option,option.xl{min-height:var(--xl);height:var(--xl)}select{background-image:url(data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20256%20448%22%20enable-background%3D%22new%200%200%20256%20448%22%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E.arrow%7Bfill%3Adarkgrey%3B%7D%3C%2Fstyle%3E%3Cpath%20class%3D%22arrow%22%20d%3D%22M255.9%20168c0-4.2-1.6-7.9-4.8-11.2-3.2-3.2-6.9-4.8-11.2-4.8H16c-4.2%200-7.9%201.6-11.2%204.8S0%20163.8%200%20168c0%204.4%201.6%208.2%204.8%2011.4l112%20112c3.1%203.1%206.8%204.6%2011.2%204.6%204.4%200%208.2-1.5%2011.4-4.6l112-112c3-3.2%204.5-7%204.5-11.4z%22%2F%3E%3C%2Fsvg%3E);background-position:right 10px center;background-repeat:no-repeat;background-size:auto 50%;padding-left:15px;padding-right:30px;outline:none;-moz-appearance:none;-webkit-appearance:none;appearance:none}input:-webkit-autofill,input:-webkit-autofill:hover,input:-webkit-autofill:focus,input:-webkit-autofill:active,textarea:-webkit-autofill,textarea:-webkit-autofill:hover,textarea:-webkit-autofill:focus,textarea:-webkit-autofill:active,select:-webkit-autofill,select:-webkit-autofill:hover,select:-webkit-autofill:focus,select:-webkit-autofill:active{color:var(--itemColor);-webkit-box-shadow:0 0 0 50px var(--itemBg) inset!important;outline:none;border:1px solid var(--defaultDark)!important}input::placeholder,textarea::placeholder{color:var(--defaultDark)}input[type=radio]{cursor:pointer}.radio label{display:block;padding-top:2px;padding-bottom:2px;cursor:pointer}.check{margin-top:5px;cursor:pointer}input[type=range]{-webkit-appearance:none;margin-top:5px!important;width:100%;background:none}input[type=range]:focus{outline:none}input[type=range]::-webkit-slider-runnable-track{width:100%;height:8.4px;cursor:pointer;background:#000000b3;border:1px solid rgba(0,0,0,0)}input[type=range]::-webkit-slider-thumb{box-shadow:0 0 1px #000,0 0 3px #0d0d0d;height:25px;width:12px;border-radius:3px 3px 6px 6px;background:var(--primaryBg);cursor:pointer;-webkit-appearance:none;margin-top:-10px}input[type=range]::-moz-range-track{width:100%;height:8.4px;cursor:pointer;background:#000000b3;border:1px solid rgba(0,0,0,0)}input[type=range]::-moz-range-thumb{box-shadow:0 0 1px #000,0 0 3px #0d0d0d;height:25px;width:12px;border-radius:3px 3px 6px 6px;background:var(--primaryBg);cursor:pointer;margin-top:-10px}.text *,.text,.t,.t *{background-color:#fff;color:#000;text-align:left;word-break:break-word}.text a{background-color:var(--linkBg);color:var(--linkColor)}.text th{background:#f0f0f5;color:#1c1b1b;border-color:#ddd}.text td{border-color:#ddd}.text tr:nth-child(2n) td{background:#fafafa}p{line-height:1.8em}.tcap{text-transform:capitalize}.tcf:first-letter{text-transform:capitalize}strong,.tb{font-weight:700}.tn{font-weight:400}.tu{text-decoration:underline}.ti{font-style:italic}small,.tsm{font-size:.8em}.txs{font-size:.7em}.tlg{font-size:1.2em}.txl{font-size:1.6em}.tc{text-align:center}.tj{text-align:justify}.tl{text-align:left}.tr{text-align:right}.tu{text-transform:uppercase}h1{font-size:26px;font-weight:700;margin-bottom:4px}h2{font-size:18px;font-weight:700;margin-top:36px;margin-bottom:14px}h3{font-size:14px;font-weight:700;margin-top:18px;margin-bottom:6px}ul{padding-left:20px;margin-bottom:12px}li{margin-bottom:6px;font-size:14px}table{width:100%;border-collapse:collapse;margin:16px 0 12px;font-size:13px}th{background:var(--tableHeadBg, rgba(128,128,128,.15));color:var(--tableHeadColor, inherit);text-align:left;padding:8px 10px;font-weight:600;border:1px solid var(--tableBorderColor, rgba(128,128,128,.2))}td{padding:7px 10px;border:1px solid var(--tableBorderColor, rgba(128,128,128,.2));vertical-align:top}tr:nth-child(2n) td{background:var(--tableStripeBg, rgba(128,128,128,.06))}.win{background-color:var(--winBodyBg);color:var(--textColor);position:absolute;margin:0;overflow:hidden;border-radius:var(--winBorderRadius);display:flex;flex-direction:column}.win>.head{height:var(--sm);display:flex;align-items:center;background-color:var(--winHeadBg);color:var(--winHeadColor);fill:var(--winHeadColor);border:none;touch-action:none;cursor:grab;user-select:none}.win>.head>.left{display:flex;align-items:center;flex-shrink:0}.win>.head>.center{flex:1;display:flex;align-items:center;overflow:hidden;margin:0 20px}.win>.head>.center>*{margin-right:5px}.win>.head>.right{display:flex;align-items:center;flex-shrink:0}.win>.head>.left>.caption{font-family:var(--font2);font-size:10pt;letter-spacing:.6pt;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;min-width:75px}.win>.head span,.win>.head img{user-select:none;touch-action:none;pointer-events:none}.win.active{z-index:10}.win.active>.head{background-color:var(--winHeadActiveBg);color:var(--winHeadActiveColor);fill:var(--winHeadActiveColor)}.win>.head>.right>*{margin-right:5px}.win>.head>.left>*{margin-left:5px}.win>.head .minimize,.win>.head .maximize,.win>.head .restore,.win>.head .close{width:var(--winBtnSize, var(--xs));height:var(--winBtnSize, var(--xs));padding:0;background:var(--winBtnBg, transparent);color:var(--winBtnColor, inherit);border:none}.win>.head .minimize:hover,.win>.head .maximize:hover,.win>.head .restore:hover,.win>.head .close:hover{background:var(--winBtnBgHover, rgba(128,128,128,.2));color:var(--winBtnColorHover, inherit)}.win.active>.head .minimize,.win.active>.head .maximize,.win.active>.head .restore,.win.active>.head .close{background:var(--winBtnActiveBg, transparent);color:var(--winBtnActiveColor, inherit)}.win.active>.head .minimize:hover,.win.active>.head .maximize:hover,.win.active>.head .restore:hover,.win.active>.head .close:hover{background:var(--winBtnActiveBgHover, rgba(255,255,255,.15));color:var(--winBtnActiveColorHover, inherit)}.win>.body{position:relative;width:100%;flex:1;overflow:hidden;background:var(--winBodyBg);color:var(--winBodyColor)}.win>.body>.overlay{position:absolute;top:0;left:0;width:100%;height:100%;z-index:10;display:none;background-color:#0000001a;background-image:linear-gradient(45deg,#0006 25%,#0000004d 25% 50%,#0006 50% 75%,#0000004d 75% 100%);background-size:30.57px 30px}.win>.menu{z-index:1000;background-image:linear-gradient(45deg,#0006 25%,#0000004d 25% 50%,#0006 50% 75%,#0000004d 75% 100%);position:fixed;top:30px;left:0;width:100%;background-color:#0000001a;cursor:pointer;background-size:30.57px 30px}.win>.close{position:absolute;bottom:10px;right:10px;padding:0;opacity:.3;background:var(--primaryColor);color:var(--primaryLight);width:var(--md);height:var(--md);cursor:pointer;font-weight:700;font-size:18px;border-radius:50%}.win>.close:hover{opacity:1}\n";
 
 /* fflate */
 /**
@@ -782,6 +782,84 @@ function Dom() {
         return el;
     };
 
+    var _node = this.node;
+    function QuickForm(data, onChange) {
+        var wrap = doc.createElement("div");
+
+        for (var key in data) {
+            if (!data.hasOwnProperty(key)) continue;
+            var val = data[key];
+
+            if (typeof val === "function") {
+                var btn = _node("button", { text: key, class: "xs m5", style: "display:block;width:100%;box-sizing:border-box", click: val });
+                wrap.appendChild(btn);
+            } else if (typeof val === "string") {
+                var inp;
+                if (val.indexOf("\n") !== -1) {
+                    inp = _node("textarea", { class: "xs m5", style: "display:block;width:100%;box-sizing:border-box", placeholder: key, text: val });
+                } else {
+                    inp = _node("input", { type: "text", class: "xs m5", style: "display:block;width:100%;box-sizing:border-box", placeholder: key, value: val });
+                }
+                (function (k) {
+                    inp.addEventListener("input", function () {
+                        data[k] = this.value;
+                        if (onChange) onChange(k, this.value);
+                    });
+                })(key);
+                wrap.appendChild(inp);
+            } else if (typeof val === "number") {
+                var num = _node("input", { type: "number", class: "xs m5", style: "display:block;width:100%;box-sizing:border-box", placeholder: key, value: val });
+                (function (k) {
+                    num.addEventListener("input", function () {
+                        data[k] = parseFloat(this.value) || 0;
+                        if (onChange) onChange(k, data[k]);
+                    });
+                })(key);
+                wrap.appendChild(num);
+            } else if (typeof val === "boolean") {
+                var lbl = doc.createElement("label");
+                lbl.className = "xs m5";
+                lbl.style.cssText = "display:block;font-size:11px";
+                var chk = _node("input", { type: "checkbox" });
+                if (val) chk.checked = true;
+                (function (k) {
+                    chk.addEventListener("change", function () {
+                        data[k] = this.checked;
+                        if (onChange) onChange(k, this.checked);
+                    });
+                })(key);
+                lbl.appendChild(doc.createTextNode(key + " "));
+                lbl.appendChild(chk);
+                wrap.appendChild(lbl);
+            } else if (val instanceof HTMLElement) {
+                val.style.display = "block";
+                wrap.appendChild(val);
+            }
+        }
+
+        return wrap;
+    }
+
+    this.quickForm = function(data, onChange){
+        return new QuickForm(data, onChange);
+    }
+
+    this.context = {
+        add: function (el, caption, functions) {
+            if (!el._ctx) el._ctx = {};
+            if (el._ctx[caption]) {
+                for (var k in functions) el._ctx[caption][k] = functions[k];
+            } else {
+                el._ctx[caption] = functions;
+            }
+        },
+        remove: function (el, caption) {
+            if (!el._ctx) return;
+            if (caption === undefined) { delete el._ctx; return; }
+            delete el._ctx[caption];
+        }
+    };
+
     this.on = function (el, event, fn) {
         if (typeof el === "string") el = warp.gui.el.querySelector(el);
         el.addEventListener(event, fn);
@@ -837,7 +915,7 @@ function Gui() {
             height: "auto",
             minWidth: 280,
             minHeight: 100,
-            maxHeight: 120,
+            maxHeight: 250,
             draggable: false,
             scalable: false,
             close: false,
@@ -846,6 +924,7 @@ function Gui() {
             scrollable: true,
             activateOnShow: false,
             destroyOnHide: true,
+            bottomClose: false,
             anchor: anchor,
             y: 10,
             state: 1
@@ -858,7 +937,7 @@ function Gui() {
 
         win.body.innerHTML = `
         <div class="count hidden wxs hxs txs round primary tb fr mt-15 mr-15 tc pt5 mb10"></div>
-        <div class="tsm">${text}</div>
+        <div class="tsm" style="overflow:hidden;text-overflow:ellipsis;white-space:nowrap">${text}</div>
         ` ;
 
         win._notifyText = text;
@@ -925,6 +1004,7 @@ function Gui() {
             scrollable: false,
             activateOnShow: false,
             destroyOnHide: true,
+            bottomClose: false,
             backdrop: true,
             backdropCloses: true,
             anchor: { from: { x: 'mid', y: 'mid' }, to: { x: 'mid', y: 'mid' } },
@@ -941,7 +1021,7 @@ function Gui() {
         win.body.style.flexDirection = 'column';
         win.body.innerHTML = `
         <div class="count hidden wxs hxs txs round primary tb fr mt-15 mr-15 tc pt5"></div>
-        <div class="content m20" style="flex:1;overflow-y:auto">${text}</div>
+        <div class="content m20" style="flex:1;overflow-y:auto;overflow-wrap:break-word;word-break:break-word">${text}</div>
         <div class="buttons tc p10" style="flex:0 0 auto"><button class="primary xs notify-ok">OK</button></div>
         `;
 
@@ -997,15 +1077,15 @@ function Gui() {
             var buttons = win.body.querySelector('.buttons');
             buttons.innerHTML = '<button class="xs notify-ok">OK</button> <button class="primary xs notify-cancel">Cancel</button>';
 
-            buttons.querySelector('.notify-ok').addEventListener('click', function () { win._dismiss(); resolve(true); });
-            buttons.querySelector('.notify-cancel').addEventListener('click', function () { win._dismiss(); resolve(false); });
+            buttons.querySelector('.notify-ok').addEventListener('click', function () { resolve(true); win._dismiss(); });
+            buttons.querySelector('.notify-cancel').addEventListener('click', function () { resolve(false); win._dismiss(); });
             win.on('hide', function () { resolve(false); });
         });
     };
 
     var inputs = [];
 
-    gui.input = function (stringOrText, text) {
+    gui.input = function (stringOrText, text, hideChars) {
         var original = text ? stringOrText : '';
         var message = text || stringOrText;
         return new Promise(function (resolve) {
@@ -1013,11 +1093,14 @@ function Gui() {
             if (!win) return resolve(false);
             if (win._notifyCount > 1) return;
 
-            win.height(230);
+            win.height(hideChars ? 200 : 230);
 
             var content = win.body.querySelector('.content');
             content.style.overflow = 'visible';
-            content.innerHTML = message + '<textarea class="notify-input mt10" style="width:100%;box-sizing:border-box;resize:vertical;min-height:40px;">' + original.replace(/</g, '&lt;') + '</textarea>';
+            var tag = hideChars
+                ? '<input class="notify-input mt10" type="password" style="width:100%;box-sizing:border-box;" value="' + original.replace(/"/g, '&quot;') + '">'
+                : '<textarea class="notify-input mt10" style="width:100%;box-sizing:border-box;resize:vertical;min-height:40px;">' + original.replace(/</g, '&lt;') + '</textarea>';
+            content.innerHTML = message + tag;
 
             var buttons = win.body.querySelector('.buttons');
             buttons.innerHTML = '<button class="xs notify-ok">OK</button> <button class="primary xs notify-cancel">Cancel</button>';
@@ -1028,14 +1111,14 @@ function Gui() {
 
             var submit = function () {
                 var val = input.value;
+                resolve(hideChars ? val : (val !== original ? val : false));
                 win._dismiss();
-                resolve(val !== original ? val : false);
             };
 
             input.addEventListener('keydown', function (e) { if (e.key === 'Enter' && !e.shiftKey) { e.preventDefault(); submit(); } });
 
             buttons.querySelector('.notify-ok').addEventListener('click', submit);
-            buttons.querySelector('.notify-cancel').addEventListener('click', function () { win._dismiss(); resolve(false); });
+            buttons.querySelector('.notify-cancel').addEventListener('click', function () { resolve(false); win._dismiss(); });
             win.on('hide', function () { resolve(false); });
         });
     };
@@ -1045,13 +1128,17 @@ function Gui() {
         if (win && win.manager === gui.managers["toastsAndErrors"]) return;
         if (activeWin === win) return;
         if (activeWin) {
+            activeWin._notify('beforeDeactivate');
             activeWin.el.classList.remove('active');
             activeWin.manager.el.classList.remove('active');
+            activeWin._notify('deactivate');
         }
         activeWin = win;
         if (activeWin) {
+            activeWin._notify('beforeActivate');
             activeWin.el.classList.add('active');
             activeWin.manager.el.classList.add('active');
+            activeWin._notify('activate');
             // keep toastsAndErrors always on top
             var te = gui.managers["toastsAndErrors"];
             if (te && te.el.parentNode) te.el.parentNode.appendChild(te.el);
@@ -1138,8 +1225,20 @@ function Gui() {
             "--winBodyBg": "#232323",
             "--winBodyColor": "#cccccc",
             "--winBodyActiveBg": "#1e1e1e",
-            "--winBodyActiveColor": "#e0e0e0"
-        },
+            "--winBodyActiveColor": "#e0e0e0",
+            "--tableHeadBg": "#2a2a2a",
+            "--tableHeadColor": "#d0d0d0",
+            "--tableBorderColor": "#3a3a3a",
+            "--tableStripeBg": "#1a1a1a",
+            "--winBtnBg": "transparent",
+            "--winBtnColor": "#5e5c5c",
+            "--winBtnBgHover": "rgba(255,255,255,.1)",
+            "--winBtnColorHover": "#cccccc",
+            "--winBtnActiveBg": "transparent",
+            "--winBtnActiveColor": "#aaaaaa",
+            "--winBtnActiveBgHover": "rgba(255,255,255,.15)",
+            "--winBtnActiveColorHover": "#ffffff"
+        },   
         light: {
             "--defaultColor": "#040e1a",
             "--defaultBg": "#e3e3e3",
@@ -1180,7 +1279,19 @@ function Gui() {
             "--winBodyBg": "#d3d3d3",
             "--winBodyColor": "#1c1b1b",
             "--winBodyActiveBg": "#f0f0f0",
-            "--winBodyActiveColor": "#1c1b1b"
+            "--winBodyActiveColor": "#1c1b1b",
+            "--tableHeadBg": "#f0f0f5",
+            "--tableHeadColor": "#1c1b1b",
+            "--tableBorderColor": "#dddddd",
+            "--tableStripeBg": "#fafafa",
+            "--winBtnBg": "transparent",
+            "--winBtnColor": "#666666",
+            "--winBtnBgHover": "rgba(0,0,0,.1)",
+            "--winBtnColorHover": "#333333",
+            "--winBtnActiveBg": "transparent",
+            "--winBtnActiveColor": "#cccccc",
+            "--winBtnActiveBgHover": "rgba(255,255,255,.2)",
+            "--winBtnActiveColorHover": "#ffffff"
         },
         teal: {
             "--defaultColor": "#c8e6e0",
@@ -1222,7 +1333,19 @@ function Gui() {
             "--winBodyBg": "#11354b",
             "--winBodyColor": "#b8d4cc",
             "--winBodyActiveBg": "#000000",
-            "--winBodyActiveColor": "#d8f0e8"
+            "--winBodyActiveColor": "#d8f0e8",
+            "--tableHeadBg": "#0a201e",
+            "--tableHeadColor": "#c8e6e0",
+            "--tableBorderColor": "#1a3a38",
+            "--tableStripeBg": "#081a18",
+            "--winBtnBg": "transparent",
+            "--winBtnColor": "#5a8a82",
+            "--winBtnBgHover": "rgba(80,216,192,.15)",
+            "--winBtnColorHover": "#80c8b8",
+            "--winBtnActiveBg": "transparent",
+            "--winBtnActiveColor": "#80aaa2",
+            "--winBtnActiveBgHover": "rgba(80,216,192,.2)",
+            "--winBtnActiveColorHover": "#e0f5f0"
         }
     };
 
@@ -1304,6 +1427,26 @@ function Gui() {
 
         gui.el = dom.node({ node: "div", class: "gui" });
         gui.shadow.appendChild(gui.el);
+
+        // ── engine-level interactive links ────────────────────────────────
+        // <a code="js expression">label</a> — evaluates the JS
+        // <a docs="topicId">label</a> — opens Warp.Docs and displays the topic
+        gui.shadow.addEventListener("click", function (e) {
+            var el = e.target.closest("a[code], a[docs]");
+            if (!el) return;
+            e.preventDefault();
+            e.stopPropagation();
+            if (el.hasAttribute("code")) {
+                try { eval(el.getAttribute("code")); }
+                catch (err) { gui.error(err.message); }
+            } else if (el.hasAttribute("docs")) {
+                var topic = el.getAttribute("docs");
+                warp.app("Warp.Docs").then(function (d) {
+                    if (d) { d.show(); d.display(topic); }
+                    else gui.toast("Docs app not available");
+                }).catch(function () { gui.toast("Docs app not available"); });
+            }
+        });
 
         // ── default managers ──────────────────────────────────────────────
         var toastsManager = new Manager({ name: "toastsAndErrors" });
@@ -1573,8 +1716,68 @@ function Gui() {
             // warp.trigger("gui.dblclick", { event: _e });
         });
 
+        // ── context menu ──────────────────────────────────────────────────
+        var contextWin = null;
+        function ensureContextWin() {
+            if (contextWin) return contextWin;
+            contextWin = toastsManager.win({
+                name: "context",
+                headless: true, classes: "raised-xs",
+                width: 150, height: "auto", minWidth: 150, minHeight: 30,
+                draggable: false, scalable: false,
+                close: false, minimize: false, maximize: false, bottomClose: false,
+                scrollable: false, activateOnShow: false,
+                anchor: { from: { x: "min", y: "min" }, to: { x: "min", y: "min" } },
+                state: 0
+            });
+            contextWin.el.style.background = "var(--itemBg)";
+            contextWin.body.style.background = "var(--itemBg)";
+            return contextWin;
+        }
+
+        gui.shadow.addEventListener("contextmenu", function (e) {
+            var path = e.composedPath();
+            var data = {};
+            for (var i = 0; i < path.length; i++) {
+                if (path[i]._ctx) {
+                    for (var cap in path[i]._ctx) {
+                        if (!data[cap]) data[cap] = {};
+                        for (var k in path[i]._ctx[cap]) data[cap][k] = path[i]._ctx[cap][k];
+                    }
+                }
+            }
+            if (!Object.keys(data).length) return;
+            e.preventDefault();
+
+            var win = ensureContextWin();
+            win.body.innerHTML = "";
+            for (var caption in data) {
+                win.body.appendChild(dom.node("div", { class: "sec op5 p5 txs", text: caption }));
+                var funcs = data[caption];
+                for (var name in funcs) {
+                    (function (fn, label) {
+                        win.body.appendChild(dom.node("button", {
+                            class: "xs rsm",
+                            style: "margin:2px;display:block;width:calc(100% - 4px);box-sizing:border-box",
+                            text: label,
+                            click: function () { win.hide(); if (typeof fn === "function") fn(); }
+                        }));
+                    })(funcs[name], name);
+                }
+            }
+            win.x(e.clientX);
+            win.y(e.clientY);
+            win.show();
+        });
+
+        document.body.addEventListener("mousedown", function (e) {
+            if (e.button !== 0 || !contextWin) return;
+            if (contextWin.options('state') === 0) return;
+            if (!e.composedPath().includes(contextWin.el)) contextWin.hide();
+        }, true);
+
         // ── electron overlay: pass mouse events through transparent areas ─
-        if (typeof window !== "undefined" && window.electronAPI && window.electronAPI.ignoreMouseEvents) {
+        if (warp.native) {
             var _mouseIgnored = false;
 
             function isOverWin(el) {
@@ -1588,20 +1791,45 @@ function Gui() {
             gui.shadow.addEventListener('mouseover', function () {
                 if (_mouseIgnored) {
                     _mouseIgnored = false;
-                    window.electronAPI.ignoreMouseEvents(false);
+                    warp.native.invoke("App", "IgnoreMouseEvents", [false]);
                 }
             });
 
             gui.shadow.addEventListener('mouseout', function (e) {
                 if (!isOverWin(e.relatedTarget) && !pointer.dragged) {
                     _mouseIgnored = true;
-                    window.electronAPI.ignoreMouseEvents(true);
+                    warp.native.invoke("App", "IgnoreMouseEvents", [true]);
                 }
             });
         }
     }
 
     init();
+
+    function formatError(msg, stack, file, line, col) {
+        var out = '<b>' + msg + '</b>';
+        if (file) out += '<br><span class="op5">' + file + (line ? ':' + line : '') + (col ? ':' + col : '') + '</span>';
+        if (stack) {
+            var lines = stack.replace(/</g, '&lt;').split('\n').slice(1).join('\n');
+            if (lines) out += '<pre class="txs op7" style="margin:5px 0 0;white-space:pre-wrap;word-break:break-all">' + lines + '</pre>';
+        }
+        return out;
+    }
+
+    //shows errors in scripts and xhr visually
+    window.addEventListener('error', function (event) {
+        var err = event.error;
+        gui.error(formatError(event.message, err && err.stack, event.filename, event.lineno, event.colno));
+    });
+    //handles errors in promises
+    window.onunhandledrejection = function (event) {
+        var r = event.reason || {};
+        gui.error(formatError(r.message || String(r), r.stack));
+    };
+
+
+
+
     return gui;
 }
 
@@ -1609,7 +1837,9 @@ function Gui() {
 /* Manager.js */
 var ManagerJSON = {
     name: false,
-    defaultWin: {} //WinJSON
+    defaultWin: {}, //WinJSON
+    skin: false, // false | string (skin name) | object (CSS var map) — scoped to this manager
+    css: false   // false | string (raw CSS text) — injected as <style> inside manager el
 };
 
 function Manager(options) {
@@ -1620,6 +1850,43 @@ function Manager(options) {
     manager.name = options.name;
     manager.defaultWin = options.defaultWin || {};
     manager.windows = {};
+
+    // setupOptionsAndInstance installs getter/setters on `manager` for every
+    // ManagerJSON key — that would shadow our skin/css methods (assigning a
+    // function would land in options.skin / options.css, then calling it would
+    // invoke the function with itself). Stash the values, then drop the props.
+    var _initialSkin = options.skin;
+    var _initialCss  = options.css;
+    delete manager.skin;
+    delete manager.css;
+
+    // ── skin (scoped CSS vars on manager.el) ─────────────────────────
+    var _currentSkin = null;
+
+    manager.skin = function (nameOrData) {
+        if (nameOrData === undefined) return _currentSkin;
+        var data = typeof nameOrData === "string" ? warp.gui.skins[nameOrData] : nameOrData;
+        if (!data) return _currentSkin;
+        for (var k in data) manager.el.style.setProperty(k, data[k]);
+        _currentSkin = typeof nameOrData === "string" ? nameOrData : "custom";
+        return _currentSkin;
+    };
+
+    if (_initialSkin) manager.skin(_initialSkin);
+
+    // ── css (raw stylesheet scoped inside manager el) ────────────────
+    var _cssStyleEl = null;
+
+    manager.css = function (text) {
+        if (text === undefined) return _cssStyleEl ? _cssStyleEl.textContent : null;
+        if (!_cssStyleEl) {
+            _cssStyleEl = warp.dom.node({ node: "style" });
+            manager.el.insertBefore(_cssStyleEl, manager.el.firstChild);
+        }
+        _cssStyleEl.textContent = text;
+    };
+
+    if (_initialCss) manager.css(_initialCss);
 
     var _queue = new Set();
     var _pending = false;
@@ -1758,7 +2025,7 @@ function Manager(options) {
                 var bodyH    = h === 'auto' ? 'auto' : (h - headH) + 'px';
                 win.body.style.width  = w + 'px';
                 win.body.style.height = bodyH;
-                win._notifyResize(w, h === 'auto' ? win.el.offsetHeight : h);
+                win._notify('resize', { width: w, height: h === 'auto' ? win.el.offsetHeight : h });
             }
         });
     };
@@ -1824,6 +2091,8 @@ function Manager(options) {
     manager.json = function () {
         var out = {};
         for (var k in ManagerJSON) out[k] = options[k];
+        out.skin = _currentSkin || false;
+        out.css = _cssStyleEl ? _cssStyleEl.textContent : false;
         out.windows = {};
         for (var name in manager.windows) {
             out.windows[name] = manager.windows[name].json();
@@ -1955,7 +2224,9 @@ function Win(userOpts) {
     };
 
     // called by Manager._render() after it applies dimensions to the DOM
-    this._notifyResize = function (w, h) { trigger('resize', { width: w, height: h }); };
+    // bridge for external constructors (Manager, Gui) to fire events on this win
+    // TODO: replace with proper inter-constructor messaging so trigger stays fully private
+    this._notify = function (what, data) { trigger(what, data); };
 
     this._clampSize = clampSize;
 
@@ -1977,6 +2248,68 @@ function Win(userOpts) {
         opts[prop] = val;
         win.manager.addWinToRenderQueue(win.name);
     }
+
+    // ── overlay: menu, modal, busy ──────────────────────────────────────
+
+    var _overlayEl = null;
+    var _onOverlayHide = null;
+
+    function showOverlay(contentEl, clickable, width) {
+        _overlayEl = win.el.querySelector('.overlay');
+        _overlayEl.innerHTML = '';
+        contentEl.style.cssText = 'position:absolute;top:calc(50% - 50px);left:50%;transform:translate(-50%,-50%);width:' + (width || 250) + 'px;z-index:11;';
+        _overlayEl.appendChild(contentEl);
+        _overlayEl.style.display = 'block';
+        _overlayEl.style.cursor = clickable ? 'pointer' : 'default';
+        if (clickable) {
+            _overlayEl.onclick = function (e) {
+                if (e.target === _overlayEl) hideOverlay();
+            };
+        } else {
+            _overlayEl.onclick = null;
+        }
+    }
+
+    function hideOverlay() {
+        if (!_overlayEl) return;
+        _overlayEl.style.display = 'none';
+        _overlayEl.innerHTML = '';
+        _overlayEl.onclick = null;
+        var cb = _onOverlayHide;
+        _onOverlayHide = null;
+        if (cb) cb();
+    }
+
+    this.menu = function (data, onChange, onFinished) {
+        var form = warp.dom.quickForm(data, onChange);
+        _onOverlayHide = function () { if (onFinished) onFinished(data); };
+        showOverlay(form.el || form, true, 180);
+        return form;
+    };
+
+    this.modal = function (html, buttons) {
+        var div = warp.dom.node('div', { class: 's0 p10 raised rounded-sm' });
+        var content = warp.dom.node('div');
+        content.innerHTML = html;
+        div.appendChild(content);
+        if (buttons) {
+            var bar = warp.dom.node('div', { class: 'mt10', style: 'display:flex;gap:5px;justify-content:flex-end' });
+            for (var label in buttons) {
+                (function (l, fn) {
+                    bar.appendChild(warp.dom.node('button', { class: 'xs', text: l, click: function () { hideOverlay(); if (fn) fn(); } }));
+                })(label, buttons[label]);
+            }
+            div.appendChild(bar);
+        }
+        showOverlay(div, true);
+    };
+
+    this.busy = function (text, state) {
+        if (state === false) { hideOverlay(); return; }
+        var div = warp.dom.node('div', { class: 'tc p20', style: 'color:white' });
+        div.textContent = text || 'Working...';
+        showOverlay(div, false);
+    };
 
     // ── public API ────────────────────────────────────────────────────────
 
@@ -2131,7 +2464,7 @@ function Win(userOpts) {
                 <button class="hxs close default tlg rxs inverted clear"><span class="icon icon-close"></span></button>
             </div>
         </div>
-        <div class="body"></div>
+        <div class="body"><div class="overlay"></div></div>
         <button class="close raised "><span class="icon icon-close txl"></span></button>
         `;
         this.head = this.el.querySelector('.head');
@@ -2223,6 +2556,7 @@ function Win(userOpts) {
         }
  
         this._destroy = function () {
+            if (win.state() !== 0) { trigger('beforehide'); opts.state = 0; trigger('hide'); }
             if (_drag) { _drag.destroy(); _drag = null; }
             if (_backdrop && _backdrop.parentNode) _backdrop.parentNode.removeChild(_backdrop);
             _backdrop = null;
@@ -3534,23 +3868,146 @@ warp.drive = async function (nameOrOptions) {
 };
 
 
+/* Deps.js */
+
+// Deps — load/unload layout or app dependencies, scoped to a target el.
+// Item shape (one key per item): { js | css | layout : value-or-array }
+//   value: url string for js/css, layout name for layout
+//   array: shorthand for multiple URLs/names of the same type
+// umd loader is a stub — not implemented yet.
+
+
+
+
+
+function Deps(arr, target) {
+    var self = this;
+    self.data = Array.isArray(arr) ? arr : [];
+    self.target = target || document.head;
+    self.loaded = []; // [{type, src, el}]
+    self.ready = false;
+
+    function loadJs(url) {
+        return new Promise(function (resolve, reject) {
+            var el = document.createElement("script");
+            el.src = url;
+            el.async = false;
+            el.onload = function () {
+                self.loaded.push({ type: "js", src: url, el: el });
+                resolve(el);
+            };
+            el.onerror = function () { reject(new Error("Deps: failed to load js " + url)); };
+            self.target.appendChild(el);
+        });
+    }
+
+    function loadLayout(name) {
+        return warp.load(name).then(function (layout) {
+            self.loaded.push({ type: "layout", src: name, layout: layout });
+            return layout;
+        });
+    }
+
+    function unloadLayout(entry) {
+        if (entry.layout && typeof entry.layout.destroy === "function") {
+            return entry.layout.destroy();
+        }
+        return Promise.resolve();
+    }
+
+    function loadCss(url) {
+        return fetch(url).then(function (res) {
+            if (!res.ok) throw new Error("Deps: failed to fetch css " + url + " (" + res.status + ")");
+            return res.text();
+        }).then(function (text) {
+            var el = document.createElement("style");
+            el.setAttribute("data-deps-src", url);
+            el.textContent = text;
+            self.target.appendChild(el);
+            self.loaded.push({ type: "css", src: url, el: el });
+            return el;
+        });
+    }
+
+    function dispatch(type, value) {
+        if (type === "js")     return loadJs(value);
+        if (type === "css")    return loadCss(value);
+        if (type === "layout") return loadLayout(value);
+        if (type === "umd")    return Promise.reject(new Error("Deps: umd loader not implemented"));
+        return Promise.resolve();
+    }
+
+    // expand one item into jobs — value may be a string or an array of strings
+    function itemJobs(item) {
+        var out = [];
+        if (!item || typeof item !== "object") return out;
+        for (var type in item) {
+            var val = item[type];
+            var vals = Array.isArray(val) ? val : [val];
+            for (var i = 0; i < vals.length; i++) out.push(dispatch(type, vals[i]));
+        }
+        return out;
+    }
+
+    self.load = async function () {
+        self.ready = false;
+        var jobs = [];
+        for (var i = 0; i < self.data.length; i++) {
+            var itemJ = itemJobs(self.data[i]);
+            for (var j = 0; j < itemJ.length; j++) jobs.push(itemJ[j]);
+        }
+        await Promise.all(jobs);
+        self.ready = true;
+        return self;
+    };
+
+    self.unload = async function () {
+        var jobs = [];
+        for (var i = 0; i < self.loaded.length; i++) {
+            var entry = self.loaded[i];
+            if (entry.type === "layout") {
+                jobs.push(unloadLayout(entry));
+            } else if (entry.el && entry.el.parentNode) {
+                entry.el.parentNode.removeChild(entry.el);
+            }
+        }
+        await Promise.all(jobs);
+        self.loaded = [];
+        self.ready = false;
+        return self;
+    };
+}
+
+warp.Deps = Deps;
+
+
 /* Layout.js */
 var LayoutJSON = {
     name: false,
     image : false,//1024x1024 so we can scale it for publishing as we want?
     version: 1,
-    icon: "cabinet",
     desc : false,
     deps: [],
     apps: {},
     brands: {},
     defaultWin : false, //false | WinJSON - passed to layouts manager as defaultWin
+    skin : false, // false | string (skin name) | object (CSS var map) — applied to layout's manager
+    css : false,  // false | string (raw CSS) — injected into layout's manager (or from Name.css in archive)
     fileTypes: {},
     searches : {},
+    node: {}, // node endpoint files — { "EndpointName.mjs": Blob|string, ... }
+    defaultApp : false, // false | string (app name) — auto-started on layout load
+    permissions: [], // string[] — engine API names this layout's apps may access (enforced by App)
     onBeforeLoad :false, //boolean or function
     onLoad :false, //boolean or function
     onBeforeDestroy :false //boolean or function
 };
+/**
+ * additional, not implemented :
+ * node : {}, //node scripts (endpoint files that will be added tp browser/api so apps have a backend)
+ * tools : {} //Display drawing tools,start+drag+end object + type (type of Dsiplay they work with)
+ * 
+*/
 
 helpers.registerEvents([
     "beforeLayoutLoad",
@@ -3598,10 +4055,26 @@ function Layout(layoutJSON) {
             await s.set(layoutJSON.name, layoutJSON);
             lists.loadedLayoutNames.push(layoutJSON.name);
         }
-        var m = await warp.gui.manager({ name: "layout-" + layoutJSON.name, defaultWin : layoutJSON.defaultWin });
+        var m = await warp.gui.manager({ name: "layout-" + layoutJSON.name, defaultWin : layoutJSON.defaultWin, skin: layoutJSON.skin, css: layoutJSON.css });
         m.el.classList.add("layout-" + layoutJSON.name);
+        // load declared deps (js/css/layout) scoped to the manager el so unload
+        // can clean them up. Awaited so apps can assume libs are available.
+        if (Array.isArray(layoutJSON.deps) && layoutJSON.deps.length) {
+            layout.deps = new warp.Deps(layoutJSON.deps, m.el);
+            await layout.deps.load();
+        }
+        // register node endpoints — requires Electron (warp.native)
+        if (layoutJSON.node && Object.keys(layoutJSON.node).length > 0) {
+            if (!warp.native || !warp.native.registerEndpoint) {
+                throw new Error("Layout '" + layoutJSON.name + "' requires Warp Browser (node endpoints need warp.native)");
+            }
+            await warp.native.registerEndpoint(layoutJSON.name, layoutJSON.node);
+        }
         lists.instances.layouts[layoutJSON.name] = layout;
         warp.trigger("layoutLoad", layout);
+        if (layoutJSON.defaultApp) {
+            warp.app(layoutJSON.name + "." + layoutJSON.defaultApp).then(function (a) { if (a) a.show(); });
+        }
         // TODO: serialize to localStorage on layoutLoad so next cold start skips fetch
         // localStorage.setItem("warp.layout." + layoutJSON.name, layout.serialize());
     });
@@ -3625,8 +4098,20 @@ function Layout(layoutJSON) {
 
     layout.app = async function (nameOrObj) {
         if (nameOrObj === undefined) return layoutJSON.apps;
-        if (typeof nameOrObj === "object") { nameOrObj.layout = layoutJSON.name; layoutJSON.apps[nameOrObj.name] = nameOrObj; changed("apps", "add", nameOrObj.name); return nameOrObj; }
-        return layoutJSON.apps[nameOrObj];
+        if (typeof nameOrObj === "object") {
+            nameOrObj.layout = layoutJSON.name;
+            layoutJSON.apps[nameOrObj.name] = nameOrObj;
+            var s = await warp.store("layouts");
+            if (s) await s.set(layoutJSON.name + ".apps." + nameOrObj.name, nameOrObj);
+            changed("apps", "add", nameOrObj.name);
+            return nameOrObj;
+        }
+        // string — return cached instance or build on demand
+        if (layoutJSON.apps[nameOrObj]) {
+            var ck = layoutJSON.name + "." + nameOrObj;
+            return lists.instances.apps[ck] || (lists.instances.apps[ck] = await helpers._createApp(layoutJSON.apps[nameOrObj]));
+        }
+        return undefined;
     };
 
     layout.brand = async function (nameOrObj) {
@@ -3706,8 +4191,13 @@ function Layout(layoutJSON) {
 
     layout.remove = async function (type, name) {
         if (!layoutJSON[type]) throw new Error("Layout: unknown type '" + type + "'");
+        var ck = layoutJSON.name + "." + name;
+        // apps have live state (DOM, window) — destroy before removing
+        if (type === "apps" && lists.instances.apps[ck] && lists.instances.apps[ck].destroy) {
+            lists.instances.apps[ck].destroy();
+        }
         delete layoutJSON[type][name];
-        delete lists.instances[type][layoutJSON.name + "." + name];
+        delete lists.instances[type][ck];
         var s = await warp.store("layouts");
         await s.delete(layoutJSON.name + "." + type + "." + name);
         changed(type, "remove", name);
@@ -3716,11 +4206,26 @@ function Layout(layoutJSON) {
     layout.destroy = async function () {
         warp.trigger("beforeLayoutUnload", layout);
         if (typeof layoutJSON.onBeforeDestroy === "function") await layoutJSON.onBeforeDestroy(layout);
+        // unload deps before the manager el is killed, so Deps has a valid
+        // target to walk while removing its scripts/styles.
+        if (layout.deps) {
+            try { await layout.deps.unload(); } catch (_e) { }
+            layout.deps = null;
+        }
+        // destroy all app instances belonging to this layout
+        var prefix = layoutJSON.name + ".";
+        for (var ck in lists.instances.apps) {
+            if (ck.indexOf(prefix) === 0) lists.instances.apps[ck].destroy();
+        }
         var idx = lists.loadedLayoutNames.indexOf(layoutJSON.name);
         if (idx !== -1) lists.loadedLayoutNames.splice(idx, 1);
         delete lists.instances.layouts[layoutJSON.name];
         var m = await warp.gui.manager("layout-" + layoutJSON.name);
         if (m) warp.gui.kill(m);
+        // unregister node endpoints if they were registered
+        if (layoutJSON.node && Object.keys(layoutJSON.node).length > 0 && warp.native && warp.native.unregisterEndpoint) {
+            await warp.native.unregisterEndpoint(layoutJSON.name);
+        }
         var s = await warp.store("layouts");
         await s.delete(layoutJSON.name);
         warp.trigger("layoutUnload", layout);
@@ -3737,15 +4242,342 @@ function Layout(layoutJSON) {
         return toJson(layout.json());
     };
 
+    layout.pack = async function () {
+        var files = {};
+        var name = layoutJSON.name;
+
+        // read from store — single source of truth
+        var s = await warp.store("layouts");
+        var stored = await s.get(name);
+        var src = stored || layoutJSON;
+
+        // build manifest as JS object literal — functions stay as code, not JSON strings
+        var manifest = {};
+        for (var k in src) {
+            if (k === "apps" || k === "node" || k === "css") continue;
+            manifest[k] = src[k];
+        }
+        var manifestParts = ["{"];
+        for (var mk in manifest) {
+            var val = manifest[mk];
+            if (typeof val === "function") {
+                manifestParts.push("    " + mk + ": " + val.toString() + ",");
+            } else {
+                manifestParts.push("    " + mk + ": " + warp.to.json(val) + ",");
+            }
+        }
+        manifestParts.push("}");
+        files[name + ".manifest.js"] = new Blob(["(" + manifestParts.join("\n") + ")\n"], { type: "text/javascript" });
+
+        // pack Name.css if present
+        if (src.css) {
+            files[name + ".css"] = new Blob([src.css], { type: "text/css" });
+        }
+
+        // pack apps
+        var apps = src.apps || {};
+        for (var appName in apps) {
+            var appData = apps[appName];
+            var appDir = "apps/" + appName + "/";
+
+            // app manifest as JS object literal — exclude folder
+            var appParts = ["{"];
+            for (var ak in appData) {
+                if (ak === "folder") continue;
+                var av = appData[ak];
+                if (typeof av === "function") {
+                    appParts.push("    " + ak + ": " + av.toString() + ",");
+                } else {
+                    appParts.push("    " + ak + ": " + warp.to.json(av) + ",");
+                }
+            }
+            appParts.push("}");
+            files[appDir + appName + ".manifest.js"] = new Blob(["(" + appParts.join("\n") + ")\n"], { type: "text/javascript" });
+
+            // app folder files — bare keys, no layout prefix
+            if (appData.folder) {
+                for (var fk in appData.folder) {
+                    var val = appData.folder[fk];
+                    if (val instanceof Blob) {
+                        files[appDir + fk] = val;
+                    } else if (val && typeof val.blob === "function") {
+                        files[appDir + fk] = await val.blob();
+                    } else if (typeof val === "string") {
+                        files[appDir + fk] = new Blob([val]);
+                    }
+                }
+            }
+        }
+
+        // pack node endpoint files
+        var node = src.node || {};
+        if (node) {
+            for (var nk in node) {
+                var nv = node[nk];
+                files["node/" + nk] = typeof nv === "string" ? new Blob([nv]) : nv;
+            }
+        }
+
+        var blob = await warp.to.zip(files);
+        return new warp.File([blob], name + ".layout", { mime: "application/zip" });
+    };
+
 }
+
+// warp.unpack(arg)
+// Accepts URL string, Blob, File, or warp.File; unzips the archive and
+// returns a fully-populated LayoutJSON — the same shape warp.load builds
+// internally — without instantiating a Layout. Used by editors (Editor,
+// OpenCode) to inspect/modify a .layout file before deciding whether to
+// instantiate it or repack it. Does NOT touch the cache or knownLayouts.
+warp.unpack = async function (arg) {
+    // resolve input to a Blob — same overloads as warp.load, minus caching
+    if (typeof arg === "string") {
+        var res = await fetch(arg);
+        arg = await res.blob();
+    }
+    if (arg instanceof warp.File) {
+        arg = arg.data instanceof Blob ? arg.data : await arg.blob();
+    }
+    if (!(arg instanceof Blob || arg instanceof File)) {
+        throw new Error("warp.unpack: expected Blob, File, warp.File, or URL string");
+    }
+
+    var entries = await warp.un.zip(arg);
+    if (!entries) throw new Error("warp.unpack: not a valid .layout archive");
+
+    // find root-level manifest — filename IS the layout name
+    var manifestKey = Object.keys(entries).find(function (k) {
+        return k.endsWith(".manifest.js") && k.indexOf("/") === -1;
+    });
+    if (!manifestKey) throw new Error("warp.unpack: no manifest in archive");
+    var layoutName = manifestKey.replace(/\.manifest\.js$/, "");
+
+    var layoutJSON;
+    try {
+        layoutJSON = new Function("return (" + await entries[manifestKey].text() + ")")();
+        layoutJSON = warp.from.json(warp.to.json(layoutJSON));
+    } catch (e) { throw new Error("warp.unpack: failed to parse " + manifestKey); }
+    layoutJSON.name = layoutJSON.name || layoutName;
+
+    // optional root-level CSS
+    if (entries[layoutName + ".css"]) layoutJSON.css = await entries[layoutName + ".css"].text();
+    if (!layoutJSON.apps) layoutJSON.apps = {};
+    if (!layoutJSON.node) layoutJSON.node = {};
+
+    // apps/
+    var appDirs = {};
+    Object.keys(entries).forEach(function (p) {
+        if (p.indexOf("apps/") !== 0) return;
+        var rest = p.slice(5);
+        var s = rest.indexOf("/");
+        if (s > 0) appDirs[rest.slice(0, s)] = true;
+    });
+    for (var appName in appDirs) {
+        var appManifestKey = "apps/" + appName + "/" + appName + ".manifest.js";
+        var appObj = { name: appName, layout: layoutName, brands: false, folder: {}, win: false, css: false };
+        if (entries[appManifestKey]) {
+            try {
+                var parsed = new Function("return (" + await entries[appManifestKey].text() + ")")();
+                if (parsed) parsed = warp.from.json(warp.to.json(parsed));
+                if (parsed) for (var k in parsed) { if (k !== "name" && k !== "layout") appObj[k] = parsed[k]; }
+            } catch (_e) { /* use default appObj */ }
+        }
+        appObj.name = appName;
+        appObj.layout = layoutName;
+        var folderPrefix = "apps/" + appName + "/";
+        var keys = Object.keys(entries);
+        for (var fi = 0; fi < keys.length; fi++) {
+            var p = keys[fi];
+            if (p.indexOf(folderPrefix) !== 0 || p === folderPrefix || p.endsWith("/")) continue;
+            var rel = p.slice(folderPrefix.length);
+            appObj.folder[rel] = entries[p].data instanceof Blob ? entries[p].data : await entries[p].blob();
+        }
+        layoutJSON.apps[appName] = appObj;
+    }
+
+    // node/
+    var nodePrefix = "node/";
+    var nodeFiles = {};
+    var nKeys = Object.keys(entries);
+    for (var ni = 0; ni < nKeys.length; ni++) {
+        var np = nKeys[ni];
+        if (np.indexOf(nodePrefix) !== 0 || np === nodePrefix || np.endsWith("/")) continue;
+        nodeFiles[np.slice(nodePrefix.length)] = await entries[np].text();
+    }
+    if (Object.keys(nodeFiles).length > 0) layoutJSON.node = nodeFiles;
+
+    return layoutJSON;
+};
+
+// warp.forget(name | [names], unload = false)
+// Removes a layout (or layouts) from the persisted known-list AND wipes its
+// cached bytes from localStorage. If `unload` is true, the live instance is
+// destroyed first via warp.unload(name). Otherwise live instances are
+// untouched — forget only affects whether the layout auto-restores on next
+// cold boot and whether warp.load(name) will hit the cache vs the AppStore.
+warp.forget = async function (nameOrNames, unload) {
+    if (Array.isArray(nameOrNames)) return Promise.all(nameOrNames.map(function (n) { return warp.forget(n, unload); }));
+    var name = nameOrNames;
+    if (!name) return false;
+    if (unload === true) {
+        try { await warp.unload(name); } catch (_e) { /* not loaded — nothing to unload */ }
+    }
+    // splice the {name, version} entry out of prefs.knownLayouts and capture its version
+    var removedVersion = null;
+    try {
+        var list = await warp.prefs("layouts", "knownLayouts");
+        if (Array.isArray(list)) {
+            for (var i = 0; i < list.length; i++) {
+                var e = list[i];
+                if (e && typeof e === "object" && e.name === name) {
+                    removedVersion = e.version || 1;
+                    list.splice(i, 1);
+                    await warp.prefs("layouts", "knownLayouts", list);
+                    break;
+                }
+                if (typeof e === "string" && e === name) {
+                    // legacy entry — no version recorded; we'll wipe all versions below
+                    list.splice(i, 1);
+                    await warp.prefs("layouts", "knownLayouts", list);
+                    break;
+                }
+            }
+        }
+    } catch (_e) { }
+    // wipe the cached bytes. If we know the version, drop that key directly;
+    // otherwise scan for any versioned key matching this name (defensive for
+    // legacy entries or stale cache without a list entry).
+    try {
+        if (removedVersion !== null) {
+            localStorage.removeItem("warpLayout." + name + "." + removedVersion);
+        } else {
+            var prefix = "warpLayout." + name + ".";
+            for (var j = localStorage.length - 1; j >= 0; j--) {
+                var k = localStorage.key(j);
+                if (k && k.indexOf(prefix) === 0) localStorage.removeItem(k);
+            }
+        }
+    } catch (_e) { }
+    return true;
+};
 
 //loads a layout from several cases/overlaods
 //does not intentionaly use warp.open to not to bloat
-warp.load = async function(arg){
-    if (Array.isArray(arg)) return Promise.all(arg.map(function(a){ return warp.load(a); }));
+warp.load = async function(arg, skipCache){
+
+    // ── Layout load cache (closure-scoped) ──────────────────────────────
+    // Caches the raw .layout zip bytes in localStorage as base64, keyed by
+    //   "warpLayoutCache.<name>.v<version>"
+    // The version segment lets us cache multiple versions side-by-side and
+    // makes a published-version bump produce a natural cache miss → AppStore
+    // fetch. knownLayouts is a parallel index of [{name, version}] so the
+    // bare-name lookup path can reconstruct the versioned key without parsing
+    // the archive first. localStorage is sync and available at cold boot —
+    // before any Store/Instance exists.
+    var LAYOUT_CACHE_PREFIX = "warpLayout.";
+    var APPSTORE_GET_URL    = "https://bemjax.com/warp/appstore/get/?name=";
+    function _cacheKey(name, version) { return LAYOUT_CACHE_PREFIX + name + "." + (version || 1); }
+
+    // FileReader → data URL → strip the "data:...;base64," prefix → bare base64.
+    // Used for cache writes. Avoids manual binary-string encoding bugs.
+    function _blobToBase64(blob) {
+        return new Promise(function (resolve, reject) {
+            var r = new FileReader();
+            r.onload  = function () { var s = r.result; var i = s.indexOf(","); resolve(i >= 0 ? s.slice(i + 1) : s); };
+            r.onerror = function () { reject(r.error); };
+            r.readAsDataURL(blob);
+        });
+    }
+
+    // atob → bytes → Blob is the inverse. mime is application/zip because
+    // every .layout is a zip archive regardless of extension.
+    function _base64ToBlob(b64) {
+        var bin = atob(b64);
+        var bytes = new Uint8Array(bin.length);
+        for (var i = 0; i < bin.length; i++) bytes[i] = bin.charCodeAt(i);
+        return new Blob([bytes], { type: "application/zip" });
+    }
+
+    // localStorage can throw when disabled (private mode, sandboxed iframes
+    // without storage access). Swallow + return null so cache misses degrade
+    // gracefully into the network fetch path.
+    function _readCache(name, version) {
+        try { return localStorage.getItem(_cacheKey(name, version)); } catch (_e) { return null; }
+    }
+
+    // Writes can throw on quota exhaustion (~5MB per origin). A failure here
+    // is not fatal — the layout still loads, we just won't cache it for next
+    // session. Silent fallback is the right behaviour.
+    async function _writeCache(name, version, blob) {
+        try {
+            var b64 = await _blobToBase64(blob);
+            localStorage.setItem(_cacheKey(name, version), b64);
+        } catch (_e) { /* quota exceeded or storage disabled — silently skip */ }
+    }
+
+    // Look up the cached version-pair for a name in knownLayouts. Returns the
+    // entry or null. Handles legacy string entries (treats them as no version
+    // → caller falls back to network fetch).
+    async function _findKnown(name) {
+        try {
+            var list = await warp.prefs("layouts", "knownLayouts");
+            if (!Array.isArray(list)) return null;
+            for (var i = 0; i < list.length; i++) {
+                var e = list[i];
+                if (e && typeof e === "object" && e.name === name) return e;
+            }
+        } catch (_e) { }
+        return null;
+    }
+
+    // Persist {name, version} in knownLayouts. If an entry for this name
+    // already exists with a different version, evict the old cache entry to
+    // prevent localStorage bloat, then update the entry. Wrapped in try/catch
+    // because prefs is async-store-backed and may not be ready on the very
+    // first warp.load (e.g. when called from engineOptions.load before
+    // Instance.init reaches the prefs setup line).
+    async function _rememberKnown(name, version) {
+        if (!name) return;
+        version = version || 1;
+        try {
+            var list = await warp.prefs("layouts", "knownLayouts");
+            if (!Array.isArray(list)) list = [];
+            var changed = false;
+            var found = false;
+            for (var i = 0; i < list.length; i++) {
+                var e = list[i];
+                // upgrade legacy string entries to {name, version} on first encounter
+                if (typeof e === "string") { list[i] = { name: e, version: 1 }; e = list[i]; changed = true; }
+                if (e && e.name === name) {
+                    found = true;
+                    if (e.version !== version) {
+                        try { localStorage.removeItem(_cacheKey(name, e.version)); } catch (_e) { }
+                        e.version = version;
+                        changed = true;
+                    }
+                }
+            }
+            if (!found) { list.push({ name: name, version: version }); changed = true; }
+            if (changed) await warp.prefs("layouts", "knownLayouts", list);
+        } catch (_e) { /* prefs not ready (very early boot) — skip */ }
+    }
+
+    // Distinguishes a bare published name like "MyLayout" from URLs/paths/files.
+    // Heuristic: no slash (no path), no colon (no protocol), no dot (no
+    // extension or relative segment). Anything with one of those goes through
+    // the existing URL/blob/file paths and is cached after parse under its
+    // parsed manifest name.
+    function _isPublishedName(s) {
+        return typeof s === "string" && s.length > 0 && s.indexOf("/") === -1 && s.indexOf(":") === -1 && s.indexOf(".") === -1;
+    }
+    // ────────────────────────────────────────────────────────────────────
+
+    if (Array.isArray(arg)) return Promise.all(arg.map(function(a){ return warp.load(a, skipCache); }));
 
     var layoutJSON;
     var layoutName = null;
+    var sourceBlob = null; // raw .layout bytes — cached after successful parse
 
     if (arg === undefined) {
         // no argument – open file dialog and let user pick a .layout file
@@ -3758,50 +4590,92 @@ warp.load = async function(arg){
         if (!arg) return null;
     }
 
-    if (typeof arg === "string") {
+    // Bare published name (e.g. warp.load("MyLayout")):
+    // 1. If a live instance exists, return it — nothing to fetch.
+    // 2. Otherwise look up the recorded version in knownLayouts, then read the
+    //    versioned localStorage key (skipped when skipCache=true). If the user
+    //    has never loaded this layout before (no entry), or version is unknown,
+    //    we go straight to AppStore.
+    // 3. On miss or skipCache, hit the AppStore by name. Resolved bytes flow
+    //    into the same parsing path as a Blob input. The cache write at the
+    //    end uses the manifest's version, so a newer published version lands
+    //    under a fresh key and the old key is evicted by _rememberKnown.
+    if (_isPublishedName(arg)) {
+        layoutName = arg;
+        if (lists.instances.layouts[layoutName]) return lists.instances.layouts[layoutName];
+
+        var cached = null;
+        if (!skipCache) {
+            var entry = await _findKnown(layoutName);
+            if (entry) cached = _readCache(layoutName, entry.version);
+        }
+        if (cached) {
+            try { warp.gui && warp.gui.toast && warp.gui.toast("reading " + layoutName + " from cash"); } catch (_e) { }
+            arg = _base64ToBlob(cached);
+        } else {
+            var res = await fetch(APPSTORE_GET_URL + encodeURIComponent(layoutName));
+            if (!res.ok) throw new Error("warp.load: AppStore fetch failed for '" + layoutName + "' (" + res.status + ")");
+            arg = await res.blob();
+        }
+        sourceBlob = arg; // capture for cache write at end (covers skipCache refresh too)
+    } else if (typeof arg === "string") {
         // string(path) – derive name from the URL/path, then fetch as blob
         var slash = arg.lastIndexOf("/");
         var filename = slash !== -1 ? arg.slice(slash + 1) : arg;
         layoutName = filename.replace(/\.layout$/i, "");
 
-        // 1. check if already instantiated in this tab
+        // warp.load(string) always parses from the archive — the caller explicitly
+        // asked to load from a URL, so we honour that even if the store already has
+        // a layout with the same name. This avoids stale store data (e.g. app folder
+        // Blobs don't survive SharedWorker roundtrips) and prevents cross-tab races
+        // where another tab's sync listener could re-create a just-deleted entry.
+        //
+        // Only skip the fetch if this tab already holds a live instance — that means
+        // the layout is fully hydrated with folders, apps, etc.
         if (lists.instances.layouts[layoutName]) return lists.instances.layouts[layoutName];
 
-        // 2. check shared store (another tab may have loaded it)
-        var s = await warp.store("layouts");
-        var stored = await s.get(layoutName);
-        if (stored) {
-            var layout = await warp.layout(stored);
-            if (stored.onLoad) stored.onLoad(layout);
-            return layout;
-        }
-
-        // 3. TODO: check localStorage for cached serialized layout
-        // var cached = localStorage.getItem("warp.layout." + layoutName);
-        // if (cached) { ... fromJson(cached) ... skip fetch ... }
-
-        // 4. not in store or cache — fetch from URL
+        // fetch from URL — always, store is not consulted for URL loads
         var res = await fetch(arg);
         arg = await res.blob();
+        sourceBlob = arg;
     }
 
     if (arg instanceof warp.File) {
         // warp.file – grab the name before extracting the blob
         if (!layoutName && arg.name) layoutName = arg.name.replace(/\.layout$/i, "");
         arg = arg.data instanceof Blob ? arg.data : await arg.blob();
+        if (!sourceBlob) sourceBlob = arg;
     }
 
     if (arg instanceof Blob || arg instanceof File) {
         // native file/blob – decompress and extract LayoutJSON from the zip
         if (!layoutName) layoutName = arg.name ? arg.name.replace(/\.layout$/i, "") : "layout";
+        if (!sourceBlob) sourceBlob = arg;
 
         var entries = await warp.un.zip(arg);
         if (!entries) throw new Error("warp.load: not a valid .layout archive");
 
         var manifestKey = layoutName + ".manifest.js";
 
+        // If the URL-derived layoutName doesn't match what's in the archive
+        // (e.g. URL was a query-string download like ?name=Test), fall back to
+        // any root-level *.manifest.js — that filename is the true layout name.
+        if (!entries[manifestKey]) {
+            var rootManifest = Object.keys(entries).find(function (k) {
+                return k.endsWith(".manifest.js") && k.indexOf("/") === -1;
+            });
+            if (rootManifest) {
+                manifestKey = rootManifest;
+                layoutName  = rootManifest.replace(/\.manifest\.js$/, "");
+            }
+        }
+
         if (entries[manifestKey]) {
-            try { layoutJSON = new Function("return (" + await entries[manifestKey].text() + ")")(); }
+            try {
+                layoutJSON = new Function("return (" + await entries[manifestKey].text() + ")")();
+                // restore nested @function: strings produced by warp.to.json in pack()
+                layoutJSON = warp.from.json(warp.to.json(layoutJSON));
+            }
             catch(e) { throw new Error("warp.load: failed to parse " + manifestKey); }
         } else {
             throw new Error("warp.load: " + manifestKey + " not found in archive");
@@ -3809,17 +4683,15 @@ warp.load = async function(arg){
 
         layoutJSON.name = layoutJSON.name || layoutName;
 
-        // parse lifecycle event files into functions
-        var eventFiles = ["onBeforeLoad", "onLoad", "onBeforeDestroy"];
-        for (var i = 0; i < eventFiles.length; i++) {
-            var evName = eventFiles[i];
-            if (entries[evName + ".js"]) {
-                try {
-                    var src = await entries[evName + ".js"].text();
-                    layoutJSON[evName] = new Function("return (" + src + ")")();
-                } catch(e) { /* skip malformed event file */ }
-            }
+        // Name.css — optional layout-wide stylesheet from archive root
+        var cssKey = layoutName + ".css";
+        if (entries[cssKey]) {
+            layoutJSON.css = await entries[cssKey].text();
         }
+
+        // ensure runtime-populated collections exist (manifests don't carry these)
+        if (!layoutJSON.apps) layoutJSON.apps = {};
+        if (!layoutJSON.node) layoutJSON.node = {};
 
         // parse apps/ directory — each subfolder is an app
         var appDirs = {};
@@ -3832,12 +4704,13 @@ warp.load = async function(arg){
         });
 
         for (var appName in appDirs) {
-            var appManifestKey = appPrefix + appName + "/" + layoutName + "." + appName + ".manifest.js";
+            var appManifestKey = appPrefix + appName + "/" + appName + ".manifest.js";
             var appObj = { name: appName, layout: layoutName, brands: false, folder: {}, win: false, css: false };
 
             if (entries[appManifestKey]) {
                 try {
                     var parsed = new Function("return (" + await entries[appManifestKey].text() + ")")();
+                    if (parsed) parsed = warp.from.json(warp.to.json(parsed));
                     if (parsed) for (var k in parsed) { if (k !== "name" && k !== "layout") appObj[k] = parsed[k]; }
                 } catch(e) { /* use default appObj */ }
             }
@@ -3854,13 +4727,23 @@ warp.load = async function(arg){
                 if (p.indexOf(folderPrefix) !== 0 || p === folderPrefix) continue;
                 if (p.endsWith("/")) continue;
                 var relativePath = p.slice(folderPrefix.length);
-                var filePrefix = layoutName + ".";
-                if (relativePath.indexOf(filePrefix) === 0) relativePath = relativePath.slice(filePrefix.length);
                 appObj.folder[relativePath] = entries[p].data instanceof Blob ? entries[p].data : await entries[p].blob();
             }
 
             layoutJSON.apps[appName] = appObj;
         }
+
+        // parse node/ directory — backend endpoint files
+        var nodePrefix = "node/";
+        var nodeFiles = {};
+        var nodeKeys = Object.keys(entries);
+        for (var ni = 0; ni < nodeKeys.length; ni++) {
+            var np = nodeKeys[ni];
+            if (np.indexOf(nodePrefix) !== 0 || np === nodePrefix || np.endsWith("/")) continue;
+            var nodeName = np.slice(nodePrefix.length);
+            nodeFiles[nodeName] = await entries[np].text();
+        }
+        if (Object.keys(nodeFiles).length > 0) layoutJSON.node = nodeFiles;
 
         //TODO: convert entries in brands/, fileTypes/, searches/ folders similarly
 
@@ -3870,8 +4753,24 @@ warp.load = async function(arg){
     } else {
         throw new Error("warp.load: unsupported argument type");
     }
+    if (layoutJSON.onBeforeLoad) await layoutJSON.onBeforeLoad(layoutJSON);
     var layout = await warp.layout(layoutJSON);
     if(layoutJSON.onLoad)layoutJSON.onLoad(layout)
+
+    // Persist for next session. Two facts to remember:
+    //   - the raw bytes (localStorage cache)  → versioned key warpLayout.<n>.<v>
+    //   - the {name, version} pair (prefs.knownLayouts) → restore loop reads
+    //     it to compute the correct versioned key on cold boot
+    // Version comes from the manifest (defaults to 1 if missing). When the
+    // version changes from a previously cached entry, _rememberKnown evicts
+    // the old key to keep localStorage tidy. Inline-object loads have no
+    // sourceBlob and are intentionally not cached (no stable source).
+    if (sourceBlob && layoutJSON.name) {
+        var ver = layoutJSON.version || 1;
+        await _writeCache(layoutJSON.name, ver, sourceBlob);
+        await _rememberKnown(layoutJSON.name, ver);
+    }
+
     return layout;
 }
 
@@ -4033,51 +4932,8 @@ AppJSON = {
 }
 
 
-warp.app = async function (arg) {
-
-    // string — retrieve existing or look up in loaded layouts
-    if (typeof arg === "string") {
-        var layoutKey, appKey;
-
-        if (arg.indexOf(".") !== -1) {
-            // explicit "Layout.App" form
-            var parts = arg.split(".");
-            layoutKey = parts[0];
-            appKey = parts[1];
-        } else {
-            appKey = arg;
-        }
-
-        // check cache first
-        if (layoutKey) {
-            var cacheKey = layoutKey + "." + appKey;
-            if (lists.instances.apps[cacheKey]) return lists.instances.apps[cacheKey];
-        } else {
-            // scan cache for any layout-qualified match
-            for (var ck in lists.instances.apps) {
-                if (ck === appKey || ck.split(".").pop() === appKey) return lists.instances.apps[ck];
-            }
-        }
-
-        // look up appJSON from loaded layouts
-        if (layoutKey) {
-            var layout = lists.instances.layouts[layoutKey];
-            if (layout) {
-                var appData = await layout.app(appKey);
-                if (appData) return warp.app(appData);
-            }
-        } else {
-            // scan all loaded layouts for this app name
-            for (var ln in lists.instances.layouts) {
-                var appData = await lists.instances.layouts[ln].app(appKey);
-                if (appData) return warp.app(appData);
-            }
-        }
-
-        return undefined;
-    }
-
-    var appJSON = arg;
+// builds an App instance from appJSON — called by layout.app
+helpers._createApp = async function (appJSON) {
     var name = appJSON.name;
 
     // check cache before creating
@@ -4089,14 +4945,17 @@ warp.app = async function (arg) {
     if (!appJSON.win.name) appJSON.win.name = "app-" + name;
     if (!appJSON.win.caption) appJSON.win.caption = name;
 
-
     warp.trigger("beforeAppLoad", appJSON);
-
+    
+    //we set the height to 100% so in our apps we can use css only for scafolding
     var app = {
-        body: warp.dom.node("div", { class: "app-" + name }),
+        body: warp.dom.node("div", { class: "app-" + name, style : "height:100%;display:flex;flex-direction:column" }),
         win: await warp.gui.managers["layout-" + appJSON.layout].win(appJSON.win)
     };
-
+    
+    app.menu = app.win.menu;
+    app.modal = app.win.modal;
+    app.busy = app.win.busy;
 
     var dom = {
         node: warp.dom.node,
@@ -4114,14 +4973,25 @@ warp.app = async function (arg) {
             el.removeEventListener(event, listener);
         }
     }
-    
-
 
     app.show = function () { app.win.show() }
     app.hide = function () { app.win.hide() }
 
     app.el = app.body;
     app.win.body.append(app.body);
+
+    app.context = function (name, functions, optionalEl) {
+        var el = optionalEl === undefined ? app.el
+            : (typeof optionalEl === "string" ? dom.query(optionalEl) : optionalEl);
+        warp.dom.context.add(el, name, functions);
+    };
+    app.uncontext = function (name, optionalEl) {
+        var el = optionalEl === undefined ? app.el
+            : (typeof optionalEl === "string" ? dom.query(optionalEl) : optionalEl);
+        warp.dom.context.remove(el, name);
+    };
+
+    app.context("App : " + name, { hide: function () { app.hide(); } });
 
     // inject HTML from folder
     if (appJSON.folder[name + ".html"]) {
@@ -4146,11 +5016,14 @@ warp.app = async function (arg) {
 
 
         `+ code + "\n})()");
+    appApi.name = name;
+    appApi.layout = appJSON.layout || false;
     appApi.show = app.show;
     appApi.hide = app.hide;
+    appApi.context = app.context;
+    appApi.uncontext = app.uncontext;
 
     // cache with layout-qualified key
-    var cacheKey = appJSON.layout ? appJSON.layout + "." + name : name;
     lists.instances.apps[cacheKey] = appApi;
 
     warp.trigger("appLoad", appApi);
@@ -4163,6 +5036,310 @@ warp.app = async function (arg) {
     };
 
     return appApi;
+}
+
+// warp.app — delegates to layout.app for lookup and creation
+warp.app = async function (arg) {
+
+    if (typeof arg === "string") {
+        var layoutKey, appKey;
+
+        if (arg.indexOf(".") !== -1) {
+            var parts = arg.split(".");
+            layoutKey = parts[0];
+            appKey = parts[1];
+        } else {
+            appKey = arg;
+        }
+
+        if (layoutKey) {
+            var layout = lists.instances.layouts[layoutKey];
+            if (layout) return layout.app(appKey);
+        } else {
+            for (var ln in lists.instances.layouts) {
+                var result = await lists.instances.layouts[ln].app(appKey);
+                if (result) return result;
+            }
+        }
+
+        return undefined;
+    }
+
+    // object — delegate to layout.app if layout is known
+    if (typeof arg === "object" && arg.layout && lists.instances.layouts[arg.layout]) {
+        return lists.instances.layouts[arg.layout].app(arg);
+    }
+
+    // fallback: create directly (no layout context)
+    return helpers._createApp(arg);
+}
+
+
+/* Web.js */
+/* ──────────────────────────────────────────────────────────────
+   Web — Electron-only constructor for headless web page management.
+   Provides an IPC bridge to Electron's main process for creating,
+   navigating, evaluating JS in, and destroying WebContentsViews.
+
+   A Web is a headless warp window running a web page inside.
+   When the associated Win hides, the native view hides but stays
+   active — eval still works. Win position syncs to native view.
+
+   Requires: Electron main process with Webs endpoint
+             and preload exposing electronAPI.invoke / .on
+   ────────────────────────────────────────────────────────────── */
+
+var WebJSON = {
+    name: "web",
+    id: false,
+    url: "about:blank",
+    win: false,
+    active: false,
+    ready: false,
+    favicon: false,
+    offscreen: false
+};
+
+function Web(options) {
+
+    options = helpers.setupOptionsAndInstance(options, this);
+
+    var web = this;
+    var webId = options.id || rand();
+
+    web.id = webId;
+    web.url = options.url;
+    web.win = options.win;
+    web.active = options.active;
+    web.ready = options.ready;
+    web.favicon = options.favicon;
+
+    web.eval = async function (code) {
+        if (typeof code === "function")
+            code = "return (" + code.toString() + ")()";
+        var str = await warp.native.invoke("Webs", "Eval", [webId, code]);
+        // TODO: discuss — should web.eval parse JSON here or let the caller handle it?
+        // fromJson can fail on non-JSON strings (e.g. "opened", "not found")
+        // Option A: always parse (current) — convenient but fragile
+        // Option B: return raw string, let caller parse — safer, more explicit
+        try { return fromJson(str); } catch (e) { return str; }
+    };
+
+    web.destroy = async function () {
+        if (webId === warp.native.activeWeb)
+            await warp.native.invoke("Webs", "Deactivate", [webId]);
+        var result = await warp.native.invoke("Webs", "Destroy", [webId]);
+        delete Web._instances[webId];
+        if (warp.native.webs) delete warp.native.webs[webId];
+        return result;
+    };
+
+    web.back = async function () {
+        return await warp.native.invoke("Webs", "Back", [webId]);
+    };
+
+    web.forward = async function () {
+        return await warp.native.invoke("Webs", "Forward", [webId]);
+    };
+
+    web.navigate = async function (url) {
+        return await warp.native.invoke("Webs", "Navigate", [webId, url]);
+    };
+
+    web.agent = async function (agent) {
+        if (!agent) agent = null;
+        return await warp.native.invoke("Webs", "Agent", [webId, agent]);
+    };
+
+    web.capture = async function (rect) {
+        if (!rect) rect = null;
+        var dataURL = await warp.native.invoke("Webs", "Capture", [webId, rect]);
+        var parts = dataURL.split(",");
+        var metadata = parts[0];
+        var base64Data = parts[1];
+        var mimeMatch = metadata.match(/:(.*?);/);
+        var mime = mimeMatch ? mimeMatch[1] : "";
+        var binary = atob(base64Data);
+        var array = Uint8Array.from(binary, function (c) { return c.charCodeAt(0); });
+        return new Blob([array], { type: mime });
+    };
+
+    web.sleep = async function (state) {
+        if (state === undefined) state = null;
+        return await warp.native.invoke("Webs", "Sleep", [webId, state]);
+    };
+
+    web.offscreen = async function (state) {
+        if (state === undefined) state = null;
+        return await warp.native.invoke("Webs", "Offscreen", [webId, state]);
+    };
+
+    web.bounds = async function (x, y, w, h) {
+        return await warp.native.invoke("Webs", "Bounds", [webId, x, y, w, h]);
+    };
+
+    web.hide = async function () {
+        return await warp.native.invoke("Webs", "Hide", [webId]);
+    };
+
+    web.show = async function () {
+        return await warp.native.invoke("Webs", "Show", [webId]);
+    };
+}
+
+Web._instances = {};
+
+helpers.registerEvents([
+    "nativeWebsLoadEnd", "nativeWebsTitleChanged", "nativeWebsIconChanged",
+    "nativeWebsAddressChanged", "nativeWebsLoadError",
+    // backward compat
+    "nativeTabsLoadEnd", "nativeTabsTitleChanged", "nativeTabsIconChanged",
+    "nativeTabsAddressChanged", "nativeTabsLoadError"
+]);
+
+/* ── native bridge ────────────────────────────────────────────
+   Sets up warp.native — the IPC bridge to Electron's main process.
+   Only activates when window.electronAPI is present (Electron env).
+   In a plain browser this block is skipped entirely.
+   ──────────────────────────────────────────────────────────── */
+
+if (typeof window !== "undefined" && window.electronAPI && window.electronAPI.invoke) {
+
+    warp.native = {
+        messages: {},
+        webs: {},
+        tabs: {},  // backward compat
+        activeWeb: false,
+        activeTab: false, // backward compat
+        version: 0.1,
+
+        // node endpoint registration — used by Layout to register/unregister backend endpoints
+        registerEndpoint: function (name, files) { return warp.native.invoke("Endpoints", "Register", [name, files]); },
+        unregisterEndpoint: function (name) { return warp.native.invoke("Endpoints", "Unregister", [name]); },
+
+        invoke: function (className, methodName, args) {
+            if (args == null) args = [];
+            var messageId = rand();
+            var p = new Promise(function (resolve, reject) {
+                warp.native.messages[messageId] = {
+                    id: messageId,
+                    resolve: resolve,
+                    reject: reject,
+                    endpoint: className,
+                    method: methodName,
+                    args: args
+                };
+            });
+            window.electronAPI.invoke(JSON.stringify({
+                endpoint: className,
+                method: methodName,
+                id: messageId,
+                args: args
+            }));
+            warp.native.messages[messageId].promise = p;
+            return p;
+        },
+
+        resolve: function (messageId, result) {
+            if (!warp.native.messages[messageId]) return;
+            result = fromJson(result);
+            warp.native.messages[messageId].resolve(result);
+            delete warp.native.messages[messageId];
+        },
+
+        reject: function (messageId, result) {
+            if (!warp.native.messages[messageId]) return;
+            warp.native.messages[messageId].reject({ message: result });
+            delete warp.native.messages[messageId];
+        },
+
+        trigger: function (className, methodName, data) {
+            var eventName = "native" + className + methodName;
+            warp.trigger(eventName, fromJson(data));
+        },
+
+        // create a new Web instance
+        web: async function (url, offscreen) {
+            if (!offscreen) offscreen = false;
+            var webId = rand();
+
+            var webData = await warp.native.invoke("Webs", "Create", [
+                webId, url, offscreen
+            ]);
+
+            // hide by default — moves off-screen, view stays active (no throttling)
+            if (!offscreen) {
+                await warp.native.invoke("Webs", "Hide", [webData.id || webId]);
+            }
+
+            async function waitReady(id, interval) {
+                if (!interval) interval = 17;
+                return new Promise(function (resolve) {
+                    var check = function () {
+                        var w = warp.native.webs[id];
+                        if (w && w.ready) {
+                            resolve();
+                        } else {
+                            setTimeout(check, interval);
+                        }
+                    };
+                    check();
+                });
+            }
+
+            await waitReady(webData.id);
+
+            var web = new Web({
+                name: "web-" + webData.id,
+                id: webData.id,
+                url: webData.url,
+                favicon: webData.favicon || false,
+                ready: true
+            });
+
+            // bounds are set off-screen in Webs.Create — caller uses Show + Bounds to position
+
+            Web._instances[webData.id] = web;
+            warp.native.webs[webData.id] = web;
+            warp.native.tabs[webData.id] = web; // backward compat
+            return web;
+        },
+
+        // backward compat — alias
+        tab: function (url, offscreen) {
+            return warp.native.web(url, offscreen);
+        }
+    };
+
+    // listen for resolve/reject/trigger from the main process
+    if (window.electronAPI.on) {
+        window.electronAPI.on("native-resolve", function (messageId, result) {
+            warp.native.resolve(messageId, result);
+        });
+        window.electronAPI.on("native-reject", function (messageId, result) {
+            warp.native.reject(messageId, result);
+        });
+        window.electronAPI.on("native-trigger", function (className, methodName, data) {
+            // handle web lifecycle triggers internally
+            if (className === "Webs" || className === "Tabs") {
+                var parsed = fromJson(data);
+                var id = parsed && parsed.id;
+                if (id) {
+                    if (!warp.native.webs[id]) warp.native.webs[id] = { id: id, ready: false };
+                    var w = warp.native.webs[id];
+                    if (methodName === "LoadEnd") { w.ready = true; w.url = parsed.url; w.title = parsed.title; }
+                    if (methodName === "TitleChanged") w.title = parsed.title;
+                    if (methodName === "IconChanged") w.favicon = parsed.favicon;
+                    if (methodName === "AddressChanged") w.url = parsed.url;
+                }
+            }
+            warp.native.trigger(className, methodName, data);
+        });
+    }
+
+} else {
+    // no-op bridge for plain browser — engine loads without error
+    warp.native = false;
 }
 
 
@@ -4393,6 +5570,22 @@ async function init() {
         }
     });
 
+    // debounced OPFS flush on every change — don't rely on shutdown hook in Electron
+    var _prefsFlushTimer = 0;
+    prefsStore.on("change", function () {
+        clearTimeout(_prefsFlushTimer);
+        _prefsFlushTimer = setTimeout(async function () {
+            try {
+                var data = await prefsStore.get();
+                var root = await navigator.storage.getDirectory();
+                var fh = await root.getFileHandle("preferences.json", { create: true });
+                var w = await fh.createWritable();
+                await w.write(JSON.stringify(data));
+                await w.close();
+            } catch (e) { console.error("prefs flush error:", e); }
+        }, 300);
+    });
+
     if (storedPrefs && !prefsStoreExists) await prefsStore.setRoot(storedPrefs);
 
 //we definetly need 'change' here
@@ -4400,8 +5593,14 @@ async function init() {
         "beforeFileOpen",
         "fileOpen",
         "beforeFileClose",
-        "fileClose"
+        "fileClose",
+        "nativeAppOpenFile"
     ]);
+
+    // file association — when OS opens a .layout file with Warp
+    warp.on("nativeAppOpenFile", function (e) {
+        if (e.data && e.data.path) warp.load(e.data.path);
+    });
 
     
 
@@ -4413,6 +5612,37 @@ async function init() {
             if (!lists.instances.layouts[k]) await warp.layout(allLayoutData[k]);
         }
     }
+
+    // Cold-boot restore from local cache. knownLayouts entries are
+    // {name, version}; localStorage holds bytes under "warpLayout.<name>.<v>".
+    // For each entry not already loaded (engineOptions.load or cross-tab
+    // hydration above), pull bytes, wrap in a File, hand to warp.load — the
+    // File path skips the bare-name branch entirely → no AppStore fetch on
+    // restore. Cache misses are silent. Legacy string entries (pre-versioning)
+    // are skipped; they'll be migrated next time the user loads them by name.
+    try {
+        var known = await warp.prefs("layouts", "knownLayouts");
+        if (Array.isArray(known)) {
+            for (var ki = 0; ki < known.length; ki++) {
+                var ke = known[ki];
+                var kname = (ke && typeof ke === "object") ? ke.name : null;
+                var kver  = (ke && typeof ke === "object") ? (ke.version || 1) : null;
+                if (!kname || !kver) continue;
+                if (lists.instances.layouts[kname]) continue;
+                var b64 = null;
+                try { b64 = localStorage.getItem("warpLayout." + kname + "." + kver); } catch (_e) { }
+                if (!b64) continue;
+                try {
+                    var bin = atob(b64);
+                    var bytes = new Uint8Array(bin.length);
+                    for (var bi = 0; bi < bin.length; bi++) bytes[bi] = bin.charCodeAt(bi);
+                    await warp.load(new File([bytes], kname + ".layout", { type: "application/zip" }));
+                } catch (e) {
+                    console.warn("[Warp] restore failed for '" + kname + "':", e && e.message);
+                }
+            }
+        }
+    } catch (_e) { /* prefs unavailable — skip restore */ }
 
     //if mocha internal tests are passed run them
     if (engineOptions.tests) {
@@ -4426,6 +5656,16 @@ async function init() {
 
 //we create an instance of dom , helps with dom operations and is used by Gui
 //we created vars before init();
+warp.registerEvents = helpers.registerEvents;
+
+warp.unload = async function (name) {
+    if (Array.isArray(name)) return Promise.all(name.map(function (n) { return warp.unload(n); }));
+    var layout = lists.instances.layouts[name];
+    if (!layout) return false;
+    await layout.destroy();
+    return true;
+};
+
 warp.dom = new Dom();
 dom = warp.dom;
 //we create an instance of gui and attach it to the global scope, this is the main interface 

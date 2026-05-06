@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Proposition — joint venture, year 1</title>
+<link rel="stylesheet" href="to-market.css">
+</head>
+<body>
+
+<nav class="topnav">
+  <a href="index.html" class="nav-home">⌂ Home</a>
+  <span class="nav-sep">|</span>
+  <a href="proposition.html" class="active">Proposition</a>
+  <a href="features.html">Features</a>
+  <a href="plan.html">Plan</a>
+  <a href="launch-todo.html">Launch TODO</a>
+  <span class="nav-sep">|</span>
+  <a href="pricing.html">Pricing</a>
+  <a href="content.html">Content</a>
+  <a href="legal.html">Legal</a>
+  <span class="nav-sep">|</span>
+  <span class="nav-label">Publish:</span>
+  <a href="publish-common.html">common</a>
+  <a href="publish-web.html">web</a>
+  <a href="publish-ios.html">iOS</a>
+  <a href="publish-android.html">Android</a>
+</nav>
+
+<h1>Proposition — joint venture, year 1</h1>
+<div class="meta">From: Dario · For: Ivana, Ronaldo · Date: May 2026 · Status: draft for discussion</div>
+
+<p>This is the first written version of the go-to-market deal. Read it as a starting point for the
+call, not a final term sheet.</p>
+
+<h2>Where we are now</h2>
+
+<ul>
+  <li>The localisation engine is complete: 99/99 of Ivana's tests pass on a deterministic
+      rule set, with diagnoses scored per region and tiered (HIGHLY LIKELY → ESSENTIALLY
+      EXCLUDED). The output is grounded — an AI agent placed on top of it cannot
+      hallucinate a localisation or a differential outside of what the engine produces.</li>
+  <li>The Parameters and Localisation apps are usable end-to-end on a desktop. What we
+      have is a working POC, not a product.</li>
+  <li>Ronaldo has 34k followers across two Instagram accounts, predominantly practicing
+      vets — a potential never used for selling a digital product.</li>
+</ul>
+
+<h2>What still needs to happen</h2>
+
+<p>To turn the POC into something a vet can pay for and use on a phone in clinic:</p>
+
+<table>
+  <tr><th>Area</th><th>Work</th></tr>
+  <tr><td>Branding</td><td>Name, colour palette, typography, tagline, plus baseline GUI guidelines for the app (dark vs light, basic component style — not a full design system, just enough to keep the look coherent across web and mobile).</td></tr>
+  <tr><td>Mobile</td><td>Remove detection algo to backend and repackage the layout as a mobile app — <strong>PWA + Android native in year 1; iOS in year 2</strong>. UX has to fit small screens and one-handed use.</td></tr>
+  <tr><td>Backend</td><td>User accounts, auth, subscription state, case storage. Currently the app runs entirely client-side.</td></tr>
+  <tr><td>Infrastructure</td><td>Domain, servers, database, certificates, backups, monitoring. None of this exists today.</td></tr>
+  <tr><td>Payments</td><td><a href="https://stripe.com" target="_blank" rel="noopener">Stripe</a> for web, <a href="https://developer.android.com/google/play/billing" target="_blank" rel="noopener">Google Play Billing</a> for Android. (Apple in-app purchases are year-2 work along with iOS.)</td></tr>
+  <tr><td>Security</td><td>Encryption, data handling per LGPD (Brazil, never done it before) or GDPR (EU). Vet case data is sensitive.</td></tr>
+  <tr><td>Publishing</td><td>Google Play developer account, app store assets, review submission. iOS / Apple Developer enrolment is deferred to year 2.</td></tr>
+  <tr><td>Legal</td><td>Terms of Service, Privacy Policy, in-app disclaimer - not a problem, AI will help us. For founder agreement between us three, this docs are starting point</td></tr>
+  <tr><td>Conversion</td><td>Strategy and tooling to turn the 30k+ Instagram audience into paying users — not just a "post and hope" approach.</td></tr>
+</table>
+
+<p>
+  This is roughly 6–8 months of full attention from a small team for someone who already
+knows how to do all of these. None of this is research — it is execution.</p>
+
+<h2>What I am proposing</h2>
+
+<div class="key">
+  <strong>Structure</strong>
+  <ul style="margin-top:8px">
+    <li><strong>Year 1:</strong> Bemjax stake = <strong>10% equity + €2,000 / month</strong> (+ applicable tax).</li>
+    <li><strong>Year 2:</strong> Bemjax stake = <strong>15% equity + €2,000 / month</strong> (+ applicable tax) — additional 5% vested for the second year of commitment.</li>
+    <li>The <strong>€2k/month is permanent</strong> — not a year-one promo. It funds the Bemjax delivery side on an ongoing basis (see "What the €2k covers" below).</li>
+    <li><strong>Our commitment:</strong> all of the work in the table above, plus advising
+        on what Ivana and Ronaldo do operationally. Bemjax acts as the agency, with
+        several people on the team contributing.</li>
+    <li><strong>Your commitment:</strong> Ivana executes the conversion playbook on the
+        Instagram audience and runs day-to-day product/content. Ronaldo provides domain
+        validation, occasional source recordings (for content scaling), and is the face of
+        the brand.</li>
+    <li><strong>Year-one target:</strong> 200 paying accounts at ~$10/month — break-even
+        on the Bemjax fee. Anything above that is profit to be split per equity.</li>
+    <li><strong>Year-one outcome:</strong> a published, bootstrapped, self-sufficient
+        product. From there it scales worldwide on its own funnel, or we open it to a
+        vet-oriented VC.</li>
+  </ul>
+</div>
+
+<h3>What the €2k covers (and what it does not)</h3>
+
+<p>The €2k/month is an all-in agency rate for Bemjax. It covers <strong>everything we
+deliver</strong>:</p>
+
+<ul>
+  <li>All development work — Dario and the rest of the Bemjax team.</li>
+  <li>Infrastructure — hosting, database, monitoring, email, CDN, certificates.</li>
+  <li>Tooling on the funnel side — landing page, email platform, analytics.</li>
+  <li>App store accounts — Apple Developer, Google Play.</li>
+  <li>Domains, legal templates, baseline brand assets.</li>
+  <li>Strategy and advisory across the year.</li>
+</ul>
+
+<p>The <strong>only</strong> cost outside the €2k is the AI API bill — the LLM that
+powers the agent layer wrapping the engine. It is variable because it scales with the
+number of cases run and the prompt volume per case. We track it monthly and pass it
+through at cost — no markup.</p>
+
+<p class="small">The €2k figure is net of tax — applicable VAT (or equivalent in the
+chosen jurisdiction) is added on top per invoice.</p>
+
+<h2>Discovery work — things we have to figure out before we lock anything</h2>
+
+<p>A non-trivial slice of year one is investigation, not building. None of us has shipped a
+paid digital product into the Brazilian market first before, and several decisions cannot be
+made right now, we just dont know facts or have numbers.</p>
+
+<table>
+  <tr><th>Area</th><th>What we have to find out</th></tr>
+  <tr>
+    <td><strong>Procedural — incorporation jurisdiction</strong></td>
+    <td>
+      Where do we register the legal entity? Three live candidates:
+      <ul style="margin-top:6px">
+        <li><strong>Croatia / EU</strong> — easiest for me to operate, EU banking, Stripe-friendly. Tax treatment of payouts to Ivana / Ronaldo in Brazil needs to be checked.</li>
+        <li><strong>Brazil</strong> — natural for a BR-first product, easier for Ivana / Ronaldo, but the highest administrative overhead. CNPJ, accountant on retainer, currency exchange friction on USD revenue.</li>
+        <li><strong>US (Delaware C-Corp or LLC)</strong> — standard for software / VC track, frictionless Stripe + Apple / Google payouts. Foreign-shareholder admin overhead for all three of us.</li>
+      </ul>
+      Decision driver: where revenue lands, how dividends or salaries flow, what a future VC round would prefer.
+    </td>
+  </tr>
+  <tr>
+    <td><strong>Brazilian legal frame</strong></td>
+    <td>
+      We have no direct experience here. Open questions:
+      <ul style="margin-top:6px">
+        <li>LGPD specifics — Data Protection Officer requirement at our scale, where data must reside, breach-notification timing.</li>
+        <li>CRMV classification of "diagnostic decision support" — already on the legal TODO (see <a href="legal.html">legal.html</a>). If they classify it as a medical device, year one shifts substantially.</li>
+        <li>Consumer-protection rules (CDC) — refund windows on subscriptions, cancellation rights, what we must say in the checkout flow.</li>
+        <li>Tax on cross-border SaaS — IOF, withholding, ISS at municipal level if BR entity. Whether US / EU entity changes this.</li>
+        <li>Marketing rules around veterinary products and AI-generated content — anything we publish through marketing tools and services needs to be clean against any current or pending rule.</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td><strong>Operational — paid accounts &amp; vendors</strong></td>
+    <td>
+      By launch we will be running ~10+ paid services: domains (.com, .com.br), hosting,
+      database, mail, monitoring, AI API, marketing tools and services, Stripe, Apple
+      Developer, Google Play, analytics, error tracking, etc.
+      Several of these auto-debit a card and refuse to keep service when payment fails.
+      We need this <strong>frictionless</strong> from day one:
+      <ul style="margin-top:6px">
+        <li>One business card or virtual-card setup tied to the legal entity, not a personal card.</li>
+        <li>Centralised vendor inventory — what is paid, on which card, when it renews, who else has access.</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td><strong>Banking &amp; revenue routing</strong></td>
+    <td>
+      Not a day-one blocker. The €2k/month covers the first six months of operating costs
+      without any revenue moving through the system, so Stripe / Apple / Google payout
+      routing, FX cost, any holding-vs-operating structure
+      can be decided closer to actual revenue.
+    </td>
+  </tr>
+  <tr>
+    <td><strong>IP &amp; ownership clarity</strong></td>
+    <td>
+      The localisation engine and the codebase have to be assigned to the legal entity
+      from day one, not held personally. The Bemjax-as-agency relationship to the entity
+      needs to be in writing — service contract, IP assignment, no ambiguity later - to Ronaldo I guess.
+    </td>
+  </tr>
+</table>
+
+<h2>What "200 accounts at $10" actually means</h2>
+
+<p>200 paying accounts × $10/month = $2,000/month gross. That covers the €2k/month Bemjax fee at
+parity (give or take currency). It does <em>not</em> cover server costs, AI API costs, app
+store fees (~30% on mobile), or Ivana's time. So 200 accounts is the floor — the point at
+which we know the funnel works and the product retains. The actual sustainability target
+is somewhere between 300 and 500 accounts.</p>
+
+<div class="note">
+  Pricing of $10 is illustrative. Final pricing comes out of user conversations and
+  competitor research before launch — see <a href="pricing.html">pricing.html</a>.
+</div>
+
+<h2>The Instagram funnel — the leverage</h2>
+
+<p>The reason this is doable in a year and on a small budget is that we are not buying
+ads or hiring a marketing agency. We have 30k+ vets who already follow Ronaldo. We need
+roughly 200 of them to convert — under 1%. That is a realistic ask if the content is
+right and the product earns trust. Most of Ivana's strategic work in year one is running
+that funnel.</p>
+
+<p>The plan for the funnel — pre-launch teasers, soft launch via early-bird offer (Ronaldo, on a TikTok video shows the app),
+case-walkthrough content, AI-clone content scaling — is in <a href="content.html">content.html</a>.</p>
+
+<h2>What this is not</h2>
+
+<ul>
+  <li>We dont need an investemnt other than this. We are bootstrapping.</li>
+  <li>There is no ad spend in year one, for marketing.</li>
+  <li>This is not a feature factory. We launch a focused product and iterate on real-user
+      feedback. A long feature wishlist before launch is the most common way to fail.</li>
+  <li>This is not exclusive to year one. If we reach 200 by month 9, we re-discuss
+      structure for year two from a position of strength.</li>
+</ul>
+
+<h2>Roles, in plain terms</h2>
+
+<p>Below is what each role covers in principle. The actual time commitment per role
+comes out of the scope-mapping work we do together once the structure is agreed —
+there are no precise hour numbers in this draft because that mapping has not happened
+yet, and pretending to know them would be guesswork.</p>
+
+<table>
+  <tr><th>Ronaldo</th><th>Ivana</th><th>Bemjax (Dario + team)</th></tr>
+  <tr>
+    <td>
+      <ul>
+        <li>Public face of the brand</li>
+        <li>Clinical / domain validation when product decisions need it</li>
+      </ul>
+    </td>
+    <td>
+      <ul>
+        <li>Day-to-day product and content operations</li>
+        <li>Instagram conversion playbook execution</li>
+        <li>Customer feedback loop, support triage</li>
+        <li>Coordination across the three of us</li>
+      </ul>
+    </td>
+    <td>
+      <ul>
+        <li>Mobile app, backend, infrastructure, payments, security, publishing</li>
+        <li>Tooling for the funnel (landing page, email, analytics)</li>
+        <li>Strategy / advisory on areas you have not done before</li>
+        <li>Agency-level dedication for 12 months</li>
+      </ul>
+    </td>
+  </tr>
+</table>
+
+<p>Mapping the actual hour commitment per role is one of the first joint exercises once
+the structure is agreed — it depends on what we lock in scope and what we descope.</p>
+
+<h2>Decision points for you</h2>
+
+<ol>
+  <li><strong>Incorporation jurisdiction.</strong> Croatia / EU, Brazil, or US? The
+      founder agreement and the cash flow both depend on this.</li>
+  <li><strong>Timeline trigger.</strong> Year-one starts on signature, or on the first
+      €2k transfer — whichever you prefer. If you need a 30-day delay to organise the
+      cash, that is fine.</li>
+  <li><strong>AI API budget envelope.</strong> The variable AI bill is on top of the €2k.
+      Decide an agreed monthly cap and a process if usage spikes (alert at 80%, pause at
+      100%, or just absorb).</li>
+  <li><strong>Year-two trigger.</strong> The structure already commits to 15% + €2k for
+      year 2 — we just need to confirm the trigger to extend (e.g. on hitting 150 paying
+      accounts, on year-end signature, automatic unless either side opts out).</li>
+</ol>
+
+<h2>Next step</h2>
+
+<p>If you want detail: <a href="features.html">features.html</a> covers the product
+scope across the year, <a href="plan.html">plan.html</a> the consolidated 12-month plan
+and timeline, <a href="launch-todo.html">launch-todo.html</a> what specifically needs to
+happen, and the topical files (<a href="pricing.html">pricing</a>,
+<a href="content.html">content</a>, <a href="legal.html">legal</a>, plus the four
+publishing files (<a href="publish-common.html">common</a>,
+<a href="publish-web.html">web</a>, <a href="publish-ios.html">iOS</a>,
+<a href="publish-android.html">Android</a>)) the rest. The
+<a href="index.html">index.html</a> in this folder links everything.</p>
+
+<p>Once you have read those, let us schedule a call to walk through the four decision
+points above and confirm the timeline trigger. I would like to start in the next 2–3
+weeks if we agree.</p>
+
+<p class="small">— Dario</p>
+
+</body>
+</html>

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Legal</title>
+<link rel="stylesheet" href="to-market.css">
+</head>
+<body>
+
+<nav class="topnav">
+  <a href="index.html" class="nav-home">⌂ Home</a>
+  <span class="nav-sep">|</span>
+  <a href="proposition.html">Proposition</a>
+  <a href="features.html">Features</a>
+  <a href="plan.html">Plan</a>
+  <a href="launch-todo.html">Launch TODO</a>
+  <span class="nav-sep">|</span>
+  <a href="pricing.html">Pricing</a>
+  <a href="content.html">Content</a>
+  <a href="legal.html" class="active">Legal</a>
+  <span class="nav-sep">|</span>
+  <span class="nav-label">Publish:</span>
+  <a href="publish-common.html">common</a>
+  <a href="publish-web.html">web</a>
+  <a href="publish-ios.html">iOS</a>
+  <a href="publish-android.html">Android</a>
+</nav>
+
+<h1>Legal</h1>
+<div class="meta">What we need in writing — common to every platform we ship on</div>
+
+<h2>Legal stack — minimum viable</h2>
+
+<table>
+  <tr><th>Document</th><th>Where it lives</th><th>Who drafts</th></tr>
+  <tr><td>In-app disclaimer</td><td>First-launch acceptance screen + app footer + landing page</td><td>Dario (template) + Ronaldo (review)</td></tr>
+  <tr><td>Terms of Service (PT + EN)</td><td>yoursite.com/terms — public URL</td><td>Dario, from <a href="https://termly.io" target="_blank" rel="noopener">Termly</a> / <a href="https://www.termsfeed.com" target="_blank" rel="noopener">TermsFeed</a> template</td></tr>
+  <tr><td>Privacy Policy (PT + EN, LGPD-compliant)</td><td>yoursite.com/privacy — public URL</td><td>Dario, from <a href="https://termly.io" target="_blank" rel="noopener">Termly</a> / <a href="https://www.termsfeed.com" target="_blank" rel="noopener">TermsFeed</a> template</td></tr>
+  <tr><td>Cookie policy (web)</td><td>Footer link, banner on first visit</td><td>Dario</td></tr>
+  <tr><td>Founder agreement</td><td>Private, signed by all three</td><td>Joint draft + lawyer review (~€200–500)</td></tr>
+  <tr><td>CRMV regulatory confirmation</td><td>Email response from CRMV, kept on file</td><td>Ronaldo</td></tr>
+</table>
+
+<h2>Disclaimer language</h2>
+
+<div class="key">
+  <strong>Suggested wording (PT and EN versions both required):</strong><br><br>
+  "This is a diagnostic aid tool. It does not replace clinical judgment, physical
+  examination, or complementary diagnostic exams. The veterinarian using this tool
+  remains fully responsible for all clinical decisions."<br><br>
+  "Esta é uma ferramenta de auxílio diagnóstico. Não substitui o julgamento clínico, o
+  exame físico nem exames complementares. O médico-veterinário que utiliza esta
+  ferramenta permanece integralmente responsável por todas as decisões clínicas."
+</div>
+
+<p>This wording must be visible:</p>
+<ul>
+  <li>On first app launch — user must explicitly accept before continuing</li>
+  <li>In the app footer / about screen — always reachable</li>
+  <li>On the landing page</li>
+  <li>In the Terms of Service</li>
+</ul>
+
+<h2>Terms of Service — key clauses</h2>
+
+<ul>
+  <li><strong>Limitation of liability.</strong> No guarantee of diagnostic accuracy. The user accepts that the tool is supportive, not authoritative.</li>
+  <li><strong>Subscription terms.</strong> Billing cycle, price, currency. How and when charges occur.</li>
+  <li><strong>Trial-to-paid conversion.</strong> Explicit — user is told exactly when the first charge will happen.</li>
+  <li><strong>Cancellation.</strong> User can cancel at any time. Cancellation effective at end of current billing period. No partial refunds (standard SaaS).</li>
+  <li><strong>Refunds.</strong> Per local law (consumer rights in BR / EU); be ready to honour the legal minimum without arguing.</li>
+  <li><strong>Permitted use.</strong> Tool is for licensed veterinarians. Not for animal owners self-diagnosing pets. Not for human medicine under any circumstance.</li>
+  <li><strong>Account suspension.</strong> Conditions under which we may suspend (abuse, scraping, sharing accounts).</li>
+  <li><strong>Governing law.</strong> Whichever jurisdiction the legal entity is registered in.</li>
+</ul>
+
+<h2>Privacy Policy — LGPD specifics</h2>
+
+<p>Brazilian users are subject to LGPD (similar to GDPR). The policy must list:</p>
+
+<ul>
+  <li>What data is collected — email, name, usage analytics, case data the user enters</li>
+  <li>Purposes of processing — service provision, billing, support, product improvement</li>
+  <li>Legal basis for processing each category</li>
+  <li>Storage location and security measures (encryption at rest and in transit)</li>
+  <li>Third parties involved — payment processor (Stripe), analytics, AI API providers</li>
+  <li>User rights — access, correction, deletion, portability, withdrawal of consent</li>
+  <li>Retention period — how long we keep data after account closure (90 days is a common floor)</li>
+  <li>Data Protection Officer contact (LGPD requires a designated contact)</li>
+  <li>How to exercise rights — email or in-app form</li>
+</ul>
+
+<div class="note">
+  Case data entered by the vet is the most sensitive category. Default position: case data
+  is stored only against the vet's own account, never used for AI model training without
+  explicit opt-in, never shared with third parties.
+</div>
+
+<h2>Regulatory question — is this a "medical device"?</h2>
+
+<p>Decision-support tools for licensed practitioners are typically <em>not</em> classified
+as medical devices in Brazil (Anvisa) or the EU (MDR), as long as the tool does not
+directly determine treatment without a practitioner in the loop. The wording "decision
+support" + "clinical judgment remains with the veterinarian" matters here.</p>
+
+<p>That said: <strong>do not assume.</strong> Ronaldo contacts CRMV in writing to confirm
+the classification, and we keep the response on file. If the response is "this is a
+medical device", year-one plan changes substantially and we have to discuss before
+launching.</p>
+
+<h2>Founder agreement — what it covers</h2>
+
+<table>
+  <tr><th>Section</th><th>What it nails down</th></tr>
+  <tr><td>Equity split</td><td>Bemjax stake = 10% in year 1, escalating to 15% in year 2. Ivana / Ronaldo split of the remaining stake stated explicitly in the agreement.</td></tr>
+  <tr><td>Cash terms</td><td>€2k/month to Bemjax (+ applicable tax), permanent through year 1 and year 2. Payment schedule, what happens if a month is missed. AI API costs invoiced separately at cost.</td></tr>
+  <tr><td>Roles &amp; responsibilities</td><td>Who owns what (matches the table in <a href="plan.html">plan.html</a>)</td></tr>
+  <tr><td>IP ownership</td><td>The localisation engine, the brand, the codebase — owned by the legal entity, not individuals</td></tr>
+  <tr><td>Decision rules</td><td>What requires unanimous decision (price changes, partnerships, structural changes), what is delegated (day-to-day product, content)</td></tr>
+  <tr><td>Vesting</td><td>Bemjax's year-1 10% vests over the 12 months (e.g. monthly), not granted upfront. Year-2 5% escalation vests across year 2 on the same monthly cadence. Protects everyone if someone walks early.</td></tr>
+  <tr><td>Exit clauses</td><td>What happens if a founder leaves voluntarily / is removed / cannot continue. Buyout terms.</td></tr>
+  <tr><td>Year-end review</td><td>What happens at month 12 — restructure, raise, wind down. Defined in the agreement, not negotiated under pressure.</td></tr>
+  <tr><td>Dispute resolution</td><td>Mediation first, then defined jurisdiction. Avoid open-ended litigation clauses.</td></tr>
+</table>
+
+<div class="warn">
+  This is the one document we should pay a lawyer for, even if everything else is
+  template-based. Budget €200–500 for review. Founder disputes are the most common reason
+  early-stage products die — and they only happen when nothing was written down.
+</div>
+
+<h2>Legal order of operations</h2>
+
+<ol>
+  <li><strong>Founder agreement signed</strong> → before money flows. Not after.</li>
+  <li><strong>Privacy Policy + Terms live</strong> on a public URL → before any app store submission, before first marketing email.</li>
+  <li><strong>CRMV confirmation received</strong> → before public launch (not blocking PWA pre-launch tests with a closed group).</li>
+</ol>
+
+<p class="small">For the platform-specific publishing flows that depend on these
+documents, see <a href="publish-common.html">publish-common.html</a>,
+<a href="publish-ios.html">publish-ios.html</a>,
+<a href="publish-android.html">publish-android.html</a>, and
+<a href="publish-web.html">publish-web.html</a>.</p>
+
+</body>
+</html>

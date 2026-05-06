@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Go-to-Market Plan — Vet Neuro Diagnostic App</title>
+<style>
+  body { font-family: system-ui, sans-serif; max-width: 800px; margin: 40px auto; padding: 0 20px; line-height: 1.6; color: #1a1a1a; }
+  h1 { border-bottom: 3px solid #2a6e4f; padding-bottom: 10px; }
+  h2 { color: #2a6e4f; margin-top: 40px; }
+  h3 { color: #333; }
+  table { border-collapse: collapse; width: 100%; margin: 16px 0; }
+  th, td { border: 1px solid #ccc; padding: 10px 14px; text-align: left; }
+  th { background: #2a6e4f; color: #fff; }
+  tr:nth-child(even) { background: #f5f5f5; }
+  .highlight { background: #e8f5e9; border-left: 4px solid #2a6e4f; padding: 14px 18px; margin: 16px 0; border-radius: 4px; }
+  .warn { background: #fff8e1; border-left: 4px solid #f9a825; padding: 14px 18px; margin: 16px 0; border-radius: 4px; }
+  ul { padding-left: 22px; }
+  li { margin-bottom: 6px; }
+  .tag { display: inline-block; background: #2a6e4f; color: #fff; padding: 2px 10px; border-radius: 12px; font-size: 0.85em; margin-right: 4px; }
+  .owner { display: inline-block; background: #555; color: #fff; padding: 2px 8px; border-radius: 12px; font-size: 0.8em; }
+  .owner.vet { background: #1565c0; }
+  .owner.dev { background: #6a1b9a; }
+  .owner.all { background: #e65100; }
+  .todo { list-style: none; padding-left: 8px; }
+  .todo li { margin-bottom: 10px; padding: 8px 12px; background: #fafafa; border: 1px solid #e0e0e0; border-radius: 4px; }
+  .todo li::before { content: "\2610"; margin-right: 10px; font-size: 1.1em; }
+  .sub { margin-top: 6px; padding-left: 28px; font-size: 0.92em; color: #555; }
+  .sub li { background: none; border: none; padding: 2px 0; margin-bottom: 2px; }
+  .sub li::before { content: "—"; margin-right: 6px; }
+  .deliverable { margin-top: 8px; padding: 6px 12px; background: #e3f2fd; border-radius: 4px; font-size: 0.9em; }
+  .deliverable::before { content: "Deliverable: "; font-weight: bold; }
+</style>
+</head>
+<body>
+
+<h1>Go-to-Market Plan</h1>
+<p><strong>Product:</strong> Veterinary Neurology Diagnostic Helper<br>
+<strong>Target price:</strong> $2–30/month (testing range — final pricing TBD)<br>
+<strong>Date:</strong> April 2026</p>
+
+<h2>Team</h2>
+<table>
+  <tr><th>Role</th><th>Who</th><th>Responsibility</th></tr>
+  <tr><td>Domain Expert</td><td><strong>Ronaldo</strong> — world-class vet neurologist</td><td>Domain knowledge, clinical validation, Instagram presence (34k followers), face of the brand</td></tr>
+  <tr><td>Product Owner / Manager</td><td><strong>Ivana</strong> — veterinarian</td><td>Domain knowledge, product management, administration, content strategy, social media</td></tr>
+  <tr><td>Dev Team</td><td><strong>Dario</strong> — owner of Bemjax (dev agency) + team</td><td>App development, infrastructure, app store publishing, payments integration</td></tr>
+</table>
+
+<div class="highlight">
+  <strong>Key constraint:</strong> Ronaldo has heavy professional obligations (clinical work, teaching, conferences). His time is the scarcest resource. Ivana manages the product and acts as the bridge — reducing what Ronaldo needs to do personally while maximizing the value of his expertise and reputation.
+</div>
+
+<h2>Biggest Asset</h2>
+<div class="highlight">
+  <strong>Built-in credibility + distribution.</strong> Ronaldo is Brazil's (and arguably the world's) top veterinary neurologist with 34k Instagram followers — mostly practicing veterinarians. This is not just a marketing channel; it's authority that transfers directly to the product.
+</div>
+
+<h2>1. Brand &amp; Domain</h2>
+<p><span class="tag">Week 1–2</span></p>
+
+<ul class="todo">
+  <li><span class="owner all">All</span> Brainstorm 5–10 name candidates
+    <ul class="sub">
+      <li>Keep it short (2 words max), easy to spell in Portuguese and English</li>
+      <li>Avoid generic terms that are hard to trademark (e.g., "VetNeuro")</li>
+      <li>Test pronunciation with both vet and non-vet friends</li>
+    </ul>
+  </li>
+  <li><span class="owner dev">Dario/Bemjax</span> Check availability for each name candidate
+    <ul class="sub">
+      <li>.com domain (Namecheap / Google Domains)</li>
+      <li>.com.br domain (Registro.br)</li>
+      <li>Instagram handle</li>
+      <li>Apple App Store name (search iTunes)</li>
+      <li>Google Play name</li>
+    </ul>
+  </li>
+  <li><span class="owner all">All</span> Final name decision — pick one that's available everywhere</li>
+  <li><span class="owner dev">Dario/Bemjax</span> Register domains (.com + .com.br)</li>
+  <li><span class="owner dev">Dario/Bemjax</span> Create Instagram brand account &amp; reserve handle</li>
+  <li><span class="owner dev">Dario/Bemjax</span> Create a logo
+    <ul class="sub">
+      <li>Use Canva, Looka, or hire on Fiverr ($30–80)</li>
+      <li>Need: square icon (app stores), horizontal version (website), favicon</li>
+      <li>Keep it simple — brain/neuron motif + vet symbol works</li>
+    </ul>
+  </li>
+  <li><span class="owner dev">Dario/Bemjax</span> Build landing page (1-pager)
+    <ul class="sub">
+      <li>Use Carrd ($19/year) or Framer (free tier)</li>
+      <li>Sections: hero + tagline, 3 key features, "who built this" (Ronaldo's credentials), email signup</li>
+      <li>Email capture via Mailchimp free tier or Buttondown</li>
+      <li>Must work on mobile — vets browse on phones</li>
+      <li>Portuguese as primary, English secondary</li>
+    </ul>
+  </li>
+  <li><span class="owner vet">Ronaldo</span> Write the "about" copy — why this tool exists, personal credibility</li>
+</ul>
+<div class="deliverable">Brand name chosen, domains registered, landing page live with email capture, logo ready</div>
+
+<h2>2. Pricing Strategy</h2>
+<p><span class="tag">Decide before launch</span></p>
+
+<div class="warn">
+  <strong>Pricing is TBD.</strong> The values below ($2–30/month) are an initial testing range only. Actual pricing must be determined through market research, competitor analysis, user interviews, and testing. Key factors: willingness to pay in target markets (Brazil vs. international), perceived value of the tool, cost of alternatives, and operational costs (servers, API calls, support).
+</div>
+
+<table>
+  <tr><th>Option</th><th>Test Range</th><th>Notes</th></tr>
+  <tr><td>Monthly</td><td>$2–30/month</td><td>Wide range — needs validation with real users</td></tr>
+  <tr><td>Annual</td><td>TBD</td><td>Typically 15–20% discount vs. monthly</td></tr>
+  <tr><td>Founding Member</td><td>TBD (lower end of range)</td><td>Locked-in price to reward early adopters</td></tr>
+  <tr><td>Free trial</td><td>7–14 days</td><td>Removes friction; vet tries on a real case, gets value, converts</td></tr>
+</table>
+
+<h3>How to determine the right price</h3>
+<ul>
+  <li><strong>Talk to target users:</strong> Ask 10–20 vets "what would you pay monthly for this?" — don't guess</li>
+  <li><strong>Research competitors:</strong> What do VIN, Plumb's, VetBloom, and similar tools charge?</li>
+  <li><strong>Consider markets separately:</strong> Brazilian vets may have different willingness to pay than US/EU vets — consider regional pricing in BRL</li>
+  <li><strong>Factor in costs:</strong> Hosting, AI API costs per query, support time, app store fees (30%)</li>
+  <li><strong>Test before committing:</strong> You can A/B test pricing on the landing page before the app even launches</li>
+  <li><strong>Start and adjust:</strong> It's easier to lower a price than to raise one — but don't anchor too low</li>
+</ul>
+
+<ul class="todo">
+  <li><span class="owner all">All</span> Decide final price point
+    <ul class="sub">
+      <li>Ask 5–10 vet colleagues: "would you pay $X/month for this?" — test $19, $29, $39</li>
+      <li>Research what competitors charge (VetBloom, VIN, Plumb's — all $30+/month)</li>
+      <li>Factor in Brazil vs. international pricing (consider BRL pricing for BR market)</li>
+    </ul>
+  </li>
+  <li><span class="owner all">All</span> Decide on pricing tiers structure
+    <ul class="sub">
+      <li>Option A: single tier (simplest — recommended for launch)</li>
+      <li>Option B: free limited + paid full (risk: free tier cannibalizes paid)</li>
+      <li>Decide: monthly only, or monthly + annual discount?</li>
+    </ul>
+  </li>
+  <li><span class="owner all">All</span> Define the "founding member" offer
+    <ul class="sub">
+      <li>Locked-in price: $19/month forever? Or for 12 months?</li>
+      <li>How many founding member spots? (50? 100? creates scarcity)</li>
+      <li>What's the deadline to claim it?</li>
+    </ul>
+  </li>
+  <li><span class="owner all">All</span> Define free trial terms
+    <ul class="sub">
+      <li>Duration: 7 or 14 days?</li>
+      <li>Require credit card upfront? (higher conversion but fewer signups)</li>
+      <li>Full access or limited during trial?</li>
+    </ul>
+  </li>
+  <li><span class="owner dev">Dario/Bemjax</span> Implement payment system (see App Store section)</li>
+</ul>
+<div class="deliverable">Pricing page ready, founding member offer defined, payment flow tested</div>
+
+<h2>3. Soft Launch via Instagram</h2>
+<p><span class="tag">Week 5–6</span></p>
+
+<h3>3a. Pre-launch teasers (1 week before launch)</h3>
+<ul class="todo">
+  <li><span class="owner vet">Ronaldo</span> Post teaser on BR account (27k): "Something I've been working on..."
+    <ul class="sub">
+      <li>Show a quick screen recording of the app in action (15–30 sec)</li>
+      <li>Don't reveal everything — build curiosity</li>
+      <li>End with "More soon" or "DM if you want early access"</li>
+    </ul>
+  </li>
+  <li><span class="owner vet">Ronaldo</span> Post same teaser adapted for global account (7k) in English</li>
+  <li><span class="owner vet">Ivana</span> Share/repost from their own accounts</li>
+  <li><span class="owner dev">Dario/Bemjax</span> Set up a way to collect early interest (Google Form, or DM list in a spreadsheet)</li>
+</ul>
+
+<h3>3b. Launch day</h3>
+<ul class="todo">
+  <li><span class="owner vet">Ronaldo</span> Post the main launch content: a full case walkthrough
+    <ul class="sub">
+      <li>Real neuro case (anonymized if needed)</li>
+      <li>Show: patient presents → enter findings in app → app suggests differentials</li>
+      <li>Format: Reel (60–90 sec) + carousel post with screenshots</li>
+      <li>Caption: "I built this tool I use in my practice. Sharing it with you."</li>
+      <li>Include link to landing page / app store in bio</li>
+    </ul>
+  </li>
+  <li><span class="owner vet">Ronaldo</span> Post Stories with "founding member" offer
+    <ul class="sub">
+      <li>"First 100 get $19/month locked forever"</li>
+      <li>Add countdown sticker for urgency</li>
+      <li>Swipe-up / link sticker to signup page</li>
+    </ul>
+  </li>
+  <li><span class="owner vet">Ivana</span> Post supporting content from their perspective ("As a vet who's been testing this...")</li>
+  <li><span class="owner dev">Dario/Bemjax</span> Monitor signups, server load, payment flow in real-time</li>
+  <li><span class="owner dev">Dario/Bemjax</span> Be on standby for bug fixes — first 24h are critical</li>
+</ul>
+
+<h3>3c. First week after launch</h3>
+<ul class="todo">
+  <li><span class="owner vet">Ronaldo</span> Post 2–3 more case walkthroughs during the week (different conditions)</li>
+  <li><span class="owner vet">Ronaldo</span> Reply to every DM and comment personally — this is your highest-converting activity</li>
+  <li><span class="owner vet">Ivana</span> Collect user feedback systematically
+    <ul class="sub">
+      <li>Create a simple feedback form (Google Forms)</li>
+      <li>Send to every new user after 3 days: "How's it going? What's missing?"</li>
+    </ul>
+  </li>
+  <li><span class="owner dev">Dario/Bemjax</span> Track metrics: signups, trial→paid conversion, daily active users</li>
+  <li><span class="owner dev">Dario/Bemjax</span> Fix top 3 reported issues within the week</li>
+  <li><span class="owner all">All</span> Daily 15-min standup (WhatsApp group or quick call) — share numbers, issues, feedback</li>
+</ul>
+<div class="deliverable">First 50–100 paying users, initial feedback collected, critical bugs fixed</div>
+
+<h2>4. App Store Publishing</h2>
+<p><span class="tag">Week 3–4</span></p>
+<table>
+  <tr><th>Platform</th><th>Cost</th><th>Timeline</th></tr>
+  <tr><td>Apple App Store</td><td>$99/year</td><td>1–2 weeks for first review — start early</td></tr>
+  <tr><td>Google Play</td><td>$25 one-time</td><td>Faster review</td></tr>
+  <tr><td>PWA (web app)</td><td>Free</td><td>Instant — no review, distribute via link</td></tr>
+</table>
+
+<div class="highlight">
+  <strong>Consider launching as a PWA first.</strong> Instant distribution via link, no app store review delays, no 30% Apple/Google cut on payments. You can add native app store versions later.
+</div>
+
+<ul class="todo">
+  <li><span class="owner dev">Dario/Bemjax</span> Register Apple Developer Account ($99/year)
+    <ul class="sub">
+      <li>Requires a DUNS number if registering as organization (takes 1–2 weeks!)</li>
+      <li>Alternative: register as individual first, transfer later</li>
+      <li>Need: legal entity name, address, contact info</li>
+    </ul>
+  </li>
+  <li><span class="owner dev">Dario/Bemjax</span> Register Google Play Developer Account ($25 one-time)
+    <ul class="sub">
+      <li>Simpler process, but still takes a few days for verification</li>
+    </ul>
+  </li>
+  <li><span class="owner dev">Dario/Bemjax</span> Prepare app store assets
+    <ul class="sub">
+      <li>App icon (1024x1024 for Apple, 512x512 for Google)</li>
+      <li>Screenshots: minimum 3, ideally 5–6, for each device size</li>
+      <li>Short description (80 chars) + full description (4000 chars)</li>
+      <li>Keywords / tags for ASO (app store optimization)</li>
+      <li>Category: Medical or Education</li>
+      <li>Privacy policy URL (must be live before submission)</li>
+    </ul>
+  </li>
+  <li><span class="owner vet">Ronaldo</span> Write app descriptions in Portuguese and English
+    <ul class="sub">
+      <li>Emphasize: "built by a veterinary neurologist"</li>
+      <li>Key phrases vets would search: "veterinary neurology", "neuro exam", "differential diagnosis"</li>
+    </ul>
+  </li>
+  <li><span class="owner dev">Dario/Bemjax</span> Create screenshots / mockups
+    <ul class="sub">
+      <li>Use a tool like Previewed.app or mockup templates in Figma</li>
+      <li>Show key screens: exam input, differential diagnosis results, case summary</li>
+    </ul>
+  </li>
+  <li><span class="owner dev">Dario/Bemjax</span> Submit to Apple App Store
+    <ul class="sub">
+      <li>First submission: expect rejection feedback, plan for 1–2 rounds of review</li>
+      <li>Common rejection reasons: incomplete metadata, broken links, missing login for reviewer</li>
+      <li>Provide a demo account for Apple reviewers</li>
+    </ul>
+  </li>
+  <li><span class="owner dev">Dario/Bemjax</span> Submit to Google Play</li>
+  <li><span class="owner dev">Dario/Bemjax</span> Set up Stripe account for web payments
+    <ul class="sub">
+      <li>Register Stripe account (need business info, bank account)</li>
+      <li>Implement subscription billing via Stripe Checkout or Payment Links</li>
+      <li>Set up customer portal for users to manage their subscription</li>
+      <li>Test the full flow: signup → trial → charge → cancel</li>
+    </ul>
+  </li>
+  <li><span class="owner dev">Dario/Bemjax</span> (Optional) Deploy as PWA for instant distribution
+    <ul class="sub">
+      <li>Add web app manifest + service worker</li>
+      <li>Test "Add to Home Screen" on iOS and Android</li>
+      <li>Set up hosting (Vercel, Netlify, or current host)</li>
+    </ul>
+  </li>
+</ul>
+<div class="deliverable">App live on at least one platform, payment flow working end-to-end, test purchase completed</div>
+
+<h2>5. Legal &amp; Compliance</h2>
+<p><span class="tag">Before launch</span></p>
+<div class="warn">
+  <strong>Do not skip these.</strong> Skipping legal setup can get the app pulled from stores or create liability.
+</div>
+
+<ul class="todo">
+  <li><span class="owner dev">Dario/Bemjax</span> Add in-app disclaimer
+    <ul class="sub">
+      <li>Text: "This is a diagnostic aid tool. It does not replace clinical judgment, physical examination, or complementary exams."</li>
+      <li>Must be visible: on first launch (accept screen), in app footer/about, on landing page</li>
+      <li>User must explicitly accept before using the app</li>
+    </ul>
+  </li>
+  <li><span class="owner dev">Dario/Bemjax</span> Create Terms of Service
+    <ul class="sub">
+      <li>Use a generator (Termly.io, TermsFeed) as starting point — costs ~$10–50</li>
+      <li>Key clauses: limitation of liability, no guarantee of diagnostic accuracy, subscription terms, cancellation policy</li>
+      <li>Must be in Portuguese for Brazilian users</li>
+      <li>Host at yoursite.com/terms</li>
+    </ul>
+  </li>
+  <li><span class="owner dev">Dario/Bemjax</span> Create Privacy Policy (LGPD-compliant)
+    <ul class="sub">
+      <li>What data is collected (email, usage data, case data entered)</li>
+      <li>How data is stored and protected</li>
+      <li>User rights: access, deletion, portability (LGPD requirement)</li>
+      <li>Whether any data is shared with third parties (analytics, payment processor)</li>
+      <li>Cookie policy if web-based</li>
+      <li>Host at yoursite.com/privacy</li>
+    </ul>
+  </li>
+  <li><span class="owner vet">Ronaldo</span> Check veterinary regulatory requirements
+    <ul class="sub">
+      <li>Contact CRMV (Conselho Regional de Medicina Veterinaria) — ask if a "diagnostic decision support app" requires registration</li>
+      <li>Check MAPA requirements for veterinary software</li>
+      <li>"Decision support tool" is typically NOT classified as a medical device — confirm this</li>
+      <li>Document the response for your records</li>
+    </ul>
+  </li>
+  <li><span class="owner all">All</span> Decide on business entity
+    <ul class="sub">
+      <li>Who owns the app legally? Personal? LLC? Partnership?</li>
+      <li>How is revenue split between team members?</li>
+      <li>Even a simple written agreement between founders is essential before money comes in</li>
+    </ul>
+  </li>
+  <li><span class="owner vet">Ronaldo</span> Review all user-facing text for clinical accuracy
+    <ul class="sub">
+      <li>App descriptions, marketing copy, disclaimers</li>
+      <li>Ensure no claims that could be seen as "diagnosing" — always "assisting", "suggesting", "supporting"</li>
+    </ul>
+  </li>
+</ul>
+<div class="deliverable">Terms of Service live, Privacy Policy live, disclaimer in app, regulatory status confirmed, founder agreement signed</div>
+
+<h2>6. Content Scaling — Ronaldo's Digital Clone</h2>
+<p><span class="tag">Week 3–6</span></p>
+
+<div class="highlight">
+  <strong>The problem:</strong> Ronaldo is the brand, but his time is extremely limited (clinical work, teaching, travel). Content creation — especially video — is essential for marketing but is a bottleneck. <strong>The solution:</strong> create an AI-powered digital clone of Ronaldo to produce video content at scale, managed by Ivana.
+</div>
+
+<h3>What is a digital clone?</h3>
+<p>An AI-generated video avatar that looks and sounds like Ronaldo, capable of delivering scripted content (case explanations, app tutorials, educational tips) without Ronaldo needing to be on camera every time. Ivana writes the scripts, the AI generates the video.</p>
+
+<h3>Available tools (as of 2026)</h3>
+<table>
+  <tr><th>Tool</th><th>What it does</th><th>Cost</th><th>Quality</th></tr>
+  <tr><td>HeyGen</td><td>AI avatar from video sample, text-to-video</td><td>~$30–60/month</td><td>High — supports Portuguese, natural lip sync</td></tr>
+  <tr><td>Synthesia</td><td>AI avatar, enterprise-grade</td><td>~$30/month</td><td>High — good for professional/educational content</td></tr>
+  <tr><td>D-ID</td><td>Photo-to-video, simpler avatars</td><td>~$25/month</td><td>Medium — works from a single photo</td></tr>
+  <tr><td>ElevenLabs</td><td>Voice cloning only (pair with video tool)</td><td>~$5–22/month</td><td>Excellent voice quality, supports PT-BR</td></tr>
+</table>
+
+<ul class="todo">
+  <li><span class="owner vet">Ronaldo</span> Record source material for AI training
+    <ul class="sub">
+      <li>Video: 2–5 minutes of him talking directly to camera, good lighting, neutral background</li>
+      <li>Voice: 10–30 minutes of clean audio (reading scripts or talking naturally)</li>
+      <li>Multiple angles/expressions if tool supports it</li>
+      <li>This is a one-time recording session (~1 hour of Ronaldo's time)</li>
+    </ul>
+  </li>
+  <li><span class="owner vet">Ivana</span> Choose and set up the AI avatar platform
+    <ul class="sub">
+      <li>Test HeyGen and Synthesia with free trials first</li>
+      <li>Key criteria: Portuguese language support, lip-sync quality, how "real" it looks</li>
+      <li>Upload Ronaldo's video/voice samples, create the avatar</li>
+    </ul>
+  </li>
+  <li><span class="owner vet">Ivana</span> Set up voice clone (ElevenLabs or built-in tool voice)
+    <ul class="sub">
+      <li>Upload Ronaldo's voice recordings</li>
+      <li>Test with sample scripts — does it sound like him?</li>
+      <li>Fine-tune pronunciation of medical terms</li>
+    </ul>
+  </li>
+  <li><span class="owner vet">Ronaldo</span> Review and approve the digital clone
+    <ul class="sub">
+      <li>Does it represent him accurately?</li>
+      <li>Is the voice convincing?</li>
+      <li>Is he comfortable with it being used publicly?</li>
+    </ul>
+  </li>
+  <li><span class="owner vet">Ivana</span> Create content production workflow
+    <ul class="sub">
+      <li>Ivana writes scripts based on Ronaldo's expertise (case studies, tips, app tutorials)</li>
+      <li>Ronaldo reviews scripts for clinical accuracy (5–10 min per script)</li>
+      <li>Ivana generates video via AI tool</li>
+      <li>Ivana posts to Instagram / social media</li>
+      <li>Goal: 3–5 videos per week without Ronaldo being on camera</li>
+    </ul>
+  </li>
+  <li><span class="owner all">All</span> Decide on disclosure policy
+    <ul class="sub">
+      <li>Some platforms require "AI-generated" labels</li>
+      <li>Instagram may flag AI-generated faces</li>
+      <li>Options: fully disclose ("powered by AI"), subtle mention in bio, or mix AI + real videos</li>
+      <li>Recommendation: be transparent — "content created with AI, clinical knowledge by Dr. Ronaldo"</li>
+      <li>The vet community values authenticity — dishonesty here could backfire badly</li>
+    </ul>
+  </li>
+</ul>
+
+<h3>Content types the clone can produce</h3>
+<table>
+  <tr><th>Type</th><th>Example</th><th>Purpose</th></tr>
+  <tr><td>App tutorials</td><td>"Here's how to use the localisation tool for a seizure case"</td><td>Onboarding, reduce support</td></tr>
+  <tr><td>Case of the week</td><td>"A 5-year-old Boxer presents with..." + app walkthrough</td><td>Marketing, show value</td></tr>
+  <tr><td>Quick neuro tips</td><td>"3 signs that distinguish vestibular from cerebellar"</td><td>Audience growth, authority</td></tr>
+  <tr><td>Announcements</td><td>"New feature: multi-select symptoms"</td><td>Retention, engagement</td></tr>
+  <tr><td>Testimonial responses</td><td>"Dr. X used the app for this case — here's what happened"</td><td>Social proof</td></tr>
+</table>
+
+<div class="highlight">
+  <strong>The math:</strong> Ronaldo spends ~1 hour recording source material (once), then ~10 min/week reviewing scripts. Ivana produces 3–5 videos/week. That's a 10x+ content multiplier compared to Ronaldo doing it all himself.
+</div>
+
+<div class="deliverable">AI avatar created and approved, content workflow established, first 5 test videos produced</div>
+
+<h2>7. What NOT To Do Yet</h2>
+<div class="warn">
+  <ul>
+    <li>Don't hire a marketing agency</li>
+    <li>Don't spend on ads</li>
+    <li>Don't build a complex website</li>
+    <li>Don't over-invest in branding/logo design</li>
+    <li>Don't build features nobody asked for</li>
+  </ul>
+</div>
+
+<h2>Timeline</h2>
+<table>
+  <tr><th>When</th><th>What</th></tr>
+  <tr><td>Week 1–2</td><td>Name, domain, landing page, app store developer accounts</td></tr>
+  <tr><td>Week 3–4</td><td>App store submissions, set up Stripe/payments, legal docs</td></tr>
+  <tr><td>Week 5–6</td><td>Soft launch via Instagram — "founding members" at locked-in price</td></tr>
+  <tr><td>Week 7+</td><td>Iterate based on feedback, grow word-of-mouth</td></tr>
+</table>
+
+<h2>Revenue Projections (illustrative — pricing TBD)</h2>
+<table>
+  <tr><th>Scenario</th><th>Conversion</th><th>Users</th><th>At $5/mo</th><th>At $15/mo</th><th>At $30/mo</th></tr>
+  <tr><td>Conservative (1%)</td><td>1% of 27k</td><td>270</td><td>$1,350/mo</td><td>$4,050/mo</td><td>$8,100/mo</td></tr>
+  <tr><td>Moderate (2%)</td><td>2% of 27k</td><td>540</td><td>$2,700/mo</td><td>$8,100/mo</td><td>$16,200/mo</td></tr>
+  <tr><td>Optimistic (5%)</td><td>5% of 27k</td><td>1,350</td><td>$6,750/mo</td><td>$20,250/mo</td><td>$40,500/mo</td></tr>
+</table>
+<p><em>Before organic growth, referrals, or the second account (7k followers). Note: higher price typically means lower conversion — these are rough illustrations, not forecasts.</em></p>
+
+<div class="highlight">
+  <strong>Key insight:</strong> Veterinary is a tight community. If the top neurologist recommends a tool, word spreads fast. The bottleneck won't be marketing — it'll be making sure the product delivers real value on real cases.
+</div>
+
+</body>
+</html>

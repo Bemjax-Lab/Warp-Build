@@ -1,7 +1,0 @@
-.srinfo-wrap { display:flex; flex-direction:column; gap:8px; }
-.srinfo-header .name { font-weight:600; }
-.srinfo-header .layout-name { opacity:.6; font-size:11px; }
-.srinfo-header .desc { opacity:.6; font-size:11px; margin-top:2px; }
-.srinfo-row { font-size:11px; padding:2px 0; }
-.srinfo-row .key { opacity:.5; min-width:60px; display:inline-block; }
-.srinfo-actions { display:flex; gap:4px; flex-wrap:wrap; }

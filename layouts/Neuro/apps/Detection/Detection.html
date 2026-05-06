@@ -1,0 +1,47 @@
+<div style="background:rgb(12,12,12); height:80px" class="tl p10">
+                        <div class="m10 mt-5 fr block mb-20" style="width:150px">
+                            <div class="op4 small">STATUS :</div>
+                            <pre class="status mt5 small"></pre>    
+                        </div>
+                        <div class="m10 mt0 strong" style="font-size:20px; color:lightgrey">Neuro<span style="font-family:Oswald; font-weight:normal; color:teal">Loc</span></div>
+                        <span class="small ml10 op4">LIVE PREDICTION :</span><button class="ml5 mb0 inline togglePrediction" style=" border-radius: 3px;color : black; padding :2px;border :none; background : grey; height:12px; font-size:7px">OFF</button>
+                        <span class="small ml10 op4">VIDEO : </span><button class="ml5 mb0 inline toggleVideo" style=" border-radius: 3px;color : black; padding :2px;border :none; background : green; height:12px; font-size:7px">ON</button>
+                        <button class="ml10 mb0 inline timeline disabled primary" style="border-radius:3px; color:black; padding:3px; border:none; height:14px; font-size:8px">TIMELINE</button>
+                        <span class="small ml10 mr5 op4">FPS :</span> <span class="op8 fps">20</span>
+                 
+</div>
+<div style="position:relative; line-height:0;">
+    
+    <canvas class="preview m0"></canvas>
+    
+    <svg class="viewfinder m0 hidden" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg"
+     style="position:absolute; top:0; left:0; width:100%; height:100%; pointer-events:none;">
+        <defs>
+            <linearGradient id="darkGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+  
+                <stop offset="0%" stop-color="rgb(12,12,12)" />
+                <stop offset="100%" stop-color="rgba(0,0,0,0.55)" />
+            </linearGradient>
+         </defs>
+         <path fill="url(#darkGradient)" fill-rule="evenodd"
+                d="M0 0H600V600H0Z M150 150H450V450H150Z"/>
+         <rect x="150" y="150" width="300" height="300"
+                fill="none" stroke="rgba(255,255,255,0.35)" stroke-width="1.5"/>
+    </svg>
+</div>
+
+<div class="tc p5" style="background :rgb(12,12,12); position:absolute; bottom:5px; left:0px; width:100%; height:95px;">
+     <svg viewBox="0 0 16 16" class="ripple record"  style="z-index:1000; margin-top:-80px; width:50px; height:50px;  border-radius:5px; cursor:pointer; fill:rgba(200,200,200,0.3)">
+        <path d="M15 12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h1.172a3 3 0 0 0 2.12-.879l.83-.828A1 1 0 0 1 6.827 3h2.344a1 1 0 0 1 .707.293l.828.828A3 3 0 0 0 12.828 5H14a1 1 0 0 1 1 1v6zM2 4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-1.172a2 2 0 0 1-1.414-.586l-.828-.828A2 2 0 0 0 9.172 2H6.828a2 2 0 0 0-1.414.586l-.828.828A2 2 0 0 1 3.172 4H2z"/>
+        <path d="M8 11a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5zm0 1a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7zM3 6.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0z"/>
+    </svg>
+    <button class="xs m10 op1 dl hidden">
+        Download
+    </button>
+    <button class="xs m10 upload hidden">
+        Upload video
+    </button>
+    <div class="frames" style="display:flex; overflow-y:hidden; overflow-x:auto; white-space:nowrap; background:rgba(100,100,100,0 );  height:70px; padding:0px">
+    </div>
+</div>
+

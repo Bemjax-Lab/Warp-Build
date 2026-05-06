@@ -1,0 +1,132 @@
+/* Shared stylesheet for the to-market documents.
+   No brand colour is committed here — these are working drafts. The real palette
+   gets decided as part of the branding work itself. Colour is used only where it
+   carries meaning: yellow for warn / gate boxes, distinct pill colours so role
+   ownership stays recognisable across documents, and three column shades on the
+   features matrix where the column distinction is the point. */
+
+body {
+    font-family: system-ui, sans-serif;
+    max-width: 1280px;
+    margin: 40px auto;
+    padding: 0 20px;
+    line-height: 1.6;
+    color: #1a1a1a;
+}
+body.wide   { max-width: 1440px; line-height: 1.55; }
+body.narrow { max-width: 1040px; margin-top: 50px; }
+
+/* Top navigation — sticky bar present on every page */
+.topnav {
+    position: sticky;
+    top: 0;
+    background: rgba(255, 255, 255, 0.96);
+    backdrop-filter: blur(6px);
+    border-bottom: 1px solid #e0e0e0;
+    margin: -40px 0 28px 0;
+    padding: 10px 0;
+    font-size: 0.9em;
+    z-index: 10;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px 8px;
+    align-items: baseline;
+}
+body.narrow .topnav { margin-top: -50px; }
+.topnav a {
+    color: #555;
+    text-decoration: none;
+    border-bottom: none;
+    padding: 3px 7px;
+    border-radius: 3px;
+    white-space: nowrap;
+}
+.topnav a:hover {
+    background: #f0f0f0;
+    color: #1a1a1a;
+    border-bottom: none;
+}
+.topnav a.active {
+    background: #1a1a1a;
+    color: #fff;
+    font-weight: 600;
+}
+.topnav .nav-home {
+    font-weight: 600;
+    color: #1a1a1a;
+}
+.topnav .nav-home:hover {
+    background: #1a1a1a;
+    color: #fff;
+}
+.topnav .nav-sep {
+    color: #ccc;
+    padding: 0 2px;
+    user-select: none;
+}
+.topnav .nav-label {
+    color: #888;
+    font-size: 0.86em;
+    padding-right: 2px;
+}
+
+h1 { border-bottom: 2px solid #1a1a1a; padding-bottom: 10px; }
+h2 { color: #1a1a1a; margin-top: 36px; }
+h3 { color: #333; margin-top: 22px; }
+
+a        { color: #0000ee; text-decoration: underline; }
+a:visited { color: #551a8b; }
+a:hover  { color: #0000ee; }
+
+.meta  { color: #666; font-size: 0.9em; margin: 6px 0 24px 0; }
+.small { color: #666; font-size: 0.88em; }
+
+.note { background: #f5f5f5; border-left: 3px solid #999;    padding: 10px 14px; margin: 14px 0; border-radius: 4px; }
+.key  { background: #f5f5f5; border-left: 3px solid #1a1a1a; padding: 12px 16px; margin: 14px 0; border-radius: 4px; }
+.warn { background: #fff8e1; border-left: 3px solid #f9a825; padding: 12px 16px; margin: 14px 0; border-radius: 4px; }
+.gate { background: #fff8e1; border-left: 3px solid #f9a825; padding: 10px 14px; margin: 16px 0 6px 0; border-radius: 4px; font-weight: 600; }
+
+table  { border-collapse: collapse; width: 100%; margin: 14px 0; }
+th, td { border: 1px solid #ccc; padding: 10px 14px; text-align: left; vertical-align: top; }
+th     { background: #2a2a2a; color: #fff; }
+tr:nth-child(even) { background: #fafafa; }
+
+ul { padding-left: 22px; }
+li { margin-bottom: 6px; }
+
+code { background: #eef1f5; padding: 1px 5px; border-radius: 3px; font-family: Consolas, Menlo, monospace; font-size: 0.9em; }
+
+/* features.html — three-horizon matrix (column shades carry meaning) */
+th.col-now    { background: #6a6a6a; }
+th.col-y1     { background: #2a2a2a; }
+th.col-after  { background: #4a4a4a; }
+td.area       { background: #f0f0f0; font-weight: 600; width: 18%; }
+.legend       { font-size: 0.88em; color: #555; margin: 6px 0 16px 0; }
+.pill         { display: inline-block; padding: 1px 8px; border-radius: 10px; font-size: 0.78em; color: #fff; margin-right: 4px; }
+.pill.p-have  { background: #2e7d32; }
+.pill.p-build { background: #f9a825; color: #222; }
+.pill.p-future{ background: #6a1b9a; }
+.pill.p-maybe { background: #888; }
+
+/* plan.html, launch-todo.html — owner pills (distinct colours = role identity) */
+.owner     { display: inline-block; padding: 2px 8px; border-radius: 12px; font-size: 0.78em; color: #fff; margin-right: 4px; }
+.owner.o-d { background: #6a1b9a; }
+.owner.o-i { background: #1565c0; }
+.owner.o-r { background: #2e7d32; }
+.owner.o-a { background: #e65100; }
+
+/* launch-todo.html — checkbox-style todo lists */
+ul.todo               { list-style: none; padding-left: 4px; }
+ul.todo li            { margin-bottom: 8px; padding: 8px 12px; background: #fafafa; border: 1px solid #e0e0e0; border-radius: 4px; }
+ul.todo li::before    { content: "\2610"; margin-right: 10px; font-size: 1.05em; }
+ul.sub                { margin-top: 6px; padding-left: 22px; font-size: 0.92em; color: #555; }
+ul.sub li             { background: none; border: none; padding: 2px 0; margin-bottom: 2px; }
+ul.sub li::before     { content: "—"; margin-right: 6px; }
+
+/* index.html — document cards */
+.doc       { display: block; padding: 14px 16px; margin: 10px 0; background: #fafafa; border: 1px solid #e0e0e0; border-radius: 4px; text-decoration: none; color: inherit; }
+.doc:hover { background: #f0f0f0; border-color: #1a1a1a; }
+.doc h3    { margin: 0 0 4px 0; color: #1a1a1a; font-size: 1.05em; }
+.doc p     { margin: 0; color: #555; font-size: 0.93em; }
+.badge     { display: inline-block; background: #2a2a2a; color: #fff; font-size: 0.72em; padding: 2px 8px; border-radius: 10px; margin-left: 8px; vertical-align: middle; }
+.badge.new { background: #e65100; }

@@ -1,0 +1,2355 @@
+{
+  "L4-S3 simple LMN": {
+    "name": "L4-S3 simple LMN",
+    "parameters": {
+      "gait": [
+        "ataxia",
+        "paraparesis"
+      ],
+      "ataxiaType": [
+        "proprioceptive"
+      ],
+      "pelvicLeft": "decreased",
+      "pelvicRight": "decreased",
+      "patellarReflexR": "decreased",
+      "patellarReflexL": "decreased",
+      "withdrawalPelvicR": "decreased",
+      "withdrawalPelvicL": "decreased",
+      "extensorTonePelvicR": "decreased",
+      "extensorTonePelvicL": "decreased",
+      "painLumbar": "moderate"
+    },
+    "result": {
+      "definite": [
+        "L4-S3"
+      ],
+      "probable": [],
+      "possible": []
+    }
+  },
+  "C6-T2 simple LMN/UMN": {
+    "name": "C6-T2 simple LMN/UMN",
+    "parameters": {
+      "gait": [
+        "ataxia",
+        "tetraparesis"
+      ],
+      "ataxiaDistribution": "all four limbs",
+      "thoracicRight": "decreased",
+      "thoracicLeft": "decreased",
+      "pelvicRight": "decreased",
+      "pelvicLeft": "decreased",
+      "withdrawalThoracicR": "decreased",
+      "withdrawalThoracicL": "decreased",
+      "extensorToneThoracicR": "decreased",
+      "extensorToneThoracicL": "decreased"
+    },
+    "result": {
+      "definite": [
+        "C6-T2"
+      ],
+      "probable": [],
+      "possible": []
+    }
+  },
+  "forebrain-just seizures": {
+    "name": "forebrain-just seizures",
+    "parameters": {
+      "paroxysmalEvents": "yes",
+      "epilepticSeizures": "yes"
+    },
+    "result": {
+      "definite": [],
+      "probable": [
+        "forebrain"
+      ],
+      "possible": []
+    },
+    "comment": ""
+  },
+  "vestibular peripheral simple": {
+    "name": "vestibular peripheral simple",
+    "parameters": {
+      "headPosture": [
+        "head tilt R"
+      ],
+      "gait": [
+        "ataxia"
+      ],
+      "ataxiaType": [
+        "vestibular"
+      ],
+      "ataxiaDistribution": "all four limbs",
+      "thoracicRight": "normal",
+      "thoracicLeft": "normal",
+      "pelvicRight": "normal",
+      "pelvicLeft": "normal",
+      "onset": "acute",
+      "nystagmusR": "horizontal",
+      "nystagmusL": "horizontal"
+    },
+    "result": {
+      "definite": [
+        "vestibular-peripheral"
+      ],
+      "probable": [],
+      "possible": [
+        "vestibular-central"
+      ]
+    },
+    "comment": "ataxia in gait always  seams proprioceptive, even though later I have chosen vestibular ataxia. If I chose only vestibular ataxia, without clicking on ataxia, it is localized correctly to vestibular system.  Without proprioceptive ataxia, this cannot be localized to cervical spine."
+  },
+  "cervical-pain only": {
+    "name": "cervical-pain only",
+    "parameters": {
+      "headPosture": [
+        "low head carriage"
+      ],
+      "painCervical": "severe"
+    },
+    "result": {
+      "definite": [
+        "C1-C5",
+        "C6-T2"
+      ],
+      "probable": [],
+      "possible": []
+    }
+  },
+  "lumbosacral-pain only": {
+    "name": "lumbosacral-pain only",
+    "parameters": {
+      "painLumbosacral": "severe"
+    },
+    "result": {
+      "definite": [
+        "L7-S3"
+      ],
+      "probable": [],
+      "possible": []
+    }
+  },
+  "peripheral-all LMN": {
+    "name": "peripheral-all LMN",
+    "parameters": {
+      "gait": [
+        "tetraparesis"
+      ],
+      "patellarReflexR": "decreased",
+      "patellarReflexL": "decreased",
+      "withdrawalThoracicR": "decreased",
+      "withdrawalThoracicL": "decreased",
+      "withdrawalPelvicR": "decreased",
+      "withdrawalPelvicL": "decreased",
+      "extensorToneThoracicR": "decreased",
+      "extensorToneThoracicL": "decreased",
+      "extensorTonePelvicR": "decreased",
+      "extensorTonePelvicL": "decreased"
+    },
+    "result": {
+      "definite": [
+        "peripheral"
+      ],
+      "probable": [],
+      "possible": []
+    },
+    "comment": "With all four limbs involved we can not have L4-S3"
+  },
+  "L4-S3 (caudal-L7-S3)": {
+    "name": "L4-S3 (caudal-L7-S3)",
+    "parameters": {
+      "gait": [
+        "paraparesis"
+      ],
+      "ambulation": "non ambulatory",
+      "pelvicLeft": "decreased",
+      "pelvicRight": "decreased",
+      "withdrawalPelvicL": "decreased",
+      "withdrawalPelvicR": "decreased",
+      "extensorTonePelvicR": "decreased",
+      "extensorTonePelvicL": "decreased",
+      "tailPosture": "flaccid"
+    },
+    "result": {
+      "definite": [
+        "L4-S3"
+      ],
+      "probable": [
+        "L7-S3"
+      ],
+      "possible": []
+    },
+    "comment": "T3-L3 is not an option here, even with spinal shock because of the tail involment. L7-S3 is not probable, but only possible, because it nornally doesn't come with decreased extensor tone"
+  },
+  "Forebrain R": {
+    "name": "Forebrain R",
+    "parameters": {
+      "gait": [
+        "circling R"
+      ],
+      "pelvicRight": "decreased",
+      "thoracicRight": "decreased",
+      "paroxysmalEvents": "yes",
+      "epilepticSeizures": "yes"
+    },
+    "result": {
+      "definite": [
+        "forebrain"
+      ],
+      "probable": [],
+      "possible": []
+    }
+  },
+  "T3-L3 spinal shock": {
+    "name": "T3-L3 spinal shock",
+    "parameters": {
+      "ambulation": "non ambulatory",
+      "gait": [
+        "paraplegia"
+      ],
+      "pelvicLeft": "absent",
+      "pelvicRight": "absent",
+      "withdrawalPelvicR": "decreased",
+      "withdrawalPelvicL": "decreased",
+      "extensorTonePelvicR": "decreased",
+      "extensorTonePelvicL": "decreased",
+      "painThoracolumbar": "moderate",
+      "cutaneusTrunciLevelL": "L2",
+      "patellarReflexR": "decreased",
+      "patellarReflexL": "decreased",
+      "onset": "acute",
+      "duration": "1"
+    },
+    "result": {
+      "definite": [
+        "T3-L3"
+      ],
+      "probable": [],
+      "possible": []
+    }
+  },
+  "cerebellum": {
+    "name": "cerebellum",
+    "parameters": {
+      "gait": [
+        "head tremor",
+        "hypermetria R"
+      ],
+      "menaceResponseR": "decreased",
+      "ataxiaType": [
+        "cerebellar"
+      ]
+    },
+    "result": {
+      "definite": [
+        "cerebellum"
+      ],
+      "probable": [],
+      "possible": []
+    }
+  },
+  "Vestibular peripheral (ataxia-vestibular)": {
+    "name": "Vestibular peripheral (ataxia-vestibular)",
+    "parameters": {
+      "onset": "acute",
+      "duration": "2",
+      "headPosture": [
+        "head tilt R"
+      ],
+      "ataxiaType": [
+        "vestibular"
+      ],
+      "nystagmusR": "horizontal",
+      "nystagmusL": "horizontal"
+    },
+    "result": {
+      "definite": [
+        "vestibular-peripheral"
+      ],
+      "probable": [],
+      "possible": [
+        "vestibular-central"
+      ]
+    }
+  },
+  "vestibular central (vertical nystagmus)": {
+    "name": "vestibular central (vertical nystagmus)",
+    "parameters": {
+      "ataxiaType": [
+        "vestibular"
+      ],
+      "thoracicLeft": "decreased",
+      "pelvicLeft": "decreased",
+      "nystagmusR": "vertical",
+      "nystagmusL": "vertical",
+      "headPosture": [
+        "head tilt L"
+      ]
+    },
+    "result": {
+      "definite": [
+        "vestibular-central"
+      ],
+      "probable": [],
+      "possible": []
+    },
+    "comment": "paradoxycal is not possible here because head tilt and proprioceptive dificit are on thr same side"
+  },
+  "vestibular paradoxical (with menace deficit)": {
+    "name": "vestibular paradoxical (with menace deficit)",
+    "parameters": {
+      "ataxiaType": [
+        "vestibular"
+      ],
+      "headPosture": [
+        "head tilt R"
+      ],
+      "gait": [
+        "circling R"
+      ],
+      "thoracicLeft": "decreased",
+      "pelvicLeft": "decreased",
+      "menaceResponseL": "decreased"
+    },
+    "result": {
+      "definite": [
+        "vestibular-paradoxical"
+      ],
+      "probable": [
+        "vestibular-central"
+      ],
+      "possible": [
+        "cerebellum"
+      ]
+    }
+  },
+  "medulla-caudal -all parameters": {
+    "name": "medulla-caudal -all parameters",
+    "parameters": {
+      "consciousnessLevel": "somnolent/depressed/obtunded",
+      "thoracicLeft": "decreased",
+      "pelvicLeft": "decreased",
+      "voiceChanges": "dysphonia",
+      "swallowingFunction": "dysphagia",
+      "gagReflex": "decreased",
+      "tongue": [
+        "deviated to left"
+      ],
+      "regurgitation": "present"
+    },
+    "result": {
+      "definite": [
+        "medulla-caudal"
+      ],
+      "probable": [],
+      "possible": []
+    }
+  },
+  "diencephalon": {
+    "name": "diencephalon",
+    "parameters": {
+      "consciousnessLevel": "somnolent/depressed/obtunded",
+      "behavior": "compulsive / head pressing",
+      "gait": [
+        "hemiparesis left-sided"
+      ],
+      "thoracicLeft": "decreased",
+      "pelvicLeft": "decreased",
+      "menaceResponseL": "decreased",
+      "nasalSensationL": "decreased"
+    },
+    "result": {
+      "definite": [
+        "diencephalon",
+        "forebrain"
+      ],
+      "probable": [],
+      "possible": []
+    },
+    "comment": "C1-C5 is not an option here with this consciousness level.  "
+  },
+  "forebrain-no seizures": {
+    "name": "forebrain-no seizures",
+    "parameters": {
+      "onset": "chronic",
+      "duration": "30",
+      "progression": "worsening",
+      "consciousnessLevel": "somnolent/depressed/obtunded",
+      "behavior": "abnormal",
+      "menaceResponseR": "decreased",
+      "nasalSensationR": "decreased"
+    },
+    "result": {
+      "definite": [
+        "forebrain"
+      ],
+      "probable": [],
+      "possible": []
+    }
+  },
+  "vestibular + one pelvic limb": {
+    "name": "vestibular + one pelvic limb",
+    "parameters": {
+      "consciousnessLevel": "alert",
+      "headPosture": [
+        "head tilt L"
+      ],
+      "ataxiaType": [
+        "vestibular"
+      ],
+      "nystagmusR": "horizontal",
+      "nystagmusL": "horizontal",
+      "pelvicLeft": "decreased"
+    },
+    "result": {
+      "definite": [
+        "vestibular-peripheral"
+      ],
+      "probable": [],
+      "possible": [
+        "vestibular-central"
+      ]
+    },
+    "comment": "For vestibular central we need propruoceptive deficit on both limbs on the affected side (here it is left).  If thoracic left limb in this case has normal proprioception, proprioception on the left pelvic lim is nost likely incidental finding. In case PD on left thoracic limb is not corectlly assessed, we still leave option os centra vestibular being possible."
+  },
+  "rostral medulla": {
+    "name": "rostral medulla",
+    "parameters": {
+      "onset": "acute",
+      "ataxiaType": [
+        "vestibular"
+      ],
+      "headPosture": [
+        "head tilt L"
+      ],
+      "positionalStrabismusL": "present",
+      "thoracicLeft": "decreased",
+      "pelvicLeft": "decreased"
+    },
+    "result": {
+      "definite": [
+        "medulla-rostral",
+        "vestibular-central"
+      ],
+      "probable": [],
+      "possible": [
+        "vestibular-peripheral",
+        "C1-C5"
+      ]
+    },
+    "comment": "Possible-combination of these two areas, they are not possible as two different diagnosis"
+  },
+  "C1-C5 and L7-S3-multifocal (severe LS pain)": {
+    "name": "C1-C5 and L7-S3-multifocal (severe LS pain)",
+    "parameters": {
+      "ambulation": "non ambulatory",
+      "gait": [
+        "tetraparesis"
+      ],
+      "ataxiaType": [
+        "proprioceptive"
+      ],
+      "thoracicRight": "decreased",
+      "thoracicLeft": "decreased",
+      "pelvicRight": "decreased",
+      "pelvicLeft": "decreased",
+      "patellarReflexR": "normal",
+      "patellarReflexL": "normal",
+      "withdrawalThoracicR": "normal",
+      "withdrawalThoracicL": "normal",
+      "withdrawalPelvicR": "normal",
+      "withdrawalPelvicL": "normal",
+      "extensorToneThoracicR": "increased",
+      "extensorToneThoracicL": "increased",
+      "extensorTonePelvicR": "increased",
+      "extensorTonePelvicL": "increased",
+      "painLumbosacral": "severe"
+    },
+    "result": {
+      "definite": [
+        "C1-C5",
+        "L7-S3"
+      ],
+      "probable": [],
+      "possible": []
+    }
+  },
+  "paripheral with paraparesis, all lmn": {
+    "name": "paripheral with paraparesis, all lmn",
+    "parameters": {
+      "thoracicRight": "decreased",
+      "thoracicLeft": "decreased",
+      "pelvicRight": "decreased",
+      "pelvicLeft": "decreased",
+      "patellarReflexR": "decreased",
+      "patellarReflexL": "decreased",
+      "withdrawalThoracicR": "decreased",
+      "withdrawalThoracicL": "decreased",
+      "withdrawalPelvicR": "decreased",
+      "withdrawalPelvicL": "decreased",
+      "extensorToneThoracicR": "decreased",
+      "extensorToneThoracicL": "decreased",
+      "extensorTonePelvicR": "decreased",
+      "ambulation": "ambulatory",
+      "gait": [
+        "paraparesis"
+      ]
+    },
+    "result": {
+      "definite": [
+        "peripheral"
+      ],
+      "probable": [],
+      "possible": []
+    }
+  },
+  "peripheral normal agit": {
+    "name": "peripheral normal agit",
+    "parameters": {
+      "thoracicRight": "decreased",
+      "thoracicLeft": "decreased",
+      "pelvicRight": "decreased",
+      "pelvicLeft": "decreased",
+      "patellarReflexR": "decreased",
+      "patellarReflexL": "decreased",
+      "withdrawalThoracicR": "decreased",
+      "withdrawalThoracicL": "decreased",
+      "withdrawalPelvicR": "decreased",
+      "withdrawalPelvicL": "decreased",
+      "extensorToneThoracicR": "decreased",
+      "extensorToneThoracicL": "decreased",
+      "extensorTonePelvicR": "decreased",
+      "extensorTonePelvicL": "decreased",
+      "headPosture": [
+        "normal"
+      ]
+    },
+    "result": {
+      "definite": [
+        "peripheral"
+      ],
+      "probable": [],
+      "possible": []
+    },
+    "comment": ""
+  },
+  "cervical with LS moderate pain": {
+    "name": "cervical with LS moderate pain",
+    "parameters": {
+      "ambulation": "non ambulatory",
+      "gait": [
+        "tetraparesis"
+      ],
+      "thoracicRight": "decreased",
+      "thoracicLeft": "decreased",
+      "pelvicRight": "decreased",
+      "pelvicLeft": "decreased",
+      "extensorTonePelvicR": "increased",
+      "extensorTonePelvicL": "increased",
+      "extensorToneThoracicL": "increased",
+      "extensorToneThoracicR": "increased",
+      "withdrawalPelvicL": "normal",
+      "withdrawalPelvicR": "normal",
+      "withdrawalThoracicL": "normal",
+      "withdrawalThoracicR": "normal",
+      "patellarReflexL": "increased",
+      "patellarReflexR": "increased",
+      "painLumbosacral": "moderate"
+    },
+    "result": {
+      "definite": [
+        "C1-C5"
+      ],
+      "probable": [],
+      "possible": []
+    },
+    "comment": ""
+  },
+  "vestibular cat": {
+    "name": "vestibular cat",
+    "parameters": {
+      "onset": "acute",
+      "ataxiaType": [
+        "vestibular"
+      ],
+      "gait": [
+        "circling R"
+      ],
+      "headPosture": [
+        "head tilt L"
+      ],
+      "nystagmusR": "horizontal",
+      "nystagmusL": "horizontal",
+      "palpebralReflexL": "decreased",
+      "hornersSyndromeL": "present",
+      "species": "cat"
+    },
+    "result": {
+      "definite": [
+        "vestibular-peripheral"
+      ],
+      "probable": [],
+      "possible": [
+        "vestibular-central"
+      ]
+    },
+    "comment": ""
+  },
+  "facial-peripheral": {
+    "name": "facial-peripheral",
+    "parameters": {
+      "species": "dog",
+      "onset": "acute",
+      "palpebralReflexL": "decreased",
+      "masticatoryMusclesL": "atrophy",
+      "facialParesis": [
+        "R"
+      ]
+    },
+    "result": {
+      "definite": [
+        "peripheral"
+      ],
+      "probable": [],
+      "possible": []
+    },
+    "comment": "individual cranial nerves deficits should be listed as peripheral nerves"
+  },
+  "cauda equina": {
+    "name": "cauda equina",
+    "parameters": {
+      "gait": [
+        "normal"
+      ],
+      "pelvicRight": "decreased",
+      "pelvicLeft": "decreased",
+      "withdrawalPelvicR": "decreased",
+      "painLumbosacral": "moderate",
+      "withdrawalPelvicL": "decreased",
+      "extensorToneThoracicR": "normal",
+      "extensorToneThoracicL": "normal",
+      "extensorTonePelvicR": "normal",
+      "extensorTonePelvicL": "normal"
+    },
+    "result": {
+      "definite": [
+        "L7-S3"
+      ],
+      "probable": [],
+      "possible": []
+    },
+    "comment": "T3-L3 is not an option with decreased withdrawal and no ataxia"
+  },
+  "seizures+compulsive": {
+    "name": "seizures+compulsive",
+    "parameters": {
+      "behavior": "compulsive / head pressing",
+      "epilepticSeizures": "yes"
+    },
+    "result": {
+      "definite": [
+        "forebrain"
+      ],
+      "probable": [],
+      "possible": []
+    },
+    "comment": "With seizures and behaviour changes forebrain is definite"
+  },
+  "MF-seizures+hypermetria+cerebellar ataxia": {
+    "name": "MF-seizures+hypermetria+cerebellar ataxia",
+    "parameters": {
+      "gait": [
+        "ataxia",
+        "hypermetria R"
+      ],
+      "ataxiaType": [
+        "cerebellar"
+      ],
+      "epilepticSeizures": "yes"
+    },
+    "result": {
+      "definite": [
+        "multifocal"
+      ],
+      "probable": [],
+      "possible": []
+    },
+    "comment": "cerebellar lesion cannot cause forebrain signal (seizures)"
+  },
+  "MF-seizures+vestibular ataxia+head tilt": {
+    "name": "MF-seizures+vestibular ataxia+head tilt",
+    "parameters": {
+      "epilepticSeizures": "yes",
+      "headPosture": [
+        "head tilt R"
+      ],
+      "gait": [
+        "ataxia"
+      ],
+      "ataxiaType": [
+        "vestibular"
+      ]
+    },
+    "result": {
+      "definite": [
+        "multifocal"
+      ],
+      "probable": [],
+      "possible": []
+    },
+    "comment": "vestibular signs (vestibular ataxia, head tilt)+ forebrain signs (seizures)= multifocal"
+  },
+  "MF-somnolent+hypermetria+cerebellar ataxia": {
+    "name": "MF-somnolent+hypermetria+cerebellar ataxia",
+    "parameters": {
+      "consciousnessLevel": "somnolent/depressed/obtunded",
+      "gait": [
+        "ataxia",
+        "hypermetria R"
+      ],
+      "ataxiaType": [
+        "cerebellar"
+      ]
+    },
+    "result": {
+      "definite": [
+        "multifocal"
+      ],
+      "probable": [],
+      "possible": []
+    },
+    "comment": ""
+  },
+  "MF-seizures+somnolent+vestibular ataxia+head tilt": {
+    "name": "MF-seizures+somnolent+vestibular ataxia+head tilt",
+    "parameters": {
+      "consciousnessLevel": "somnolent/depressed/obtunded",
+      "headPosture": [
+        "head tilt R"
+      ],
+      "gait": [
+        "ataxia"
+      ],
+      "ataxiaType": [
+        "vestibular"
+      ],
+      "epilepticSeizures": "yes"
+    },
+    "result": {
+      "definite": [
+        "multifocal"
+      ],
+      "probable": [],
+      "possible": []
+    },
+    "comment": "vestibular lesion cannot cause consciousness level changes"
+  },
+  "MF-seizures+cerebelar ataxia": {
+    "name": "MF-seizures+cerebelar ataxia",
+    "parameters": {
+      "epilepticSeizures": "yes",
+      "gait": [
+        "ataxia"
+      ],
+      "ataxiaType": [
+        "cerebellar"
+      ]
+    },
+    "result": {
+      "definite": [
+        "multifocal"
+      ],
+      "probable": [],
+      "possible": []
+    },
+    "comment": "cerebellar lesion cannot cause seizures, for that we need forebrain involvement-multifocal"
+  },
+  "MF-seizures+vestibular ataxia": {
+    "name": "MF-seizures+vestibular ataxia",
+    "parameters": {
+      "epilepticSeizures": "yes",
+      "gait": [
+        "ataxia"
+      ],
+      "ataxiaType": [
+        "vestibular"
+      ]
+    },
+    "result": {
+      "definite": [
+        "multifocal"
+      ],
+      "probable": [],
+      "possible": []
+    },
+    "comment": "vestibular signs+forebrain signs= multifocal"
+  },
+  "MF-cerebellar ataxia+compulsion": {
+    "name": "MF-cerebellar ataxia+compulsion",
+    "parameters": {
+      "behavior": "compulsive / head pressing",
+      "gait": [
+        "ataxia"
+      ],
+      "ataxiaType": [
+        "cerebellar"
+      ]
+    },
+    "result": {
+      "definite": [
+        "multifocal"
+      ],
+      "probable": [],
+      "possible": []
+    },
+    "comment": "behavioral changes are forebrain sign, in combination with cerebellar signs (cerebellar ataxia), we have multifocal localisation"
+  },
+  "MF-cerebellar ataxia+consciousness": {
+    "name": "MF-cerebellar ataxia+consciousness",
+    "parameters": {
+      "consciousnessLevel": "somnolent/depressed/obtunded",
+      "gait": [
+        "ataxia"
+      ],
+      "ataxiaType": [
+        "cerebellar"
+      ]
+    },
+    "result": {
+      "definite": [
+        "multifocal"
+      ],
+      "probable": [],
+      "possible": []
+    },
+    "comment": "consciousness level is forebrain sign, cerebellar ataxia is cerebellar signs= multifocal"
+  },
+  "MF-forebrain+vestibular+cerebellar": {
+    "name": "MF-forebrain+vestibular+cerebellar",
+    "parameters": {
+      "behavior": "compulsive / head pressing",
+      "headPosture": [
+        "head tilt R"
+      ],
+      "gait": [
+        "ataxia",
+        "head tremor",
+        "hypermetria R"
+      ],
+      "ataxiaType": [
+        "vestibular",
+        "cerebellar"
+      ],
+      "epilepticSeizures": "yes"
+    },
+    "result": {
+      "definite": [
+        "multifocal"
+      ],
+      "probable": [],
+      "possible": []
+    },
+    "comment": "forebrain signs (compulsion, seizures)+cerebellar signs (hypermetria, head tremor, cerebellar ataxia)+vestibular signs (head tilt, vestibular ataxia)= multifocal"
+  },
+  "vestibular and cerebellar ataxia": {
+    "name": "vestibular and cerebellar ataxia",
+    "parameters": {
+      "gait": [
+        "ataxia"
+      ],
+      "ataxiaType": [
+        "vestibular",
+        "cerebellar"
+      ]
+    },
+    "result": {
+      "definite": [
+        "cerebellum",
+        "vestibular-paradoxical",
+        "vestibular-central"
+      ],
+      "probable": [],
+      "possible": []
+    },
+    "comment": "Peripheral vestibular is impossible here, there is clear involvement of cerebellum. I would add multifocal here as possible."
+  },
+  "mentation+cervical+seizures": {
+    "name": "mentation+cervical+seizures",
+    "parameters": {
+      "consciousnessLevel": "somnolent/depressed/obtunded",
+      "gait": [
+        "ataxia",
+        "tetraparesis"
+      ],
+      "ataxiaType": [
+        "proprioceptive"
+      ],
+      "epilepticSeizures": "yes",
+      "painCervical": "moderate",
+      "behavior": "compulsive / head pressing"
+    },
+    "result": {
+      "definite": [
+        "multifocal"
+      ],
+      "probable": [],
+      "possible": []
+    },
+    "comment": ""
+  },
+  "lumbosacral+forebrain": {
+    "name": "lumbosacral+forebrain",
+    "parameters": {
+      "painLumbosacral": "moderate",
+      "pelvicRight": "decreased",
+      "pelvicLeft": "decreased",
+      "withdrawalPelvicR": "decreased",
+      "withdrawalPelvicL": "decreased",
+      "behavior": "compulsive / head pressing",
+      "epilepticSeizures": "yes"
+    },
+    "result": {
+      "definite": [
+        "L7-S3",
+        "forebrain"
+      ],
+      "probable": [],
+      "possible": []
+    },
+    "comment": ""
+  },
+  "spinal pain all levels": {
+    "name": "spinal pain all levels",
+    "parameters": {
+      "painCervical": "severe",
+      "painLumbar": "severe",
+      "painThoracolumbar": "severe",
+      "painLumbosacral": "severe"
+    },
+    "result": {
+      "definite": [
+        "C1-C5",
+        "C6-T2",
+        "T3-L3",
+        "L7-S3",
+        "L4-S3"
+      ],
+      "probable": [],
+      "possible": []
+    },
+    "comment": "we don't have severe pain override in L4-S3 but we should add it. "
+  },
+  "multifocal crazy": {
+    "name": "multifocal crazy",
+    "parameters": {
+      "behavior": "compulsive / head pressing",
+      "menaceResponseL": "decreased",
+      "nasalSensationL": "decreased",
+      "nystagmusL": "horizontal",
+      "nystagmusR": "horizontal",
+      "headPosture": [
+        "head tilt L"
+      ],
+      "gait": [
+        "ataxia",
+        "hemiparesis left-sided"
+      ],
+      "ataxiaType": [
+        "vestibular"
+      ],
+      "thoracicLeft": "decreased",
+      "pelvicLeft": "decreased",
+      "epilepticSeizures": "yes"
+    },
+    "result": {
+      "definite": [
+        "multifocal"
+      ],
+      "probable": [],
+      "possible": []
+    },
+    "comment": "all possibles that were here are actually impossible. here we have forebrain, vestibular  signs, so it is multifocal"
+  },
+  "cer+for+vest": {
+    "name": "cer+for+vest",
+    "parameters": {
+      "ambulation": "non ambulatory",
+      "headPosture": [
+        "head tilt R"
+      ],
+      "menaceResponseL": "decreased",
+      "menaceResponseR": "decreased",
+      "nystagmusR": "vertical",
+      "nystagmusL": "vertical",
+      "gait": [
+        "head tremor"
+      ]
+    },
+    "result": {
+      "definite": [
+        "multifocal"
+      ],
+      "probable": [],
+      "possible": []
+    },
+    "comment": "There are no forebrain signs, we have vestibular and cerebellar signs"
+  },
+  "vestibular ataxia with hypermetria": {
+    "name": "vestibular ataxia with hypermetria",
+    "parameters": {
+      "gait": [
+        "ataxia",
+        "hypermetria R"
+      ],
+      "headPosture": [
+        "head tilt R"
+      ],
+      "ataxiaType": [
+        "cerebellar"
+      ]
+    },
+    "result": {
+      "definite": [
+        "vestibular-paradoxical",
+        "multifocal"
+      ],
+      "probable": [],
+      "possible": []
+    },
+    "comment": "vestibular peripheral cannot exist with central signs (cerebellar in this case)"
+  },
+  "brain stem multifocal": {
+    "name": "brain stem multifocal",
+    "parameters": {
+      "consciousnessLevel": "somnolent/depressed/obtunded",
+      "behavior": "compulsive / head pressing",
+      "menaceResponseL": "decreased",
+      "nasalSensationL": "decreased",
+      "thoracicLeft": "decreased",
+      "pelvicLeft": "decreased",
+      "thoracicRight": "normal",
+      "pelvicRight": "normal",
+      "oculocephalicReflexR": "decreased",
+      "oculocephalicReflexL": "decreased",
+      "palpebralReflexL": "decreased",
+      "gagReflex": "decreased",
+      "epilepticSeizures": "yes",
+      "headPosture": [
+        "head turn"
+      ],
+      "ataxiaType": [
+        "proprioceptive"
+      ]
+    },
+    "result": {
+      "definite": [
+        "multifocal"
+      ],
+      "probable": [],
+      "possible": []
+    },
+    "comment": "we have diffuse brain stem plus forebrain signs= multifocal"
+  },
+  "pons+peripheral": {
+    "name": "pons+peripheral",
+    "parameters": {
+      "masticatoryMusclesR": "atrophy",
+      "pelvicRight": "decreased",
+      "pelvicLeft": "normal",
+      "thoracicRight": "decreased",
+      "thoracicLeft": "normal",
+      "palpebralReflexR": "decreased"
+    },
+    "result": {
+      "definite": [
+        "peripheral",
+        "pons"
+      ],
+      "probable": [],
+      "possible": []
+    },
+    "comment": ""
+  },   "1": {
+    "name": "1",
+    "parameters": {
+      "species": "dog",
+      "behavior": "compulsive / head pressing",
+      "gait": [
+        "circling L"
+      ],
+      "menaceResponseR": "decreased",
+      "thoracicRight": "decreased",
+      "pelvicRight": "decreased",
+      "epilepticSeizures": "yes"
+    },
+    "result": {
+      "definite": [
+        "forebrain"
+      ],
+      "probable": [],
+      "possible": []
+    },
+    "comment": "Seizures and abnormal behavior localise to the forebrain. Deficits are on the right side, so the lesion is on the left side. Reduced menace with normal pupillary light reflex supports a lesion in the forebrain, not in the brainstem. "
+  },
+  "2": {
+    "name": "2",
+    "parameters": {
+      "species": "dog",
+      "consciousnessLevel": "somnolent/depressed/obtunded",
+      "behavior": "abnormal",
+      "gait": [
+        "circling R"
+      ],
+      "thoracicLeft": "decreased",
+      "pelvicLeft": "decreased"
+    },
+    "result": {
+      "definite": [
+        "forebrain"
+      ],
+      "probable": [],
+      "possible": []
+    },
+    "comment": ": Circling, disorientation, and abnormal behavior suggest forebrain disease. Postural deficits are contralateral to the lesion, so left-sided deficits indicate a right forebrain lesion."
+  },
+  "3": {
+    "name": "3",
+    "parameters": {
+      "species": "dog",
+      "consciousnessLevel": "somnolent/depressed/obtunded",
+      "blindness": "yes",
+      "epilepticSeizures": "yes"
+    },
+    "result": {
+      "definite": [
+        "forebrain"
+      ],
+      "probable": [],
+      "possible": []
+    },
+    "comment": "Bilateral forebrain.\nExplanation: Seizures and abnormal mentation indicate forebrain disease. Apparent blindness with normal pupillary light reflexes suggests cortical blindness. Because both eyes are affected, the lesion is most likely bilateral forebrain.\n"
+  },
+  "4": {
+    "name": "4",
+    "parameters": {
+      "species": "dog",
+      "consciousnessLevel": "somnolent/depressed/obtunded",
+      "headPosture": [
+        "head tilt R"
+      ],
+      "gait": [
+        "ataxia"
+      ],
+      "ataxiaType": [
+        "vestibular"
+      ],
+      "palpebralReflexR": "decreased",
+      "palpebralReflexL": "normal",
+      "menaceResponseL": "normal",
+      "menaceResponseR": "decreased"
+    },
+    "result": {
+      "definite": [
+        "vestibular-central"
+      ],
+      "probable": [],
+      "possible": []
+    },
+    "comment": "Right brainstem, central vestibular system.\nExplanation: Vestibular signs can be central or peripheral. Altered mentation and postural deficits in all four limbs indicate a central lesion. Ipsilateral facial nerve dysfunction makes a right brainstem lesion most likely.\n"
+  },
+  "5": {
+    "name": "5",
+    "parameters": {
+      "species": "cat",
+      "consciousnessLevel": "somnolent/depressed/obtunded",
+      "ambulation": "non ambulatory",
+      "gait": [
+        "tetraparesis"
+      ],
+      "gagReflex": "decreased",
+      "thoracicRight": "decreased",
+      "thoracicLeft": "decreased",
+      "pelvicRight": "decreased",
+      "pelvicLeft": "decreased"
+    },
+    "result": {
+      "definite": [
+        "medulla-caudal"
+      ],
+      "probable": [],
+      "possible": []
+    },
+    "comment": "Caudal brainstem, especially medulla.\nExplanation: Multiple cranial nerve deficits together with tetraparesis localise to the brainstem. Involvement of gag and tongue function suggests the caudal brainstem.\n"
+  },
+  "6": {
+    "name": "6",
+    "parameters": {
+      "species": "cat",
+      "bodyPosture": [
+        "wide-based stance"
+      ],
+      "gait": [
+        "generalized tremor",
+        "hypermetria L",
+        "hypermetria R"
+      ],
+      "menaceResponseR": "absent",
+      "menaceResponseL": "absent"
+    },
+    "result": {
+      "definite": [
+        "cerebellum"
+      ],
+      "probable": [],
+      "possible": []
+    },
+    "comment": "Hypermetria, intention tremor, and broad-based stance are classic cerebellar signs. Absent menace with normal vision and normal pupillary light reflex is also typical for cerebellar disease."
+  },
+  "7": {
+    "name": "7",
+    "parameters": {
+      "species": "dog",
+      "headPosture": [
+        "head tilt R"
+      ],
+      "gait": [
+        "ataxia",
+        "hypermetria L"
+      ],
+      "menaceResponseL": "absent",
+      "ataxiaType": [
+        "vestibular"
+      ]
+    },
+    "result": {
+      "definite": [
+        "vestibular-paradoxical"
+      ],
+      "probable": [],
+      "possible": [
+        "cerebellum",
+        "vestibular-central",
+        "multifocal"
+      ]
+    },
+    "comment": "Left cerebellum or left cerebellar peduncle, paradoxical vestibular syndrome.\nExplanation: In paradoxical vestibular disease, the head tilt is away from the lesion. The cerebellar signs on the left indicate the lesion is on the left side.\n"
+  },
+  "8": {
+    "name": "8",
+    "parameters": {
+      "gait": [
+        "ataxia"
+      ],
+      "ataxiaType": [
+        "vestibular"
+      ],
+      "thoracicRight": "decreased",
+      "thoracicLeft": "decreased",
+      "pelvicRight": "decreased",
+      "pelvicLeft": "decreased",
+      "painCervical": "moderate",
+      "epilepticSeizures": "yes"
+    },
+    "result": {
+      "definite": [
+        "multifocal"
+      ],
+      "probable": [],
+      "possible": []
+    },
+    "comment": "Multifocal central nervous system disease.\nExplanation: Seizures suggest forebrain disease. Vestibular signs and tetraparesis suggest brainstem involvement. Neck pain also suggests additional disease. One single lesion does not explain all findings well.\n"
+  },
+  "10": {
+    "name": "10",
+    "parameters": {
+      "species": "dog",
+      "gait": [
+        "hemiparesis right-sided"
+      ],
+      "thoracicRight": "decreased",
+      "pelvicRight": "decreased"
+    },
+    "result": {
+      "definite": [
+        "C1-C5"
+      ],
+      "probable": [],
+      "possible": []
+    },
+    "comment": "Right C1 to C5 spinal cord.\nExplanation: The lesion affects both right limbs but not cranial nerves. Reflexes are not reduced, so this is an upper motor neuron lesion in the cervical spinal cord.\n"
+  },
+  "13": {
+    "name": "13",
+    "parameters": {
+      "species": "dog",
+      "gait": [
+        "monoparesis LT",
+        "lameness LT"
+      ],
+      "withdrawalThoracicL": "decreased",
+      "painCervical": "moderate"
+    },
+    "result": {
+      "definite": [
+        "C6-T2"
+      ],
+      "probable": [],
+      "possible": [
+        "peripheral"
+      ]
+    },
+    "comment": "Left C6 to T2 nerve roots or brachial intumescence.\nExplanation: This pattern suggests a lesion affecting the lower motor neurons to the thoracic limb. Neck pain and one-limb involvement suggest nerve root disease or a root signature.\n"
+  },
+  "17": {
+    "name": "17",
+    "parameters": {
+      "species": "dog",
+      "gait": [
+        "paraplegia"
+      ],
+      "bodyPosture": [
+        "Schiff-Sherrington posture"
+      ]
+    },
+    "result": {
+      "definite": [
+        "T3-L3"
+      ],
+      "probable": [],
+      "possible": []
+    },
+    "comment": "Schiff-Sherrington posture-It can occur with severe T3 to L3 lesions and does not mean the thoracic limb lower motor neurons are damaged."
+  },
+  "19": {
+    "name": "19",
+    "parameters": {
+      "species": "dog",
+      "tailPosture": "flaccid",
+      "withdrawalPelvicR": "decreased",
+      "withdrawalPelvicL": "decreased",
+      "urinaryIncontinence": "yes",
+      "painLumbosacral": "moderate"
+    },
+    "result": {
+      "definite": [
+        "L7-S3"
+      ],
+      "probable": [],
+      "possible": []
+    },
+    "comment": "Cauda equina or lumbosacral nerve roots.\nExplanation: Pain over the lumbosacral area, tail weakness, and urinary problems strongly suggest cauda equina disease rather than a more cranial spinal cord lesion. Normal patellar reflexes ad weaker withdrawal.\n"
+  },
+  "20": {
+    "name": "20",
+    "parameters": {
+      "species": "dog",
+      "tailPosture": "flaccid",
+      "perinealReflexR": "decreased",
+      "perinealReflexL": "decreased"
+    },
+    "result": {
+      "definite": [
+        "L7-S3"
+      ],
+      "probable": [],
+      "possible": []
+    },
+    "comment": "Sacral segments or sacral peripheral nerves.\nExplanation: The main deficits involve tail and perineal function. That localises to the sacral spinal cord segments or their peripheral nerves.\n"
+  },
+  "22": {
+    "name": "22",
+    "parameters": {
+      "species": "dog",
+      "headPosture": [
+        "head tilt R"
+      ],
+      "gait": [
+        "ataxia"
+      ],
+      "ataxiaType": [
+        "vestibular"
+      ],
+      "facialParesis": [
+        "R"
+      ],
+      "hornersSyndromeR": "present"
+    },
+    "result": {
+      "definite": [
+        "vestibular-peripheral"
+      ],
+      "probable": [],
+      "possible": [
+        "vestibular-central"
+      ]
+    },
+    "comment": "Right peripheral vestibular system, likely middle or inner ear region.\nExplanation: CN VII dysfunction, vestibular signs, and Horner syndrome can all occur together with disease in the middle or inner ear region. Normal mentation and normal postural reactions support a peripheral lesion\n"
+  },
+  "23": {
+    "name": "23",
+    "parameters": {
+      "species": "dog",
+      "masticatoryMusclesR": "atrophy",
+      "masticatoryMusclesL": "atrophy",
+      "jawTone": "dropped jaw"
+    },
+    "result": {
+      "definite": [
+        "peripheral"
+      ],
+      "probable": [],
+      "possible": []
+    },
+    "comment": "Bilateral trigeminal nerve, mainly motor component.\nExplanation: The muscles of mastication are innervated by the trigeminal nerve. A dropped jaw and bilateral masticatory muscle atrophy strongly support bilateral trigeminal motor dysfunction.\n"
+  },
+  "24": {
+    "name": "24",
+    "parameters": {
+      "species": "dog",
+      "facialParesis": [
+        "L"
+      ],
+      "palpebralReflexL": "absent"
+    },
+    "result": {
+      "definite": [
+        "peripheral"
+      ],
+      "probable": [],
+      "possible": []
+    },
+    "comment": "Left facial nerve, peripheral.\nExplanation: Facial asymmetry and poor blink with normal facial sensation indicate facial nerve dysfunction, not trigeminal dysfunction.\n"
+  },
+  "27": {
+    "name": "27",
+    "parameters": {
+      "species": "dog",
+      "tongue": [
+        "deviated to right"
+      ],
+      "tongueAtrophy": [
+        "R"
+      ]
+    },
+    "result": {
+      "definite": [
+        "peripheral"
+      ],
+      "probable": [],
+      "possible": []
+    },
+    "comment": "Right hypoglossal nerve.\nExplanation: Tongue deviation occurs toward the side of the lesion because the normal side pushes the tongue away in chronic cases.  In the acute phase tongue deviates away from the lesion, normal side will have normal tone and affected decreased tone. \n"
+  },
+  "28": {
+    "name": "28",
+    "parameters": {
+      "species": "dog",
+      "gagReflex": "decreased",
+      "voiceChanges": "dysphonia",
+      "swallowingFunction": "dysphagia"
+    },
+    "result": {
+      "definite": [
+        "peripheral"
+      ],
+      "probable": [],
+      "possible": []
+    },
+    "comment": "Glossopharyngeal and vagus nerves, or their nuclei in the medulla.\nExplanation: Gag, swallowing, and laryngeal function depend mainly on CN IX and CN X. If there are no long tract deficits, a peripheral lower cranial nerve lesion is possible.\n"
+  },
+  "33": {
+    "name": "33",
+    "parameters": {
+      "species": "dog",
+      "headPosture": [
+        "head tilt L"
+      ],
+      "facialParesis": [
+        "L"
+      ]
+    },
+    "result": {
+      "definite": [
+        "vestibular-peripheral"
+      ],
+      "probable": [],
+      "possible": [
+        "vestibular-central"
+      ]
+    },
+    "comment": "Left peripheral vestibular system with left facial nerve involvement.\nExplanation: This pattern fits a lesion in the petrous temporal or middle ear region affecting CN VII and CN VIII.\n"
+  },
+  "35": {
+    "name": "35",
+    "parameters": {
+      "species": "dog",
+      "gait": [
+        "monoplegia RT"
+      ],
+      "hornersSyndromeR": "present",
+      "withdrawalThoracicR": "absent",
+      "extensorToneThoracicR": "decreased"
+    },
+    "result": {
+      "definite": [
+        "peripheral"
+      ],
+      "probable": [],
+      "possible": []
+    },
+    "comment": "Right brachial plexus avulsion, especially C8 to T2 roots.\nExplanation: Severe lower motor neuron deficits in the thoracic limb plus Horner syndrome strongly suggest brachial plexus avulsion with root involvement.\n"
+  },
+  "41": {
+    "name": "41",
+    "parameters": {
+      "species": "cat",
+      "gait": [
+        "monoparesis LP"
+      ],
+      "withdrawalPelvicL": "decreased"
+    },
+    "result": {
+      "definite": [
+        "peripheral"
+      ],
+      "probable": [],
+      "possible": [
+        "L7-S3"
+      ]
+    },
+    "comment": ": Left sciatic nerve.\nExplanation: A normal patellar reflex means the femoral nerve is functioning. Reduced withdrawal and distal limb sensory loss fit sciatic nerve dysfunction.\n"
+  },
+  "43": {
+    "name": "43",
+    "parameters": {
+      "bodyPosture": [
+        "plantigrade RP"
+      ]
+    },
+    "result": {
+      "definite": [
+        "peripheral"
+      ],
+      "probable": [],
+      "possible": []
+    },
+    "comment": "Tibial nerve.\nExplanation: The tibial nerve supplies the extensor muscles of the hock and sensation to the plantar surface.\n"
+  },
+  "45": {
+    "name": "45",
+    "parameters": {
+      "species": "dog",
+      "progression": "worsening",
+      "onset": "chronic",
+      "gait": [
+        "generalised weakness"
+      ],
+      "patellarReflexR": "decreased",
+      "patellarReflexL": "decreased",
+      "withdrawalThoracicR": "decreased",
+      "withdrawalThoracicL": "decreased",
+      "withdrawalPelvicR": "decreased",
+      "withdrawalPelvicL": "decreased",
+      "extensorToneThoracicR": "decreased",
+      "extensorToneThoracicL": "decreased",
+      "extensorTonePelvicR": "decreased",
+      "extensorTonePelvicL": "decreased"
+    },
+    "result": {
+      "definite": [
+        "peripheral"
+      ],
+      "probable": [],
+      "possible": []
+    },
+    "comment": "Generalized peripheral neuropathy or diffuse lower motor neuron disease.\nExplanation: Generalized weakness with reduced reflexes and neurogenic atrophy indicates a diffuse lower motor neuron disorder.\n"
+  },
+  "46": {
+    "name": "46",
+    "parameters": {
+      "species": "dog",
+      "gait": [
+        "exercise-induced weakness"
+      ],
+      "palpebralReflexR": "decreased",
+      "palpebralReflexL": "decreased",
+      "regurgitation": "present"
+    },
+    "result": {
+      "definite": [
+        "peripheral"
+      ],
+      "probable": [],
+      "possible": []
+    },
+    "comment": "Neuromuscular junction.\nExplanation: Exercise-induced weakness and fatigability are classic for neuromuscular junction disease. Regurgitation suggests possible megaesophagus.\n"
+  },
+  "48": {
+    "name": "48",
+    "parameters": {
+      "species": "dog",
+      "gait": [
+        "tetraplegia"
+      ],
+      "patellarReflexR": "decreased",
+      "patellarReflexL": "decreased",
+      "withdrawalThoracicR": "decreased",
+      "withdrawalThoracicL": "decreased",
+      "withdrawalPelvicR": "decreased",
+      "withdrawalPelvicL": "decreased",
+      "extensorToneThoracicR": "decreased",
+      "extensorToneThoracicL": "decreased",
+      "extensorTonePelvicR": "decreased",
+      "extensorTonePelvicL": "decreased"
+    },
+    "result": {
+      "definite": [
+        "peripheral"
+      ],
+      "probable": [],
+      "possible": []
+    },
+    "comment": "Diffuse lower motor neuron disease, likely peripheral nerve or neuromuscular junction (less likely but possible pre-synaptic).\nExplanation: This is a generalized flaccid paralysis pattern. The lesion is peripheral, not central, because mentation is normal and reflexes are reduced.\n"
+  },
+  "49": {
+    "name": "49",
+    "parameters": {
+      "species": "cat",
+      "bodyPosture": [
+        "neck ventroflexion"
+      ],
+      "gait": [
+        "generalised weakness"
+      ]
+    },
+    "result": {
+      "definite": [
+        "peripheral"
+      ],
+      "probable": [],
+      "possible": []
+    },
+    "comment": ": Generalized muscle disease or neuromuscular junction disease.\nExplanation: Ventroflexion is common with neuropathy, myopathy and some neuromuscular junction disorders. It is possible with cervical myelopahies but than we have UMN pelvic limbs and no generalised weakness\n"
+  },
+  "50": {
+    "name": "50",
+    "parameters": {
+      "species": "dog",
+      "onset": "acute",
+      "gait": [
+        "tetraparesis"
+      ],
+      "voiceChanges": "dysphonia",
+      "patellarReflexR": "decreased",
+      "patellarReflexL": "decreased",
+      "withdrawalThoracicR": "decreased",
+      "withdrawalThoracicL": "decreased",
+      "withdrawalPelvicR": "decreased",
+      "withdrawalPelvicL": "decreased",
+      "extensorToneThoracicR": "decreased",
+      "extensorToneThoracicL": "decreased",
+      "extensorTonePelvicR": "decreased",
+      "extensorTonePelvicL": "decreased"
+    },
+    "result": {
+      "definite": [
+        "peripheral"
+      ],
+      "probable": [],
+      "possible": []
+    },
+    "comment": "Generalized peripheral motor nerve roots and nerves, polyradiculoneuritis pattern.\nExplanation: Acute flaccid weakness with reduced reflexes and normal mentation strongly supports a generalized lower motor neuron disorder affecting nerve roots and peripheral nerves.\n"
+  },
+  "C27": {
+    "name": "C27",
+    "parameters": {
+      "species": "dog",
+      "onset": "intermittent",
+      "gait": [
+        "paraparesis"
+      ],
+      "tailPosture": "flaccid",
+      "perinealReflexL": "decreased",
+      "perinealReflexR": "decreased",
+      "withdrawalPelvicR": "decreased",
+      "withdrawalPelvicL": "decreased"
+    },
+    "result": {
+      "definite": [
+        "L7-S3"
+      ],
+      "probable": [],
+      "possible": []
+    },
+    "comment": "SUBDIVISION: Lumbosacral stenosis / cauda equina compression, affecting\nL7 and sacral nerve roots (S1-S3) — patellar reflex integrity confirms L4-L6\nare spared\n\n[EXPLANATION]\nThe patellar reflex is the most important discriminating finding:\nNORMAL patellar reflex confirms L4-L6 (femoral nerve) are INTACT.\nThis places the lesion CAUDAL to L6, at L7-S3.\nIf the lesion were at T3-L3: UMN signs (increased reflexes, spasticity,\npostural deficits) would be expected — not LMN pattern.\nIf the lesion involved L4-L6: patellar reflex would be reduced or absent.\nSigns and their nerve root attribution:\n  Tail hypotonia: caudal nerve roots (Cd1-5) and S3 — AFFECTED ✓\n  Perineal hypoalgesia: S1-S3 dermatome — AFFECTED ✓\n  Reduced anal reflex: pudendal nerve (S1-S3) — AFFECTED ✓\n  Reduced hock flexion in withdrawal: sciatic nerve, specifically S1\n    component — AFFECTED ✓ (L6-S1 compose the sciatic nerve; S1 involvement\n    explains the withdrawal deficit while L6 may be relatively spared)\n  Atonic bladder (LMN): pelvic nerve (S1-S3) — detrusor innervation lost ✓\n  Patellar reflex NORMAL: L4-L6 (femoral nerve) — INTACT ✓\n"
+  },
+  "C1": {
+    "name": "C1",
+    "parameters": {
+      "species": "dog",
+      "onset": "acute",
+      "headPosture": [
+        "head tilt R"
+      ],
+      "gait": [
+        "ataxia",
+        "rolling R"
+      ],
+      "nystagmusR": "horizontal",
+      "nystagmusL": "horizontal"
+    },
+    "result": {
+      "definite": [
+        "vestibular-peripheral"
+      ],
+      "probable": [],
+      "possible": [
+        "vestibular-central"
+      ]
+    },
+    "comment": ""
+  },
+  "C2": {
+    "name": "C2",
+    "parameters": {
+      "species": "cat",
+      "onset": "chronic",
+      "progression": "worsening",
+      "facialParesis": [
+        "L"
+      ]
+    },
+    "result": {
+      "definite": [
+        "peripheral"
+      ],
+      "probable": [],
+      "possible": []
+    },
+    "comment": ""
+  },
+  "C3": {
+    "name": "C3",
+    "parameters": {
+      "species": "dog",
+      "onset": "acute",
+      "jawTone": "dropped jaw",
+      "masticatoryMusclesR": "atrophy",
+      "masticatoryMusclesL": "atrophy"
+    },
+    "result": {
+      "definite": [
+        "peripheral"
+      ],
+      "probable": [],
+      "possible": []
+    },
+    "comment": ""
+  },
+  "C4": {
+    "name": "C4",
+    "parameters": {
+      "species": "dog",
+      "onset": "acute",
+      "headPosture": [
+        "head tilt R"
+      ],
+      "gait": [
+        "ataxia",
+        "hemiparesis right-sided"
+      ],
+      "nystagmusR": "vertical",
+      "nystagmusL": "vertical",
+      "thoracicRight": "decreased",
+      "pelvicRight": "decreased",
+      "ataxiaType": [
+        "vestibular"
+      ]
+    },
+    "result": {
+      "definite": [
+        "vestibular-central"
+      ],
+      "probable": [],
+      "possible": []
+    },
+    "comment": ""
+  },
+  "C5": {
+    "name": "C5",
+    "parameters": {
+      "species": "cat",
+      "onset": "chronic",
+      "progression": "worsening",
+      "duration": "30",
+      "hornersSyndromeL": "present",
+      "cough": "yes"
+    },
+    "result": {
+      "definite": [
+        "peripheral"
+      ],
+      "probable": [],
+      "possible": []
+    },
+    "comment": "SUBDIVISION: Left second-order (preganglionic) neuron Horner's syndrome —\nsympathetic trunk at the thoracic inlet or T1-T3 nerve root level\n\n[EXPLANATION]\nHorner's syndrome localisation requires identifying which neuron in the\nthree-neuron sympathetic arc is affected:\n  First-order neuron (hypothalamus → T1-T3 spinal cord):\n    Associated with ipsilateral hemiplegia, brainstem signs, or cervical\n    myelopathy signs. Inthis case ruled out: normal gait and postural reactions.\n  Second-order neuron / preganglionic (T1-T3 → cranial cervical ganglion,\n    coursing over the thoracic inlet and up the neck):\n    Associated with thoracic or brachial plexus pathology. Isolated Horner's\n    with chest signs is the possible  presentation. FITS HERE.\n  Third-order neuron / postganglionic (cranial cervical ganglion → orbit,\n    traveling with internal carotid and ophthalmic nerve):\n    Produces isolated Horner's, no other neurological signs, often idiopathic\n    in cats. Does not explain the coughing .\nLeft coughing + left Horner's = thoracic or\nmediastinal mass compressing the preganglionic sympathetic trunk as it\ncourses over the thoracic inlet. Of course, coughing is a soft finding, regrdless of that, localisation is peripheral.\n"
+  },
+  "C6": {
+    "name": "C6",
+    "parameters": {
+      "species": "dog",
+      "facialParesis": [
+        "L",
+        "R"
+      ],
+      "menaceResponseR": "absent",
+      "menaceResponseL": "absent"
+    },
+    "result": {
+      "definite": [
+        "peripheral"
+      ],
+      "probable": [],
+      "possible": []
+    },
+    "comment": "All deficits are attributable to bilateral CN VII motor failure.\nCRITICAL TEACHING POINT — Absent menace does NOT indicate blindness here:\nThe menace response requires an intact efferent limb (CN VII → blink).\nIf CN VII is bilaterally non-functional, the animal CANNOT blink regardless\nof visual input. The menace will be absent despite intact vision.\nEvidence that vision is intact:\n- Normal PLR bilaterally (CN II afferent and CN III efferent are intact)\n- Normal visual obstacle course (conscious vision present)\nThe absent menace is entirely explained by bilateral CN VII efferent failure —\nit is not an indicator of a forebrain or optic pathway lesion in this case.\nNormal gait and postural reactions confirm no brainstem or forebrain\ninvolvement, which rules out a central CN VII nucleus lesion in the pons.\nFor a central CN VII lesion to explain bilateral facial paresis, a bilateral\ncaudal pontine lesion would be required — which would inevitably produce\nadditional brainstem signs (postural deficits, altered mentation, other\nCN deficits).\n"
+  },
+  "C7": {
+    "name": "C7",
+    "parameters": {
+      "species": "dog",
+      "onset": "chronic",
+      "progression": "worsening",
+      "gagReflex": "absent",
+      "voiceChanges": "dysphonia",
+      "regurgitation": "present",
+      "swallowingFunction": "dysphagia",
+      "inspiratoryStridor": "present"
+    },
+    "result": {
+      "definite": [
+        "peripheral"
+      ],
+      "probable": [],
+      "possible": []
+    },
+    "comment": "SUBDIVISION: Peripheral CN IX (glossopharyngeal) and CN X (vagus) neuropathy,\nat or distal to the jugular foramen; vagal neuropathy cannot be distinguished\nfrom nucleus ambiguus involvement (medulla) without imaging\n\n[EXPLANATION]\nCN IX (glossopharyngeal): innervates pharyngeal muscles (stylopharyngeus),\nprovides pharyngeal sensation, and contributes the afferent limb of the\ngag reflex.\nCN X (vagus): innervates pharyngeal and laryngeal muscles via the nucleus\nambiguus, provides the efferent limb of the gag reflex, and its recurrent\nlaryngeal branch innervates the intrinsic laryngeal muscles (voice, stridor).\nAbsent gag reflex: CN IX afferent or CN X efferent failure (or both).\nDysphagia + regurgitation: pharyngeal motor failure (CN X, nucleus ambiguus).\nDysphonia + stridor: laryngeal paresis/paralysis (recurrent laryngeal nerve,\nbranch of CN X).\nNormal tongue (CN XII): hypoglossal nucleus and nerve intact. This rules out\na caudal medullary lesion affecting both CN X and CN XII nuclei (which are\nadjacent in the caudal medulla).\nNormal facial motor (CN VII): pons and CN VII intact, rules out more rostral\nbrainstem involvement.\nNormal gait and postural reactions: no long tract involvement, favoring\nperipheral nerve over nuclear (nucleus ambiguus) origin — though imaging is\nrequired to definitively distinguish peripheral CN IX/X from a medullary\nlesion.\nIf postural deficits or other brainstem signs were present,\nthe localisation would shift to medulla-caudal (nucleus ambiguus).\n"
+  },
+  "C8": {
+    "name": "C8",
+    "parameters": {
+      "species": "cat",
+      "onset": "acute",
+      "headPosture": [
+        "head tilt R"
+      ],
+      "gait": [
+        "ataxia",
+        "hemiparesis right-sided"
+      ],
+      "ataxiaType": [
+        "vestibular"
+      ],
+      "nystagmusR": "rotatory",
+      "nystagmusL": "rotatory",
+      "thoracicRight": "decreased",
+      "pelvicRight": "decreased",
+      "hornersSyndromeR": "present"
+    },
+    "result": {
+      "definite": [
+        "vestibular-central"
+      ],
+      "probable": [],
+      "possible": []
+    },
+    "comment": "SUBDIVISION: Right lateral medulla (rostral medulla) —\n\n[EXPLANATION]\nHead tilt and falling to the right: vestibular system affected on the right.\nRotary nystagmus: can occur in both central and peripheral vestibular disease\n— not discriminating alone in this case.\nKey finding: IPSILATERAL postural reaction deficits (right-sided deficits\nwith right-sided vestibular signs).\nIn peripheral vestibular disease, postural reactions are NORMAL because\nthe lesion does not affect central pathways.\nPostural reaction deficits confirm a CENTRAL (brainstem) lesion.\nThe combination of ipsilateral vestibular signs + ipsilateral postural deficits\nlocalises to the MEDULLA at or above the level where ascending proprioceptive\ntracts are still ipsilateral.\nRight-sided Horner's syndrome: the descending sympathetic tract runs through\nthe LATERAL medulla on the same side as the body it serves (ipsilateral).\nA right lateral medullary lesion interrupts the right descending sympathetic\ntract → right Horner's. This is a key anatomical landmark.\nNormal CN VII bilaterally: CN VII nucleus is in the caudal PONS, not the\nmedulla. Its integrity places the lesion caudal to the pons (medulla) or\nconfirms the pons is spared.\nThis is the lateral medullary syndrome :\nipsilateral vestibular signs + ipsilateral Horner's + ipsilateral postural\ndeficits from a single lateral medullary lesion.\n"
+  },
+  "C9": {
+    "name": "C9",
+    "parameters": {
+      "species": "dog",
+      "onset": "acute",
+      "progression": "worsening",
+      "headPosture": [
+        "head tilt L"
+      ],
+      "gait": [
+        "ataxia",
+        "rolling L",
+        "hypermetria R"
+      ],
+      "ataxiaType": [
+        "vestibular"
+      ],
+      "nystagmusR": "horizontal",
+      "nystagmusL": "horizontal",
+      "menaceResponseR": "absent",
+      "thoracicRight": "decreased",
+      "pelvicRight": "decreased"
+    },
+    "result": {
+      "definite": [
+        "vestibular-paradoxical",
+        "multifocal"
+      ],
+      "probable": [],
+      "possible": [
+        "cerebellum"
+      ]
+    },
+    "comment": "Paradoxical vestibular syndrome occurs when a cerebellar lesion disrupts\nvestibular modulation, causing vestibular signs that point to the OPPOSITE\nside from the actual lesion.\nMechanism:\nThe flocculonodular lobe of the cerebellum provides inhibitory input to the\nIPSILATERAL vestibular nuclei. A LEFT cerebellar lesion removes inhibition\nfrom the LEFT vestibular nuclei → left vestibular nuclei become overactive\n→ clinical signs mimic a RIGHT peripheral vestibular lesion.\nTherefore: head tilt, falling, and rolling to the LEFT appear to indicate a\nleft-sided vestibular lesion — but this is PARADOXICAL because the actual\nlesion is RIGHT cerebellar, not RIGHT vestibular.\nHow to identify the paradox:\n- Postural reaction deficits on the RIGHT: cerebellar hemisphere lesions\n  cause ipsilateral limb deficits (cerebellum does not decussate for limb\n  coordination). Right-sided deficits = RIGHT-sided cerebellar or central\n  pathway lesion — but the vestibular signs point LEFT. This discordance\n  reveals the paradox.\nSIMPLE RULE TO CALL PARADOXICAL – LESION IN ON THE SAME SIDE OF POSTURAL REACTION DEFICITS OR HYPERMETRIA. REMEMBER THIS – LEGS DON’T LIE!\n"
+  },
+  "C10": {
+    "name": "C10",
+    "parameters": {
+      "species": "dog",
+      "progression": "worsening",
+      "onset": "chronic",
+      "bodyPosture": [
+        "wide-based stance"
+      ],
+      "gait": [
+        "ataxia",
+        "head tremor",
+        "hypermetria L",
+        "hypermetria R"
+      ],
+      "ataxiaDistribution": "all four limbs",
+      "ataxiaType": [
+        "cerebellar"
+      ]
+    },
+    "result": {
+      "definite": [
+        "cerebellum"
+      ],
+      "probable": [],
+      "possible": []
+    },
+    "comment": ""
+  },
+  "C10 without type of ataxia": {
+    "name": "C10 without type of ataxia",
+    "parameters": {
+      "bodyPosture": [
+        "wide-based stance"
+      ],
+      "gait": [
+        "ataxia",
+        "head tremor",
+        "hypermetria L",
+        "hypermetria R"
+      ]
+    },
+    "result": {
+      "definite": [
+        "cerebellum"
+      ],
+      "probable": [],
+      "possible": []
+    },
+    "comment": "tremor+hypermetria= cerebellar ataxia"
+  },
+  "C11-somnolent": {
+    "name": "C11-somnolent",
+    "parameters": {
+      "species": "dog",
+      "onset": "chronic",
+      "progression": "worsening",
+      "gait": [
+        "ataxia"
+      ],
+      "menaceResponseR": "absent",
+      "menaceResponseL": "absent",
+      "blindness": "yes",
+      "thoracicLeft": "decreased",
+      "pelvicLeft": "decreased",
+      "epilepticSeizures": "yes",
+      "seizureType": "focal",
+      "consciousnessLevel": "somnolent/depressed/obtunded"
+    },
+    "result": {
+      "definite": [
+        "forebrain"
+      ],
+      "probable": [],
+      "possible": []
+    },
+    "comment": ""
+  },
+  "C11-normal ": {
+    "name": "C11-normal ",
+    "parameters": {
+      "species": "dog",
+      "onset": "chronic",
+      "progression": "worsening",
+      "gait": [
+        "ataxia"
+      ],
+      "ataxiaDistribution": "all four limbs",
+      "menaceResponseR": "absent",
+      "menaceResponseL": "absent",
+      "blindness": "yes",
+      "thoracicLeft": "decreased",
+      "pelvicLeft": "decreased",
+      "epilepticSeizures": "yes",
+      "seizureType": "focal"
+    },
+    "result": {
+      "definite": [
+        "forebrain"
+      ],
+      "probable": [],
+      "possible": []
+    },
+    "comment": "SUBDIVISION: Right cortex / visual cortex (with possible bilateral\nor contralateral extension given bilateral visual deficits)\n\n[EXPLANATION]\nNormal PLR + absent menace + normal fundic exam + absent visual placing =\nCORTICAL BLINDNESS.\nThe PLR pathway: retina → optic nerve → optic chiasm → optic tract →\npretectal area → CN III nucleus. This pathway does NOT require cortical\nprocessing. Normal PLRs confirm CN II (retina to midbrain) and CN III are\nintact.\nThe menace and visual placing pathways require: CN II → lateral geniculate\nnucleus → optic radiations → visual cortex (occipital lobe) but then it goes to the motor cortex. If the visual\ncortex or optic radiations are damaged, menace and visual placing are lost\ndespite normal PLRs.\nConclusion: the lesion is in the visual cortex (occipital lobe)/motor cortex or optic\nradiations — NOT in the retina or optic nerves.\nLeft postural reaction deficits: right hemisphere lesion (contralateral\ncontrol). This confirms a right-sided forebrain but then in the motor cortex lesion.\nRight-sided focal seizures (facial twitching): cortical irritation of the\nLEFT motor cortex (contralateral to body side). This implies left hemisphere\ninvolvement OR bilateral disease.\nBilateral visual deficits from forebrain disease: in dogs and cats, visual\ncortical representation is partly bilateral (unlike humans). A large right\noccipital lesion can produce bilateral visual field deficits. Alternatively,\nbilateral occipital lesions explain bilateral blindness more cleanly.\nALWAYS consider cortical blindness when PLRs are normal\nand menace/placing are absent. Do not diagnose retinal or optic nerve disease\nwithout ruling out a forebrain lesion.\n"
+  },
+  "C12": {
+    "name": "C12",
+    "parameters": {
+      "species": "cat",
+      "onset": "acute",
+      "behavior": "abnormal",
+      "consciousnessLevel": "somnolent/depressed/obtunded",
+      "headPosture": [
+        "head turn"
+      ],
+      "gait": [
+        "circling L"
+      ],
+      "thoracicRight": "decreased",
+      "pelvicRight": "decreased"
+    },
+    "result": {
+      "definite": [
+        "forebrain"
+      ],
+      "probable": [],
+      "possible": []
+    },
+    "comment": "Circling and head turn toward the LEFT: in forebrain/thalamic disease,\nanimals circle toward the side of the lesion. Left circling = left-sided lesion.\nHowever: forebrain hemisphere lesions produce CONTRALATERAL postural\nreaction deficits (right hemisphere → left limb deficits; left hemisphere →\nright limb deficits). This is a key internal consistency check.\nAltered mentation (obtunded): forebrain (cerebral cortex or thalamus)\nor ascending reticular activating system (ARAS) in the brainstem.\nNo nystagmus distinguishes this from vestibular disease, which can\nsuperficially mimic forebrain signs (circling, head turn).\nNormal menace and PLR: primary visual pathways intact, no occipital cortex\nor optic pathway failure.\nThalamus (diencephalon) is favoured over cortex alone because:\n- Obtundation is more prominent with thalamic lesions (thalamus is integral\n  to the ARAS and consciousness)\n"
+  },
+  "C16": {
+    "name": "C16",
+    "parameters": {
+      "species": "cat",
+      "onset": "peracute",
+      "gait": [
+        "paraplegia"
+      ],
+      "pelvicRight": "absent",
+      "pelvicLeft": "absent",
+      "withdrawalPelvicR": "absent",
+      "withdrawalPelvicL": "absent",
+      "deepPain": [
+        "absent RP",
+        "absent LP"
+      ],
+      "musclePain": "focal",
+      "femoralPulse": "absent"
+    },
+    "result": {
+      "definite": [
+        "peripheral"
+      ],
+      "probable": [],
+      "possible": []
+    },
+    "comment": "SUBDIVISION: Peripheral nerve and muscle ischemia secondary to aortic\nthromboembolism (ATE, saddle thrombus)\n\nWARNING: THIS IS NOT A PRIMARY NEUROLOGICAL LESION. This is vascular\ndisease causing peripheral nerve and muscle ischemia. Assigning to\n'peripheral' reflects the site of neurological dysfunction (ischemic\nperipheral nerves and muscles), but the primary diagnosis is vascular.\nDo NOT localise this to the spinal cord.\n\n[EXPLANATION]\nATE occurs when a thrombus (commonly from cardiomyopathy) lodges at the\naortic trifurcation, obstructing blood flow to both pelvic limbs.\nThis mimics T3-L3 myelopathy or lumbosacral myelopathy clinically but\nis NOT a spinal cord lesion.\nCritical differentiating features from myelopathy:\n- ABSENT bilateral femoral pulses: NEVER absent in myelopathy. This is\n  the single most important differentiating sign.\n- COLD pelvic limbs: ischemia causes peripheral vasoconstriction and\n  absent perfusion. Myelopathy does not affect limb temperature.\n- FIRM, PAINFUL gastrocnemius muscles: ischemic myopathy and muscle\n  contracture. Acute myelopathy causes flaccid, non-painful muscles.\n- HYPERACUTE simultaneous bilateral onset: ATE strikes both limbs\n  simultaneously and instantaneously. Myelopathy can be acute but rarely\n  perfectly bilateral from onset.\n- Elevated CK and lactate (if measured): ischemic muscle damage.\nThe pelvic limb paralysis and absent reflexes/pain are due to peripheral\nnerve ischemia, not spinal cord damage. The nerve and muscle fail because\nthey are not perfused — not because the spinal cord is damaged.\nBladder distension is shared with both conditions and does not discriminate.\n"
+  },
+  "C17": {
+    "name": "C17",
+    "parameters": {
+      "species": "dog",
+      "onset": "acute",
+      "gait": [
+        "monoparesis LP"
+      ],
+      "withdrawalPelvicL": "decreased",
+      "deepPain": [
+        "absent LP"
+      ]
+    },
+    "result": {
+      "definite": [
+        "peripheral"
+      ],
+      "probable": [],
+      "possible": []
+    },
+    "comment": "SUBDIVISION: Left sciatic nerve injury, complete (both common peroneal\nand tibial branches affected), distal to the hamstring branches (proximal\nsciatic nerve intact)\n\n[EXPLANATION]\nSciatic nerve (L6-S1) divides into two major branches:\n  Common peroneal nerve: hock flexion (dorsiflexion), digit extension,\n    sensory to dorsal paw.\n  Tibial nerve: hock extension (plantarflexion), digital flexion, sensory\n    to plantar paw surface.\nABSENT hock flexion: common peroneal nerve affected.\nWEAK hock extension: tibial nerve affected.\nABSENT deep pain plantar digits: tibial nerve sensory affected.\nSciatic distribution hypalgesia: confirms sciatic territory.\nCannot bear weight on digits: combined peroneal + tibial failure.\nNORMAL stifle flexion and hip flexion: the hamstring muscles (biceps\nfemoris, semimembranosus, semitendinosus) are innervated by PROXIMAL\nbranches of the sciatic nerve. Their function confirms the lesion is\nDISTAL to the hamstring branches of the sciatic nerve.\nThis is critical: if stifle flexion were absent, the lesion would be\nmore proximal (at or near the sciatic notch or higher).\nNORMAL patellar reflex (not explicitly tested but implied by normal\nstifle behavior): confirms femoral nerve (L4-L6) is intact — rules out\na lesion at the level of the lumbar plexus.\nDifferential nerve localisation:\n- Isolated peroneal: hock flexion lost, dorsal sensation lost, but plantar\n  sensation and hock extension intact.\n- Isolated tibial: hock extension weak, plantar sensation lost, but hock\n  flexion and dorsal sensation intact.\n- Complete sciatic (distal to hamstrings): all of the above affected — fits\n  this case.\n\n"
+  },
+  "C20 without vestibular": {
+    "name": "C20 without vestibular",
+    "parameters": {
+      "species": "cat",
+      "onset": "chronic",
+      "gait": [
+        "hemiparesis right-sided"
+      ],
+      "consciousnessLevel": "somnolent/depressed/obtunded",
+      "thoracicRight": "decreased",
+      "pelvicRight": "decreased",
+      "menaceResponseR": "absent",
+      "facialParesis": [
+        "R"
+      ],
+      "epilepticSeizures": "yes",
+      "seizureType": "focal"
+    },
+    "result": {
+      "definite": [
+        "multifocal"
+      ],
+      "probable": [],
+      "possible": []
+    },
+    "comment": "SUBDIVISION: At minimum two lesions — (1) left forebrain/cerebral cortex\n(right focal seizures, right postural deficits) AND (2) right caudal pons\nor peripheral right CN VII (right facial paresis).\n"
+  },
+  "C20 with vestibular": {
+    "name": "C20 with vestibular",
+    "parameters": {
+      "species": "cat",
+      "onset": "chronic",
+      "consciousnessLevel": "somnolent/depressed/obtunded",
+      "gait": [
+        "ataxia",
+        "hemiparesis right-sided"
+      ],
+      "menaceResponseR": "absent",
+      "facialParesis": [
+        "R"
+      ],
+      "thoracicRight": "decreased",
+      "pelvicRight": "decreased",
+      "epilepticSeizures": "yes",
+      "seizureType": "focal",
+      "ataxiaType": [
+        "vestibular"
+      ]
+    },
+    "result": {
+      "definite": [
+        "multifocal"
+      ],
+      "probable": [],
+      "possible": []
+    },
+    "comment": "SUBDIVISION: At minimum two lesions — (1) left forebrain/cerebral cortex\n(right focal seizures, right postural deficits) AND (2) right caudal pons\nor peripheral right CN VII (right facial paresis). Prior vestibular episode\nsuggests a third area (vestibular system) was previously involved.\n\n[EXPLANATION]\nFocal right-sided facial twitching seizures: irritative focus in the LEFT\nmotor cortex (cortical seizures are contralateral to the body side affected).\nRight postural reaction deficits: LEFT forebrain/UMN pathway. Confirms\nleft hemisphere lesion.\nRight facial paresis (CN VII): RIGHT-sided CN VII lesion — either at the\nright CN VII nucleus (caudal pons) or the right peripheral facial nerve.\nThis is CONTRALATERAL to the forebrain lesion (which is left-sided).\nTherefore: the right facial paresis CANNOT be explained by the same left\nforebrain lesion.\nAbsent right menace: could be due to right CN VII failure (efferent limb\nof menace absent → no blink) OR left visual cortex involvement. In the\ncontext of existing right CN VII paresis, the absent right menace is\nexplained by the CN VII efferent failure and does not necessarily indicate\na second visual cortex lesion.\nPrior vestibular episode (resolved): indicates previous involvement of a\nvestibular-associated area (inner ear, vestibular nuclei, or cerebellum) —\nthis adds a third potential lesion site or indicates a multifocal process\nthat has evolved.\nConclusion: minimum two active lesions (left forebrain + right CN VII/pons).\n"
+  },
+  "C21": {
+    "name": "C21",
+    "parameters": {
+      "species": "dog",
+      "progression": "worsening",
+      "onset": "chronic",
+      "gait": [
+        "generalised weakness",
+        "exercise-induced weakness"
+      ],
+      "facialParesis": [
+        "L",
+        "R"
+      ],
+      "regurgitation": "present",
+      "withdrawalPelvicL": "decreased",
+      "withdrawalPelvicR": "decreased",
+      "patellarReflexR": "decreased",
+      "patellarReflexL": "decreased",
+      "withdrawalThoracicL": "decreased",
+      "withdrawalThoracicR": "decreased"
+    },
+    "result": {
+      "definite": [
+        "peripheral"
+      ],
+      "probable": [],
+      "possible": []
+    },
+    "comment": "SUBDIVISION: Neuromuscular junction (NMJ) — consistent with myasthenia\ngravis (acquired or congenital)\n\n[EXPLANATION]\nThe hallmark finding is FATIGABILITY: weakness that worsens with exercise\nor repetitive use and improves with rest.\nThis is NOT a feature of:\n- Neuropathy: produces consistent deficits that do not fluctuate with\n  exercise in this pattern.\n- Myopathy: weakness is consistent; fatigability specific to exercise\n  is not characteristic.\n- UMN or LMN spinal cord disease: produces static or progressive deficits,\n  not episodic fatigue-dependent weakness.\nFatigability is the physiological signature of NMJ disease: each nerve\nimpulse releases acetylcholine; if acetylcholine receptors are blocked\n(as in MG) or depleted, repeated stimulation leads to progressive failure\nof neuromuscular transmission → increasing weakness.\nMegaesophagus: the canine esophagus is striated muscle innervated by\nvagal motor fibers via NMJ synapses. MG-related NMJ failure at esophageal\njunctions → esophageal hypomotility → megaesophagus and regurgitation.\nThis is one of the most common and important presentations of MG in dogs.\nPost-exercise facial paresis: CN VII motor (facial muscles have NMJs).\nWith insufficient acetylcholine receptor function, repeated facial muscle\nactivation during exercise leads to NMJ failure → transient facial paresis.\nNo muscle atrophy: no denervation, no primary muscle destruction (no\naxonal loss, no myopathy).\nReduced reflexes: NMJ failure can impair the motor efferent component of\nreflex arcs, producing mildly reduced reflexes.\nLocalisation is at the NEUROMUSCULAR JUNCTION — not within the CNS,\nperipheral nerve axon, or muscle fiber. The lesion is at the synapse.\n"
+  },
+  "C22": {
+    "name": "C22",
+    "parameters": {
+      "gagReflex": "absent",
+      "tongueAtrophy": [
+        "L"
+      ]
+    },
+    "result": {
+      "definite": [
+        "medulla-caudal"
+      ],
+      "probable": [],
+      "possible": []
+    },
+    "comment": ""
+  },
+  "C23": {
+    "name": "C23",
+    "parameters": {
+      "species": "dog",
+      "progression": "worsening",
+      "onset": "chronic",
+      "gait": [
+        "tetraparesis"
+      ],
+      "muscleAtrophy": "generalized",
+      "patellarReflexR": "decreased",
+      "patellarReflexL": "decreased",
+      "withdrawalThoracicR": "decreased",
+      "withdrawalThoracicL": "decreased",
+      "withdrawalPelvicR": "decreased",
+      "withdrawalPelvicL": "decreased",
+      "extensorToneThoracicR": "decreased",
+      "extensorToneThoracicL": "decreased",
+      "extensorTonePelvicR": "decreased",
+      "extensorTonePelvicL": "decreased"
+    },
+    "result": {
+      "definite": [
+        "peripheral"
+      ],
+      "probable": [],
+      "possible": []
+    },
+    "comment": ""
+  },
+  "C24": {
+    "name": "C24",
+    "parameters": {
+      "species": "cat",
+      "onset": "chronic",
+      "progression": "worsening",
+      "bodyPosture": [
+        "plantigrade RP",
+        "plantigrade LP"
+      ],
+      "gait": [
+        "paraparesis"
+      ],
+      "pelvicRight": "decreased",
+      "pelvicLeft": "decreased",
+      "patellarReflexR": "decreased",
+      "patellarReflexL": "decreased",
+      "withdrawalThoracicR": "normal",
+      "withdrawalThoracicL": "normal",
+      "withdrawalPelvicR": "decreased",
+      "withdrawalPelvicL": "decreased"
+    },
+    "result": {
+      "definite": [
+        "peripheral"
+      ],
+      "probable": [],
+      "possible": [
+        "L4-S3"
+      ]
+    },
+    "comment": "Plantigrade or palmigrade stance usually indicate peripheral problem "
+  },
+  "C28": {
+    "name": "C28",
+    "parameters": {
+      "species": "dog",
+      "onset": "acute",
+      "fecalIncontinence": "yes",
+      "urinaryIncontinence": "yes",
+      "perinealReflexR": "decreased",
+      "perinealReflexL": "decreased"
+    },
+    "result": {
+      "definite": [
+        "L7-S3"
+      ],
+      "probable": [],
+      "possible": []
+    },
+    "comment": "SUBDIVISION: Isolated sacral segment (S1-S3) lesion — patellar reflex\nand limb motor function intact confirm L4-S1 motor is spared; the lesion\naffects only sacral autonomic and somatic nerve roots\n\n[EXPLANATION]\nNormal gait and postural reactions: L4-L7 nerve roots that supply pelvic\nlimb motor function (sciatic via L6-S1, femoral via L4-L6) are functionally\nINTACT.\nNormal patellar reflex: L4-L6 (femoral nerve) INTACT ✓\nNormal withdrawal reflex (all components including hock flexion): sciatic\nnerve (L6-S1) motor function INTACT ✓\nThese normal findings place the motor lesion at the SACRAL level (S1-S3\nautonomic and somatic) where sphincter and perineal innervation originates,\nbut the motor supply to the limbs is spared.\nIsolated sacral deficits:\n  Atonic bladder (LMN): pelvic nerve (S1-S3) — detrusor innervation lost ✓\n  Fecal incontinence: internal and external anal sphincter (S1-S3 pudendal\n    nerve) — AFFECTED ✓\n  Reduced anal reflex: pudendal nerve (S1-S3) — AFFECTED ✓\n  Perineal hypoalgesia: S1-S3 dermatome — AFFECTED ✓\nHow this differs from an L7-dominated lesion (Case 027):\n  L7 lesion (lumbosacral junction): affects L7 nerve root → sciatic motor\n    contributions → pelvic limb weakness and reduced withdrawal would be\n    expected in addition to sphincter signs.\n  Pure sacral lesion: sphincter and perineal signs ONLY — limbs are\n    completely normal\n"
+  },
+  "C29": {
+    "name": "C29",
+    "parameters": {
+      "species": "dog",
+      "onset": "acute",
+      "gait": [
+        "lameness RT"
+      ],
+      "deepPain": [
+        "absent RT"
+      ]
+    },
+    "result": {
+      "definite": [
+        "peripheral"
+      ],
+      "probable": [],
+      "possible": []
+    },
+    "comment": "SUBDIVISION: Right median nerve injury — isolated sensory and distal motor\ndeficit in the median nerve distribution (C8-T1)\n\n[EXPLANATION]\nThis is a pure peripheral nerve sensory localisation challenge.\nMedian nerve (C8-T1): motor supply to carpal and digital flexors (flexor\ncarpi radialis, superficial and deep digital flexors); sensory supply to\nthe medial and palmar surface of the paw and medial antebrachium.\nAbsent deep pain medial antebrachium and medial/palmar digits: exactly\nthe sensory distribution of the median nerve ✓\nPRESENT pain dorsal and lateral limb: dorsal paw (radial nerve, C7-T1)\nand lateral limb (radial and musculocutaneous nerve) are INTACT.\nNORMAL biceps reflex: musculocutaneous nerve (C6-C8) — INTACT. Rules out\nmusculocutaneous nerve lesion and C6-C7 root involvement.\nNORMAL triceps reflex: radial nerve (C7-T1) — INTACT. Rules out radial\nnerve and C7-T1 root.\nNORMAL withdrawal reflex (full flexion): both proximal flexors (biceps/\nmusculocutaneous) and distal flexors (median and ulnar nerve) participate\nin withdrawal. Normal full withdrawal indicates the efferent (motor)\ncomponent is largely intact — this lesion may be predominantly sensory,\nor the motor loss is mild/partial.\nNORMAL postural reactions when placed: radial nerve proprioceptive function\n(dorsal digit contact) is intact — the dog can perceive dorsal surface\ncontact and correct posture.\nWhy not medial cord of brachial plexus?\n  Medial cord → median AND ulnar nerves. Ulnar nerve: sensory to lateral\n  palmar surface and lateral digit, motor to carpal and digital flexors\n  (ulnar head). Ulnar involvement would add lateral palmar hypoalgesia —\n  absent here. Medial cord lesion = combined median + ulnar distribution.\nDistal atrophy: consistent with denervation of carpal/digital flexors\n(median nerve motor supply).\n"
+  },
+  "C30?????????": {
+    "name": "C30?????????",
+    "parameters": {
+      "species": "cat",
+      "headPosture": [
+        "head tilt L"
+      ],
+      "gait": [
+        "ataxia",
+        "hemiparesis right-sided"
+      ],
+      "facialParesis": [
+        "L"
+      ],
+      "hornersSyndromeL": "present",
+      "ataxiaType": [
+        "vestibular"
+      ],
+      "nystagmusL": "horizontal",
+      "nystagmusR": "horizontal",
+      "thoracicRight": "normal",
+      "pelvicRight": "normal",
+      "thoracicLeft": "decreased",
+      "pelvicLeft": "decreased"
+    },
+    "result": {
+      "definite": [
+        "pons",
+        "vestibular-central"
+      ],
+      "probable": [],
+      "possible": []
+    },
+    "comment": "SUBDIVISION: Left lateral pontine tegmentum (caudal pons) — single lesion\nproducing crossed signs; left-sided cranial nerve deficits with contralateral\n(right) limb UMN signs\n\n[EXPLANATION]\nThis is the definitive brainstem crossed-signs case. All signs are\nexplained by ONE left-sided lesion at the level of the caudal pons /\npons-medulla junction. The key principle is that CROSSED SIGNS = BRAINSTEM.\n\nLEFT-SIDED signs (ipsilateral to the lesion — all arising from structures\nat the lesion level that serve the ipsilateral side):\n  Left head tilt: left vestibular nuclei (located at the pontomedullary\n    junction, predominantly pons/medulla) are disrupted ✓\n  Nystagmus fast phase to the RIGHT: lesion is LEFT-sided; fast phase\n    is directed away from the lesion ✓\n  Left Horner's syndrome: descending sympathetic tract runs ipsilaterally\n    through the lateral brainstem tegmentum. Disruption at the left pontine/\n    medullary level → left Horner's ✓\n  Left facial hypoalgesia: spinal nucleus and tract of CN V runs ipsilaterally\n    through the lateral brainstem from the pons into the medulla and cervical\n    cord. Left lateral pontine/medullary tegmentum lesion → left facial\n    pain/temperature loss ✓\n  Left facial paresis (CN VII): CN VII nucleus is located in the CAUDAL\n    PONS. Left-sided caudal pons lesion → left CN VII motor nucleus or\n    fascicles affected → left facial paresis ✓\n\nRIGHT-SIDED signs (contralateral to the lesion — arising from tracts that\nserve the contralateral body but have NOT yet decussated at this level):\n  Right hemiparesis (UMN): descending corticospinal/rubrospinal tracts run\n    in the ventral/lateral pons and have NOT decussated at the level of the\n    caudal pons. They decussate at the pyramidal decussation in the caudal\n    medulla/cervicomedullary junction. A LEFT pontine lesion interrupts the\n    LEFT descending UMN tract, which at this level serves the RIGHT body →\n    right hemiparesis ✓\n  Left postural deficits: ascending proprioceptive tracts at the pontine\n    level are ipsilateral to the body side they serve (they have already\n    entered the spinal cord from the left limbs and ascend on the left side\n    of the brainstem at this level) → left pontine lesion disrupts left\n    ascending proprioceptive input → left postural deficits ✓\n\nSummary of the anatomical logic:\n  Ipsilateral at pons level: CN VII nucleus, vestibular nuclei (partly),\n    descending sympathetic tract, spinal trigeminal tract, ascending\n    proprioceptive tracts.\n  Contralateral at pons level: descending UMN tracts (not yet crossed).\nLocalisation = LEFT caudal pons (pontine tegmentum) because:\n  - CN VII nucleus is in caudal pons (explains facial paresis)\n  - All other signs are consistent with lateral pontine tegmentum involvement\nRule to teach: if there are ipsilateral cranial nerve signs + contralateral\nlimb UMN signs, the lesion is in the BRAINSTEM at the level of those\ncranial nerve nuclei.\n"
+  },
+  "6 cer. at.": {
+    "name": "6 cer. at.",
+    "parameters": {
+      "species": "cat",
+      "bodyPosture": [
+        "wide-based stance"
+      ],
+      "gait": [
+        "ataxia",
+        "generalized tremor",
+        "hypermetria L",
+        "hypermetria R"
+      ],
+      "menaceResponseR": "absent",
+      "menaceResponseL": "absent",
+      "ataxiaType": [
+        "cerebellar"
+      ]
+    },
+    "result": {
+      "definite": [
+        "cerebellum"
+      ],
+      "probable": [],
+      "possible": []
+    },
+    "comment": ""
+  }
+}

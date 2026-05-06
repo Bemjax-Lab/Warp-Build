@@ -1,0 +1,729 @@
+{
+  "patient data": {
+    "species": {
+      "name": "species",
+      "desc": "Animal species",
+      "values": ["dog", "cat"]
+    },
+    "age": {
+      "name": "age",
+      "desc": "Age in years, decimal if months",
+      "values": 0
+    },
+    "breed": {
+      "name": "breed",
+      "desc": "List of all breeds",
+      "values": [
+        "Dachshund", "Labrador Retriever", "German Shepherd", "Golden Retriever",
+        "Bulldog", "Poodle", "Beagle", "Rottweiler", "Yorkshire Terrier", "Boxer"
+      ]
+    },
+    "reproductiveStatus": {
+      "name": "reproductiveStatus",
+      "desc": "Reproductive status",
+      "values": ["intact", "neutered"]
+    }
+  },
+
+  "history": {
+    "onset": {
+      "name": "onset",
+      "desc": "Onset of symptoms",
+      "values": ["peracute", "acute", "subacute", "chronic"]
+    },
+    "duration": {
+      "name": "duration",
+      "desc": "Duration of symptoms in days",
+      "values": 0
+    },
+    "progression": {
+      "name": "progression",
+      "desc": "Progression of symptoms",
+      "values": ["improving", "stable", "worsening"]
+    },
+    "vaccinated": {
+      "name": "vaccinated",
+      "desc": "Vaccination status",
+      "values": ["yes", "no", "unknown"]
+    },
+    "traumaHistory": {
+      "name": "traumaHistory",
+      "desc": "History of trauma or injury (including injection-site injury)",
+      "values": ["yes", "no"]
+    },
+    "biteHistory": {
+      "name": "biteHistory",
+      "desc": "History of animal bite wound",
+      "values": ["yes", "no"]
+    },
+    "wildlifeExposure": {
+      "name": "wildlifeExposure",
+      "desc": "Exposure to wild animals",
+      "values": ["yes", "no"]
+    },
+    "tickDiscovery": {
+      "name": "tickDiscovery",
+      "desc": "Tick found on animal",
+      "values": ["yes", "no"]
+    },
+    "toxinExposure": {
+      "name": "toxinExposure",
+      "desc": "Known exposure to toxin or poison",
+      "values": ["yes", "no"]
+    },
+    "chemotherapyHistory": {
+      "name": "chemotherapyHistory",
+      "desc": "Receiving or recently received chemotherapy",
+      "values": ["yes", "no"]
+    },
+    "immunosuppressed": {
+      "name": "immunosuppressed",
+      "desc": "Immunosuppressed (long-term steroids, immunosuppressive disease)",
+      "values": ["yes", "no"]
+    },
+    "recentNeurologicDrug": {
+      "name": "recentNeurologicDrug",
+      "desc": "Recent drug with known neurological or ototoxic side effects",
+      "values": [
+        "none",
+        "metronidazole",
+        "aminoglycoside (gentamicin / amikacin / tobramycin)",
+        "cisplatin",
+        "chlorhexidine ear cleaning (ruptured tympanum)",
+        "other"
+      ]
+    }
+  },
+
+  "systemic signs": {
+    "fever": {
+      "name": "fever",
+      "desc": "Fever on rectal temperature",
+      "values": ["yes", "no"]
+    },
+    "lethargy": {
+      "name": "lethargy",
+      "desc": "Lethargy",
+      "values": ["yes", "no"]
+    },
+    "anorexia": {
+      "name": "anorexia",
+      "desc": "Anorexia or decreased appetite",
+      "values": ["yes", "no"]
+    },
+    "weightLoss": {
+      "name": "weightLoss",
+      "desc": "Weight loss",
+      "values": ["yes", "no"]
+    },
+    "vomiting": {
+      "name": "vomiting",
+      "desc": "Vomiting",
+      "values": ["yes", "no"]
+    },
+    "diarrhea": {
+      "name": "diarrhea",
+      "desc": "Diarrhea",
+      "values": ["yes", "no"]
+    },
+    "polydipsiaPolyuria": {
+      "name": "polydipsiaPolyuria",
+      "desc": "Increased thirst and urination",
+      "values": ["yes", "no"]
+    },
+    "potBelly": {
+      "name": "potBelly",
+      "desc": "Pot-bellied appearance (pendulous abdomen)",
+      "values": ["yes", "no"]
+    },
+    "cough": {
+      "name": "cough",
+      "desc": "Cough",
+      "values": ["yes", "no"]
+    },
+    "lymphadenopathy": {
+      "name": "lymphadenopathy",
+      "desc": "Lymphadenopathy on palpation",
+      "values": ["yes", "no"]
+    },
+    "petechiae": {
+      "name": "petechiae",
+      "desc": "Petechiae or ecchymoses on skin/mucous membranes",
+      "values": ["yes", "no"]
+    },
+    "skinLesions": {
+      "name": "skinLesions",
+      "desc": "Skin lesions",
+      "values": ["yes", "no"]
+    },
+    "limbEdema": {
+      "name": "limbEdema",
+      "desc": "Limb oedema",
+      "values": ["yes", "no"]
+    },
+    "biteWoundSwelling": {
+      "name": "biteWoundSwelling",
+      "desc": "Local swelling at a bite wound site (snake or spider envenomation)",
+      "values": ["yes", "no"]
+    }
+  },
+
+  "mentation": {
+    "consciousnessLevel": {
+      "name": "consciousnessLevel",
+      "desc": "Level of consciousness",
+      "values": ["alert", "somnolent/depressed/obtunded", "stuporous", "comatose"]
+    },
+    "behavior": {
+      "name": "behavior",
+      "desc": "Behaviour abnormality",
+      "values": ["normal", "abnormal", "inappropriate", "compulsive", "aggressive"]
+    }
+  },
+
+  "gait & posture": {
+    "ambulation": {
+      "name": "ambulation",
+      "desc": "Ability to ambulate without assistance",
+      "values": ["ambulatory", "non ambulatory"]
+    },
+    "headPosture": {
+      "name": "headPosture",
+      "desc": "Position of head",
+      "allowMultiple": true,
+      "values": ["normal", "head tilt L", "head tilt R", "head turn", "low head carriage"]
+    },
+    "bodyPosture": {
+      "name": "bodyPosture",
+      "desc": "Body posture abnormalities",
+      "allowMultiple": true,
+      "values": [
+        "normal", "wide-based stance", "kyphosis", "lordosis", "scoliosis",
+        "plantigrade RT", "plantigrade LT", "plantigrade RP", "plantigrade LP",
+        "palmigrade RT", "palmigrade LT", "palmigrade RP", "palmigrade LP",
+        "decerebrate rigidity", "decerebellate rigidity", "Schiff-Sherrington posture"
+      ]
+    },
+    "tailPosture": {
+      "name": "tailPosture",
+      "desc": "Tail posture and movement",
+      "values": ["normal", "flaccid", "spastic"]
+    },
+    "gait": {
+      "name": "gait",
+      "desc": "Type of gait abnormality",
+      "allowMultiple": true,
+      "values": [
+        "normal", "ataxia",
+        "paraparesis", "tetraparesis", "paraplegia", "tetraplegia",
+        "monoparesis RT", "monoparesis LT", "monoparesis RP", "monoparesis LP",
+        "monoplegia RT", "monoplegia LT", "monoplegia RP", "monoplegia LP",
+        "hemiparesis left-sided", "hemiparesis right-sided",
+        "lameness RT", "lameness LT", "lameness RP", "lameness LP",
+        "head tremor", "generalized tremor", "limb tremor",
+        "myotonia", "myoclonus", "fasciculation", "tetanus", "tetany",
+        "circling", "dystonia", "two-engine gait",
+        "hypermetria", "pseudohypermetria", "truncal sway",
+        "exercise-induced weakness"
+      ]
+    },
+    "ataxiaType": {
+      "name": "ataxiaType",
+      "desc": "Type of ataxia",
+      "allowMultiple": true,
+      "values": ["none", "proprioceptive", "vestibular", "cerebellar"]
+    },
+    "ataxiaDistribution": {
+      "name": "ataxiaDistribution",
+      "desc": "Limb distribution of ataxia",
+      "values": ["all four limbs", "only pelvic limbs"]
+    },
+    "exerciseIntolerance": {
+      "name": "exerciseIntolerance",
+      "desc": "Exercise intolerance or collapse with exercise",
+      "values": ["yes", "no"]
+    },
+    "stiffnessWorseAtRest": {
+      "name": "stiffnessWorseAtRest",
+      "desc": "Stiffness worse after rest, improves with movement (myotonia pattern)",
+      "values": ["yes", "no"]
+    },
+    "phantomScratching": {
+      "name": "phantomScratching",
+      "desc": "Phantom scratching (scratching movement towards neck without contact)",
+      "values": ["yes", "no"]
+    }
+  },
+
+  "cranial nerve reflexes and reactions": {
+    "menaceResponseR": {
+      "name": "menaceResponseR",
+      "desc": "Menace response right eye",
+      "values": ["normal", "decreased", "absent"]
+    },
+    "menaceResponseL": {
+      "name": "menaceResponseL",
+      "desc": "Menace response left eye",
+      "values": ["normal", "decreased", "absent"]
+    },
+    "pupilSizeR": {
+      "name": "pupilSizeR",
+      "desc": "Right pupil size",
+      "values": ["normal", "increased", "decreased"]
+    },
+    "pupilSizeL": {
+      "name": "pupilSizeL",
+      "desc": "Left pupil size",
+      "values": ["normal", "increased", "decreased"]
+    },
+    "directPlrR": {
+      "name": "directPlrR",
+      "desc": "Direct PLR right eye",
+      "values": ["normal", "decreased", "absent"]
+    },
+    "directPlrL": {
+      "name": "directPlrL",
+      "desc": "Direct PLR left eye",
+      "values": ["normal", "decreased", "absent"]
+    },
+    "consensualPlrR": {
+      "name": "consensualPlrR",
+      "desc": "Consensual PLR right eye",
+      "values": ["normal", "decreased", "absent"]
+    },
+    "consensualPlrL": {
+      "name": "consensualPlrL",
+      "desc": "Consensual PLR left eye",
+      "values": ["normal", "decreased", "absent"]
+    },
+    "oculocephalicReflexR": {
+      "name": "oculocephalicReflexR",
+      "desc": "Oculocephalic reflex (physiologic nystagmus) right eye",
+      "values": ["normal", "decreased", "absent"]
+    },
+    "oculocephalicReflexL": {
+      "name": "oculocephalicReflexL",
+      "desc": "Oculocephalic reflex (physiologic nystagmus) left eye",
+      "values": ["normal", "decreased", "absent"]
+    },
+    "nystagmusR": {
+      "name": "nystagmusR",
+      "desc": "Direction of nystagmus right eye",
+      "values": ["horizontal", "vertical", "rotatory", "direction changing"]
+    },
+    "nystagmusL": {
+      "name": "nystagmusL",
+      "desc": "Direction of nystagmus left eye",
+      "values": ["horizontal", "vertical", "rotatory", "direction changing"]
+    },
+    "positionalNystagmusR": {
+      "name": "positionalNystagmusR",
+      "desc": "Positional nystagmus right eye",
+      "values": ["present", "absent"]
+    },
+    "positionalNystagmusL": {
+      "name": "positionalNystagmusL",
+      "desc": "Positional nystagmus left eye",
+      "values": ["present", "absent"]
+    },
+    "positionalStrabismusR": {
+      "name": "positionalStrabismusR",
+      "desc": "Positional strabismus right eye",
+      "values": ["present", "absent"]
+    },
+    "positionalStrabismusL": {
+      "name": "positionalStrabismusL",
+      "desc": "Positional strabismus left eye",
+      "values": ["present", "absent"]
+    },
+    "nasalSensationR": {
+      "name": "nasalSensationR",
+      "desc": "Right nasal sensation",
+      "values": ["normal", "decreased", "absent"]
+    },
+    "nasalSensationL": {
+      "name": "nasalSensationL",
+      "desc": "Left nasal sensation",
+      "values": ["normal", "decreased", "absent"]
+    },
+    "masticatoryMusclesR": {
+      "name": "masticatoryMusclesR",
+      "desc": "Condition of right masticatory muscles",
+      "values": ["normal", "atrophy"]
+    },
+    "masticatoryMusclesL": {
+      "name": "masticatoryMusclesL",
+      "desc": "Condition of left masticatory muscles",
+      "values": ["normal", "atrophy"]
+    },
+    "facialSymmetry": {
+      "name": "facialSymmetry",
+      "desc": "Facial symmetry",
+      "values": ["normal", "asymmetric"]
+    },
+    "facialAsymmetryLocation": {
+      "name": "facialAsymmetryLocation",
+      "desc": "Location of facial asymmetry if present",
+      "values": ["eyelids", "ear", "upper lip", "lower lip"]
+    },
+    "palpebralReflexR": {
+      "name": "palpebralReflexR",
+      "desc": "Palpebral reflex right eye",
+      "values": ["normal", "decreased", "absent"]
+    },
+    "palpebralReflexL": {
+      "name": "palpebralReflexL",
+      "desc": "Palpebral reflex left eye",
+      "values": ["normal", "decreased", "absent"]
+    },
+    "palpebralClosureR": {
+      "name": "palpebralClosureR",
+      "desc": "Palpebral closure right eye",
+      "values": ["complete", "incomplete"]
+    },
+    "palpebralClosureL": {
+      "name": "palpebralClosureL",
+      "desc": "Palpebral closure left eye",
+      "values": ["complete", "incomplete"]
+    },
+    "gagReflex": {
+      "name": "gagReflex",
+      "desc": "Gag reflex",
+      "values": ["normal", "decreased", "absent"]
+    },
+    "swallowingFunction": {
+      "name": "swallowingFunction",
+      "desc": "Swallowing function",
+      "values": ["normal", "dysphagia"]
+    },
+    "tongue": {
+      "name": "tongue",
+      "desc": "Tongue position and muscle condition",
+      "allowMultiple": true,
+      "values": [
+        "normal", "deviated to left", "deviated to right",
+        "ventral tongue base atrophy", "dorsal tongue base atrophy"
+      ]
+    },
+    "jawTone": {
+      "name": "jawTone",
+      "desc": "Jaw tone",
+      "values": ["normal", "dropped jaw", "trismus", "decreased tone"]
+    },
+    "hornersSyndromeR": {
+      "name": "hornersSyndromeR",
+      "desc": "Horner's syndrome right eye (miosis, enophthalmos, third eyelid protrusion, ptosis)",
+      "values": ["present", "absent"]
+    },
+    "hornersSyndromeL": {
+      "name": "hornersSyndromeL",
+      "desc": "Horner's syndrome left eye (miosis, enophthalmos, third eyelid protrusion, ptosis)",
+      "values": ["present", "absent"]
+    },
+    "voiceChanges": {
+      "name": "voiceChanges",
+      "desc": "Voice changes",
+      "values": ["normal voice", "dysphonia"]
+    },
+    "inspiratoryStridor": {
+      "name": "inspiratoryStridor",
+      "desc": "Inspiratory stridor",
+      "values": ["present", "absent"]
+    },
+    "regurgitation": {
+      "name": "regurgitation",
+      "desc": "Regurgitation",
+      "values": ["present", "absent"]
+    },
+    "dysmetria": {
+      "name": "dysmetria",
+      "desc": "Dysmetria (hypermetria or hypometria on stepping)",
+      "values": ["yes", "no"]
+    },
+    "headTremor": {
+      "name": "headTremor",
+      "desc": "Intention head tremor",
+      "values": ["yes", "no"]
+    },
+    "vestibularSigns": {
+      "name": "vestibularSigns",
+      "desc": "Vestibular signs present (head tilt, nystagmus, rolling)",
+      "values": ["yes", "no"]
+    },
+    "selfMutilation": {
+      "name": "selfMutilation",
+      "desc": "Self-mutilation of a limb",
+      "values": ["yes", "no"]
+    },
+    "drooling": {
+      "name": "drooling",
+      "desc": "Drooling (salivation from oral cavity)",
+      "values": ["yes", "no"]
+    },
+    "salivation": {
+      "name": "salivation",
+      "desc": "Excessive salivation",
+      "values": ["yes", "no"]
+    },
+    "lacrimation": {
+      "name": "lacrimation",
+      "desc": "Excessive lacrimation",
+      "values": ["yes", "no"]
+    },
+    "nasalDischarge": {
+      "name": "nasalDischarge",
+      "desc": "Nasal discharge",
+      "values": ["yes", "no"]
+    }
+  },
+
+  "ear examination": {
+    "otitis": {
+      "name": "otitis",
+      "desc": "Otitis externa or media present",
+      "values": ["yes", "no"]
+    },
+    "otoscopicAbnormality": {
+      "name": "otoscopicAbnormality",
+      "desc": "Otoscopic abnormality (ruptured tympanum, mass, discharge)",
+      "values": ["yes", "no"]
+    },
+    "earDischarge": {
+      "name": "earDischarge",
+      "desc": "Ear discharge",
+      "values": ["yes", "no"]
+    }
+  },
+
+  "postural reactions": {
+    "thoracicRight": {
+      "name": "thoracicRight",
+      "desc": "Postural reaction thoracic right limb",
+      "values": ["normal", "decreased", "absent"]
+    },
+    "thoracicLeft": {
+      "name": "thoracicLeft",
+      "desc": "Postural reaction thoracic left limb",
+      "values": ["normal", "decreased", "absent"]
+    },
+    "pelvicRight": {
+      "name": "pelvicRight",
+      "desc": "Postural reaction pelvic right limb",
+      "values": ["normal", "decreased", "absent"]
+    },
+    "pelvicLeft": {
+      "name": "pelvicLeft",
+      "desc": "Postural reaction pelvic left limb",
+      "values": ["normal", "decreased", "absent"]
+    },
+    "asymmetry": {
+      "name": "asymmetry",
+      "desc": "Side with worse postural reactions",
+      "values": ["L worse than R", "R worse than L"]
+    }
+  },
+
+  "spinal reflexes": {
+    "patellarPosition": {
+      "name": "patellarPosition",
+      "desc": "Patella position during reflex exam",
+      "values": ["in situ", "luxated"]
+    },
+    "patellarReflexR": {
+      "name": "patellarReflexR",
+      "desc": "Patellar reflex right pelvic limb",
+      "values": ["normal", "increased", "decreased", "absent", "clonus", "not examined (grade IV patellar luxation)"]
+    },
+    "patellarReflexL": {
+      "name": "patellarReflexL",
+      "desc": "Patellar reflex left pelvic limb",
+      "values": ["normal", "increased", "decreased", "absent", "clonus", "not examined (grade IV patellar luxation)"]
+    },
+    "withdrawalThoracicR": {
+      "name": "withdrawalThoracicR",
+      "desc": "Withdrawal reflex thoracic right",
+      "values": ["normal", "decreased", "absent"]
+    },
+    "withdrawalThoracicL": {
+      "name": "withdrawalThoracicL",
+      "desc": "Withdrawal reflex thoracic left",
+      "values": ["normal", "decreased", "absent"]
+    },
+    "withdrawalPelvicR": {
+      "name": "withdrawalPelvicR",
+      "desc": "Withdrawal reflex pelvic right",
+      "values": ["normal", "decreased", "absent"]
+    },
+    "withdrawalPelvicL": {
+      "name": "withdrawalPelvicL",
+      "desc": "Withdrawal reflex pelvic left",
+      "values": ["normal", "decreased", "absent"]
+    },
+    "extensorToneThoracicR": {
+      "name": "extensorToneThoracicR",
+      "desc": "Extensor tone thoracic right limb",
+      "values": ["normal", "increased", "decreased"]
+    },
+    "extensorToneThoracicL": {
+      "name": "extensorToneThoracicL",
+      "desc": "Extensor tone thoracic left limb",
+      "values": ["normal", "increased", "decreased"]
+    },
+    "extensorTonePelvicR": {
+      "name": "extensorTonePelvicR",
+      "desc": "Extensor tone pelvic right limb",
+      "values": ["normal", "increased", "decreased"]
+    },
+    "extensorTonePelvicL": {
+      "name": "extensorTonePelvicL",
+      "desc": "Extensor tone pelvic left limb",
+      "values": ["normal", "increased", "decreased"]
+    },
+    "perinealReflexR": {
+      "name": "perinealReflexR",
+      "desc": "Perineal reflex right",
+      "values": ["normal", "decreased", "absent"]
+    },
+    "perinealReflexL": {
+      "name": "perinealReflexL",
+      "desc": "Perineal reflex left",
+      "values": ["normal", "decreased", "absent"]
+    },
+    "cutaneusTrunciLevelR": {
+      "name": "cutaneusTrunciLevelR",
+      "desc": "Cutaneous trunci reflex level right",
+      "values": ["normal", "absent", "decreased", "L4", "L3", "L2", "L1",
+        "T13", "T12", "T11", "T10", "T9", "T8", "T7", "T6", "T5", "T4", "T3", "T2"]
+    },
+    "cutaneusTrunciLevelL": {
+      "name": "cutaneusTrunciLevelL",
+      "desc": "Cutaneous trunci reflex level left",
+      "values": ["normal", "absent", "decreased", "L4", "L3", "L2", "L1",
+        "T13", "T12", "T11", "T10", "T9", "T8", "T7", "T6", "T5", "T4", "T3", "T2"]
+    }
+  },
+
+  "pain": {
+    "painCervical": {
+      "name": "painCervical",
+      "desc": "Cervical spinal pain",
+      "values": ["none", "mild", "moderate", "severe"]
+    },
+    "painThoracolumbar": {
+      "name": "painThoracolumbar",
+      "desc": "Thoracolumbar spinal pain",
+      "values": ["none", "mild", "moderate", "severe"]
+    },
+    "painLumbar": {
+      "name": "painLumbar",
+      "desc": "Lumbar spinal pain",
+      "values": ["none", "mild", "moderate", "severe"]
+    },
+    "painLumbosacral": {
+      "name": "painLumbosacral",
+      "desc": "Lumbosacral spinal pain",
+      "values": ["none", "mild", "moderate", "severe"]
+    },
+    "painPattern": {
+      "name": "painPattern",
+      "desc": "Pain pattern over time",
+      "values": ["constant", "intermittent", "positional"]
+    },
+    "painProgression": {
+      "name": "painProgression",
+      "desc": "Pain progression",
+      "values": ["stable", "worsening", "improvement", "disappeared within 24/48 h"]
+    },
+    "musclePain": {
+      "name": "musclePain",
+      "desc": "Muscle pain on palpation",
+      "values": ["absent", "focal", "generalized"]
+    },
+    "deepPain": {
+      "name": "deepPain",
+      "desc": "Deep pain sensation",
+      "allowMultiple": true,
+      "values": ["preserved", "absent RT", "absent LT", "absent RP", "absent LP", "absent tail"]
+    }
+  },
+
+  "bladder and bowel": {
+    "urination": {
+      "name": "urination",
+      "desc": "Urination",
+      "values": ["normal", "increased", "decreased", "absent"]
+    },
+    "defecation": {
+      "name": "defecation",
+      "desc": "Defecation",
+      "values": ["normal", "absent"]
+    }
+  },
+
+  "paroxysmal events": {
+    "paroxysmalEvents": {
+      "name": "paroxysmalEvents",
+      "desc": "Paroxysmal events present",
+      "values": ["yes", "no"]
+    },
+    "consciousnessDuringEpisodes": {
+      "name": "consciousnessDuringEpisodes",
+      "desc": "Consciousness during episodes",
+      "values": ["preserved", "lost"]
+    },
+    "epilepticSeizures": {
+      "name": "epilepticSeizures",
+      "desc": "Epileptic seizures",
+      "values": ["yes", "no"]
+    },
+    "seizureFrequency": {
+      "name": "seizureFrequency",
+      "desc": "Number of seizure events per day",
+      "values": 0
+    },
+    "clusterOrStatusEpilepticus": {
+      "name": "clusterOrStatusEpilepticus",
+      "desc": "Cluster seizures or status epilepticus",
+      "values": ["yes", "no"]
+    },
+    "seizureType": {
+      "name": "seizureType",
+      "desc": "Type of epileptic seizures",
+      "values": ["generalized", "focal", "focal with secondary generalization", "myoclonic", "atonic"]
+    },
+    "paroxysmalDyskinesia": {
+      "name": "paroxysmalDyskinesia",
+      "desc": "Episodic involuntary movement disorders",
+      "values": ["yes", "no"]
+    },
+    "paroxysmalVestibularAtaxia": {
+      "name": "paroxysmalVestibularAtaxia",
+      "desc": "Episodic vestibular ataxia",
+      "values": ["yes", "no"]
+    }
+  },
+
+  "muscle assessment": {
+    "muscleAtrophy": {
+      "name": "muscleAtrophy",
+      "desc": "Muscle atrophy presence",
+      "values": ["absent", "focal"]
+    },
+    "muscleAtrophyLocation": {
+      "name": "muscleAtrophyLocation",
+      "desc": "Location of muscle atrophy",
+      "allowMultiple": true,
+      "values": ["thoracic limbs", "pelvic limbs", "masticatory muscles", "paraspinal muscles"]
+    },
+    "muscleAtrophySpeed": {
+      "name": "muscleAtrophySpeed",
+      "desc": "Speed of atrophy onset",
+      "values": ["rapid neurogenic (1-2 weeks)", "slow disuse (weeks to months)"]
+    },
+    "percussionDimpling": {
+      "name": "percussionDimpling",
+      "desc": "Percussion dimpling of muscle (persistent dimple after tapping — pathognomonic for myotonia)",
+      "values": ["yes", "no"]
+    }
+  }
+}

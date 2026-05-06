@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Publish — Android (Google Play)</title>
+<link rel="stylesheet" href="to-market.css">
+</head>
+<body>
+
+<nav class="topnav">
+  <a href="index.html" class="nav-home">⌂ Home</a>
+  <span class="nav-sep">|</span>
+  <a href="proposition.html">Proposition</a>
+  <a href="features.html">Features</a>
+  <a href="plan.html">Plan</a>
+  <a href="launch-todo.html">Launch TODO</a>
+  <span class="nav-sep">|</span>
+  <a href="pricing.html">Pricing</a>
+  <a href="content.html">Content</a>
+  <a href="legal.html">Legal</a>
+  <span class="nav-sep">|</span>
+  <span class="nav-label">Publish:</span>
+  <a href="publish-common.html">common</a>
+  <a href="publish-web.html">web</a>
+  <a href="publish-ios.html">iOS</a>
+  <a href="publish-android.html" class="active">Android</a>
+</nav>
+
+<h1>Publish — Android (Google Play)</h1>
+<div class="meta">Google Play–specific publishing. Common requirements live in <a href="publish-common.html">publish-common.html</a>.</div>
+
+<h2>Headline numbers</h2>
+
+<table>
+  <tr><th>Item</th><th>Value</th></tr>
+  <tr><td>Cost</td><td>$25 one-time (<a href="https://play.google.com/console" target="_blank" rel="noopener">Google Play Console</a> developer account)</td></tr>
+  <tr><td>First-review lead time</td><td>Typically hours to a few days. Closed testing tracks bypass review.</td></tr>
+  <tr><td>Store cut on subscriptions</td><td>15% on the first $1M / year of revenue per developer; 30% above that</td></tr>
+  <tr><td>Identity verification</td><td>Google ID-verifies the developer (passport / national ID + selfie). Adds 1–7 days at first sign-up.</td></tr>
+  <tr><td>Developer policies</td><td><a href="https://play.google.com/about/developer-content-policy/" target="_blank" rel="noopener">Play Developer Content Policy</a> — read top to bottom before drafting copy</td></tr>
+</table>
+
+<h2>Google Play Console — what to set up</h2>
+
+<table>
+  <tr><th>Step</th><th>Detail</th></tr>
+  <tr><td>Developer account</td><td>$25 one-time. Identity verification is required as of late 2023 — passport / ID + selfie. Adds 1–7 days.</td></tr>
+  <tr><td>Payments profile</td><td>Bank account in the entity's country, tax info. Required before publishing a paid app or subscription.</td></tr>
+  <tr><td>Application created</td><td>App record in Play Console. Package name (com.&lt;entity&gt;.&lt;app&gt;) is permanent — same as iOS bundle ID for consistency.</td></tr>
+  <tr><td>Closed testing track</td><td>Internal / closed / open testing tracks let us push builds without going through full review. Use this for the first 1–2 weeks of real-device testing.</td></tr>
+  <tr><td>Subscription product</td><td>Set up in Play Console. Define base plan (monthly / annual), free trial offer, early-bird offer. Pricing tiers automatically converted by Google to local currencies.</td></tr>
+  <tr><td>Real-time developer notifications</td><td>Google publishes subscription state-change events to a Pub/Sub topic; our backend subscribes and persists state.</td></tr>
+  <tr><td>Google Play Billing Library</td><td>Latest version (v7+). <a href="https://developer.android.com/google/play/billing" target="_blank" rel="noopener">Integration docs</a>. Integrates the IAP / subscription purchase flow into the app.</td></tr>
+  <tr><td>License key</td><td>Generated in Play Console; used by our backend when verifying purchase signatures.</td></tr>
+</table>
+
+<h2>Android-specific assets</h2>
+
+<table>
+  <tr><th>Asset</th><th>Spec</th></tr>
+  <tr><td>App icon</td><td>512×512 PNG (high-res icon). Adaptive icon recommended (foreground 108×108 dp + background) for newer Android versions.</td></tr>
+  <tr><td>Feature graphic</td><td>1024×500 banner shown at the top of the Play Store listing. Often a stylised screenshot + tagline.</td></tr>
+  <tr><td>Screenshots</td><td>At least 2, recommended 4–8. Phone (1080×1920 portrait works), 7-inch tablet, 10-inch tablet.</td></tr>
+  <tr><td>Promo video (optional)</td><td>YouTube link. 30s landscape, captions in PT/EN.</td></tr>
+  <tr><td>Short description</td><td>80 chars (matching iOS short description for parity)</td></tr>
+  <tr><td>Full description</td><td>Up to 4000 chars, PT primary + EN secondary</td></tr>
+</table>
+
+<h2>Steering to web — Google is more relaxed than Apple</h2>
+
+<p>Google Play's "User Choice Billing" pilot (and the EU DMA) lets apps offer an
+alternative billing method alongside Google Play Billing in some regions, with a
+reduced (typically 11–26%) Play cut. Eligibility varies by region and developer
+program. For year one we keep it simple: Google Play Billing for purchases inside the
+Android app, Stripe for purchases on the web. We do not link out from the Android app
+to web payments (matches the iOS pattern — keeps cross-platform behaviour symmetric and
+removes one rejection vector).</p>
+
+<h2>Android-specific rejection / removal patterns</h2>
+
+<table>
+  <tr><th>Pattern</th><th>Fix</th></tr>
+  <tr><td>Identity verification incomplete</td><td>Complete ID + selfie verification before submitting. Apps from unverified developers are blocked from publishing.</td></tr>
+  <tr><td>Missing data safety form</td><td>The Data Safety section in Play Console must be filled in — every data category collected and how it is used. Inconsistencies with the Privacy Policy get flagged.</td></tr>
+  <tr><td>Permissions not justified</td><td>Sensitive permissions (location, contacts, storage) need a clear justification in the listing. We avoid them entirely; the app does not need them.</td></tr>
+  <tr><td>Medical claims in store description</td><td>Same as iOS — "decision support", "diagnostic aid". Never "diagnoses", "treats", "cures".</td></tr>
+  <tr><td>Subscription billing surprise</td><td>Free trial → first charge must be clearly disclosed. Google audits this; auto-renew language must be on the same screen as the Subscribe button.</td></tr>
+</table>
+
+<h2>Order of operations — Android</h2>
+
+<ol>
+  <li>Legal entity exists → developer account creation ($25) → identity verification (1–7 days).</li>
+  <li>Payments profile filled in (bank, tax info).</li>
+  <li>App record created → package name registered → subscription products configured.</li>
+  <li>Native Android wrapper around the PWA built. Google Play Billing flow tested on a real device with a closed-testing track.</li>
+  <li>Real-time developer notification endpoint live, persisting subscription state.</li>
+  <li>Privacy Policy URL + Data Safety form filled in (see <a href="legal.html">legal.html</a>).</li>
+  <li>Submission to closed testing → internal validation → promote to production.</li>
+  <li>First review for production track — typically hours to days.</li>
+</ol>
+
+<p class="small">For pricing parity across platforms see <a href="pricing.html">pricing.html</a>.</p>
+
+</body>
+</html>

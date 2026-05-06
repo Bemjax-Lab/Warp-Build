@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Features &amp; scope — now / year 1 / after</title>
+<link rel="stylesheet" href="to-market.css">
+</head>
+<body class="wide">
+
+<nav class="topnav">
+  <a href="index.html" class="nav-home">⌂ Home</a>
+  <span class="nav-sep">|</span>
+  <a href="proposition.html">Proposition</a>
+  <a href="features.html" class="active">Features</a>
+  <a href="plan.html">Plan</a>
+  <a href="launch-todo.html">Launch TODO</a>
+  <span class="nav-sep">|</span>
+  <a href="pricing.html">Pricing</a>
+  <a href="content.html">Content</a>
+  <a href="legal.html">Legal</a>
+  <span class="nav-sep">|</span>
+  <span class="nav-label">Publish:</span>
+  <a href="publish-common.html">common</a>
+  <a href="publish-web.html">web</a>
+  <a href="publish-ios.html">iOS</a>
+  <a href="publish-android.html">Android</a>
+</nav>
+
+<h1>Features &amp; scope — now / year 1 / after</h1>
+<div class="meta">What the product is today, what it becomes in twelve months, and what is on the table for year two and beyond.</div>
+
+<p class="legend">
+  Legend:
+  <span class="pill p-have">have it</span> already working
+  <span class="pill p-build">build in year 1</span> shipped during the 12-month window
+  <span class="pill p-future">year 2+</span> on the roadmap, not committed
+  <span class="pill p-maybe">explore</span> conditional on year-one signals
+</p>
+
+<h2>The matrix</h2>
+
+<table>
+  <tr>
+    <th>Area</th>
+    <th class="col-now">Now (POC, May 2026)</th>
+    <th class="col-y1">End of year 1</th>
+    <th class="col-after">Year 2+ (vision)</th>
+  </tr>
+
+  <tr>
+    <td class="area">Localisation engine</td>
+    <td>
+      <span class="pill p-have">have it</span>
+      <ul>
+        <li>19 spinal + brain regions covered</li>
+        <li>Deterministic rules, 99/99 of Ivana's tests pass</li>
+        <li>Tiered output: DEFINITE / PROBABLE / POSSIBLE</li>
+        <li>Per-rule evidence + reasoning surfaced</li>
+      </ul>
+    </td>
+    <td>
+      <span class="pill p-build">build in year 1</span>
+      <ul>
+        <li>Same engine, hardened on real-vet feedback</li>
+        <li>New regions only as Ivana / Ronaldo flag gaps</li>
+        <li>Audit log of which rule fired for each case</li>
+      </ul>
+    </td>
+    <td>
+      <span class="pill p-future">year 2+</span>
+      <ul>
+        <li>Species expansion (cats already in scope; consider exotics later)</li>
+        <li>Pediatric / geriatric specialised rule sets</li>
+        <li>Rule-authoring UI for Ronaldo / vet contributors</li>
+      </ul>
+    </td>
+  </tr>
+
+  <tr>
+    <td class="area">Differential diagnoses (DDX)</td>
+    <td>
+      <span class="pill p-have">have it</span>
+      <ul>
+        <li>~147 diagnoses across 13 region pools</li>
+        <li>Scored per region with confidence tiers (HIGHLY LIKELY → ESSENTIALLY EXCLUDED)</li>
+        <li>Per-diagnosis flags, alerts, workup lists</li>
+      </ul>
+    </td>
+    <td>
+      <span class="pill p-build">build in year 1</span>
+      <ul>
+        <li>22 currently-missing parameters resolved (added or stripped)</li>
+        <li>Confidence thresholds re-tuned on real cases</li>
+        <li>Brainstem per-loc score tuning</li>
+        <li>Workup links open into the right diagnostic context</li>
+      </ul>
+    </td>
+    <td>
+      <span class="pill p-future">year 2+</span>
+      <ul>
+        <li>Region-specific DDX customisation per user (boutique vs ER vs referral)</li>
+        <li>Treatment / prognosis layer (today we stop at DDX)</li>
+      </ul>
+    </td>
+  </tr>
+
+  <tr>
+    <td class="area">AI agent layer</td>
+    <td>
+      <span class="pill p-maybe">explore</span>
+      <ul>
+        <li>Not built. The deterministic engine output is the source of truth.</li>
+      </ul>
+    </td>
+    <td>
+      <span class="pill p-build">build in year 1</span>
+      <ul>
+        <li>Conversational layer wrapping the engine</li>
+        <li>Vet types / dictates findings, agent extracts parameters, runs engine, narrates results</li>
+        <li>Hard constraint: agent cannot output a localisation or DDX outside what the engine produced — no hallucination by design</li>
+        <li>"Explain why" — agent surfaces the rule chain in plain language</li>
+      </ul>
+    </td>
+    <td>
+      <span class="pill p-future">year 2+</span>
+      <ul>
+        <li>Voice-driven exam (vet narrates as they examine, agent fills the form)</li>
+        <li>Image input (photo of patient stance, video of gait) interpreted into parameters</li>
+        <li>Multi-language agent (PT, EN, ES)</li>
+      </ul>
+    </td>
+  </tr>
+
+  <tr>
+    <td class="area">Mobile / UX</td>
+    <td>
+      <span class="pill p-have">have it</span>
+      <ul>
+        <li>Desktop-first layout in browser</li>
+        <li>Parameters + Localisation + Tests apps usable end-to-end</li>
+        <li>Polish pass shipped May 2026 (diagnosis cards, evidence panel)</li>
+      </ul>
+    </td>
+    <td>
+      <span class="pill p-build">build in year 1</span>
+      <ul>
+        <li>PWA — installable on iOS + Android home screen</li>
+        <li>Mobile-first UX rebuild — one-handed, large tap targets</li>
+        <li>Offline-capable for the parameters + localisation flow</li>
+        <li>Native Android wrapper (post-PWA)</li>
+        <li>Dark mode</li>
+      </ul>
+    </td>
+    <td>
+      <span class="pill p-future">year 2+</span>
+      <ul>
+        <li>Native iOS app (deferred from year 1)</li>
+        <li>Tablet-optimised exam-room layout</li>
+        <li>Apple Pencil / stylus annotations on body diagrams</li>
+        <li>Bluetooth pairing with vet hardware (e.g. tonometers)</li>
+      </ul>
+    </td>
+  </tr>
+
+  <tr>
+    <td class="area">Case management</td>
+    <td>
+      <span class="pill p-maybe">explore</span>
+      <ul>
+        <li>Tests can be saved as reproducible inputs (developer feature, not a vet workflow)</li>
+        <li>No real-world case storage</li>
+      </ul>
+    </td>
+    <td>
+      <span class="pill p-build">build in year 1</span>
+      <ul>
+        <li>Cases saved per vet account, named, retrievable</li>
+        <li>Patient identity (name, species, breed, age) attached to each case</li>
+        <li>Re-run a case with new parameters as findings evolve</li>
+        <li>Export case as PDF for client / referral notes</li>
+      </ul>
+    </td>
+    <td>
+      <span class="pill p-future">year 2+</span>
+      <ul>
+        <li>Multi-vet collaboration on a case (referral pattern)</li>
+        <li>Case timeline (visits, re-exams, progression)</li>
+        <li>Imaging / lab attachments</li>
+      </ul>
+    </td>
+  </tr>
+
+  <tr>
+    <td class="area">Accounts &amp; auth</td>
+    <td>
+      <span class="pill p-maybe">explore</span>
+      <ul>
+        <li>None — fully client-side</li>
+      </ul>
+    </td>
+    <td>
+      <span class="pill p-build">build in year 1</span>
+      <ul>
+        <li>Email + password, magic link option</li>
+        <li>Account profile (vet name, clinic, country)</li>
+        <li>Trial / active / past-due / cancelled state</li>
+        <li>Password reset, email verification</li>
+      </ul>
+    </td>
+    <td>
+      <span class="pill p-future">year 2+</span>
+      <ul>
+        <li>Clinic accounts (multi-vet, single billing)</li>
+        <li>SSO for institutional buyers</li>
+        <li>Role-based permissions (vet / tech / admin)</li>
+      </ul>
+    </td>
+  </tr>
+
+  <tr>
+    <td class="area">Payments</td>
+    <td>
+      <span class="pill p-maybe">explore</span>
+      <ul>
+        <li>None</li>
+      </ul>
+    </td>
+    <td>
+      <span class="pill p-build">build in year 1</span>
+      <ul>
+        <li>Stripe subscriptions (web)</li>
+        <li>Google Play Billing (Android)</li>
+        <li>14-day free trial</li>
+        <li>Early-bird tier (discount on launch price)</li>
+        <li>BR regional pricing in BRL</li>
+        <li>Customer portal for cancel / change card</li>
+      </ul>
+    </td>
+    <td>
+      <span class="pill p-future">year 2+</span>
+      <ul>
+        <li>Apple in-app purchase / StoreKit (deferred from year 1)</li>
+        <li>Annual / multi-year prepay discounts</li>
+        <li>Clinic-license tiers (volume pricing)</li>
+        <li>Affiliate / referral commission tracking</li>
+      </ul>
+    </td>
+  </tr>
+
+  <tr>
+    <td class="area">Content scaling tools</td>
+    <td>
+      <span class="pill p-maybe">explore</span>
+      <ul>
+        <li>None</li>
+      </ul>
+    </td>
+    <td>
+      <span class="pill p-build">build in year 1</span>
+      <ul>
+        <li>Marketing tools and services for video content production</li>
+        <li>Script-to-video pipeline managed by Ivana</li>
+        <li>Content calendar + Instagram scheduler</li>
+        <li>Email newsletter (Buttondown) for landing-page captures</li>
+      </ul>
+    </td>
+    <td>
+      <span class="pill p-future">year 2+</span>
+      <ul>
+        <li>In-app "case of the week" content embedded for paying users</li>
+        <li>Webinar / live-Q&amp;A platform with Ronaldo</li>
+        <li>YouTube long-form (case explainers)</li>
+      </ul>
+    </td>
+  </tr>
+
+  <tr>
+    <td class="area">Internationalisation</td>
+    <td>
+      <span class="pill p-maybe">explore</span>
+      <ul>
+        <li>App is in English. Parameter names in English.</li>
+      </ul>
+    </td>
+    <td>
+      <span class="pill p-build">build in year 1</span>
+      <ul>
+        <li>PT-BR full UI translation (primary launch market)</li>
+        <li>EN secondary</li>
+        <li>BRL regional pricing</li>
+      </ul>
+    </td>
+    <td>
+      <span class="pill p-future">year 2+</span>
+      <ul>
+        <li>ES (Latin America)</li>
+        <li>Possibly DE / FR / IT for EU expansion</li>
+        <li>Region-specific DDX prevalence weighting (e.g. tropical-disease weighting)</li>
+      </ul>
+    </td>
+  </tr>
+
+  <tr>
+    <td class="area">Integrations</td>
+    <td>
+      <span class="pill p-maybe">explore</span>
+      <ul>
+        <li>None — standalone tool</li>
+      </ul>
+    </td>
+    <td>
+      <span class="pill p-maybe">explore</span>
+      <ul>
+        <li>None planned in year 1 unless a specific integration becomes the dealbreaker for a paying cohort</li>
+      </ul>
+    </td>
+    <td>
+      <span class="pill p-future">year 2+</span>
+      <ul>
+        <li>Practice management software (e.g. ezyVet, IDEXX, regional BR equivalents)</li>
+        <li>Lab result import (CBC, CSF, biochemistry → autopopulate parameters)</li>
+        <li>DICOM viewer for MRI / CT correlation</li>
+        <li>Public API for institutional integrations</li>
+      </ul>
+    </td>
+  </tr>
+
+  <tr>
+    <td class="area">Analytics &amp; insights</td>
+    <td>
+      <span class="pill p-maybe">explore</span>
+      <ul>
+        <li>Test runner gives pass/fail counts (developer-facing)</li>
+      </ul>
+    </td>
+    <td>
+      <span class="pill p-build">build in year 1</span>
+      <ul>
+        <li>Plausible-style funnel analytics (signups, conversion, retention)</li>
+        <li>Per-vet usage analytics (private to the vet)</li>
+        <li>Aggregate anonymised insights ("most common DDX in pelvic monoparesis cases this month")</li>
+      </ul>
+    </td>
+    <td>
+      <span class="pill p-future">year 2+</span>
+      <ul>
+        <li>Benchmarking — "your DDX patterns vs. peer vets" (opt-in)</li>
+        <li>Epidemiological dashboards for regions / breeds</li>
+        <li>Research-grade dataset offered to academic partners (with consent)</li>
+      </ul>
+    </td>
+  </tr>
+
+  <tr>
+    <td class="area">Compliance &amp; security</td>
+    <td>
+      <span class="pill p-maybe">explore</span>
+      <ul>
+        <li>No data leaves the browser — nothing to secure server-side yet</li>
+      </ul>
+    </td>
+    <td>
+      <span class="pill p-build">build in year 1</span>
+      <ul>
+        <li>HTTPS everywhere, TLS managed (Vercel / Cloudflare)</li>
+        <li>Encryption at rest on database</li>
+        <li>LGPD-compliant Privacy Policy + data-rights flow</li>
+        <li>Daily backups, disaster recovery plan</li>
+        <li>CRMV regulatory confirmation on file</li>
+        <li>In-app disclaimer + clinical-judgment language</li>
+      </ul>
+    </td>
+    <td>
+      <span class="pill p-future">year 2+</span>
+      <ul>
+        <li>SOC 2 Type 1 if institutional buyers ask</li>
+        <li>EU-region data residency for GDPR-strict customers</li>
+        <li>Pen-test before any public API ships</li>
+      </ul>
+    </td>
+  </tr>
+
+  <tr>
+    <td class="area">Distribution</td>
+    <td>
+      <span class="pill p-maybe">explore</span>
+      <ul>
+        <li>None — runs in a dev browser</li>
+      </ul>
+    </td>
+    <td>
+      <span class="pill p-build">build in year 1</span>
+      <ul>
+        <li>PWA via direct link (launch vehicle)</li>
+        <li>Google Play Store</li>
+        <li>Instagram bio link, landing page, email list</li>
+      </ul>
+    </td>
+    <td>
+      <span class="pill p-future">year 2+</span>
+      <ul>
+        <li>Apple App Store (deferred from year 1)</li>
+        <li>Vet-conference booth presence (BR + international)</li>
+        <li>Vet-school institutional licences</li>
+        <li>Regional reseller partners (LatAm, EU)</li>
+      </ul>
+    </td>
+  </tr>
+
+  <tr>
+    <td class="area">Team &amp; ops</td>
+    <td>
+      <span class="pill p-have">have it</span>
+      <ul>
+        <li>Three people: Dario (dev), Ivana (product / content), Ronaldo (domain / face)</li>
+        <li>POC built across two months without dedicated commitment</li>
+      </ul>
+    </td>
+    <td>
+      <span class="pill p-build">build in year 1</span>
+      <ul>
+        <li>Same three. No new hires.</li>
+        <li>Bemjax acts as agency for everything Dario does.</li>
+        <li>Daily-then-weekly operational rhythm</li>
+      </ul>
+    </td>
+    <td>
+      <span class="pill p-future">year 2+</span>
+      <ul>
+        <li>Customer support hire (PT + EN)</li>
+        <li>Second developer if mobile native maintenance demands it</li>
+        <li>Possibly a clinical advisory board (3–5 vets) on a small honorarium</li>
+      </ul>
+    </td>
+  </tr>
+</table>
+
+<h2>What stays out of scope — year 1</h2>
+
+<div class="key">
+  <strong>Things we are NOT building in the next 12 months</strong>, even if they sound
+  like good ideas:
+  <ul style="margin-top:8px">
+    <li>Practice-management integrations (ezyVet, IDEXX, etc.)</li>
+    <li>Lab / imaging import</li>
+    <li>Treatment / prescribing layer</li>
+    <li>Multi-vet collaboration on a case</li>
+    <li>Research / academic dataset offerings</li>
+    <li>SOC 2 / ISO certifications</li>
+    <li>Voice-driven exam / image-based parameter extraction</li>
+    <li>Languages beyond PT and EN</li>
+    <li>Apple Watch / wearables</li>
+    <li>Native desktop apps (the PWA covers desktop browsers)</li>
+  </ul>
+</div>
+
+<p>Each of those is a year-two or year-three conversation. They are listed here so we
+collectively resist the temptation to build them when a single paying user asks. Year-one
+discipline is the price of getting to 200 accounts.</p>
+
+<h2>Re-evaluation cadence</h2>
+
+<table>
+  <tr><th>When</th><th>What we re-decide</th></tr>
+  <tr><td>Month 4</td><td>Is the AI agent layer ready in time for the soft launch, or do we ship without it and add it post-launch?</td></tr>
+  <tr><td>Month 6</td><td>Soft launch. Numbers from the early-bird campaign tell us whether the funnel and the product are landing.</td></tr>
+  <tr><td>Month 9</td><td>Mid-grow review. Tracking toward 200 accounts? If yes, start year-two scoping. If not, what feature or content gap is missing?</td></tr>
+  <tr><td>Month 12</td><td>Year-end review. Year-two scope decided based on numbers, not aspiration.</td></tr>
+</table>
+
+</body>
+</html>

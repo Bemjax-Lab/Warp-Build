@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Launch TODO — what a launch needs</title>
+<link rel="stylesheet" href="to-market.css">
+</head>
+<body>
+
+<nav class="topnav">
+  <a href="index.html" class="nav-home">⌂ Home</a>
+  <span class="nav-sep">|</span>
+  <a href="proposition.html">Proposition</a>
+  <a href="features.html">Features</a>
+  <a href="plan.html">Plan</a>
+  <a href="launch-todo.html" class="active">Launch TODO</a>
+  <span class="nav-sep">|</span>
+  <a href="pricing.html">Pricing</a>
+  <a href="content.html">Content</a>
+  <a href="legal.html">Legal</a>
+  <span class="nav-sep">|</span>
+  <span class="nav-label">Publish:</span>
+  <a href="publish-common.html">common</a>
+  <a href="publish-web.html">web</a>
+  <a href="publish-ios.html">iOS</a>
+  <a href="publish-android.html">Android</a>
+</nav>
+
+<h1>Launch TODO — what a launch needs</h1>
+<div class="meta">Operational checklist · grouped by area · gates marked where one item must finish before the next can start</div>
+
+<p>Roles: <span class="owner o-d">Dario</span> Bemjax / dev <span class="owner o-i">Ivana</span>
+product / content <span class="owner o-r">Ronaldo</span> domain / personal brand
+<span class="owner o-a">All</span> joint decision</p>
+
+<h2>1. Brand &amp; foundation</h2>
+
+<ul class="todo">
+  <li><span class="owner o-a">All</span> Brainstorm 5–10 name candidates
+    <ul class="sub">
+      <li>Two words max, easy to spell in PT and EN</li>
+      <li>Avoid generic "VetNeuro"-style names that cannot be trademarked</li>
+    </ul>
+  </li>
+  <li><span class="owner o-d">Dario</span> Check availability for each candidate (.com, .com.br, Instagram handle, App Store, Google Play)</li>
+  <li><span class="owner o-a">All</span> Pick one available everywhere</li>
+  <li><span class="owner o-d">Dario</span> Register .com + .com.br domains</li>
+  <li><span class="owner o-d">Dario</span> Reserve Instagram brand handle</li>
+  <li><span class="owner o-d">Dario</span> Logo — square icon, horizontal, favicon</li>
+  <li><span class="owner o-d">Dario</span> Landing page (1-pager, mobile-first, PT primary / EN secondary)
+    <ul class="sub">
+      <li>Hero + tagline, three key features, "who built this", email signup</li>
+      <li>Email capture into <a href="https://buttondown.com" target="_blank" rel="noopener">Buttondown</a> or <a href="https://mailchimp.com" target="_blank" rel="noopener">Mailchimp</a> free tier</li>
+    </ul>
+  </li>
+  <li><span class="owner o-r">Ronaldo</span> "About" copy — why the tool exists, personal credibility</li>
+</ul>
+
+<div class="gate">Gate A — landing page live, brand decided. P1 starts.</div>
+
+<h2>2. Mobile app + backend</h2>
+
+<ul class="todo">
+  <li><span class="owner o-d">Dario</span> Repackage Neuro layout as PWA — installable on iOS + Android home screen, offline-capable for the parameters/localisation flow</li>
+  <li><span class="owner o-d">Dario</span> Mobile-first UX pass on Parameters and Localisation apps (one-handed, large tap targets, scroll behaviour)</li>
+  <li><span class="owner o-d">Dario</span> User accounts + auth (email + password, magic link as alternative)</li>
+  <li><span class="owner o-d">Dario</span> Subscription state model — trial / active / past-due / cancelled, persisted to backend</li>
+  <li><span class="owner o-d">Dario</span> Case storage — vet enters parameters, can save cases, retrieve later</li>
+  <li><span class="owner o-d">Dario</span> AI agent layer — wraps the deterministic engine, answers in natural language but cannot output anything outside the engine's localisations / diagnoses</li>
+  <li><span class="owner o-d">Dario</span> Server + database — domain, certificate, managed Postgres, automated backups</li>
+  <li><span class="owner o-d">Dario</span> Monitoring — uptime + error alerting (<a href="https://sentry.io" target="_blank" rel="noopener">Sentry</a> or similar)</li>
+</ul>
+
+<h2>3. Payments</h2>
+
+<ul class="todo">
+  <li><span class="owner o-d">Dario</span> <a href="https://stripe.com" target="_blank" rel="noopener">Stripe</a> account (business info, bank account)</li>
+  <li><span class="owner o-d">Dario</span> Subscription billing via <a href="https://stripe.com/payments/checkout" target="_blank" rel="noopener">Stripe Checkout</a> or Payment Links</li>
+  <li><span class="owner o-d">Dario</span> Customer portal — change card, cancel, view invoices</li>
+  <li><span class="owner o-d">Dario</span> End-to-end test: signup → trial → charge → cancel → reactivate</li>
+  <li><span class="owner o-d">Dario</span> Google Play Billing for Android native — subscription product configured. (Apple in-app purchase / StoreKit is year-2 work, when the iOS native ships.)</li>
+  <li><span class="owner o-a">All</span> Decide regional pricing (BRL for Brazilian market vs USD/EUR for international)</li>
+</ul>
+
+<h2>4. App store accounts &amp; submission — year 1 (Google Play only)</h2>
+
+<ul class="todo">
+  <li><span class="owner o-d">Dario</span> Google Play Developer account ($25 one-time) — identity verification (1–7 days)</li>
+  <li><span class="owner o-d">Dario</span> App store assets — 1024² + 512² icons, screenshots, short + full description, ASO keywords, Medical / Education category</li>
+  <li><span class="owner o-r">Ronaldo</span> App descriptions in PT and EN — emphasise "built by a veterinary neurologist", include searchable phrases (veterinary neurology, neuro exam, differential diagnosis)</li>
+  <li><span class="owner o-d">Dario</span> Privacy Policy URL live before submission</li>
+  <li><span class="owner o-d">Dario</span> Demo account credentials for the Play reviewer</li>
+  <li><span class="owner o-d">Dario</span> Submit to Google Play</li>
+</ul>
+
+<div class="note">
+  PWA + Google Play are the year-1 distribution vehicles. <strong>Apple App Store / iOS
+  native is year-2 work</strong> — Apple Developer enrolment, DUNS, App Store Connect,
+  StoreKit subscriptions and the Apple submission flow are all deferred. Detail in
+  <a href="publish-ios.html">publish-ios.html</a>.
+</div>
+
+<h2>5. Legal &amp; compliance</h2>
+
+<ul class="todo">
+  <li><span class="owner o-d">Dario</span> In-app disclaimer — "diagnostic aid, does not replace clinical judgment / physical exam / complementary exams". On first launch (must accept), in app footer, on landing page.</li>
+  <li><span class="owner o-d">Dario</span> Terms of Service (<a href="https://termly.io" target="_blank" rel="noopener">Termly</a> / <a href="https://www.termsfeed.com" target="_blank" rel="noopener">TermsFeed</a> template, ~€10–50). PT + EN. Limitation of liability, no diagnostic guarantee, subscription / cancellation terms.</li>
+  <li><span class="owner o-d">Dario</span> Privacy Policy — LGPD-compliant. Lists data collected, storage, third-party sharing (analytics, payments), user rights (access, deletion, portability).</li>
+  <li><span class="owner o-r">Ronaldo</span> Confirm with CRMV that "diagnostic decision support tool" does not require medical-device registration — get the response in writing</li>
+  <li><span class="owner o-r">Ronaldo</span> Review all user-facing copy for clinical accuracy — never "diagnose", always "assist / suggest / support"</li>
+  <li><span class="owner o-a">All</span> Founder agreement signed — equity split, cash terms, IP ownership, exit clauses, what happens at month 12</li>
+  <li><span class="owner o-a">All</span> Decide business entity — who legally owns the app (LLC, partnership, individual), where it is registered</li>
+</ul>
+
+<div class="gate">Gate B — payments work end-to-end, app passes Apple review (or PWA is acceptable), legal docs live. Launch becomes possible.</div>
+
+<h2>6. Pre-launch content &amp; teasers</h2>
+
+<ul class="todo">
+  <li><span class="owner o-r">Ronaldo</span> Source recording session for content scaling — direct-to-camera + clean voice, neutral background</li>
+  <li><span class="owner o-i">Ivana</span> Evaluate marketing tools and services for content production; configure the chosen stack with Ronaldo's source material</li>
+  <li><span class="owner o-i">Ivana</span> Tune the chosen stack for PT-BR output, including medical-term pronunciation</li>
+  <li><span class="owner o-r">Ronaldo</span> Approve produced content — accuracy of representation, voice match, comfort with public use</li>
+  <li><span class="owner o-i">Ivana</span> Content production workflow — Ivana writes scripts, Ronaldo reviews, Ivana generates &amp; posts</li>
+  <li><span class="owner o-a">All</span> AI disclosure policy — transparent label on AI-produced content (e.g. "content created with AI, clinical knowledge by Dr. Ronaldo")</li>
+  <li><span class="owner o-r">Ronaldo</span> Pre-launch teaser — 15–30 sec screen recording, "Something I have been working on", BR account first then global</li>
+  <li><span class="owner o-i">Ivana</span> Early-interest collection — Google Form or DM list, count and tag warm leads</li>
+</ul>
+
+<h2>7. Launch day</h2>
+
+<ul class="todo">
+  <li><span class="owner o-r">Ronaldo</span> Launch post — full case walkthrough Reel (60–90s) + carousel screenshots. "I built this tool I use in my practice. Sharing it with you."</li>
+  <li><span class="owner o-r">Ronaldo</span> Stories with early-bird offer — discount on launch price for the first cohort, link to signup</li>
+  <li><span class="owner o-i">Ivana</span> Supporting post from her own account — "as a vet who has been testing this..."</li>
+  <li><span class="owner o-d">Dario</span> Real-time monitoring — signups, server load, payment flow, error tracking</li>
+  <li><span class="owner o-d">Dario</span> On standby for hot-fixes — first 24h are critical</li>
+  <li><span class="owner o-r">Ronaldo</span> Reply personally to every DM and comment on launch day — highest-converting activity that exists</li>
+</ul>
+
+<h2>8. First two weeks after launch</h2>
+
+<ul class="todo">
+  <li><span class="owner o-r">Ronaldo</span> 2–3 more case walkthroughs across the week, varied conditions</li>
+  <li><span class="owner o-i">Ivana</span> Feedback form to every new user at day 3 — "how is it going? what is missing?"</li>
+  <li><span class="owner o-d">Dario</span> Track signups, trial → paid conversion, daily active users</li>
+  <li><span class="owner o-d">Dario</span> Ship top 3 reported issues within the first week</li>
+  <li><span class="owner o-a">All</span> Daily 15-min standup (WhatsApp or quick call) — numbers, issues, feedback</li>
+  <li><span class="owner o-i">Ivana</span> Tag the most active early users — they become testimonials and referral sources</li>
+</ul>
+
+<h2>9. What we will not do (year 1)</h2>
+
+<ul>
+  <li>Hire a marketing agency.</li>
+  <li>Spend on paid ads.</li>
+  <li>Build a feature factory before launch — we ship a focused product and iterate on real cases.</li>
+  <li>Over-invest in branding / logo design beyond a clean baseline.</li>
+  <li>Take on enterprise / clinic-license deals before the consumer product is stable.</li>
+  <li>Promise compliance certifications we do not have (HIPAA, ISO 13485, FDA / Anvisa medical-device).</li>
+</ul>
+
+<h2>Standing operational rhythm</h2>
+
+<table>
+  <tr><th>Cadence</th><th>What</th></tr>
+  <tr><td>Daily (first month)</td><td>15-min WhatsApp standup — numbers, blockers, issues</td></tr>
+  <tr><td>Weekly</td><td>Numbers review (signups, conversion, retention) + top-3 issue triage</td></tr>
+  <tr><td>Monthly</td><td>Cohort retention review + content cycle review + budget check</td></tr>
+  <tr><td>Quarterly</td><td>Strategic check — are we on the trajectory for 200? If not, what changes?</td></tr>
+</table>
+
+</body>
+</html>

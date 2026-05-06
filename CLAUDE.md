@@ -31,7 +31,6 @@ Warp-build/
   layouts/                 # YOUR WORKSPACE — layout source dirs
     Warp/                  # Example layout (reference, read-only)
     MyLayout/              # Your layout goes here
-  template/                # Templates for new layouts/apps
   docs/                    # API reference, event docs, manifest format
   demo.html                # Load and test your layouts here
   vite.config.mjs          # Build system (layouts → .layout zips)

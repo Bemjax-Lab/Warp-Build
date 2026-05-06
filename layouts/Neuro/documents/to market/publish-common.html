@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Publish — common (all platforms)</title>
+<link rel="stylesheet" href="to-market.css">
+</head>
+<body>
+
+<nav class="topnav">
+  <a href="index.html" class="nav-home">⌂ Home</a>
+  <span class="nav-sep">|</span>
+  <a href="proposition.html">Proposition</a>
+  <a href="features.html">Features</a>
+  <a href="plan.html">Plan</a>
+  <a href="launch-todo.html">Launch TODO</a>
+  <span class="nav-sep">|</span>
+  <a href="pricing.html">Pricing</a>
+  <a href="content.html">Content</a>
+  <a href="legal.html">Legal</a>
+  <span class="nav-sep">|</span>
+  <span class="nav-label">Publish:</span>
+  <a href="publish-common.html" class="active">common</a>
+  <a href="publish-web.html">web</a>
+  <a href="publish-ios.html">iOS</a>
+  <a href="publish-android.html">Android</a>
+</nav>
+
+<h1>Publish — common (all platforms)</h1>
+<div class="meta">What we prepare once and reuse across iOS, Android, and web. Platform-specific files cover the rest.</div>
+
+<h2>The three platforms at a glance</h2>
+
+<table>
+  <tr><th>Platform</th><th>File</th><th>Cost</th><th>Lead time</th><th>Cut on payments</th><th>When</th></tr>
+  <tr><td>Web (PWA + Stripe)</td><td><a href="publish-web.html">publish-web.html</a></td><td>Free (hosting only)</td><td>Instant</td><td>~3% (Stripe)</td><td>Year 1 — launch vehicle</td></tr>
+  <tr><td>Android (Google Play)</td><td><a href="publish-android.html">publish-android.html</a></td><td>$25 one-time</td><td>Days</td><td>30% (15% on first $1M / year)</td><td>Year 1</td></tr>
+  <tr><td>iOS (App Store)</td><td><a href="publish-ios.html">publish-ios.html</a></td><td>$99 / year</td><td>1–2 weeks first review</td><td>30% (15% after year 1, small-business program)</td><td><strong>Year 2</strong> — deferred</td></tr>
+</table>
+
+<div class="key">
+  <strong>Year-1 launch order:</strong> ship web (PWA) first — instant, no review, no
+  store cut, lets us iterate on real user feedback right away. Submit Android second
+  (Play review takes days). <strong>iOS is year-2 work</strong> — Apple Developer
+  enrolment, DUNS lead time, App Store Connect setup, StoreKit subscriptions and the
+  Apple submission cycle all wait until year 2.
+</div>
+
+<h2>Shared assets — produce once, ship everywhere</h2>
+
+<p>These items are needed for every platform. Produce them in the highest fidelity once
+and crop / down-scale per platform.</p>
+
+<table>
+  <tr><th>Asset</th><th>Master format</th><th>Used on</th></tr>
+  <tr><td>App icon</td><td>1024×1024 PNG, no rounded corners (Apple adds them), no alpha</td><td>iOS, Android, PWA, favicon</td></tr>
+  <tr><td>Wordmark / logo (horizontal)</td><td>SVG + 1× / 2× / 3× PNG</td><td>Landing page, email, store description headers</td></tr>
+  <tr><td>Screenshots</td><td>5–6 actual app screens at native device resolution — no marketing-only mockups (Apple rejects those)</td><td>App stores + landing page</td></tr>
+  <tr><td>Short description</td><td>80 characters (App Store limit; Play Store allows more but we keep parity)</td><td>All stores</td></tr>
+  <tr><td>Full description</td><td>Up to 4000 characters, PT primary + EN secondary</td><td>All stores</td></tr>
+  <tr><td>ASO keywords</td><td>"veterinary neurology", "vet neuro exam", "differential diagnosis", regional variants</td><td>iOS keyword field, Android description (Play has no separate keyword field)</td></tr>
+  <tr><td>Category</td><td>Medical (primary). Education as fallback if Medical category becomes restrictive.</td><td>iOS + Android</td></tr>
+  <tr><td>Demo account credentials</td><td>Reviewer login (vet@example.com / known password) — pre-loaded with sample case data</td><td>iOS reviewer (mandatory), Android reviewer (recommended)</td></tr>
+  <tr><td>Privacy Policy URL</td><td>yoursite.com/privacy — live and stable before any submission</td><td>iOS + Android + web</td></tr>
+  <tr><td>Promo / preview video</td><td>30s portrait, no narration, captions in PT/EN</td><td>App Store preview + Play Store feature graphic + landing page</td></tr>
+</table>
+
+<h2>Common rejection reasons — applies to both stores</h2>
+
+<table>
+  <tr><th>Pattern</th><th>Fix</th></tr>
+  <tr><td>"App seems incomplete" / "limited functionality"</td><td>Reviewer can run a full case end-to-end on the demo account. Provide a 60-second walkthrough video in the review notes.</td></tr>
+  <tr><td>Privacy Policy URL broken or 404</td><td>Live on a stable host. Test from an incognito browser before submitting. Footer-link it from the landing page too.</td></tr>
+  <tr><td>Marketing copy claims diagnosis or treatment</td><td>Use "decision support", "differential suggestion", "diagnostic aid". Never "diagnoses your pet" or "treats X".</td></tr>
+  <tr><td>Medical app without licensed-practitioner gate</td><td>State clearly in the store description and on first launch that the tool is for licensed veterinarians. Acceptance toggle on first run.</td></tr>
+  <tr><td>Crash or login failure for reviewer</td><td>Sanity-test the demo account 24h before submission. If the backend is down for the reviewer, it is auto-rejection.</td></tr>
+</table>
+
+<h2>Backend requirements that the apps depend on</h2>
+
+<p>These apply regardless of which platform the user installs from — see
+<a href="publish-web.html">publish-web.html</a> for the actual hosting / database
+choices.</p>
+
+<ul>
+  <li>HTTPS on every endpoint (TLS managed by Vercel / Cloudflare).</li>
+  <li>Authentication system that works the same way on web and native (email + password, magic link).</li>
+  <li>Subscription state synced from Stripe (web) and IAP receipts (iOS / Android) — single source of truth in our database.</li>
+  <li>Daily backups of the subscription / user table from day one.</li>
+  <li>Public Privacy Policy + Terms URLs reachable from any platform.</li>
+</ul>
+
+<h2>Order of operations across platforms</h2>
+
+<ol>
+  <li><strong>Brand decided</strong> → register domains → reserve store names — see
+      <a href="publish-web.html">publish-web.html</a> for domain detail.</li>
+  <li><strong>Apple Developer + Google Play accounts created</strong> in parallel — DUNS
+      lead time for Apple (1–2 weeks) starts immediately.</li>
+  <li><strong>Privacy Policy + Terms live</strong> (see <a href="legal.html">legal.html</a>) → necessary for any submission.</li>
+  <li><strong>PWA + Stripe live</strong> on a real device end-to-end — this is the
+      launch vehicle, not just a fallback.</li>
+  <li><strong>Android submission</strong> — typically approved in days.</li>
+  <li><strong>iOS submission</strong> — expect 1–2 review rounds. Soft launch on web +
+      Android does not wait for Apple.</li>
+</ol>
+
+</body>
+</html>

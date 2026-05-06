@@ -1,0 +1,115 @@
+
+
+/* drawer caption overrides Warp's 0.9em — inherit normal size */
+.drawer > .title .caption { font-size: inherit; }
+
+/* confidence level colors — shared across Neuro apps */
+.confidence-definite { color: #4CAF50; }
+.confidence-probable { color: #FFC107; }
+.confidence-possible { color: #FF9800; }
+
+/* ── Evidence panel (Localisation app) ─────────────────────────────── */
+.evidence-panel {
+    background: rgba(255,255,255,0.04);
+    border-left: 2px solid rgba(255,255,255,0.15);
+}
+
+/* ── Diagnosis cards (Localisation + Parameters detected drawers) ──── */
+.dx-list {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    padding: 6px 8px 8px 8px;
+}
+
+.dx-card {
+    background: rgba(255,255,255,0.03);
+    border: 1px solid rgba(255,255,255,0.08);
+    border-left: 3px solid rgba(255,255,255,0.2);
+    border-radius: 3px;
+    padding: 6px 8px;
+    font-size: 0.85em;
+    line-height: 1.35;
+}
+
+.dx-card.dx-tier-high     { border-left-color: #4CAF50; }
+.dx-card.dx-tier-likely   { border-left-color: #8BC34A; }
+.dx-card.dx-tier-possible { border-left-color: #FFC107; }
+.dx-card.dx-tier-less     { border-left-color: #FF9800; }
+.dx-card.dx-tier-excluded { border-left-color: #555; opacity: 0.55; }
+
+.dx-head {
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+}
+
+.dx-name {
+    flex: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.dx-tier {
+    white-space: nowrap;
+    font-size: 0.78em;
+    padding: 1px 6px;
+    border-radius: 8px;
+    background: rgba(255,255,255,0.06);
+    opacity: 0.85;
+}
+
+.dx-tier-high     .dx-tier { background: rgba(76,175,80,0.18);  color: #A5D6A7; }
+.dx-tier-likely   .dx-tier { background: rgba(139,195,74,0.18); color: #C5E1A5; }
+.dx-tier-possible .dx-tier { background: rgba(255,193,7,0.18);  color: #FFE082; }
+.dx-tier-less     .dx-tier { background: rgba(255,152,0,0.18);  color: #FFCC80; }
+.dx-tier-excluded .dx-tier { background: rgba(255,255,255,0.05); color: #999; }
+
+.dx-meta {
+    margin-top: 1px;
+}
+
+/* Alerts */
+.dx-alert {
+    margin-top: 5px;
+    padding: 4px 6px;
+    border-left: 2px solid;
+    border-radius: 2px;
+    background: rgba(255,255,255,0.03);
+}
+
+.dx-alert-critical { border-left-color: #E53935; background: rgba(229,57,53,0.10); }
+.dx-alert-urgent   { border-left-color: #FB8C00; background: rgba(251,140,0,0.10); }
+.dx-alert-warning  { border-left-color: #FDD835; background: rgba(253,216,53,0.08); }
+.dx-alert-info     { border-left-color: #29B6F6; background: rgba(41,182,246,0.08); }
+
+.dx-alert-critical .dx-alert-title { color: #EF9A9A; }
+.dx-alert-urgent   .dx-alert-title { color: #FFCC80; }
+.dx-alert-warning  .dx-alert-title { color: #FFF59D; }
+.dx-alert-info     .dx-alert-title { color: #B3E5FC; }
+
+.dx-alert-text {
+    margin-top: 2px;
+}
+
+/* Details toggle + collapsible body */
+.dx-toggle {
+    margin-top: 5px;
+}
+
+.dx-detail {
+    margin-top: 5px;
+    padding: 4px 6px;
+    background: rgba(255,255,255,0.025);
+    border-radius: 2px;
+}
+
+.dx-section-title {
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.dx-flag,
+.dx-workup {
+    margin-left: 4px;
+}

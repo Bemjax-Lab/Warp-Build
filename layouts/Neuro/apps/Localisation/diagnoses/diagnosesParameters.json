@@ -1,0 +1,105 @@
+{
+    "systemic signs": {
+        "fever": {
+            "name": "fever",
+            "desc": "Fever (body temperature >39.5°C)",
+            "values": ["yes", "no"]
+        },
+        "weightLoss": {
+            "name": "weightLoss",
+            "desc": "Weight loss",
+            "values": ["yes", "no"]
+        },
+        "anorexia": {
+            "name": "anorexia",
+            "desc": "Anorexia / loss of appetite",
+            "values": ["yes", "no"]
+        },
+        "lethargy": {
+            "name": "lethargy",
+            "desc": "Lethargy",
+            "values": ["yes", "no"]
+        }
+    },
+    "history & exposure": {
+        "vaccinated": {
+            "name": "vaccinated",
+            "desc": "Vaccination status (rabies / core vaccines)",
+            "values": ["upToDate", "yes", "no", "unknown"]
+        },
+        "biteHistory": {
+            "name": "biteHistory",
+            "desc": "Recent bite wound",
+            "values": ["yes", "no"]
+        },
+        "wildlifeExposure": {
+            "name": "wildlifeExposure",
+            "desc": "Wildlife contact / tick exposure",
+            "values": ["yes", "no"]
+        },
+        "immunosuppressed": {
+            "name": "immunosuppressed",
+            "desc": "Immunosuppressed (steroids, chemotherapy, comorbidity)",
+            "values": ["yes", "no"]
+        }
+    },
+    "respiratory & GI signs": {
+        "cough": {
+            "name": "cough",
+            "desc": "Cough",
+            "values": ["yes", "no"]
+        },
+        "nasalDischarge": {
+            "name": "nasalDischarge",
+            "desc": "Nasal discharge or nasal mass",
+            "values": ["yes", "no"]
+        },
+        "vomiting": {
+            "name": "vomiting",
+            "desc": "Vomiting",
+            "values": ["yes", "no"]
+        },
+        "diarrhea": {
+            "name": "diarrhea",
+            "desc": "Diarrhea",
+            "values": ["yes", "no"]
+        }
+    },
+    "other systemic findings": {
+        "otitis": {
+            "name": "otitis",
+            "desc": "Otitis media / interna",
+            "values": ["yes", "no"]
+        },
+        "petechiae": {
+            "name": "petechiae",
+            "desc": "Petechiae / ecchymoses",
+            "values": ["yes", "no"]
+        },
+        "limbEdema": {
+            "name": "limbEdema",
+            "desc": "Limb or facial oedema",
+            "values": ["yes", "no"]
+        },
+        "polydipsiaPolyuria": {
+            "name": "polydipsiaPolyuria",
+            "desc": "Polydipsia / polyuria (PU/PD)",
+            "values": ["yes", "no"]
+        },
+        "potBelly": {
+            "name": "potBelly",
+            "desc": "Pot belly / muscle wasting (HAC phenotype)",
+            "values": ["yes", "no"]
+        },
+        "skinLesions": {
+            "name": "skinLesions",
+            "desc": "Skin lesions / exfoliative dermatitis",
+            "values": ["yes", "no"]
+        },
+        "lymphadenopathy": {
+            "name": "lymphadenopathy",
+            "desc": "Lymphadenopathy",
+            "values": ["yes", "no"]
+        }
+    }
+}

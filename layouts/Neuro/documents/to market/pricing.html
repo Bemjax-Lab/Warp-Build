@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pricing strategy</title>
+<link rel="stylesheet" href="to-market.css">
+</head>
+<body>
+
+<nav class="topnav">
+  <a href="index.html" class="nav-home">⌂ Home</a>
+  <span class="nav-sep">|</span>
+  <a href="proposition.html">Proposition</a>
+  <a href="features.html">Features</a>
+  <a href="plan.html">Plan</a>
+  <a href="launch-todo.html">Launch TODO</a>
+  <span class="nav-sep">|</span>
+  <a href="pricing.html" class="active">Pricing</a>
+  <a href="content.html">Content</a>
+  <a href="legal.html">Legal</a>
+  <span class="nav-sep">|</span>
+  <span class="nav-label">Publish:</span>
+  <a href="publish-common.html">common</a>
+  <a href="publish-web.html">web</a>
+  <a href="publish-ios.html">iOS</a>
+  <a href="publish-android.html">Android</a>
+</nav>
+
+<h1>Pricing strategy</h1>
+<div class="meta">Pricing is TBD until launch. The values below are a working range, not commitments.</div>
+
+<div class="warn">
+  <strong>Pricing is the single decision we should not guess.</strong> The right number
+  comes from talking to vets, not from spreadsheets. Plan: open the launch around $10/month
+  with an early-bird discount for the first cohort, then adjust within 3–6 months based on
+  real conversion and retention data.
+</div>
+
+<h2>Working range</h2>
+
+<table>
+  <tr><th>Option</th><th>Test range</th><th>Notes</th></tr>
+  <tr><td>Monthly subscription</td><td>$8–25 / month</td><td>Wide. Plumb's, VIN, VetBloom sit at $30+. We come in below for soft launch, raise post-feedback.</td></tr>
+  <tr><td>Annual subscription</td><td>15–20% off the monthly</td><td>Improves cash flow, reduces churn. Worth offering from day 1.</td></tr>
+  <tr><td>Early bird / friend</td><td>discount on the launch price for the first cohort</td><td>Discount level and cohort size decided closer to launch — rewards the people who try it first.</td></tr>
+  <tr><td>Free trial</td><td>7 or 14 days</td><td>Removes friction. Vet tries it on a real case.</td></tr>
+  <tr><td>Free tier</td><td>None recommended</td><td>Free tier risks cannibalising paid. The trial is enough.</td></tr>
+</table>
+
+<h2>How we land on the number</h2>
+
+<ol>
+  <li><strong>Talk to 10–20 target vets</strong> before launch. Not "would you pay?" — "what would you pay monthly for this?" Open ended. Note the floor and ceiling.</li>
+  <li><strong>Research competitors.</strong> What do VIN, Plumb's, VetBloom, regional Brazilian alternatives charge? Where do we sit?</li>
+  <li><strong>Factor in costs.</strong> App store cut (30% mobile), Stripe (~3% web), AI API per query, hosting. The web price can be lower than the mobile price for the same product.</li>
+  <li><strong>Region-segment.</strong> Brazil pricing in BRL with regional purchasing power in mind. International in USD or EUR.</li>
+  <li><strong>A/B test on the landing page</strong> before the app launches — show two prices to two visitor groups, count signups for each.</li>
+  <li><strong>Start, watch, adjust.</strong> Easier to lower a price than to raise one. Do not anchor too low to be safe.</li>
+</ol>
+
+<h2>Web vs mobile pricing</h2>
+
+<p>Apple and Google take 30% on in-app purchases. Stripe (web) takes ~3%. That is a
+<strong>27 percentage-point gap</strong>. We do not absorb that gap as margin loss — we
+price web slightly cheaper and let the user choose.</p>
+
+<table>
+  <tr><th>Channel</th><th>Cut</th><th>Suggested headline price</th><th>Net to us</th></tr>
+  <tr><td>Web (Stripe)</td><td>~3%</td><td>$10 / month</td><td>~$9.70</td></tr>
+  <tr><td>iOS / Android (in-app)</td><td>30%</td><td>$13 / month</td><td>~$9.10</td></tr>
+</table>
+
+<p>Net is comparable; the user gets a small "save by paying on the web" nudge; we comply
+with both stores' rules. (Apple has loosened "steering" rules but the safe pattern is
+still: never link out to web payments from inside the iOS app.)</p>
+
+<h2>Early-bird tier — what it is for</h2>
+
+<ul>
+  <li><strong>Reward early supporters.</strong> The first vets to try it in real cases are the ones who will tell others. They get a discount.</li>
+  <li><strong>Cohort signal.</strong> An early cohort tells us whether we have a 30%, 5%, or 0.5% conversion of warm Instagram traffic. That number drives everything for year one.</li>
+</ul>
+
+<div class="key">
+  <strong>Recommended launch shape</strong>
+  <ul style="margin-top:8px">
+    <li>14-day free trial, no credit card upfront (lower conversion to paid but more usage signal)</li>
+    <li>$10 / month web, $13 / month mobile</li>
+    <li>$96 / year web (20% off), $130 / year mobile</li>
+    <li>Early-bird discount on launch price — discount level and cohort size decided closer to launch</li>
+    <li>BR regional pricing in BRL at ~70% of USD equivalent</li>
+  </ul>
+</div>
+
+<h2>What changes after the first 100 paying users</h2>
+
+<ul>
+  <li>If conversion is &gt; 1% of warm IG traffic, raise the standard price toward $15.</li>
+  <li>If retention is below 70% at 30 days, do not touch price — fix the product.</li>
+  <li>If a clinic asks for "team licences" — note it, do not build it. Year-two work.</li>
+  <li>If a region (US, EU, AU) shows organic interest, add a regional price tier with proper localisation.</li>
+</ul>
+
+</body>
+</html>

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Publish — web (PWA + Stripe)</title>
+<link rel="stylesheet" href="to-market.css">
+</head>
+<body>
+
+<nav class="topnav">
+  <a href="index.html" class="nav-home">⌂ Home</a>
+  <span class="nav-sep">|</span>
+  <a href="proposition.html">Proposition</a>
+  <a href="features.html">Features</a>
+  <a href="plan.html">Plan</a>
+  <a href="launch-todo.html">Launch TODO</a>
+  <span class="nav-sep">|</span>
+  <a href="pricing.html">Pricing</a>
+  <a href="content.html">Content</a>
+  <a href="legal.html">Legal</a>
+  <span class="nav-sep">|</span>
+  <span class="nav-label">Publish:</span>
+  <a href="publish-common.html">common</a>
+  <a href="publish-web.html" class="active">web</a>
+  <a href="publish-ios.html">iOS</a>
+  <a href="publish-android.html">Android</a>
+</nav>
+
+<h1>Publish — web (PWA + Stripe)</h1>
+<div class="meta">The web build is the launch vehicle. Common requirements live in <a href="publish-common.html">publish-common.html</a>.</div>
+
+<h2>Headline numbers</h2>
+
+<table>
+  <tr><th>Item</th><th>Value</th></tr>
+  <tr><td>Cost</td><td>Free baseline (hosting on <a href="https://vercel.com" target="_blank" rel="noopener">Vercel</a> / <a href="https://www.cloudflare.com" target="_blank" rel="noopener">Cloudflare</a> free tier). ~€20–60/month at scale.</td></tr>
+  <tr><td>Lead time to publish</td><td>Instant — no review, no gatekeeper. Push and it is live.</td></tr>
+  <tr><td>Cut on payments</td><td><a href="https://stripe.com" target="_blank" rel="noopener">Stripe</a> ~2.9% + $0.30 per transaction. ~10× cheaper than the app stores.</td></tr>
+  <tr><td>Install path</td><td>"Add to Home Screen" — feels like a native app once installed.</td></tr>
+</table>
+
+<div class="key">
+  <strong>Why web is the launch vehicle.</strong> No review queue blocking us. No store
+  cut in year one when every percentage point matters. Universal — runs on iPad, an old
+  Android phone, a desktop browser, an in-clinic computer. Updates ship the moment they
+  are pushed. The native app stores catch up later for users who prefer them.
+</div>
+
+<h2>Domain — buy these immediately when the brand name is locked</h2>
+
+<table>
+  <tr><th>Domain</th><th>Where</th><th>Cost</th><th>Notes</th></tr>
+  <tr><td>.com</td><td><a href="https://www.namecheap.com" target="_blank" rel="noopener">Namecheap</a> or Squarespace Domains</td><td>~€10–15 / year</td><td>Primary global presence</td></tr>
+  <tr><td>.com.br</td><td><a href="https://registro.br" target="_blank" rel="noopener">Registro.br</a></td><td>~R$40 / year</td><td>Requires CPF (individual) or CNPJ (company) — Brazilian-resident registration. If we incorporate outside BR, register via a local representative.</td></tr>
+  <tr><td>Defensive — .vet</td><td><a href="https://www.namecheap.com" target="_blank" rel="noopener">Namecheap</a> (TLD limited to credentialed vets in some registries)</td><td>~€40 / year</td><td>Optional. Low priority.</td></tr>
+  <tr><td>Defensive — .app</td><td><a href="https://www.namecheap.com" target="_blank" rel="noopener">Namecheap</a></td><td>~€15 / year</td><td>Optional. Forces HTTPS by default (HSTS preload). Could be the primary if .com is taken.</td></tr>
+</table>
+
+<h2>Hosting stack</h2>
+
+<table>
+  <tr><th>Layer</th><th>Service</th><th>Notes</th></tr>
+  <tr><td>Static + edge functions</td><td><a href="https://vercel.com" target="_blank" rel="noopener">Vercel</a> (free tier → Pro at scale) or <a href="https://pages.cloudflare.com" target="_blank" rel="noopener">Cloudflare Pages</a></td><td>Serves the PWA + landing page + edge API. TLS managed.</td></tr>
+  <tr><td>Backend</td><td><a href="https://railway.com" target="_blank" rel="noopener">Railway</a> / <a href="https://fly.io" target="_blank" rel="noopener">Fly.io</a> / a small VPS</td><td>Auth, subscription state, case storage. Node / Python — scope-driven.</td></tr>
+  <tr><td>Database</td><td>Managed Postgres — <a href="https://supabase.com" target="_blank" rel="noopener">Supabase</a>, <a href="https://neon.tech" target="_blank" rel="noopener">Neon</a>, or <a href="https://railway.com" target="_blank" rel="noopener">Railway</a></td><td>Daily automated backups from day one. Point-in-time recovery on the paid tiers.</td></tr>
+  <tr><td>Email — newsletter</td><td><a href="https://buttondown.com" target="_blank" rel="noopener">Buttondown</a> (€9/month) or <a href="https://mailchimp.com" target="_blank" rel="noopener">Mailchimp</a> free tier</td><td>Early-bird announcements, content updates.</td></tr>
+  <tr><td>Email — transactional</td><td><a href="https://resend.com" target="_blank" rel="noopener">Resend</a> or <a href="https://postmarkapp.com" target="_blank" rel="noopener">Postmark</a></td><td>Verification emails, billing receipts, password resets.</td></tr>
+  <tr><td>CDN + TLS</td><td><a href="https://vercel.com" target="_blank" rel="noopener">Vercel</a> and <a href="https://www.cloudflare.com" target="_blank" rel="noopener">Cloudflare</a> both manage automatic HTTPS</td><td>We never run a server without HTTPS.</td></tr>
+  <tr><td>Analytics</td><td><a href="https://plausible.io" target="_blank" rel="noopener">Plausible</a> (~€9/month, GDPR/LGPD-clean)</td><td>Funnel signups + landing page conversion.</td></tr>
+  <tr><td>Error tracking</td><td><a href="https://sentry.io" target="_blank" rel="noopener">Sentry</a> free tier</td><td>Production errors with stack traces. ~5k events/month is plenty for year one.</td></tr>
+</table>
+
+<h2>PWA setup — what makes it installable</h2>
+
+<table>
+  <tr><th>Piece</th><th>What it does</th></tr>
+  <tr><td><code>manifest.webmanifest</code></td><td>App name, short name, icons (192² + 512²), theme colour, display: standalone, start URL. Without this the browser will not show "Add to Home Screen".</td></tr>
+  <tr><td>Service worker</td><td>Caches the app shell so it loads offline. We make the parameters + localisation flow work without network; case sync happens when connection returns.</td></tr>
+  <tr><td>Apple touch icons</td><td>iOS does not honour the manifest icon for "Add to Home Screen". Add <code>&lt;link rel="apple-touch-icon"&gt;</code> for 152×152 and 180×180.</td></tr>
+  <tr><td>Splash screens (iOS)</td><td>iOS expects per-device-resolution splash images. Generate from the icon + brand colour.</td></tr>
+  <tr><td>Maskable icon</td><td>Android Adaptive Icons — the icon survives the device's mask cropping. Generate alongside the standard icon.</td></tr>
+  <tr><td>HTTPS</td><td>PWAs only install over HTTPS. Vercel / Cloudflare give this for free.</td></tr>
+</table>
+
+<h2>"Add to Home Screen" — test on real devices</h2>
+
+<ul>
+  <li><strong>iOS Safari:</strong> Share menu → Add to Home Screen. Test on an iPhone running current iOS and one a couple of versions back. iOS does not show the install prompt automatically — we need a small in-app banner explaining the path.</li>
+  <li><strong>Android Chrome:</strong> Browser shows an "Install app" prompt automatically when the manifest is valid and the user has engagement signals. We can also trigger the prompt from a button (<code>BeforeInstallPromptEvent</code>).</li>
+  <li><strong>Desktop Chrome / Edge:</strong> Install icon appears in the address bar. Useful for in-clinic desktops.</li>
+</ul>
+
+<h2>Stripe — payments on the web</h2>
+
+<table>
+  <tr><th>Step</th><th>Detail</th></tr>
+  <tr><td><a href="https://stripe.com" target="_blank" rel="noopener">Stripe</a> account</td><td>Business info, bank account in entity's country, tax info. Country choice tied to the legal entity.</td></tr>
+  <tr><td>Subscription products</td><td>Monthly + annual + early-bird tier. BRL pricing for BR (Stripe supports local card networks).</td></tr>
+  <tr><td>Checkout flow</td><td>Stripe Checkout (hosted page) is the simplest. Stripe Elements for an inline custom flow if Checkout cannot be styled to brand.</td></tr>
+  <tr><td>Customer portal</td><td>Stripe-hosted page where users update payment method, cancel, view invoices. Saves us building one.</td></tr>
+  <tr><td>Webhooks</td><td><code>customer.subscription.*</code> and <code>invoice.payment_*</code> events update our database. Idempotent by event ID.</td></tr>
+  <tr><td>Free trial handling</td><td>Trial without card upfront → user signs up, has 14 days, sees "add card to continue" on day 14. Higher activation, lower trial-to-paid conversion.</td></tr>
+  <tr><td>Tax handling</td><td>Stripe Tax (1% fee) computes VAT / sales tax / Brazilian taxes per region — saves us building a tax matrix.</td></tr>
+</table>
+
+<h2>Web-specific operational notes</h2>
+
+<ul>
+  <li>No review queue means we can ship multiple times a day. Automated tests gate deploys (cypress / playwright on the critical flow: signup → trial → checkout → engine result).</li>
+  <li>The PWA is served from the same origin as the Stripe Checkout return URL — required for the Stripe customer object to bind cleanly to our user account.</li>
+  <li>Service-worker caching needs a versioning strategy (cache name includes a build hash) — otherwise users pin an old version of the app and miss bug fixes.</li>
+  <li>iOS Safari has historically reset PWA storage after 7 days of inactivity. We account for this by re-fetching from the backend on launch rather than depending on local storage as the source of truth.</li>
+</ul>
+
+<h2>Order of operations — web</h2>
+
+<ol>
+  <li>Domains registered (.com + .com.br).</li>
+  <li>Hosting + database provisioned. TLS certificate issued automatically.</li>
+  <li>Authentication wired (email + password / magic link).</li>
+  <li>Stripe account approved → subscription products configured → webhooks pointed at our backend.</li>
+  <li>End-to-end test on a real device: signup → trial → charge → cancel → reactivate.</li>
+  <li>PWA manifest + service worker shipped → "Add to Home Screen" tested on iOS Safari and Android Chrome.</li>
+  <li>Privacy Policy + Terms live (see <a href="legal.html">legal.html</a>).</li>
+  <li>Soft launch — share the link with the early-bird cohort. No review, no waiting.</li>
+</ol>
+
+<p class="small">For pricing detail (web vs mobile split) see
+<a href="pricing.html">pricing.html</a>. For native iOS / Android publishing see
+<a href="publish-ios.html">publish-ios.html</a> and
+<a href="publish-android.html">publish-android.html</a>.</p>
+
+</body>
+</html>
